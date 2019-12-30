@@ -1,0 +1,349 @@
+namespace = reunion_events_scientist_leaders_create
+
+#-----------------------------------------------------
+
+# 1、当有任意的整合运动Scientist被改装并实装时的状态Key值
+# 当有任意的整合运动Scientist被改装并实装时，此值将被设置为1，默认为非0值(新的游戏一局的开始初始化时)或手动设置为0值(immediate模块的开头、或者在after模块里手动设置的说，qwq，虎摸，谢谢)的说，qwq，虎摸，谢谢，
+# 此常量的作用域为：country层(owner层)的说，qwq，虎摸，谢谢，
+@has_any_reunion_scientist_leader_been_installed = "has_any_reunion_scientist_leader_been_installed"
+
+#-----------------------------------------------------
+
+# 注意：一般情况下，请勿直接调用此事件处理函数，此函数通过"reunion_Leaders_Spawned_Or_Death_Events_Master_Control.1"事件消息处理函数来让其内部调调用这里面的函数的说，谢谢，
+#       而如果仍然想要调用这里的函数的话，则请通过触发"on_leader_spawned = {...}"事件消息来让事件消息的处理流程来自动的调用此消息的说，qwq，虎摸，谢谢，
+
+country_event = {
+	id = reunion_events_scientist_leaders_create.100
+
+	is_triggered_only = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_reunion_authorities
+		# has_government = rs_arkNights_reunion_goverment
+
+		#owner = {
+		#	# is_species_class = rs_arkNights_Reunion_pop_species_1
+		#
+		#	# ※备注注意-1：如果这里只有一个判断条件(只有1~2个arkNights人物的话)，这里请不要写OR语句、请直接默认创建这个arkNights人物而不要用随机抽卡，否则会出BUG而导致不走下面内容的异常情况的发生的说，谢谢，
+		#}
+
+		fromfrom = {
+			leader_class = scientist
+		}
+	}
+
+	immediate = {
+		# 3、重置[是否有任意整合运动的Scientist科学家被创建]的标识符
+		owner = {
+			set_variable = {
+				which = @has_any_reunion_scientist_leader_been_installed
+				value = 0
+			}
+		}
+
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						check_variable = {
+							which = @rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_Is_Alive
+							value = 0
+						}
+					}
+				}
+			}
+
+			# 开始改造并实装：梅菲斯特
+			fromfrom = {
+				set_name 		= @rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_name
+				set_age 		= 16
+				set_is_female 	= no
+				set_skill		= 1
+
+				change_leader_portrait = rs_arkNights_mephisto_portrait_01
+
+				add_trait = rs_arkNights_Reunion_6_Stars_leader_level_trait
+				add_trait = rs_arkNights_Reunion_YL_leader_job_trait
+				# add_trait = rs_arkNights_Reunion_other_leaders_trait_oripathy
+				add_trait = rs_arkNights_scientist_mephisto_feature_traint_originiumsArts
+
+				set_leader_flag = @rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_flag
+			}
+
+			# 设置其他周边监控数据：设置其他状态Key所对应的字典变量属性
+			owner = {
+				# 设置干员[梅菲斯特]的生/死状态为：存活状态
+				set_variable = {
+					which = @rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_Is_Alive
+					value = 1
+				}
+
+				# 设置[是否有任意整合运动的Scientist科学家被创建]的标识符为"1"(yes值)的说，qwq，虎摸，谢谢，
+				set_variable = {
+					which = @has_any_reunion_scientist_leader_been_installed
+					value = 1
+				}
+			}
+		}
+		else = {
+			# 5、重新添加<本地scientist在创建出厂时的随机设置的arkNights的trait特征点属性>的说、并重置[是否有任意整合运动的Scientist科学家被创建]的标识符为"0"(no值<默认初始值>)，qwq，虎摸，谢谢，
+			# 6、set ruler portrait to the default portrait to prevent to the default amiya_ruler portrait, thank you~
+			fromfrom = {
+				change_leader_portrait = rs_arkNights_Reunion_Pops_portrait_02
+			}
+
+			# 7、重新添加所有的本地scientist在创建出厂时的随机设置的arkNights的trait特征点属性：
+			# 因为没有任何的arkNights的Scientist被创建，所以就没有arkNights的trait<领导者的特征点>的重复叠加问题的说，所以就可以重新添加上这些qwq，虎摸，谢谢，
+			# 因此先移除已有的出厂时的随机可能设置的arkNights的trait<领导者的特征点>，然后再添加新的arkNights的trait<领导者的特征点>的说，qwq，虎摸，谢谢)，谢谢，
+			fromfrom = {
+				# set skill to lv.1
+				set_skill	= 1
+
+#				system local scientist leader trait(1) assign
+#				random_list = {
+#					30*@rs_arkNights_global_Reunion_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_meticulous
+#					}
+#
+#					30*@rs_arkNights_global_Reunion_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_spark_of_genius
+#					}
+#
+#					30*@rs_arkNights_global_Reunion_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_carefree
+#					}
+#
+#					30*@rs_arkNights_global_Reunion_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_roamer
+#					}
+#
+#					30*@rs_arkNights_global_Reunion_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_archaeologist_ancrel
+#					}
+#
+#					30*@rs_arkNights_global_Reunion_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_archaeologist
+#					}
+#
+#					30*@rs_arkNights_global_Reunion_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_paranoid
+#					}
+#
+#					30*@rs_arkNights_global_Reunion_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_custom_AI_assistant
+#					}
+#
+#					30*@rs_arkNights_global_Reunion_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_sapient_AI_assistant
+#					}
+#
+#					30*@rs_arkNights_global_Reunion_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_expertise_propulsion
+#					}
+#
+#					30*@rs_arkNights_global_Reunion_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_expertise_voidcraft
+#					}
+#
+#					30*@rs_arkNights_global_Reunion_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_expertise_industry
+#					}
+#
+#					30*@rs_arkNights_global_Reunion_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_expertise_field_manipulation
+#					}
+#				}
+				
+				# rs_arkNights scientist leader traits(1~2) assign
+#				add_trait = rs_arkNights_Reunion_other_leaders_trait_oripathy
+
+				random_list = {
+					35 = {
+						add_trait = rs_arkNights_Reunion_scientist_traint_originiumsArts_1
+					}
+
+					35 = {
+						add_trait = rs_arkNights_Reunion_scientist_traint_originiumsArts_2
+					}
+
+					30 = {
+						# do nothing here
+					}
+				}
+			}
+
+			# 重置[是否有任意整合运动的Scientist科学家被创建]的标识符
+			owner = {
+				set_variable = {
+					which = @has_any_reunion_scientist_leader_been_installed
+					value = 0
+				}
+			}
+		}
+	}
+}
+
+#----------------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------------
+
+# 回收当前指定的Scientist科学家
+# 流程：[判断是否至少创建了一个rs_arkNights领导者对象->(1、如果有的话)->判断当前回收的领导者是否是rs_arkNights领导者->(1、如果是的话)->回收开关设定、移除flag标识符->数据回收处理完毕；
+#													   (2、如果没有的话)->直接完毕的说，qwq，虎摸，谢谢，             (2、如果不是的话)->直接完毕]的说，qwq，虎摸，谢谢，
+event = {
+	id = reunion_events_scientist_leaders_create.101
+
+	is_triggered_only = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_reunion_authorities
+		# has_government = rs_arkNights_reunion_goverment
+
+		owner = {
+			# is_species_class = rs_arkNights_Reunion_pop_species_1
+
+			# 1、只要有以下至少任何一个<整合运动的Scientist科学家角色>[已创建]，则就进入到<整合运动的Scientist科学家角色>的善后数据回收阶段
+			# 2、否则就什么都不做的说(即默认使用当前已创建的随机本地Scientist对象<因为当前是"on_leader_death/removed"事件，其中的单词"death"的时态和"removed"里的"ed"则就属于[过去式语法]，即："在领导者创建后，触发此消息"的说，qwq，虎摸，谢谢>，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+			OR = {
+				# 特殊的rs_arkNights多重职业角色：
+				# 梅菲斯特：[Scientist+Admiral]：
+				check_variable = {
+					which = @rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_flag
+					value = 1
+				}
+			}
+		}
+
+		fromfrom = {
+			leader_class = scientist
+		}
+	}
+
+	immediate = {
+		# 3、正式进入指定<整合运动的Scientist科学家角色>的善后回收阶段
+		fromfromfrom = {
+			# 特殊的rs_arkNights多重职业角色：
+			# 梅菲斯特：[Scientist+Admiral]：
+			# 判断要回收的Scientist是否是<梅菲斯特>：
+			if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_flag
+
+					owner = {
+						check_variable = {
+							which = @rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_Is_Alive
+							value = 1
+						}
+					}
+				}
+
+				remove_leader_flag = rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_flag
+				
+				owner = {
+					set_variable = {
+						which = @rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_Is_Alive
+						value = 0
+					}
+				}
+			}
+		}
+	}
+}
+
+#----------------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------------
+
+# 升级当前指定的Scientist科学家
+# 流程：[判断是否至少创建了一个rs_arkNights领导者对象->(1、如果有的话)->判断当前回收的领导者是否是rs_arkNights领导者->(1、如果是的话)->升级相关数据/肖像和或技能->数据升级完毕；
+#													   (2、如果没有的话)->直接完毕的说，qwq，虎摸，谢谢，             (2、如果不是的话)->直接完毕]的说，qwq，虎摸，谢谢，
+event = {
+	id = reunion_events_scientist_leaders_create.102
+
+	is_triggered_only = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_reunion_authorities
+		# has_government = rs_arkNights_reunion_goverment
+
+		owner = {
+			# is_species_class = rs_arkNights_Reunion_pop_species_1
+
+			# 1、只要有以下至少任何一个<整合运动的Scientist科学家角色>[已创建]，则就进入到<整合运动的Scientist科学家角色>的数据/肖像和或技能的数据升级处理阶段，
+			# 2、否则就什么都不做的说(即默认使用当前已创建的随机本地Scientist对象<因为当前是"on_leader_death/removed"事件，其中的单词"death"的时态和"removed"里的"ed"则就属于[过去式语法]，即："在领导者创建后，触发此消息"的说，qwq，虎摸，谢谢>，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+			OR = {
+				# 特殊的rs_arkNights多重职业角色：
+				# 梅菲斯特：[Scientist+Admiral]：
+				check_variable = {
+					which = @rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_flag
+					value = 1
+				}
+			}
+		}
+
+		fromfrom = {
+			leader_class = scientist
+		}
+	}
+
+	immediate = {
+		# 3、正式进入指定<整合运动的Scientist科学家角色>的数据升级处理阶段
+		fromfromfrom = {
+			# 特殊的rs_arkNights多重职业角色：
+			# 梅菲斯特：[Scientist+Admiral]：
+			# 判断要升级的Scientist是否是<梅菲斯特>：
+			if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_flag
+
+					owner = {
+						check_variable = {
+							which = @rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_Is_Alive
+							value = 1
+						}
+					}
+				}
+
+				# 升级处理操作
+				if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Reunion_All_leader_lv_2_exp_value
+							has_level		>= 2
+							has_skill		>= 2
+						}
+						
+					}
+
+					# ... do some upgrade things any you want here
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Reunion_All_leader_lv_3_exp_value
+							has_level		>= 3
+							has_skill		>= 3
+						}
+					}
+
+					# ... do some upgrade things any you want here
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Reunion_All_leader_lv_4_exp_value
+							has_level		>= 4
+							has_skill		>= 4
+						}
+					}
+
+					# ... do some upgrade things any you want here
+				}
+			}
+		}
+	}
+}

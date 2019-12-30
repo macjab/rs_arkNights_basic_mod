@@ -1,0 +1,24 @@
+###############################################
+#####-----Author: 	RhineSky--------------#####
+#####-----SteamID:	RhineSky--------------#####
+#####-----Email:	macjab@macjab.com-----#####
+#####-----QQ：		516278065-------------#####
+#U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+###############################################
+
+portraits = {
+	# --------------Pops_1--------------
+	rs_arkNights_Reunion_Pops_material_01 = {
+		texturefile = "gfx/models/portraits/reunion/reunion_soldier_style_1.dds"
+	}
+
+	# --------------Pops_2--------------
+	rs_arkNights_Reunion_Talulah_Pops_material_00 = {
+		texturefile = "gfx/models/portraits/reunion/talulah_style_1.dds" # using for preCountry settings at the options of Reunion country settings(and this object is only using for pop_portraitsgroup, thank you~)
+	}
+
+	# --------------Pops_3--------------
+	rs_arkNights_Reunion_Talulah_Pops_material_01 = {
+		texturefile = "gfx/models/portraits/reunion/reunion_normal_leader_style_1.dds" # using for preCountry settings at the options of Reunion country settings(and this object is only using for pop_portraitsgroup, thank you~)
+	}
+}

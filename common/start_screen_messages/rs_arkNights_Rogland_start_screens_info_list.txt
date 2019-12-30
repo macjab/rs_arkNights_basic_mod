@@ -1,0 +1,18 @@
+# Rogland_start_screen_info
+part = {
+	location = 0
+	localization = "rs_arkNights_Rogland_Flag_custom_start_screen_info_flag"
+	
+	trigger = {
+		# has_government	 	= rs_arkNights_rogland_goverment
+
+		has_authority		= rs_arkNights_rogland_authorities
+
+		has_civic			= rs_arkNights_Rogland_civic_arkNights
+		has_civic			= rs_arkNights_Rogland_civic_warrior_culture
+
+		has_ethic			= ethic_egalitarian
+		has_ethic			= ethic_militarist
+		has_ethic			= ethic_xenophile
+	}		
+}

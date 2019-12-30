@@ -1,0 +1,64 @@
+##########-----arkNights_All_Leader_ALive_Or_Dead_State_List_Related_Variables-----##########
+
+########################################################################################################
+##########------------------------------------------------------------------------------------##########
+##########-----scripted_varaibles_的变量作用域：country层(owner层)的说，qwq，虎摸，谢谢，-----##########
+##########------------------------------------------------------------------------------------##########
+########################################################################################################
+
+################################################################
+##########-----<罗德岛：干员生/死状态>的常量Key值-----##########
+################################################################
+# Rogland_Rulers
+@rs_arkNights_Rogland_ruler_4_stars_Dobermann_Is_Alive			= "rs_arkNights_Rogland_ruler_4_stars_Dobermann_Is_Alive"
+@rs_arkNights_Rogland_ruler_5_stars_Amiya_Is_Alive 				= "rs_arkNights_Rogland_ruler_5_stars_Amiya_Is_Alive"
+@rs_arkNights_Rogland_ruler_5_stars_Warfarin_Is_Alive			= "rs_arkNights_Rogland_ruler_5_stars_Warfarin_Is_Alive"
+@rs_arkNights_Rogland_ruler_6_stars_Kaltsit_Is_Alive			= "rs_arkNights_Rogland_ruler_6_stars_Kaltsit_Is_Alive"
+@rs_arkNights_Rogland_ruler_7_stars_Doctor_Is_Alive				= "rs_arkNights_Rogland_ruler_7_stars_Doctor_Is_Alive"
+
+# Rogland_Governors
+@rs_arkNights_Rogland_governor_2_stars_Yato_Is_Alive			= "rs_arkNights_Rogland_governor_2_stars_Yato_Is_Alive"
+@rs_arkNights_Rogland_governor_3_stars_Fang_Is_Alive 			= "rs_arkNights_Rogland_governor_3_stars_Fang_Is_Alive"
+@rs_arkNights_Rogland_governor_3_stars_Orchid_Is_Alive 			= "rs_arkNights_Rogland_governor_3_stars_Orchid_Is_Alive"
+@rs_arkNights_Rogland_governor_3_stars_Melantha_Is_Alive		= "rs_arkNights_Rogland_governor_3_stars_Melantha_Is_Alive"
+@rs_arkNights_Rogland_governor_5_stars_ACE_Is_Alive				= "rs_arkNights_Rogland_governor_5_stars_ACE_Is_Alive"
+
+# Rogland_Scientists(+1)
+@rs_arkNights_Rogland_scientist_3_stars_Hibiscus_Is_Alive		= "rs_arkNights_Rogland_scientist_3_stars_Hibiscus_Is_Alive"
+@rs_arkNights_Rogland_scientist_3_stars_Ansel_Is_Alive 			= "rs_arkNights_Rogland_scientist_3_stars_Ansel_Is_Alive"
+@rs_arkNights_Rogland_scientist_4_stars_Perfumer_Is_Alive 		= "rs_arkNights_Rogland_scientist_4_stars_Perfumer_Is_Alive"
+@rs_arkNights_Rogland_scientist_4_stars_Gavial_Is_Alive			= "rs_arkNights_Rogland_scientist_4_stars_Gavial_Is_Alive"
+@rs_arkNights_Rogland_scientist_6_stars_Nightingal_Is_Alive		= "rs_arkNights_Rogland_scientist_6_stars_Nightingal_Is_Alive"
+@rs_arkNights_Rogland_scientist_6_stars_Angelina_Is_Alive		= "rs_arkNights_Rogland_scientist_6_stars_Angelina_Is_Alive"
+
+# Rogland_Admirals(+1)
+@rs_arkNights_Rogland_admiral_3_stars_Catapult_Is_Alive			= "rs_arkNights_Rogland_admiral_3_stars_Catapult_Is_Alive"
+@rs_arkNights_Rogland_admiral_4_stars_Deepcolor_Is_Alive 		= "rs_arkNights_Rogland_admiral_4_stars_Deepcolor_Is_Alive"
+@rs_arkNights_Rogland_admiral_5_stars_Firewatch_Is_Alive		= "rs_arkNights_Rogland_admiral_5_stars_Firewatch_Is_Alive"
+@rs_arkNights_Rogland_admiral_5_stars_BluePoision_Is_Alive		= "rs_arkNights_Rogland_admiral_5_stars_BluePoision_Is_Alive"
+@rs_arkNights_Rogland_admiral_5_stars_Skyfire_Is_Alive			= "rs_arkNights_Rogland_admiral_5_stars_Skyfire_Is_Alive"
+@rs_arkNights_Rogland_admiral_5_stars_Provence_Is_Alive			= "rs_arkNights_Rogland_admiral_5_stars_Provence_Is_Alive"
+@rs_arkNights_Rogland_admiral_5_stars_Meteorite_Is_Alive		= "rs_arkNights_Rogland_admiral_5_stars_Meteorite_Is_Alive"
+@rs_arkNights_Rogland_admiral_5_stars_Truth_Is_Alive			= "rs_arkNights_Rogland_admiral_5_stars_Truth_Is_Alive"
+
+# Rogland_Generals(+1)
+@rs_arkNights_Rogland_general_4_stars_Cuora_Is_Alive 			= "rs_arkNights_Rogland_general_4_stars_Cuora_Is_Alive"
+@rs_arkNights_Rogland_general_4_stars_Fronstleaf_Is_Alive 		= "rs_arkNights_Rogland_general_4_stars_Fronstleaf_Is_Alive"
+@rs_arkNights_Rogland_general_4_stars_Matoimaru_Is_Alive 		= "rs_arkNights_Rogland_general_4_stars_Matoimaru_Is_Alive"
+@rs_arkNights_Rogland_general_4_stars_Scavenger_Is_Alive 		= "rs_arkNights_Rogland_general_4_stars_Scavenger_Is_Alive"
+@rs_arkNights_Rogland_general_5_stars_Nearl_Is_Alive 			= "rs_arkNights_Rogland_general_5_stars_Nearl_Is_Alive"
+@rs_arkNights_Rogland_general_5_stars_ProjektRed_Is_Alive 		= "rs_arkNights_Rogland_general_5_stars_ProjektRed_Is_Alive"
+@rs_arkNights_Rogland_general_5_stars_Winter_Is_Alive 			= "rs_arkNights_Rogland_general_5_stars_Winter_Is_Alive"
+@rs_arkNights_Rogland_general_5_stars_Specter_Is_Alive 			= "rs_arkNights_Rogland_general_5_stars_Specter_Is_Alive"
+@rs_arkNights_Rogland_general_6_stars_Skadi_Is_Alive 			= "rs_arkNights_Rogland_general_6_stars_Skadi_Is_Alive"
+
+# ※其他特殊角色：
+# 1、特殊干员角色(多职业角色，但同时只能存在于一个职位(全局唯一性的随机职位角色)，
+#   a、即："如果A职位存在了这个这个角色，则其他职位就无法再出现这个角色，直到这个角色死亡之后[而被堕落带走的状态待定的说，谢谢]，才能再次随机刷新这个人物及其职位"的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+# Rogland_Scientist、Rogland_General
+@rs_arkNights_Rogland_scientist_or_general_6_stars_Shining_Is_Alive	= "rs_arkNights_Rogland_scientist_or_general_6_stars_Shining_Is_Alive" # 闪灵同时可以任意兼职"Scientist科学家"和"General陆军将军"的这2个职位的说，qwq，虎摸，谢谢，
+																					                                     				   # 即：1个角色、2个副本、同1个肖像、不同特征点、对应2个领导者类型的说，qwq，虎摸，谢谢，
+
+# Rogland_General、Rogland_Admiral
+@rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_Is_Alive	= "rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_Is_Alive"  # 拉普兰德同时可以任意兼职"General陆军将军"和"Admiral舰队司令"的这2个职位的说，qwq，虎摸，谢谢，
+																					                                     				   # 即：1个角色、2个副本、同1个肖像、不同特征点、对应2个领导者类型的说，qwq，虎摸，谢谢，

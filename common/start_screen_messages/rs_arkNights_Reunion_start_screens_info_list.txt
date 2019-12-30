@@ -1,0 +1,17 @@
+# Reunion_start_screen_info
+part = {
+	location = 0
+	localization = "rs_arkNights_Reunion_Flag_custom_start_screen_info_flag"
+	
+	trigger = {
+		# has_government	 	= rs_arkNights_reunion_goverment
+
+		has_authority		= rs_arkNights_reunion_authorities
+
+		has_civic			= rs_arkNights_Reunion_civic_Chaos_Willing
+		has_civic			= rs_arkNights_Reunion_civic_Originiums_New_Life
+
+		has_ethic			= ethic_militarist
+		has_ethic			= ethic_fanatic_xenophobe
+	}		
+}

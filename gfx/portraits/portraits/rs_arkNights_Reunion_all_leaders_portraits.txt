@@ -1,0 +1,84 @@
+###############################################
+#####-----Author: 	RhineSky--------------#####
+#####-----SteamID:	RhineSky--------------#####
+#####-----Email:	macjab@macjab.com-----#####
+#####-----QQ：		516278065-------------#####
+#U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+###############################################
+
+portraits = {
+	##############################################################
+	##########-----Ruler组领导者的人物肖像Scope对象-----##########
+	##############################################################
+	
+
+	#################################################################
+	##########-----Governor组领导者的人物肖像Scope对象-----##########
+	#################################################################
+	# --------------WeiYanWu--------------
+	rs_arkNights_weiyanwu_material_01 = {
+		texturefile = "gfx/models/portraits/reunion/weiyanwu_style_1.dds"
+	}
+
+	##################################################################
+	##########-----Scientist组领导者的人物肖像Scope对象-----##########
+	##################################################################
+
+
+	################################################################
+	##########-----Admiral组领导者的人物肖像Scope对象-----##########
+	################################################################
+	# --------------Faust--------------
+	rs_arkNights_faust_material_01 = {
+		texturefile = "gfx/models/portraits/reunion/faust_style_1.dds"
+	}
+
+	################################################################
+	##########-----General组领导者的人物肖像Scope对象-----##########
+	################################################################
+	# --------------KingKiller--------------
+	rs_arkNights_kingkiller_material_01 = {
+		texturefile = "gfx/models/portraits/reunion/kingkiller_style_1.dds"
+	}
+
+	##########################################################################
+	##########-----Special特殊多职业组领导者的人物肖像Scope对象-----##########
+	##########################################################################
+	# --------------W(Ruler/Admiral)--------------
+	rs_arkNights_w_material_01 = {
+		texturefile = "gfx/models/portraits/reunion/w_style_1.dds"
+	}
+
+	# --------------Talulah(Ruler/Admiral)--------------
+	rs_arkNights_talulah_material_01 = {
+		texturefile = "gfx/models/portraits/reunion/talulah_style_1.dds"
+	}
+
+	# --------------FronstStar--------------
+	rs_arkNights_fronststar_material_01 = {
+		texturefile = "gfx/models/portraits/reunion/fronststar_style_1.dds"
+	}
+
+	# --------------Mephisto(Scientist/Admiral)--------------
+	rs_arkNights_mephisto_material_01 = {
+		texturefile = "gfx/models/portraits/reunion/mephisto_style_1.dds"
+	}
+
+	# --------------Micha--------------
+	rs_arkNights_micha_material_01 = {
+		texturefile = "gfx/models/portraits/reunion/micha_style_1.dds"
+	}
+
+	# --------------BrokenBone(General/Admiral)--------------
+	rs_arkNights_brokenbone_material_01 = {
+		texturefile = "gfx/models/portraits/reunion/brokenbone_style_1.dds"
+	}
+
+	###################################################################################################################
+	##########-----Other其他没有个人属性卡面的特殊NPC角色的整合运动的补充人物组领导者的人物肖像Scope对象-----##########
+	###################################################################################################################
+	# --------------Other_Normal_Leader--------------
+	rs_arkNights_Reunion_normal_leader_material_01 = {
+		texturefile = "gfx/models/portraits/reunion/reunion_normal_leader_style_1.dds"
+	}
+}

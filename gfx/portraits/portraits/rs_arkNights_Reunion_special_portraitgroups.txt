@@ -1,0 +1,346 @@
+###############################################
+#####-----Author: 	RhineSky--------------#####
+#####-----SteamID:	RhineSky--------------#####
+#####-----Email:	macjab@macjab.com-----#####
+#####-----QQ：		516278065-------------#####
+#U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+###############################################
+
+##########################################################################
+##########-----Special特殊多职业组领导者的人物肖像Scope对象-----##########
+##########################################################################
+###########--------------W--------------###########
+portrait_groups = {
+	rs_arkNights_w_portrait_01 = {
+		default = rs_arkNights_w_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_w_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_w_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the Reunion, thank you~
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					# gender = female
+
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_w_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					# gender = female
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_w_material_01
+				}
+			}
+		}
+	}
+}
+
+###########--------------Talulah--------------###########
+portrait_groups = {
+	rs_arkNights_talulah_portrait_01 = {
+		default = rs_arkNights_talulah_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_talulah_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_talulah_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the Reunion, thank you~
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					# gender = female
+
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_talulah_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					# gender = female
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_talulah_material_01
+				}
+			}
+		}
+	}
+}
+
+###########--------------FronstStar--------------###########
+portrait_groups = {
+	rs_arkNights_fronststar_portrait_01 = {
+		default = rs_arkNights_fronststar_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_fronststar_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_fronststar_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the Reunion, thank you~
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					# gender = female
+
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_fronststar_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					# gender = female
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_fronststar_material_01
+				}
+			}
+		}
+	}
+}
+
+###########--------------Mephisto--------------###########
+portrait_groups = {
+	rs_arkNights_mephisto_portrait_01 = {
+		default = rs_arkNights_mephisto_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_mephisto_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_mephisto_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the Reunion, thank you~
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					# gender = male
+
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_mephisto_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					# gender = male
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_mephisto_material_01
+				}
+			}
+		}
+	}
+}
+
+###########--------------Micha--------------###########
+portrait_groups = {
+	rs_arkNights_micha_portrait_01 = {
+		default = rs_arkNights_micha_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_micha_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_micha_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the Reunion, thank you~
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					# gender = female
+
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_micha_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					# gender = female
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_micha_material_01
+				}
+			}
+		}
+	}
+}
+
+###########--------------BrokenBone--------------###########
+portrait_groups = {
+	rs_arkNights_brokenbone_portrait_01 = {
+		default = rs_arkNights_brokenbone_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_brokenbone_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_brokenbone_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the Reunion, thank you~
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					# gender = male
+
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_brokenbone_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					# gender = male
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_brokenbone_material_01
+				}
+			}
+		}
+	}
+}

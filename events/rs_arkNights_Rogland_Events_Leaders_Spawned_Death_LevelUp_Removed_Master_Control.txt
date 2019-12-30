@@ -1,0 +1,265 @@
+namespace = rogland_Leaders_Spawned_Death_LevelUp_Removed_Events_Master_Control
+
+# 注意：一般情况下，请勿直接调用此事件处理函数，此函数用于通过"on_leader_spawned = {...}"事件消息进行调用的说，谢谢，
+#       而如果仍然想要调用这里的函数的话，则请通过触发"on_game_spawned = {...}"事件消息来让事件消息的处理流程来自动的调用此消息的说，qwq，虎摸，谢谢，
+
+# [Rogland]总控消息：当有新的领导者出生时，根据不同的领导者类型，做不同类型的处理的说，qwq，虎摸，谢谢，
+country_event = {
+	id = rogland_Leaders_Spawned_Death_LevelUp_Removed_Events_Master_Control.1
+
+	is_triggered_only = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_rogland_authorities
+		# has_government = rs_arkNights_rogland_goverment
+	}
+
+	immediate = {
+		# for different leader class type to event to the specific contiune sub event processing scope
+		# ruler process
+		if = {
+			limit = {
+				from = {
+					leader_class = ruler
+				}
+			}
+
+			country_event = {
+				id = rogland_events_ruler_leaders_create.100
+			}
+		}
+
+		# governor process
+		else_if = {
+			limit = {
+				from = {
+					leader_class = governor
+				}
+			}
+
+			country_event = {
+				id = rogland_events_governor_leaders_create.100
+			}
+		}
+
+		# admiral process
+		else_if = {
+			limit = {
+				from = {
+					leader_class = admiral
+				}
+			}
+
+			country_event = {
+				id = rogland_events_admiral_leaders_create.100
+			}
+		}
+
+		# scientist process
+		else_if = {
+			limit = {
+				from = {
+					leader_class = scientist
+				}
+			}
+
+			country_event = {
+				id = rogland_events_scientist_leaders_create.100
+			}
+		}
+
+		# general process
+		else_if = {
+			limit = {
+				from = {
+					leader_class = general
+				}
+			}
+
+			country_event = {
+				id = rogland_events_general_leaders_create.100
+			}
+		}
+	}
+
+	after = {
+		country_event = {
+			id = rogland_events_specific_leader_classes_leaders_states_control.104
+			# id = rogland_events_specific_leader_classes_leaders_states_control.105
+		}
+	}
+}
+
+#------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------
+
+# [Rogland]总控消息：当有已有的领导者嗝屁或被移除时(除了情感方面之外，最后的数据效果相同，都是数据销毁的说，谢谢)，
+#                    这里将会根据不同的领导者类型，来做对应的不同领导者类型的善后的数据回收处理、与回收处理之后的数据再循环利用的说，qwq，虎摸，谢谢，
+country_event = {
+	id = rogland_Leaders_Spawned_Death_LevelUp_Removed_Events_Master_Control.2
+
+	is_triggered_only = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_rogland_authorities
+		# has_government = rs_arkNights_rogland_goverment
+	}
+
+	immediate = {
+		# for different leader class type to event to the specific contiune sub event processing scope
+		# ruler process
+		if = {
+			limit = {
+				from = {
+					leader_class = ruler
+				}
+			}
+
+			country_event = {
+				id = rogland_events_ruler_leaders_create.101
+			}
+		}
+
+		# governor process
+		else_if = {
+			limit = {
+				from = {
+					leader_class = governor
+				}
+			}
+
+			country_event = {
+				id = rogland_events_governor_leaders_create.101
+			}
+		}
+
+		# admiral process
+		else_if = {
+			limit = {
+				from = {
+					leader_class = admiral
+				}
+			}
+
+			country_event = {
+				id = rogland_events_admiral_leaders_create.101
+			}
+		}
+
+		# scientist process
+		else_if = {
+			limit = {
+				from = {
+					leader_class = scientist
+				}
+			}
+
+			country_event = {
+				id = rogland_events_scientist_leaders_create.101
+			}
+		}
+
+		# general process
+		else_if = {
+			limit = {
+				from = {
+					leader_class = general
+				}
+			}
+
+			country_event = {
+				id = rogland_events_general_leaders_create.101
+			}
+		}
+	}
+}
+
+#------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------
+
+# [Rogland]总控消息：当有已有的领导者升级时，
+#                    这里将会根据不同的领导者类型，来做对应的不同领导者类型的升级后的后续数据/肖像再处理和再添加新数据/新肖像和或新技能的说，qwq，虎摸，谢谢，
+country_event = {
+	id = rogland_Leaders_Spawned_Death_LevelUp_Removed_Events_Master_Control.3
+
+	is_triggered_only = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_rogland_authorities
+		# has_government = rs_arkNights_rogland_goverment
+	}
+
+	immediate = {
+		# for different leader class type to event to the specific contiune sub event processing scope
+		# ruler process
+		if = {
+			limit = {
+				from = {
+					leader_class = ruler
+				}
+			}
+
+			country_event = {
+				id = rogland_events_ruler_leaders_create.102
+			}
+		}
+
+		# governor process
+		else_if = {
+			limit = {
+				from = {
+					leader_class = governor
+				}
+			}
+
+			country_event = {
+				id = rogland_events_governor_leaders_create.102
+			}
+		}
+
+		# admiral process
+		else_if = {
+			limit = {
+				from = {
+					leader_class = admiral
+				}
+			}
+
+			country_event = {
+				id = rogland_events_admiral_leaders_create.102
+			}
+		}
+
+		# scientist process
+		else_if = {
+			limit = {
+				from = {
+					leader_class = scientist
+				}
+			}
+
+			country_event = {
+				id = rogland_events_scientist_leaders_create.102
+			}
+		}
+
+		# general process
+		else_if = {
+			limit = {
+				from = {
+					leader_class = general
+				}
+			}
+
+			country_event = {
+				id = rogland_events_general_leaders_create.102
+			}
+		}
+	}
+}

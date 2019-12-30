@@ -1,0 +1,873 @@
+namespace = reunion_events_specific_leader_classes_leaders_states_control
+
+# 检测Ruler/Heir的姓名属性状态的MTTH的间隔时间状态选择表
+@mtth_set_heir_name_distance_days = 15
+
+##########-----整合运动的指定领导者类型的领导者的开局状态与属性设置-----##########
+
+# 切换整合运动的人口肖像、以及整合运动的开局Ruler统治者领袖的[生/死]状态设置
+country_event = {
+	id = reunion_events_specific_leader_classes_leaders_states_control.100
+
+	is_triggered_only = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_reunion_authorities
+		# has_government = rs_arkNights_reunion_goverment
+
+		#owner = {
+		#	# is_species_class = rs_arkNights_Reunion_pop_species_1
+		#}
+	}
+
+	immediate = {
+		# 切换整合运动的人口肖像
+		owner.species = {
+			change_species_portrait = rs_arkNights_Reunion_Pops_portrait_02
+		}
+
+		# 整合运动默认的指挥官是塔露拉，因此在整合运动的国家创建后，默认塔露拉为已改造并实装的状态的说(具体的<塔露拉的改造与实装>的代码内容请见："./events/rs_arkNights_Reunion_Events_Ruler_Leaders_Create.txt"文件里的关于<"# 改造并实装5星人物：塔露拉">的代码相关内容的说，谢谢)，qwq，虎摸，谢谢，
+		# 当前Scope范围是country的说(因为就在country的内容定义体内的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+		owner = {
+			set_variable = {
+				which = @rs_arkNights_Reunion_ruler_7_stars_Talulah_Is_Alive
+				value = 1
+			}
+		}
+
+		# 强制性重置初始Ruler的名字为"塔露拉"及其属性内容的说，谢谢，
+		#every_owned_leader = {
+		#	if = {
+		#		limit = {
+		#			has_leader_flag = @rs_arkNights_Reunion_ruler_or_admiral_7_stars_Talulah_flag
+		#		}
+		#
+		#		set_name 				= @rs_arkNights_Reunion_ruler_or_admiral_7_stars_Talulah_name
+		#		set_is_female 			= yes
+		#
+		#		change_leader_portrait 	= rs_arkNights_talulah_portrait_01
+		#	}
+		#}
+
+		# ※备注-1：在新的一局游戏启动后，请先按照"100->101->103"的事件处理流程的先后执行顺序来先后依次的来执行初始化的数据处理操作的说(即下方已设定好的事件顺序处理流程的说，谢谢)，
+		#          这些事件处理流程的先后顺序不能错，否则可能导致"塔露拉不会被正确初始化为默认初始化Ruler、以及Heir继承者的姓名不会被正确MTTH刷新"的问题的说，qwq，虎摸，谢谢，
+		country_event = {
+			id = reunion_events_specific_leader_classes_leaders_states_control.101
+			id = reunion_events_specific_leader_classes_leaders_states_control.103 # maybe need to be comment(need test)
+		}
+	}
+}
+
+# 整合运动的Scientist科学家领导者的开局状态设置
+country_event = {
+	id = reunion_events_specific_leader_classes_leaders_states_control.101
+
+	is_triggered_only = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_reunion_authorities
+		# has_government = rs_arkNights_reunion_goverment
+
+		owner = {
+			# is_species_class = rs_arkNights_Reunion_pop_species_1
+
+			# 1、只要有以下任何一个<整合运动的Scientist科学家角色>[被创建]，则就进入到<整合运动的Scientist科学家角色>的状态检测与属性修改阶段
+			# 2、否则就什么都不做的说，qwq，虎摸，谢谢，
+			OR = {
+				# 特殊的rs_arkNights多重职业角色：
+				# 梅菲斯特：[Scientist+Admiral]：
+				check_variable = {
+					which = @rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_Is_Alive
+					value = 1
+				}
+			}
+		}
+	}
+
+	immediate = {
+		every_owned_leader = {
+			# 判断并检测是否是6星Scientist科学家：梅菲斯特：
+			#   a、如果是，则重新覆盖领导者的姓名(因为初始科学船会在开局时给上船的科学家领导者重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_flag
+				}
+
+				set_name = @rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_name
+			}
+		}
+	}
+}
+
+# 整合运动的Ruler指挥官/Heir副指挥官的定期MTTH检查的对外接口
+# (※备注-1：请通过这个102事件调用，而不要直接用下方的104事件调用的说，请保持<封装态>的<封装特性>的说，谢谢，谢谢)，谢谢，
+country_event = {
+	id = reunion_events_specific_leader_classes_leaders_states_control.102
+
+	is_triggered_only = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_reunion_authorities
+		# has_government = rs_arkNights_reunion_goverment
+
+		#owner = {
+		#	# is_species_class = rs_arkNights_Reunion_pop_species_1
+		#}
+	}
+
+	immediate = {
+		# 请在当前文件的代码实现里的代码文件内部调用104事件的说(实现类似于C/C++/OC等OOP语言的"封装"特性的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+		country_event = {
+			# 通过当前的102事件，来一次性的(而不是MTTH持续的)调用104事件以进行Ruler/Heir状态检测操作的说，qwq，虎摸，谢谢，
+			id = reunion_events_specific_leader_classes_leaders_states_control.104
+		}
+	}
+
+}
+
+# 整合运动的Ruler指挥官/Heir副指挥官的定期MTTH检查的内部中转函数，如果有升任Ruler/Heir的任意rs_arkNights的人物角色，则直接进行属性覆盖操作的说，谢谢，
+country_event = {
+	id = reunion_events_specific_leader_classes_leaders_states_control.103
+
+	is_triggered_only = no
+
+	# single_instance_invoke
+	fire_only_once = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_reunion_authorities
+		# has_government = rs_arkNights_reunion_goverment
+
+		#owner = {
+		#	# is_species_class = rs_arkNights_Reunion_pop_species_1
+		#}
+	}
+
+	# MTTH System (but when the ruler: death、be removed、election start、election ended、reelection、new ruler set[heir->ruler]，will also called current scope function, thank you qwq~)
+	# PS: don't ask me why use chinese and english both but not the single only, just 很方便的说，qwq，虎摸，thank you~_20190804_1156_RhineSky，qwq，虎摸，谢谢，
+	mean_time_to_happen = {
+		days = @mtth_set_heir_name_distance_days
+	}
+
+	immediate = {
+		# 请在当前文件的代码实现里的代码文件内部调用104事件的说(实现类似于C/C++/OC等OOP语言的"封装"特性的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+		country_event = {
+			# 通过当前的102事件，开始通过高频的MTTH来频繁调用104事件以进行Ruler/Heir状态检测操作的说，qwq，虎摸，谢谢，
+			id = reunion_events_specific_leader_classes_leaders_states_control.104
+		}
+	}
+}
+
+# 整合运动的Ruler指挥官/Heir副指挥官的定期MTTH检查，如果有升任Ruler/Heir的任意rs_arkNights的人物角色，则直接进行属性覆盖操作的说，谢谢，
+# (※备注-1：请通过上方的102和103事件调用，而不要用这个的104事件直接调用的说，否则会破坏OOP的"封装"特性的说，谢谢)，谢谢，
+country_event = {
+	id = reunion_events_specific_leader_classes_leaders_states_control.104
+
+	is_triggered_only = no
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_reunion_authorities
+		# has_government = rs_arkNights_reunion_goverment
+
+		#owner = {
+		#	# is_species_class = rs_arkNights_Reunion_pop_species_1
+		#}
+	}
+	immediate = {
+		# 遍历整合运动里的所有可以拥有的rs_arkNights的领导者角色，如果有和当前新当任的指挥官或副指挥官的个人数据属性所相符合与匹配的已有领导者角色，则直接将其领导者的数据属性与对应所轮询到的的领导者的数据属性进行同步覆盖的说，qwq，虎摸，谢谢，
+		# 否则就只修改默认的领导者的人物肖像图portrait的说，qwq，虎摸，谢谢，
+		# 任何领导者类型都可以转为Ruler候选人的说，所以这里不做Ruler类型判断的说，谢谢，
+		every_owned_leader = {
+			if = {
+				limit = {
+					has_trait = rs_arkNights_Reunion_4_Stars_leader_level_trait
+				}
+
+				###################################################
+				######------5、遍历整合运动的4星General------######
+				###################################################
+				# 判断并检测是否是4星General陆军将军：弑君者：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Reunion_general_4_stars_KingKiller_flag
+					}
+
+					set_name 			= @rs_arkNights_Reunion_general_4_stars_KingKiller_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_kingkiller_portrait_01
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_trait = rs_arkNights_Reunion_5_Stars_leader_level_trait
+				}
+
+				###################################################
+				######------4、遍历整合运动的5星Admiral------######
+				###################################################
+				# 判断并检测是否是5星Admiral舰队司令：浮士德：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Reunion_admiral_5_stars_Faust_flag
+					}
+
+					set_name 			= @rs_arkNights_Reunion_admiral_5_stars_Faust_name
+					set_is_female 		= no
+
+					change_leader_portrait = rs_arkNights_faust_portrait_01
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_trait = rs_arkNights_Reunion_6_Stars_leader_level_trait
+				}
+
+				####################################################
+				######------1、遍历整合运动的6星Governor------######
+				####################################################
+				# 判断并检测是否是6星Ruler统治者指挥官：魏彦吾：
+				#   a、如果是，则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Reunion_governor_6_stars_WeiYanWu_flag
+					}
+
+					set_name 			= @rs_arkNights_Reunion_governor_6_stars_WeiYanWu_name
+					set_is_female 		= no
+
+					change_leader_portrait = rs_arkNights_weiyanwu_portrait_01
+				}
+			}
+
+			###########################################################
+			######------X-1、遍历整合运动的特殊多重职业角色------######
+			###########################################################
+			# 判断并检测是否是5星Ruler统治者+Admiral舰队司令：W：
+			#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Reunion_ruler_or_admiral_5_stars_W_flag
+				}
+
+				set_name 			= @rs_arkNights_Reunion_ruler_or_admiral_5_stars_W_name
+				set_is_female 		= yes
+
+				# change_leader_portrait = rs_arkNights_w_portrait_01
+			}
+
+			# 判断并检测是否是7星Ruler统治者+Admiral舰队司令：塔露拉：
+			#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Reunion_ruler_or_admiral_7_stars_Talulah_flag
+				}
+
+				set_name 			= @rs_arkNights_Reunion_ruler_or_admiral_7_stars_Talulah_name
+				set_is_female 		= yes
+
+				change_leader_portrait = rs_arkNights_talulah_portrait_01
+			}
+
+			# 判断并检测是否是6星Governor总督+Admiral舰队司令：霜星：
+			#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Reunion_governor_or_admiral_6_stars_FronstStar_flag
+				}
+
+				set_name 			= @rs_arkNights_Reunion_governor_or_admiral_6_stars_FronstStar_name
+				set_is_female 		= yes
+
+				change_leader_portrait = rs_arkNights_fronststar_portrait_01
+			}
+
+			# 判断并检测是否是6星Scientist科学家+Admiral舰队司令：梅菲斯特：
+			#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_flag
+				}
+
+				set_name 			= @rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_name
+				set_is_female 		= no
+
+				change_leader_portrait = rs_arkNights_mephisto_portrait_01
+			}
+
+			# 判断并检测是否是3星General陆军将军+Admiral舰队司令：米莎：
+			#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Reunion_general_or_admiral_3_stars_Micha_flag
+				}
+
+				set_name 		= @rs_arkNights_Reunion_general_or_admiral_3_stars_Micha_name
+				set_is_female 	= yes
+
+				change_leader_portrait = rs_arkNights_micha_portrait_01
+			}
+
+			# 判断并检测是否是5星General陆军将军+Admiral舰队司令：碎骨：
+			#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Reunion_general_or_admiral_5_stars_BrokenBone_flag
+				}
+
+				set_name 			= @rs_arkNights_Reunion_general_or_admiral_5_stars_BrokenBone_name
+				set_is_female 		= yes
+
+				change_leader_portrait = rs_arkNights_brokenbone_portrait_01
+			}
+
+			#######################################################################################
+			######------X-2、不是rs_arkNights的任意星级领导者时的默认的领导者的属性操作------######
+			#######################################################################################
+			# 如果以上的Ruler统治者指挥官的人物选项都不是，则默认只改变当前新的Ruler统治者领袖/Heir高级干部的默认Ruler统治者领袖肖像的说，谢谢，
+			else_if = {
+				# 之后要换为非rs_arkNights星级人物的其他默认Ruler的专用人物肖像图片的说(不过具体的默认Ruler的人物肖像选谁还需要继续待定的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+				change_leader_portrait = rs_arkNights_Reunion_Pops_portrait_02
+			}
+		}
+	}
+}
+
+# 整合运动的Ruler指挥官/Heir副指挥官的领导者池的定期MTTH检查，如果有升任Ruler/Heir的任意rs_arkNights的人物角色，则直接进行属性覆盖操作的说，谢谢，
+country_event = {
+	id = reunion_events_specific_leader_classes_leaders_states_control.105
+
+	is_triggered_only = no
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_reunion_authorities
+		# has_government = rs_arkNights_reunion_goverment
+
+		#owner = {
+		#	# is_species_class = rs_arkNights_Reunion_pop_species_1
+		#}
+	}
+	immediate = {
+		# 遍历整合运动里的所有可以拥有的rs_arkNights的领导者角色，如果有和当前新当任的指挥官或副指挥官的个人数据属性所相符合与匹配的已有领导者角色，则直接将其领导者的数据属性与对应所轮询到的的领导者的数据属性进行同步覆盖的说，qwq，虎摸，谢谢，
+		# 否则就只修改默认的领导者的人物肖像图portrait的说，qwq，虎摸，谢谢，
+		# 任何领导者类型都可以转为Ruler候选人的说，所以这里不做Ruler类型判断的说，谢谢，
+		every_pool_leader = { # 领导者池检查
+			if = {
+				limit = {
+					has_trait = rs_arkNights_Reunion_4_Stars_leader_level_trait
+				}
+
+				###################################################
+				######------5、遍历整合运动的4星General------######
+				###################################################
+				# 判断并检测是否是4星General陆军将军：弑君者：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Reunion_general_4_stars_KingKiller_flag
+					}
+
+					set_name 			= @rs_arkNights_Reunion_general_4_stars_KingKiller_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_kingkiller_portrait_01
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_trait = rs_arkNights_Reunion_5_Stars_leader_level_trait
+				}
+
+				###################################################
+				######------4、遍历整合运动的5星Admiral------######
+				###################################################
+				# 判断并检测是否是5星Admiral舰队司令：浮士德：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Reunion_admiral_5_stars_Faust_flag
+					}
+
+					set_name 			= @rs_arkNights_Reunion_admiral_5_stars_Faust_name
+					set_is_female 		= no
+
+					change_leader_portrait = rs_arkNights_faust_portrait_01
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_trait = rs_arkNights_Reunion_6_Stars_leader_level_trait
+				}
+
+				####################################################
+				######------1、遍历整合运动的6星Governor------######
+				####################################################
+				# 判断并检测是否是6星Ruler统治者指挥官：魏彦吾：
+				#   a、如果是，则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Reunion_governor_6_stars_WeiYanWu_flag
+					}
+
+					set_name 			= @rs_arkNights_Reunion_governor_6_stars_WeiYanWu_name
+					set_is_female 		= no
+
+					change_leader_portrait = rs_arkNights_weiyanwu_portrait_01
+				}
+			}
+
+			###########################################################
+			######------X-1、遍历整合运动的特殊多重职业角色------######
+			###########################################################
+			# 判断并检测是否是5星Ruler统治者+Admiral舰队司令：W：
+			#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Reunion_ruler_or_admiral_5_stars_W_flag
+				}
+
+				set_name 			= @rs_arkNights_Reunion_ruler_or_admiral_5_stars_W_name
+				set_is_female 		= yes
+
+				# change_leader_portrait = rs_arkNights_w_portrait_01
+			}
+
+			# 判断并检测是否是7星Ruler统治者+Admiral舰队司令：塔露拉：
+			#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Reunion_ruler_or_admiral_7_stars_Talulah_flag
+				}
+
+				set_name 			= @rs_arkNights_Reunion_ruler_or_admiral_7_stars_Talulah_name
+				set_is_female 		= yes
+
+				change_leader_portrait = rs_arkNights_talulah_portrait_01
+			}
+
+			# 判断并检测是否是6星Governor总督+Admiral舰队司令：霜星：
+			#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Reunion_governor_or_admiral_6_stars_FronstStar_flag
+				}
+
+				set_name 			= @rs_arkNights_Reunion_governor_or_admiral_6_stars_FronstStar_name
+				set_is_female 		= yes
+
+				change_leader_portrait = rs_arkNights_fronststar_portrait_01
+			}
+
+			# 判断并检测是否是6星Scientist科学家+Admiral舰队司令：梅菲斯特：
+			#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_flag
+				}
+
+				set_name 			= @rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_name
+				set_is_female 		= no
+
+				change_leader_portrait = rs_arkNights_mephisto_portrait_01
+			}
+
+			# 判断并检测是否是3星General陆军将军+Admiral舰队司令：米莎：
+			#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Reunion_general_or_admiral_3_stars_Micha_flag
+				}
+
+				set_name 		= @rs_arkNights_Reunion_general_or_admiral_3_stars_Micha_name
+				set_is_female 	= yes
+
+				change_leader_portrait = rs_arkNights_micha_portrait_01
+			}
+
+			# 判断并检测是否是5星General陆军将军+Admiral舰队司令：碎骨：
+			#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Reunion_general_or_admiral_5_stars_BrokenBone_flag
+				}
+
+				set_name 			= @rs_arkNights_Reunion_general_or_admiral_5_stars_BrokenBone_name
+				set_is_female 		= yes
+
+				change_leader_portrait = rs_arkNights_brokenbone_portrait_01
+			}
+
+			#######################################################################################
+			######------X-2、不是rs_arkNights的任意星级领导者时的默认的领导者的属性操作------######
+			#######################################################################################
+			# 如果以上的Ruler统治者指挥官的人物选项都不是，则默认只改变当前新的Ruler统治者领袖/Heir高级干部的默认Ruler统治者领袖肖像的说，谢谢，
+			else_if = {
+				# 之后要换为非rs_arkNights星级人物的其他默认Ruler的专用人物肖像图片的说(不过具体的默认Ruler的人物肖像选谁还需要继续待定的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+				change_leader_portrait = rs_arkNights_Reunion_Pops_portrait_02
+			}
+		}
+	}
+}
+
+# 当有任意的Ruler统治者上任时，Ruler统治者的个人属性刷新设置(与创建对应职业的角色的职业trait进行同步叠加的说，具体请参考每个角色在对应职业创建时的职业技能的trait列表的说[xxx_creat.txt]的说，谢谢)，谢谢，
+# 流程：[Normal Leader(Recruit->Normal Leader) -> Ruler(PreRuler->Ruler) -> Removed(Ruler->PreRuler->Removed) -> Recruit(Removed->Rebirth) -> Normal Leader] -> etc...
+# Ruler Trait: [Personal Specific Arts Trait], or [rs_arkNights_Rogland_ruler_traint_originiumsArts_1](*), thank you~
+country_event = {
+	id = reunion_events_specific_leader_classes_leaders_states_control.106
+
+	is_triggered_only = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_reunion_authorities
+		# has_government = rs_arkNights_reunion_goverment
+
+		#owner = {
+		#	# is_species_class = rs_arkNights_Reunion_pop_species_1
+		#}
+	}
+
+	immediate = {
+		every_owned_leader = {
+			if = {
+				limit = {
+					leader_class = ruler
+				}
+
+				if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Reunion_ruler_or_admiral_5_stars_W_flag
+					}
+
+					change_leader_portrait = rs_arkNights_w_portrait_01
+
+					add_trait = rs_arkNights_Reunion_5_Stars_leader_level_trait
+					add_trait = rs_arkNights_Reunion_SS_leader_job_trait
+					# add_trait = rs_arkNights_Reunion_ruler_leaders_trait_oripathy
+					add_trait = rs_arkNights_ruler_w_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Reunion_ruler_or_admiral_7_stars_Talulah_flag
+					}
+
+					change_leader_portrait = rs_arkNights_talulah_portrait_01
+
+					add_trait = rs_arkNights_Reunion_7_Stars_leader_level_trait
+					add_trait = rs_arkNights_Reunion_SS_leader_job_trait
+					# add_trait = rs_arkNights_Reunion_ruler_leaders_trait_oripathy
+					add_trait = rs_arkNights_ruler_talulah_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Reunion_governor_6_stars_WeiYanWu_flag
+					}
+
+					change_leader_portrait = rs_arkNights_weiyanwu_portrait_01
+
+					add_trait = rs_arkNights_Reunion_6_Stars_leader_level_trait
+					add_trait = rs_arkNights_Reunion_FZ_leader_job_trait
+					add_trait = rs_arkNights_governor_weiyanwu_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Reunion_governor_or_admiral_6_stars_FronstStar_flag
+					}
+
+					change_leader_portrait = rs_arkNights_fronststar_portrait_01
+
+					add_trait = rs_arkNights_Reunion_6_Stars_leader_level_trait
+					add_trait = rs_arkNights_Reunion_SS_leader_job_trait
+					# add_trait = rs_arkNights_Reunion_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_governor_fronstStar_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_flag
+					}
+
+					change_leader_portrait = rs_arkNights_mephisto_portrait_01
+
+					add_trait = rs_arkNights_Reunion_6_Stars_leader_level_trait
+					add_trait = rs_arkNights_Reunion_YL_leader_job_trait
+					# add_trait = rs_arkNights_Reunion_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_scientist_mephisto_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Reunion_general_or_admiral_3_stars_Micha_flag
+					}
+
+					change_leader_portrait = rs_arkNights_micha_portrait_01
+
+					add_trait = rs_arkNights_Reunion_3_Stars_leader_level_trait
+					add_trait = rs_arkNights_Reunion_JJ_leader_job_trait
+					# add_trait = rs_arkNights_Reunion_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_admiral_micha_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Reunion_admiral_5_stars_Faust_flag
+					}
+
+					change_leader_portrait = rs_arkNights_faust_portrait_01
+
+					add_trait = rs_arkNights_Reunion_5_Stars_leader_level_trait
+					add_trait = rs_arkNights_Reunion_JJ_leader_job_trait
+					# add_trait = rs_arkNights_Reunion_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_admiral_faust_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Reunion_general_or_admiral_5_stars_BrokenBone_flag
+					}
+
+					change_leader_portrait = rs_arkNights_brokenbone_portrait_01
+
+					add_trait = rs_arkNights_Reunion_5_Stars_leader_level_trait
+					add_trait = rs_arkNights_Reunion_JJ_leader_job_trait
+					# add_trait = rs_arkNights_Reunion_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_admiral_brokenbone_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Reunion_general_4_stars_KingKiller_flag
+					}
+
+					change_leader_portrait = rs_arkNights_kingkiller_portrait_01
+
+					add_trait = rs_arkNights_Reunion_4_Stars_leader_level_trait
+					add_trait = rs_arkNights_Reunion_XF_leader_job_trait
+					# add_trait = rs_arkNights_Reunion_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_general_kingkiller_feature_traint_originiumsArts
+				}
+
+				else = {
+					add_trait = rs_arkNights_Reunion_ruler_traint_originiumsArts_1
+				}
+			}
+		}
+	}
+}
+
+# 当有任意的飞身导致当前的领导者肖像出现变化时，此时通过下列消息处理函数来刷新当前领导者(含领导者池里的待征募领导的说，谢谢)的肖像的说，qwq，虎摸，谢谢，
+country_event = {
+	id = reunion_events_specific_leader_classes_leaders_states_control.107
+
+	is_triggered_only = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_reunion_authorities
+		# has_government = rs_arkNights_reunion_goverment
+
+		#owner = {
+		#	# is_species_class = rs_arkNights_Reunion_pop_species_1
+		#}
+	}
+
+	immediate = {
+		every_owned_leader = {
+			if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Reunion_ruler_or_admiral_5_stars_W_flag
+				}
+
+				change_leader_portrait = rs_arkNights_w_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Reunion_ruler_or_admiral_7_stars_Talulah_flag
+				}
+
+				change_leader_portrait = rs_arkNights_talulah_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Reunion_governor_6_stars_WeiYanWu_flag
+				}
+
+				change_leader_portrait = rs_arkNights_weiyanwu_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Reunion_governor_or_admiral_6_stars_FronstStar_flag
+				}
+
+				change_leader_portrait = rs_arkNights_fronststar_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_flag
+				}
+
+				change_leader_portrait = rs_arkNights_mephisto_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Reunion_general_or_admiral_3_stars_Micha_flag
+				}
+
+				change_leader_portrait = rs_arkNights_micha_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Reunion_admiral_5_stars_Faust_flag
+				}
+
+				change_leader_portrait = rs_arkNights_faust_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Reunion_general_or_admiral_5_stars_BrokenBone_flag
+				}
+
+				change_leader_portrait = rs_arkNights_brokenbone_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Reunion_general_4_stars_KingKiller_flag
+				}
+
+				change_leader_portrait = rs_arkNights_kingkiller_portrait_01
+			}
+
+			else = {
+				change_leader_portrait = rs_arkNights_Reunion_Pops_portrait_02
+			}
+		}
+
+		every_pool_leader = {
+			if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Reunion_ruler_or_admiral_5_stars_W_flag
+				}
+
+				change_leader_portrait = rs_arkNights_w_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Reunion_ruler_or_admiral_7_stars_Talulah_flag
+				}
+
+				change_leader_portrait = rs_arkNights_talulah_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Reunion_governor_6_stars_WeiYanWu_flag
+				}
+
+				change_leader_portrait = rs_arkNights_weiyanwu_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Reunion_governor_or_admiral_6_stars_FronstStar_flag
+				}
+
+				change_leader_portrait = rs_arkNights_fronststar_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_flag
+				}
+
+				change_leader_portrait = rs_arkNights_mephisto_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Reunion_general_or_admiral_3_stars_Micha_flag
+				}
+
+				change_leader_portrait = rs_arkNights_micha_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Reunion_admiral_5_stars_Faust_flag
+				}
+
+				change_leader_portrait = rs_arkNights_faust_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Reunion_general_or_admiral_5_stars_BrokenBone_flag
+				}
+
+				change_leader_portrait = rs_arkNights_brokenbone_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Reunion_general_4_stars_KingKiller_flag
+				}
+
+				change_leader_portrait = rs_arkNights_kingkiller_portrait_01
+			}
+
+			else = {
+				change_leader_portrait = rs_arkNights_Reunion_Pops_portrait_02
+			}
+		}
+	}
+}

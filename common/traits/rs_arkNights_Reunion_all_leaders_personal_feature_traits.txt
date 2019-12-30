@@ -1,0 +1,786 @@
+###############################################
+#####-----Author: 	RhineSky--------------#####
+#####-----SteamID:	RhineSky--------------#####
+#####-----Email:	macjab@macjab.com-----#####
+#####-----QQ：		516278065-------------#####
+#U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+###############################################
+
+# ----------整合运动的每个领导者的技能特性(源石技艺)：个人技能&天赋技能相关(0 cost)----------
+####################################################################################
+##########-----Ruler组指挥官leaders的各个人物能力特点的源石技艺特征点-----##########
+####################################################################################
+# Ruler-1、源石技艺使用者(W_W)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、基建技能：暂无、
+                                                    #		2、人物技能：星球障碍清理费用降低、至纯源石产出增加、所有科研产出增加、国家领土主张影响力消耗降低、
+                                                    #		3、源石病：寿命减少、
+
+
+rs_arkNights_ruler_w_feature_traint_originiumsArts = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { ruler }
+	leader_class = { ruler }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	modifier = {
+		# 对应<设定：1>：星球障碍清理费用降低
+		#				 至纯源石产出增加
+		#				 所有科研产出增加
+		#				 寿命减少
+		deposit_blockers_cost_mult 			= -0.15
+		planet_jobs_alloys_produces_mult	= 0.15
+		all_technology_research_speed		= 0.15
+		country_claim_influence_cost_mult	= -0.15
+		# leader_age 						= -15
+	}
+}
+
+# Ruler-2、源石技艺使用者(塔露拉_Talulah)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、基建技能：暂无、
+                                                    #		2、人物技能：人口增长速率增加、凝聚力产出增加、国家领土主张影响力消耗降低、国家的厌战增长速率降低、殖民速度增加、海军容量提升、每月影响力增加、
+                                                    #		3、源石病：寿命减少、
+
+rs_arkNights_ruler_talulah_feature_traint_originiumsArts = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { ruler }
+	leader_class = { ruler }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	modifier = {
+		# 对应<设定：1>：人口增长速率增加
+		#				 凝聚力产出增加
+		#				 国家领土主张影响力消耗降低
+		#				 国家的厌战增长速率降低
+		#				 殖民速度增加
+		#				 海军容量提升
+		#				 每月影响力增加
+		#				 寿命减少
+		pop_growth_speed 					= 0.15
+		country_unity_produces_mult			= 0.15
+		country_claim_influence_cost_mult	= -0.25
+		country_war_exhaustion_mult			= -0.25
+		terraform_speed_mult				= 0.5
+		country_naval_cap_mult				= 0.15
+		country_base_influence_produces_add	= 1
+		# leader_age 						= -15
+	}
+}
+
+#####################################################################################
+##########-----Governor组总督leaders的各个人物能力特点的源石技艺特征点-----##########
+#####################################################################################
+# Governor-1、源石技艺使用者(魏彦吾_WeiYanWu)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、基建技能：暂无、
+                                                    #		2、人物技能：贸易吸引力增加、贸易价值增加、星球所有资源产出增加、法令的持续时间增加、法令消耗费用降低、星球结构建造费用降低、星球结构的每月维护费用降低、星球每月所有科研产出增加、
+
+rs_arkNights_governor_weiyanwu_feature_traint_originiumsArts = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { governor }
+	leader_class = { governor }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	modifier = {
+		# 对应<设定：1>：贸易吸引力增加
+		#				 贸易价值增加
+		#				 星球所有资源产出增加
+		#				 法令的持续时间增加
+		#				 法令消耗费用降低
+		#				 星球结构建造费用降低
+		#				 星球结构的每月维护费用降低
+		#				 星球每月所有科研产出增加
+		country_trade_attractiveness		= 0.15
+		trade_value_mult					= 0.2
+		planet_jobs_produces_mult 			= 0.15
+		edict_length_mult					= 0.2
+		edicts_cost_mult					= -0.2
+		planet_structures_cost_mult			= -0.15
+		planet_structures_upkeep_mult		= -0.15
+		planet_researchers_produces_mult	= 0.2
+	}
+}
+
+# Governor-2、源石技艺使用者(霜星_FronstStar)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、基建技能：暂无、
+                                                    #		2、人物技能：星球的天灾源石产出增加、星球至纯源石产出增加、星球每月艺术产出增加、星球每月凝聚力产出增加、星球陆军建造速度增加、星球建造速度增加、星球的伤害增加、星球每月物理科研产出增加、星球每月合成玉产出(1/3倍数系数)减少、
+                                                    #		3、源石病：寿命减少、
+
+rs_arkNights_governor_fronstStar_feature_traint_originiumsArts = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { governor }
+	leader_class = { governor }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	modifier = {
+		# 对应<设定：1>：星球的天灾源石产出增加
+		#				 星球至纯源石产出增加
+		#				 星球每月艺术产出增加
+		#				 星球每月凝聚力产出增加
+		#				 星球陆军建造速度增加
+		#				 星球建筑建造速度增加
+		#				 星球的伤害增加
+		#				 星球每月合成玉产出(1/3倍数系数)减少
+		#				 星球每月物理科研产出增加
+		#				 寿命减少
+		planet_jobs_minerals_produces_mult					= 0.15
+		planet_jobs_alloys_produces_mult					= 0.15
+		planet_artisans_produces_mult 						= 0.15
+		planet_jobs_unity_produces_mult						= 0.15
+		planet_army_build_time_mult							= -0.15
+		planet_building_build_speed_mult					= -0.15
+		planet_researchers_physics_research_produces_mult	= 0.2
+		planet_jobs_consumer_goods_produces_mult			= -0.05
+		# leader_age 										= -15
+	}
+}
+
+########################################################################################
+##########-----Scientist组科学家leaders的各个人物能力特点的源石技艺特征点-----##########
+########################################################################################
+# Scientist-1、源石技艺使用者(梅菲斯特_Mephisto)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、基建技能：暂无
+                                                    #		2、人物技能：所有科研产出增加、军事理论研究速度、飞船研究速度增加、异常产生几率增加、异常的研究速度增加、异常的研究失败几率(1/3倍数系数)提升、飞船的护盾值增加、飞船闪避几率增加、飞船逃脱几率增加、
+                                                    #		3、源石病：寿命减少、
+
+rs_arkNights_scientist_mephisto_feature_traint_originiumsArts = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { scientist }
+	leader_class = { scientist }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	modifier = {
+		# 对应<设定：1>：所有科研产出增加
+		#				 军事理论研究速度
+		#				 飞船研究速度增加
+		#				 异常产生几率增加
+		#				 异常的研究速度增加
+		#				 异常的研究失败几率(1/3倍数系数)提升
+		#				 飞船护盾值增加
+		#				 飞船闪避几率增加
+		#				 飞船逃脱几率增加
+		#				 寿命减少
+		all_technology_research_speed	 				= 0.25
+		category_military_theory_research_speed_mult	= 0.15
+		category_voidcraft_research_speed_mult			= 0.15
+		ship_anomaly_generation_chance_mult				= 0.15
+		ship_anomaly_research_speed_mult				= 0.2
+		ship_anomaly_fail_risk							= 0.05
+		ship_shield_mult								= 0.15
+		ship_evasion_mult								= 0.15
+		ship_disengage_chance_mult						= 0.15
+		# leader_age 									= -15
+	}
+}
+
+########################################################################################
+##########-----Admiral组舰队司令leaders的各个人物能力特点的源石技艺特征点-----##########
+########################################################################################
+# Admiral-1、源石技艺使用者(弑君者_KingKiller)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+#                                                    # 效果：1、基建技能：暂无、
+#                                                    #		 2、人物技能：飞船的攻击力增加、飞船的飞行速度增加、飞船的飞行速度增加、飞船的星际穿越速度增加、飞船的紧急FTL伤害降低、飞船的闪避几率增加、
+													 #	 	 3、源石病：寿命减少、
+#
+#rs_arkNights_admiral_kingkiller_feature_traint_originiumsArts = {
+#	cost = 0
+#
+#	initial = no
+#	modification = yes
+#	randomized = no
+#
+#	# leader_trait = yes
+#
+#	leader_trait = { admiral }
+#	leader_class = { admiral }
+#
+#	# sapient = yes
+#	# sentient = yes
+#
+#	# improves_leaders = yes
+#
+#	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy_originiumsArts.dds"
+#
+#	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+#
+#	modifier = {
+#		# 对应<设定：1>：飞船的攻击力增加
+#		#				 飞船的飞行速度增加
+#		#				 飞船的飞行速度增加
+#		#				 飞船的星际穿越速度增加
+#		#				 飞船的紧急FTL伤害降低、
+#		#				 飞船的闪避几率增加
+#		#				 寿命减少
+#		ship_weapon_range_mult 			= 0.15
+#		ship_speed_mult 				= 0.3  # 0.15x3
+#		ship_interstellar_speed_mult	= 0.15
+#		ship_emergency_ftl_mult			= -0.15
+#		ship_evasion_mult				= 0.15
+#		# leader_age 					= -15
+#	}
+#}
+
+# Admiral-2、源石技艺使用者(米莎_Micha)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、基建技能：暂无、
+                                                    #		2、人物技能：飞船的武器攻击距离增加、飞船的爆炸武器威力增加、飞船的飞行速度增加、飞船的闪避几率(1/3倍数系数)降低、
+                                                    #		3、源石病：寿命减少、
+
+rs_arkNights_admiral_micha_feature_traint_originiumsArts = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { admiral }
+	leader_class = { admiral }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	modifier = {
+		# 对应<设定：1>：飞船的武器攻击距离增加
+		#				 飞船的爆炸武器威力增加
+		#				 飞船的飞行速度增加
+		#				 飞船的闪避几率(1/3倍数系数)降低
+		#				 寿命减少
+		ship_weapon_range_mult 						= 0.15
+		weapon_type_explosive_weapon_damage_mult	= 0.15
+		ship_speed_mult 							= 0.15
+		ship_evasion_mult							= -0.05
+		# leader_age 								= -15
+	}
+}
+
+# Admiral-3、源石技艺使用者(碎骨_BrokenBone)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、基建技能：暂无、
+                                                    #		2、人物技能：舰船攻击力增加、舰船攻击力增加、舰船攻击力增加、舰船动能武器威力增加、舰船打击武器威力增加、舰船飞行速度增加、舰船星际穿越速度增加、舰船逃脱几率(5/3倍数系数降低)降低、
+                                                    #		3、源石病：寿命减少、
+
+rs_arkNights_admiral_brokenbone_feature_traint_originiumsArts = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { admiral }
+	leader_class = { admiral }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	modifier = {
+		# 对应<设定：1>：舰船攻击力增加
+		#				 舰船攻击力增加
+		#				 舰船攻击力增加
+		#				 舰船动能武器威力增加
+		#				 舰船打击武器威力增加
+		#				 舰船飞行速度增加
+		#				 舰船星际穿越速度增加
+		#				 舰船逃脱几率(5/3倍数系数降低)降低
+		#				 寿命减少
+		ship_weapon_damage 							= 0.45 # 0.15x3
+		weapon_type_kinetic_weapon_damage_mult		= 0.15
+		weapon_type_strike_craft_weapon_damage_mult	= 0.15
+		ship_speed_mult 							= 0.15
+		ship_interstellar_speed_mult 	 			= 0.15
+		ship_evasion_mult							= -0.25
+		# leader_age 								= -15
+	}
+}
+
+# Admiral-4、源石技艺使用者(W_W)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、基建技能：暂无、
+                                                    #		2、人物技能：舰船攻击力增加、舰船攻击范围增加、舰船爆炸武器威力增加、舰船爆炸武器威力增加、舰船爆炸武器的攻击频率增加、舰船飞行速度增加、
+                                                    #		3、源石病：寿命减少、
+
+rs_arkNights_admiral_w_feature_traint_originiumsArts = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { admiral }
+	leader_class = { admiral }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	modifier = {
+		# 对应<设定：1>：舰船攻击力增加
+		#				 舰船攻击范围增加
+		#				 舰船爆炸武器威力增加
+		#				 舰船爆炸武器威力增加
+		#				 舰船爆炸武器的攻击频率增加
+		#				 舰船飞行速度增加
+		#				 寿命减少
+		ship_weapon_damage 							= 0.15
+		ship_weapon_range_mult						= 0.15
+		weapon_type_explosive_weapon_fire_rate_mult	= 0.3  # 0.15x2
+		weapon_type_explosive_weapon_fire_rate_mult	= 0.15
+		ship_speed_mult 							= 0.15
+		ship_interstellar_speed_mult				= 0.1
+		# leader_age 								= -15
+	}
+}
+
+# Admiral-5、源石技艺使用者(浮士德_Faust)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、基建技能：暂无、
+                                                    #		2、人物技能：舰船攻击力增加、舰船攻击力增加、舰船攻击范围增加、舰船的攻击速度增加、舰船动能武器威力增加、舰船逃脱几率增加、
+                                                    #		3、源石病：寿命减少、
+
+rs_arkNights_admiral_faust_feature_traint_originiumsArts = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { admiral }
+	leader_class = { admiral }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	modifier = {
+		# 对应<设定：1>：舰船攻击力增加
+		#				 舰船攻击力增加
+		#				 舰船攻击范围增加
+		#				 舰船的攻击速度增加
+		#				 舰船动能武器威力增加
+		#				 舰船动能武器威力增加
+		#				 舰船逃脱几率增加
+		#				 寿命减少
+		ship_weapon_damage 						= 0.3   # 0.15x2
+		ship_weapon_range_mult					= 0.15
+		ship_fire_rate_mult						= 0.15
+		weapon_type_kinetic_weapon_damage_mult	= 0.3   # 0.15x2
+		ship_evasion_mult						= -0.15
+		# leader_age 							= -15
+	}
+}
+
+# Admiral-6、源石技艺使用者(梅菲斯特_Mephisto)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、基建技能：暂无、
+                                                    #		2、人物技能：舰船攻击力增加、舰船攻击力增加、舰船攻击范围增加、舰船攻击频率增加、舰船护盾值增加、舰船护盾回复速度增加、舰船护盾回复速度增加、舰船闪避率增加、
+                                                    #		3、源石病：寿命减少、
+
+rs_arkNights_admiral_mephisto_feature_traint_originiumsArts = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { admiral }
+	leader_class = { admiral }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	modifier = {
+		# 对应<设定：1>：舰船攻击力增加
+		#				 舰船攻击力增加
+		#				 舰船攻击范围增加
+		#				 舰船攻击频率增加
+		#				 舰船护盾值增加
+		#				 舰船护盾回复速度增加
+		#				 舰船护盾回复速度增加
+		#				 舰船闪避率增加
+		#				 寿命减少
+		ship_weapon_damage 			= 0.3   # 0.15x2
+		ship_weapon_range_mult		= 0.15
+		ship_fire_rate_mult			= 0.15
+		ship_shield_mult			= 0.15
+		ship_shield_regen_add_perc	= 10    # 5x2
+		ship_evasion_mult			= 0.15
+		# leader_age 				= -15
+	}
+}
+
+# Admiral-7、源石技艺使用者(霜星_FronstStar)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、基建技能：暂无、
+                                                    #		2、人物技能：舰船攻击力增加、舰船攻击力增加、舰船攻击范围增加、舰船攻击范围增加、舰船能量武器威力增加、舰船能量武器威力增加、舰船护盾值增加、舰船护盾值增加、舰船闪避率增加、舰船维护费用(2/3倍数系数)增加、
+                                                    #		3、源石病：寿命减少、
+
+rs_arkNights_admiral_fronstStar_feature_traint_originiumsArts = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { admiral }
+	leader_class = { admiral }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	modifier = {
+		# 对应<设定：1>：舰船攻击力增加
+		#				 舰船攻击力增加
+		#				 舰船攻击范围增加
+		#				 舰船攻击范围增加
+		#				 舰船能量武器威力增加
+		#				 舰船能量武器威力增加
+		#				 舰船护盾值增加
+		#				 舰船护盾值增加
+		#				 舰船闪避率增加
+		#				 舰船维护费用(2/3倍数系数)增加
+		#				 寿命减少
+		ship_weapon_damage 						= 0.3  # 0.15x2
+		ship_weapon_range_mult					= 0.3  # 0.15x2
+		weapon_type_energy_weapon_damage_mult	= 0.3  # 0.15x2
+		ship_shield_mult						= 0.3  # 0.15x2
+		ship_evasion_mult						= 0.15
+		ships_upkeep_mult						= 0.1
+		# leader_age 							= -15
+	}
+}
+
+# Admiral-8、源石技艺使用者(塔露拉_Talulah)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、基建技能：经验获得速率增加、
+                                                    #		2、人物技能：舰船攻击力增加、舰船攻击力增加、舰船攻击力增加、舰船攻击范围增加、舰船能量武器威力增加、舰船能量武器威力增加、舰船护盾值增加、舰船护盾值增加、舰船装甲值增加、舰船装甲值增加、舰船闪避率增加、舰船维护费用降低、国家每月影响力增加、国家每月凝聚力增长增加、
+                                                    #		3、源石病：寿命减少、
+
+rs_arkNights_admiral_talulah_feature_traint_originiumsArts = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { admiral }
+	leader_class = { admiral }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	modifier = {
+		# 对应<设定：1>：经验获得速率增加
+		#				 舰船攻击力增加
+		#				 舰船攻击力增加
+		#				 舰船攻击力增加
+		#				 舰船攻击范围增加
+		#				 舰船能量武器威力增加
+		#				 舰船能量武器威力增加
+		#				 舰船护盾值增加
+		#				 舰船护盾值增加
+		#				 舰船装甲值增加
+		#				 舰船装甲值增加
+		#				 舰船闪避率增加
+		#				 舰船紧急FTL伤害降低
+		#				 舰船逃脱几率增加
+		#				 舰船维护费用降低
+		#				 国家每月影响力增加
+		#				 国家每月凝聚力增长增加
+		#				 寿命减少
+		species_leader_exp_gain					= 0.15
+		ship_weapon_damage 						= 0.45  # 0.15x3
+		ship_weapon_range_mult					= 0.15
+		weapon_type_energy_weapon_damage_mult	= 0.3   # 0.15x2
+		ship_shield_mult						= 0.3   # 0.15x2
+		ship_armor_mult							= 0.3   # 0.15x2
+		ship_evasion_mult						= 0.15
+		ship_emergency_ftl_mult					= -0.15
+		ship_disengage_chance_mult				= 0.15
+		ships_upkeep_mult						= -0.15
+		country_base_influence_produces_add		= 0.5
+		country_unity_produces_mult				= 0.15
+		# leader_age 							= -15
+	}
+}
+
+########################################################################################
+##########-----General组陆军将军leaders的各个人物能力特点的源石技艺特征点-----##########
+########################################################################################
+# General-1、源石技艺使用者(弑君者_KingKiller)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、基建技能：暂无、
+                                                    #		2、人物技能：飞船飞行速度增加、飞船飞行速度增加、飞船闪避率增加、飞船逃脱率增加、陆军士气增加、陆军士气伤害增加、
+                                                    #		3、源石病：寿命减少、
+
+rs_arkNights_general_kingkiller_feature_traint_originiumsArts = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { general }
+	leader_class = { general }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	modifier = {
+		# 对应<设定：1>：飞船飞行速度增加
+		#				 飞船飞行速度增加
+		#				 飞船闪避率增加
+		#				 飞船逃脱率增加
+		#				 陆军士气增加
+		#				 陆军士气伤害增加
+		#				 寿命减少
+		ship_speed_mult 			= 0.3   # 0.15x2
+		ship_evasion_mult			= 0.15
+		ship_disengage_chance_mult 	= 0.15
+		army_morale					= 0.15
+		army_morale_damage_mult		= 0.3
+		# leader_age 				= -15
+	}
+}
+
+# General-2、源石技艺使用者(米莎_Micha)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、基建技能：暂无、
+                                                    #		2、人物技能：飞船飞行速度增加、飞船闪避率增加、陆军士气增加、陆军士气增加、陆军士气伤害增加、
+                                                    #		3、源石病：寿命减少、
+
+rs_arkNights_general_micha_feature_traint_originiumsArts = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { general }
+	leader_class = { general }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	modifier = {
+		# 对应<设定：1>：飞船飞行速度增加
+		#				 飞船闪避率增加
+		#				 陆军士气增加
+		#				 陆军士气增加
+		#				 陆军士气伤害增加
+		#				 寿命减少
+		ship_speed_mult 			= 0.15
+		ship_evasion_mult			= 0.15
+		army_morale					= 0.3  # 0.15x2
+		army_morale_damage_mult		= 0.3
+		# leader_age 				= -15
+	}
+}
+
+# General-3、源石技艺使用者(碎骨_BrokenBone)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、基建技能：暂无、
+                                                    #		2、人物技能：飞船飞行速度增加、飞船闪避率增加、陆军攻击力增加、陆军攻击力增加、陆军攻击力增加、陆军士气增加、陆军士气伤害增加、陆军士气伤害增加、
+                                                    #		3、源石病：寿命减少、
+
+rs_arkNights_general_brokenbone_feature_traint_originiumsArts = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { general }
+	leader_class = { general }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	modifier = {
+		# 对应<设定：1>：飞船飞行速度增加
+		#				 飞船闪避率增加
+		#				 陆军攻击力增加
+		#				 陆军攻击力增加
+		#				 陆军攻击力增加
+		#				 陆军士气增加
+		#				 陆军士气伤害增加
+		#				 陆军士气伤害增加
+		#				 寿命减少
+		ship_speed_mult 			= 0.15
+		ship_evasion_mult			= 0.15
+		army_damage_mult 			= 0.9  # 0.3x3
+		army_morale					= 0.15
+		army_morale_damage_mult		= 0.6  # 0.3x2
+		# leader_age 				= -15
+	}
+}

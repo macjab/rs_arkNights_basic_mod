@@ -1,0 +1,1035 @@
+###############################################
+#####-----Author: 	RhineSky--------------#####
+#####-----SteamID:	RhineSky--------------#####
+#####-----Email:	macjab@macjab.com-----#####
+#####-----QQ：		516278065-------------#####
+#U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+###############################################
+
+#################################################################################
+##########-----通用的各类leaders的各个人物能力特点的源石技艺特征点-----##########
+#################################################################################
+# A-1-1、源石技艺使用者(Ruler)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、科研产出增加、障碍清理费用减少、
+
+rs_arkNights_Rogland_ruler_traint_originiumsArts_1 = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { ruler }
+	leader_class = { ruler }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	modifier = {
+		# 对应<设定：1>：科研产出增加
+		#				 障碍清理费用减少
+		all_technology_research_speed 	= 0.15
+		deposit_blockers_cost_mult		= -0.15
+	}
+}
+
+# A-1-2、源石技艺使用者(Ruler)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、法令持续时间增加、殖民速度增加、
+
+rs_arkNights_Rogland_ruler_traint_originiumsArts_2 = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { ruler }
+	leader_class = { ruler }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	modifier = {
+		# 对应<设定：1>：法令持续时间增加
+		#				 殖民速度增加
+		edict_length_mult 		= 0.15
+		terraform_speed_mult	= 0.2
+	}
+}
+
+# A-2-1、源石技艺使用者(Governor)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、贸易价值增加、贸易吸引力增加、
+
+rs_arkNights_Rogland_governor_traint_originiumsArts_1 = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { governor }
+	leader_class = { governor }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	modifier = {
+		# 对应<设定：1>：贸易价值增加
+		#				 贸易吸引力增加
+		trade_value_mult 				= 0.2
+		country_trade_attractiveness 	= 0.15
+	}
+}
+
+# A-2-2、源石技艺使用者(Governor)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、星球职位每月所有资源产出率、星球稳定性增加、
+
+rs_arkNights_Rogland_governor_traint_originiumsArts_2 = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { governor }
+	leader_class = { governor }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	modifier = {
+		# 对应<设定：1>：星球职位每月所有资源产出率
+		#				 星球稳定性增加
+		planet_jobs_produces_mult 	= 0.15
+		planet_stability_add		 = 10
+	}
+}
+
+# A-3-1、源石技艺使用者(Scientist)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果<偏研究向>：1、所有科技研究速度增加(0.5x速)、生物研究速度增加(1.5x速)、异常研究速度增加、紧急FTL伤害减少、
+
+rs_arkNights_Rogland_scientist_traint_originiumsArts_1 = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { scientist }
+	leader_class = { scientist }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	modifier = {
+		# 对应<设定：1>：所有科技研究速度增加(0.5x速)
+		#				 生物研究速度增加(1.5x速)
+		#				 异常研究速度增加
+		#				 紧急FTL伤害减少
+		all_technology_research_speed 			= 0.05
+		category_biology_research_speed_mult	= 0.15
+		ship_anomaly_research_speed_mult		= 0.15
+		ship_emergency_ftl_mult					= -0.15
+	}
+}
+
+# A-3-2、源石技艺使用者(Scientist)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果<偏选择向>：1、所有科技研究速度增加(1x速)、异常产生几率增加、飞船逃脱几率增加、
+
+rs_arkNights_Rogland_scientist_traint_originiumsArts_2 = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { scientist }
+	leader_class = { scientist }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	modifier = {
+		# 对应<设定：1>：所有科技研究速度增加(1x速)
+		#				 异常产生几率增加
+		#				 飞船逃脱几率增加
+		all_technology_research_speed		= 0.1
+		ship_anomaly_generation_chance_mult	= 0.15
+		ship_disengage_chance_mult			= 0.15
+	}
+}
+
+# A-4-1、源石技艺使用者(Admiral)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、飞船攻击力增加、飞船射程增加、
+
+rs_arkNights_Rogland_admiral_traint_originiumsArts_1 = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { admiral }
+	leader_class = { admiral }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	modifier = {
+		# 对应<设定：1>：所飞船攻击力增加
+		#				 飞船射程增加
+		ship_weapon_damage		= 0.15
+		ship_weapon_range_mult	= 0.15
+	}
+}
+
+# A-4-2、源石技艺使用者(Admiral)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、飞船护盾回复速度增加、飞船射速增加、飞船的飞行速度增加、
+
+rs_arkNights_Rogland_admiral_traint_originiumsArts_2 = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { admiral }
+	leader_class = { admiral }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	modifier = {
+		# 对应<设定：1>：飞船护盾回复速度增加
+		#				 飞船射速增加
+		#				 飞船的飞行速度增加
+		ship_shield_regen_add_perc	= 5
+		ship_fire_rate_mult			= 0.15
+		ship_speed_mult 			= 0.15
+	}
+}
+
+# A-5-1、源石技艺使用者(General)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、陆军士气增加、陆军士气伤害增加、陆军逃脱几率增加、
+
+rs_arkNights_Rogland_general_traint_originiumsArts_1 = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { general }
+	leader_class = { general }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	modifier = {
+		# 对应<设定：1>：陆军士气增加
+		#				 陆军士气伤害增加
+		#				 陆军逃脱几率增加
+		army_morale 				= 0.15
+		army_morale_damage_mult 	= 0.15
+		army_disengage_chance_mult	= 0.15
+	}
+}
+
+# A-5-2、源石技艺使用者(General)
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：1、陆军攻击力增加、陆军血量增加、陆军逃脱几率增加、
+
+rs_arkNights_Rogland_general_traint_originiumsArts_2 = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	# leader_trait = yes
+
+	leader_trait = { general }
+	leader_class = { general }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_originiumsArts.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	modifier = {
+		# 对应<设定：1>：陆军攻击力增加
+		#				 陆军血量增加
+		#				 陆军逃脱几率增加
+		army_damage_mult 			= 0.15
+		army_health					= 0.15
+		army_disengage_chance_mult	= 0.15
+	}
+}
+
+#########################################################################
+##########-----通用的各类leaders的各个人物的干员星级特征点-----##########
+#########################################################################
+# ----------通用领袖特性：星级(0 cost)----------
+# 2星干员的领袖特征点
+# 2星干员，蓝天白云qwq，非洲小伙QAQ，刚把爹！
+rs_arkNights_Rogland_2_Stars_leader_level_trait = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { ruler admiral general governor scientist }
+	leader_class = { ruler admiral general governor scientist }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/leader_traits/rs_arkNights_character_level_2.dds"
+
+	custom_tooltip = rs_arkNights_Rogland_3_Stars_leader_level_trait_custom_tooltip
+
+	# allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	# 干员的星级只能在[2、3、4、5、6、7]里任选一个哟，qwq，虎摸，谢谢，
+	opposites = {
+		rs_arkNights_Rogland_3_Stars_leader_level_trait
+		rs_arkNights_Rogland_4_Stars_leader_level_trait
+		rs_arkNights_Rogland_5_Stars_leader_level_trait
+		rs_arkNights_Rogland_6_Stars_leader_level_trait
+		rs_arkNights_Rogland_7_Stars_leader_level_trait
+	}
+
+	modifier = {
+		# 全世界都知道你拥有了一位新的2星干员，你在他人眼里的影响力成功得到了提升，罗德岛因你生辉，罗德岛的当前影响力+50
+		# 备注：这里可以尝试下通过事件触发来增加影响力，下方的"直接增加影响力"的代码似乎会报错的说(因为Modifier里似乎没有这个效果的说<待继续验证的说，谢谢>，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+		# country_base_influence_produces_add = 50
+	}
+
+	self_modifier = {
+		# 2星干员通过各种初级干部福利、完善的医疗待遇措施与罗德岛的和谐人文关怀，成功让自己的寿命增加了2年
+		leader_age = 2
+	}
+}
+
+# 3星干员的领袖特征点
+# 3星干员，蓝天白云qwq，非洲小伙QAQ，刚把爹！
+rs_arkNights_Rogland_3_Stars_leader_level_trait = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { ruler admiral general governor scientist }
+	leader_class = { ruler admiral general governor scientist }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/leader_traits/rs_arkNights_character_level_3.dds"
+
+	custom_tooltip = rs_arkNights_Rogland_3_Stars_leader_level_trait_custom_tooltip
+
+	# allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+#	leader_potential_add = {
+#		from = {
+#			OR = {
+#				has_authority = rs_arkNights_rogland_authorities
+#				# has_government = rs_arkNights_rogland_goverment
+#			}
+#		}
+#	}
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	# 干员的星级只能在[2、3、4、5、6、7]里任选一个哟，qwq，虎摸，谢谢，
+	opposites = {
+		rs_arkNights_Rogland_2_Stars_leader_level_trait
+		rs_arkNights_Rogland_4_Stars_leader_level_trait
+		rs_arkNights_Rogland_5_Stars_leader_level_trait
+		rs_arkNights_Rogland_6_Stars_leader_level_trait
+		rs_arkNights_Rogland_7_Stars_leader_level_trait
+	}
+
+	modifier = {
+		# 全世界都知道你拥有了一位新的3星干员，你在他人眼里的影响力成功得到了提升，罗德岛因你生辉，罗德岛的当前影响力+100
+		# 备注：这里可以尝试下通过事件触发来增加影响力，下方的"直接增加影响力"的代码似乎会报错的说(因为Modifier里似乎没有这个效果的说<待继续验证的说，谢谢>，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+		# country_base_influence_produces_add = 100
+	}
+
+	self_modifier = {
+		# 3星干员通过各种初级干部福利、完善的医疗待遇措施与罗德岛的和谐人文关怀，成功让自己的寿命增加了5年
+		leader_age = 5
+	}
+}
+
+# 4星干员的领袖特征点
+# 4星干员，蓝天白云qwq，非洲小伙QAQ，刚把爹！
+rs_arkNights_Rogland_4_Stars_leader_level_trait = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { ruler admiral general governor scientist }
+	leader_class = { ruler admiral general governor scientist }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/leader_traits/rs_arkNights_character_level_4.dds"
+
+	custom_tooltip = rs_arkNights_Rogland_4_Stars_leader_level_trait_custom_tooltip
+
+	# allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	# 干员的星级只能在[2、3、4、5、6、7]里任选一个哟，qwq，虎摸，谢谢，
+	opposites = {
+		rs_arkNights_Rogland_2_Stars_leader_level_trait
+		rs_arkNights_Rogland_3_Stars_leader_level_trait
+		rs_arkNights_Rogland_5_Stars_leader_level_trait
+		rs_arkNights_Rogland_6_Stars_leader_level_trait
+		rs_arkNights_Rogland_7_Stars_leader_level_trait
+	}
+
+	modifier = {
+		# 全世界都知道你拥有了一位新的4星干员，你在他人眼里的影响力成功得到了提升，罗德岛因你生辉，罗德岛的当前影响力+200
+		# 备注：这里可以尝试下通过事件触发来增加影响力，下方的"直接增加影响力"的代码似乎会报错的说(因为Modifier里似乎没有这个效果的说<待继续验证的说，谢谢>，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+		# country_base_influence_produces_add = 200
+	}
+
+	self_modifier = {
+		# 4星干员通过各种中级干部福利、完善的医疗待遇措施与罗德岛的和谐人文关怀，成功让自己的寿命增加了10年
+		leader_age = 10
+	}
+}
+
+# 5星干员的领袖特征点
+# 5星干员，是橙光耶~有点厉害哦qwq，亚洲小伙QAQ，刚把爹！
+rs_arkNights_Rogland_5_Stars_leader_level_trait = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { ruler admiral general governor scientist }
+	leader_class = { ruler admiral general governor scientist }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/leader_traits/rs_arkNights_character_level_5.dds"
+
+	custom_tooltip = rs_arkNights_Rogland_5_Stars_leader_level_trait_custom_tooltip
+
+	# allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	# 干员的星级只能在[2、3、4、5、6、7]里任选一个哟，qwq，虎摸，谢谢，
+	opposites = {
+		rs_arkNights_Rogland_2_Stars_leader_level_trait
+		rs_arkNights_Rogland_3_Stars_leader_level_trait
+		rs_arkNights_Rogland_4_Stars_leader_level_trait
+		rs_arkNights_Rogland_6_Stars_leader_level_trait
+		rs_arkNights_Rogland_7_Stars_leader_level_trait
+	}
+
+	modifier = {
+		# 全世界都知道你拥有了一位新的4星干员，你在他人眼里的影响力成功得到了提升，罗德岛因你生辉，罗德岛的当前影响力+300
+		# 备注：这里可以尝试下通过事件触发来增加影响力，下方的"直接增加影响力"的代码似乎会报错的说(因为Modifier里似乎没有这个效果的说<待继续验证的说，谢谢>，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+		# country_base_influence_produces_add = 300
+	}
+
+	self_modifier = {
+		# 5星干员通过各种高级干部福利、完善的医疗待遇措施与罗德岛的和谐人文关怀，成功让自己的寿命增加了15年
+		leader_age = 15
+	}
+}
+
+# 6星干员的领袖特征点
+# 6星干员，是金光，是金光qwq！，欧洲小伙QAQ，刚把爹！
+rs_arkNights_Rogland_6_Stars_leader_level_trait = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { ruler admiral general governor scientist }
+	leader_class = { ruler admiral general governor scientist }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/leader_traits/rs_arkNights_character_level_6.dds"
+
+	custom_tooltip = rs_arkNights_Rogland_6_Stars_leader_level_trait_custom_tooltip
+
+	# allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	# 干员的星级只能在[2、3、4、5、6、7]里任选一个哟，qwq，虎摸，谢谢，
+	opposites = {
+		rs_arkNights_Rogland_2_Stars_leader_level_trait
+		rs_arkNights_Rogland_3_Stars_leader_level_trait
+		rs_arkNights_Rogland_4_Stars_leader_level_trait
+		rs_arkNights_Rogland_5_Stars_leader_level_trait
+		rs_arkNights_Rogland_7_Stars_leader_level_trait
+	}
+	
+	modifier = {
+		# 全世界都知道你拥有了一位新的4星干员，你在他人眼里的影响力成功得到了提升，罗德岛因你生辉，罗德岛的当前影响力+400
+		# 备注：这里可以尝试下通过事件触发来增加影响力，下方的"直接增加影响力"的代码似乎会报错的说(因为Modifier里似乎没有这个效果的说<待继续验证的说，谢谢>，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+		# country_base_influence_produces_add = 400
+	}
+
+	self_modifier = {
+		# 6星干员通过各种顶级干部福利、完善的医疗待遇措施与罗德岛的和谐人文关怀，成功让自己的寿命增加了20年
+		leader_age = 20
+	}
+}
+
+# 7星干员的领袖特征点
+# 7星干员，妈耶dalao你开挂了吧qwq！，dalao，QAQ，刚把爹！
+rs_arkNights_Rogland_7_Stars_leader_level_trait = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { ruler admiral general governor scientist }
+	leader_class = { ruler admiral general governor scientist }
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/leader_traits/rs_arkNights_character_level_7.dds"
+
+	custom_tooltip = rs_arkNights_Rogland_7_Stars_leader_level_trait_custom_tooltip
+
+	# allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	# 干员的星级只能在[2、3、4、5、6、7]里任选一个哟，qwq，虎摸，谢谢，
+	opposites = {
+		rs_arkNights_Rogland_2_Stars_leader_level_trait
+		rs_arkNights_Rogland_3_Stars_leader_level_trait
+		rs_arkNights_Rogland_4_Stars_leader_level_trait
+		rs_arkNights_Rogland_5_Stars_leader_level_trait
+		rs_arkNights_Rogland_6_Stars_leader_level_trait
+	}
+
+	modifier = {
+		# 全世界都知道你拥有了一位新的7星干员，你在他人眼里的影响力成功得到了提升，罗德岛因你生辉，罗德岛的当前影响力+500
+		# 备注：这里可以尝试下通过事件触发来增加影响力，下方的"直接增加影响力"的代码似乎会报错的说(因为Modifier里似乎没有这个效果的说<待继续验证的说，谢谢>，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+		# country_base_influence_produces_add = 500
+	}
+
+	self_modifier = {
+		# 7星干员通过各种EX级干部福利、完善的医疗待遇措施与罗德岛的和谐人文关怀，成功让自己的寿命增加了25年
+		leader_age = 25
+	}
+}
+
+#################################################################################
+##########-----通用的各类leaders的各个人物能力特点的干员职业特征点-----##########
+#################################################################################
+# ----------通用领袖特性：职业(0 cost)----------
+# 职业：术师
+rs_arkNights_Rogland_SS_leader_job_trait = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { ruler admiral general governor scientist }
+	leader_class = { ruler admiral general governor scientist }
+
+	icon = "gfx/interface/icons/traits/leader_traits/rs_arkNights_leader_job_ss.dds"
+
+	custom_tooltip = rs_arkNights_Rogland_SS_leader_job_trait_custom_tooltip
+
+	# allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	opposites = {
+		rs_arkNights_Rogland_XF_leader_job_trait
+		rs_arkNights_Rogland_ZZ_leader_job_trait
+		rs_arkNights_Rogland_JJ_leader_job_trait
+		rs_arkNights_Rogland_FZ_leader_job_trait
+		rs_arkNights_Rogland_YL_leader_job_trait
+		rs_arkNights_Rogland_JW_leader_job_trait
+		rs_arkNights_Rogland_TZ_leader_job_trait
+	}
+}
+
+# 职业：先锋
+rs_arkNights_Rogland_XF_leader_job_trait = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { ruler admiral general governor scientist }
+	leader_class = { ruler admiral general governor scientist }
+
+	icon = "gfx/interface/icons/traits/leader_traits/rs_arkNights_leader_job_xf.dds"
+
+	custom_tooltip = rs_arkNights_Rogland_XF_leader_job_trait_custom_tooltip
+
+	# allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	opposites = {
+		rs_arkNights_Rogland_SS_leader_job_trait
+		rs_arkNights_Rogland_ZZ_leader_job_trait
+		rs_arkNights_Rogland_JJ_leader_job_trait
+		rs_arkNights_Rogland_FZ_leader_job_trait
+		rs_arkNights_Rogland_YL_leader_job_trait
+		rs_arkNights_Rogland_JW_leader_job_trait
+		rs_arkNights_Rogland_TZ_leader_job_trait
+	}
+}
+
+# 职业：重装
+rs_arkNights_Rogland_ZZ_leader_job_trait = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { ruler admiral general governor scientist }
+	leader_class = { ruler admiral general governor scientist }
+
+	icon = "gfx/interface/icons/traits/leader_traits/rs_arkNights_leader_job_zz.dds"
+
+	custom_tooltip = rs_arkNights_Rogland_ZZ_leader_job_trait_custom_tooltip
+
+	# allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	opposites = {
+		rs_arkNights_Rogland_SS_leader_job_trait
+		rs_arkNights_Rogland_XF_leader_job_trait
+		rs_arkNights_Rogland_JJ_leader_job_trait
+		rs_arkNights_Rogland_FZ_leader_job_trait
+		rs_arkNights_Rogland_YL_leader_job_trait
+		rs_arkNights_Rogland_JW_leader_job_trait
+		rs_arkNights_Rogland_TZ_leader_job_trait
+	}
+}
+
+# 职业：狙击
+rs_arkNights_Rogland_JJ_leader_job_trait = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { ruler admiral general governor scientist }
+	leader_class = { ruler admiral general governor scientist }
+
+	icon = "gfx/interface/icons/traits/leader_traits/rs_arkNights_leader_job_jj.dds"
+
+	custom_tooltip = rs_arkNights_Rogland_JJ_leader_job_trait_custom_tooltip
+
+	# allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	opposites = {
+		rs_arkNights_Rogland_SS_leader_job_trait
+		rs_arkNights_Rogland_XF_leader_job_trait
+		rs_arkNights_Rogland_ZZ_leader_job_trait
+		rs_arkNights_Rogland_FZ_leader_job_trait
+		rs_arkNights_Rogland_YL_leader_job_trait
+		rs_arkNights_Rogland_JW_leader_job_trait
+		rs_arkNights_Rogland_TZ_leader_job_trait
+	}
+}
+
+# 职业：辅助
+rs_arkNights_Rogland_FZ_leader_job_trait = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { ruler admiral general governor scientist }
+	leader_class = { ruler admiral general governor scientist }
+
+	icon = "gfx/interface/icons/traits/leader_traits/rs_arkNights_leader_job_fz.dds"
+
+	custom_tooltip = rs_arkNights_Rogland_FZ_leader_job_trait_custom_tooltip
+
+	# allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	opposites = {
+		rs_arkNights_Rogland_SS_leader_job_trait
+		rs_arkNights_Rogland_XF_leader_job_trait
+		rs_arkNights_Rogland_ZZ_leader_job_trait
+		rs_arkNights_Rogland_JJ_leader_job_trait
+		rs_arkNights_Rogland_YL_leader_job_trait
+		rs_arkNights_Rogland_JW_leader_job_trait
+		rs_arkNights_Rogland_TZ_leader_job_trait
+	}
+}
+
+# 职业：医疗
+rs_arkNights_Rogland_YL_leader_job_trait = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { ruler admiral general governor scientist }
+	leader_class = { ruler admiral general governor scientist }
+
+	icon = "gfx/interface/icons/traits/leader_traits/rs_arkNights_leader_job_yl.dds"
+
+	custom_tooltip = rs_arkNights_Rogland_YL_leader_job_trait_custom_tooltip
+
+	# allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	opposites = {
+		rs_arkNights_Rogland_SS_leader_job_trait
+		rs_arkNights_Rogland_XF_leader_job_trait
+		rs_arkNights_Rogland_ZZ_leader_job_trait
+		rs_arkNights_Rogland_JJ_leader_job_trait
+		rs_arkNights_Rogland_FZ_leader_job_trait
+		rs_arkNights_Rogland_JW_leader_job_trait
+		rs_arkNights_Rogland_TZ_leader_job_trait
+	}
+}
+
+# 职业：近卫
+rs_arkNights_Rogland_JW_leader_job_trait = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { ruler admiral general governor scientist }
+	leader_class = { ruler admiral general governor scientist }
+
+	icon = "gfx/interface/icons/traits/leader_traits/rs_arkNights_leader_job_jw.dds"
+
+	custom_tooltip = rs_arkNights_Rogland_JW_leader_job_trait_custom_tooltip
+
+	# allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	opposites = {
+		rs_arkNights_Rogland_SS_leader_job_trait
+		rs_arkNights_Rogland_XF_leader_job_trait
+		rs_arkNights_Rogland_ZZ_leader_job_trait
+		rs_arkNights_Rogland_JJ_leader_job_trait
+		rs_arkNights_Rogland_FZ_leader_job_trait
+		rs_arkNights_Rogland_YL_leader_job_trait
+		rs_arkNights_Rogland_TZ_leader_job_trait
+	}
+}
+
+# 职业：特种
+rs_arkNights_Rogland_TZ_leader_job_trait = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { ruler admiral general governor scientist }
+	leader_class = { ruler admiral general governor scientist }
+
+	icon = "gfx/interface/icons/traits/leader_traits/rs_arkNights_leader_job_tz.dds"
+
+	custom_tooltip = rs_arkNights_Rogland_TZ_leader_job_trait_custom_tooltip
+
+	# allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	opposites = {
+		rs_arkNights_Rogland_SS_leader_job_trait
+		rs_arkNights_Rogland_XF_leader_job_trait
+		rs_arkNights_Rogland_ZZ_leader_job_trait
+		rs_arkNights_Rogland_JJ_leader_job_trait
+		rs_arkNights_Rogland_FZ_leader_job_trait
+		rs_arkNights_Rogland_YL_leader_job_trait
+		rs_arkNights_Rogland_JW_leader_job_trait
+	}
+}

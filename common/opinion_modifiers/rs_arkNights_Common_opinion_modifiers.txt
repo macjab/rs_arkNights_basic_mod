@@ -1,0 +1,133 @@
+trigger_rs_arkNights_Common_opinion_modifier_1 = {
+	trigger = {
+		NOT = {
+			has_authority = rs_arkNights_reunion_authorities
+			# has_government = rs_arkNights_reunion_goverment
+			
+			has_authority = rs_arkNights_rogland_authorities
+			# has_government = rs_arkNights_rogland_goverment
+		}
+
+		from = {
+			owner_species = {
+				OR = {
+					has_trait = rs_arkNights_Rogland_pops_trait_oripathy
+					has_trait = rs_arkNights_Reunion_pops_trait_oripathy
+				}
+			}
+		}
+	}
+
+	opinion = {
+		base = 0
+
+		modifier = {
+			add = -30
+
+			from = {
+				owner_species = {
+					OR = {
+						has_trait = rs_arkNights_Rogland_pops_trait_oripathy
+						has_trait = rs_arkNights_Reunion_pops_trait_oripathy
+					}
+				}
+			}
+		}
+	}
+}
+
+trigger_rs_arkNights_Common_opinion_modifier_2 = {
+	trigger = {
+		NOT = {
+			has_authority = rs_arkNights_reunion_authorities
+			# has_government = rs_arkNights_reunion_goverment
+
+			has_authority = rs_arkNights_rogland_authorities
+			# has_government = rs_arkNights_rogland_goverment
+		}
+
+		from = {
+			OR = {
+				has_authority = rs_arkNights_rogland_authorities
+				# has_government = rs_arkNights_rogland_goverment
+
+				has_ai_personality 	= rs_arkNights_Rogland_Personality
+				has_authority		= rs_arkNights_rogland_authorities
+			}
+		}
+	}
+
+	opinion = {
+		base = 0
+
+		modifier = {
+			add = 30
+
+			NOT = {
+				has_authority = rs_arkNights_reunion_authorities
+				# has_government = rs_arkNights_reunion_goverment
+
+				has_authority = rs_arkNights_rogland_authorities
+				# has_government = rs_arkNights_rogland_goverment
+			}
+
+			from = {
+				OR = {
+					has_authority = rs_arkNights_rogland_authorities
+					# has_government = rs_arkNights_rogland_goverment
+					
+					has_ai_personality 	= rs_arkNights_Rogland_Personality
+					has_authority		= rs_arkNights_rogland_authorities
+				}
+			}
+		}
+	}
+}
+
+trigger_rs_arkNights_Common_opinion_modifier_3 = {
+	trigger = {
+		NOT = {
+			has_authority = rs_arkNights_reunion_authorities
+			# has_government = rs_arkNights_reunion_goverment
+			
+			has_authority = rs_arkNights_rogland_authorities
+			# has_government = rs_arkNights_rogland_goverment
+		}
+
+		from = {
+			OR = {
+				has_authority = rs_arkNights_reunion_authorities
+				# has_government = rs_arkNights_reunion_goverment
+
+				has_ai_personality 	= rs_arkNights_Reunion_Personality
+				has_authority		= rs_arkNights_reunion_authorities
+			}
+		}
+	}
+
+	opinion = {
+		base = 0
+
+		modifier = {
+			add = -50
+
+			from = {
+				NOT = {
+					has_authority = rs_arkNights_reunion_authorities
+					# has_government = rs_arkNights_reunion_goverment
+
+					has_authority = rs_arkNights_rogland_authorities
+				# has_government = rs_arkNights_rogland_goverment
+				}
+
+				OR = {
+					has_authority = rs_arkNights_reunion_authorities
+					# has_government = rs_arkNights_reunion_goverment
+					
+					has_ai_personality 	= rs_arkNights_Reunion_Personality
+					has_authority		= rs_arkNights_reunion_authorities
+				}
+			}
+		}
+	}
+}

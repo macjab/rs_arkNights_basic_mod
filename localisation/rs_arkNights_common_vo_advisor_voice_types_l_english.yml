@@ -1,0 +1,18 @@
+﻿l_english:
+ ###############################################
+ #####-----Author:   RhineSky--------------#####
+ #####-----SteamID:  RhineSky--------------#####
+ #####------Email:   macjab@macjab.com-----#####
+ #####------QQ：     516278065-------------#####
+ #U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+ ###############################################
+
+ ##########-----VO Advisor Voice Types Localisations-----##########
+ rs_arkNights_RhineLab_Ptilopsis_sounds_advisor_voice_type:0 "ArkNights-白面鸮"
+ rs_arkNights_RhineLab_Ptilopsis_sounds_advisor_voice_type_desc:0 "种族特性与病毒效果叠加，导致我在会话中会随时休眠，请不必在意。Hzzzzzzz....."
+
+ rs_arkNights_Rogland_Amiya_sounds_advisor_voice_type:0 "ArkNights-阿米娅"
+ rs_arkNights_Rogland_Amiya_sounds_advisor_voice_type_desc:0 "博士，您还有许多事情需要处理。现在还不能休息哦。"
+
+ rs_arkNights_0019_Shaw_sounds_advisor_voice_type:0 "ArkNights-阿消"
+ rs_arkNights_0019_Shaw_sounds_advisor_voice_type_desc:0 "为大家科普消防知识也是我职责的一部分就先从您开始吧长官！"

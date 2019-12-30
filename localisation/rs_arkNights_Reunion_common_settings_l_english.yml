@@ -1,0 +1,114 @@
+﻿l_english:
+ ###############################################
+ #####-----Author:   RhineSky--------------#####
+ #####-----SteamID:  RhineSky--------------#####
+ #####------Email:   macjab@macjab.com-----#####
+ #####------QQ：     516278065-------------#####
+ #U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+ ###############################################
+
+#########-----leader_common_traits-----##########
+#################################################################################
+##########-----通用的各类leaders的各个人物能力特点的源石技艺特征点-----##########
+#################################################################################
+rs_arkNights_Reunion_ruler_traint_originiumsArts_1:0 "源石技艺使用者"
+rs_arkNights_Reunion_ruler_traint_originiumsArts_1_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Reunion_ruler_traint_originiumsArts_1_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_ruler_traint_originiumsArts_2:0 "源石技艺使用者"
+rs_arkNights_Reunion_ruler_traint_originiumsArts_2_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Reunion_ruler_traint_originiumsArts_2_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_governor_traint_originiumsArts_1:0 "源石技艺使用者"
+rs_arkNights_Reunion_governor_traint_originiumsArts_1_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Reunion_governor_traint_originiumsArts_1_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_governor_traint_originiumsArts_2:0 "源石技艺使用者"
+rs_arkNights_Reunion_governor_traint_originiumsArts_2_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Reunion_governor_traint_originiumsArts_2_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_scientist_traint_originiumsArts_1:0 "源石技艺使用者"
+rs_arkNights_Reunion_scientist_traint_originiumsArts_1_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Reunion_scientist_traint_originiumsArts_1_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_scientist_traint_originiumsArts_2:0 "源石技艺使用者"
+rs_arkNights_Reunion_scientist_traint_originiumsArts_2_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Reunion_scientist_traint_originiumsArts_2_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_admiral_traint_originiumsArts_1:0 "源石技艺使用者"
+rs_arkNights_Reunion_admiral_traint_originiumsArts_1_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Reunion_admiral_traint_originiumsArts_1_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_admiral_traint_originiumsArts_2:0 "源石技艺使用者"
+rs_arkNights_Reunion_admiral_traint_originiumsArts_2_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Reunion_admiral_traint_originiumsArts_2_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_general_traint_originiumsArts_1:0 "源石技艺使用者"
+rs_arkNights_Reunion_general_traint_originiumsArts_1_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Reunion_general_traint_originiumsArts_1_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_general_traint_originiumsArts_2:0 "源石技艺使用者"
+rs_arkNights_Reunion_general_traint_originiumsArts_2_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Reunion_general_traint_originiumsArts_2_custom_tooltip:0 ""
+
+#########################################################################
+##########-----通用的各类leaders的各个人物的干员星级特征点-----##########
+#########################################################################
+rs_arkNights_Reunion_2_Stars_leader_level_trait:0 "2星干员"
+rs_arkNights_Reunion_2_Stars_leader_level_trait_desc:0 "新人之友，不是一般人能得到的，刚把爹! qwq。"
+rs_arkNights_Reunion_2_Stars_leader_level_trait_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_3_Stars_leader_level_trait:0 "3星干员"
+rs_arkNights_Reunion_3_Stars_leader_level_trait_desc:0 "蓝天白云，有点非qwq。"
+rs_arkNights_Reunion_3_Stars_leader_level_trait_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_4_Stars_leader_level_trait:0 "4星干员"
+rs_arkNights_Reunion_4_Stars_leader_level_trait_desc:0 "蓝天白云，有点非qwq。"
+rs_arkNights_Reunion_4_Stars_leader_level_trait_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_5_Stars_leader_level_trait:0 "5星干员"
+rs_arkNights_Reunion_5_Stars_leader_level_trait_desc:0 "橙光一闪，有点厉害qwq。"
+rs_arkNights_Reunion_5_Stars_leader_level_trait_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_6_Stars_leader_level_trait:0 "6星干员"
+rs_arkNights_Reunion_6_Stars_leader_level_trait_desc:0 "金光一闪，欧提之证qwq。"
+rs_arkNights_Reunion_6_Stars_leader_level_trait_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_7_Stars_leader_level_trait:0 "7星干员"
+rs_arkNights_Reunion_7_Stars_leader_level_trait_desc:0 "醒醒，在对面qwq。"
+rs_arkNights_Reunion_7_Stars_leader_level_trait_custom_tooltip:0 ""
+
+#################################################################################
+##########-----通用的各类leaders的各个人物能力特点的干员职业特征点-----##########
+#################################################################################
+rs_arkNights_Reunion_SS_leader_job_trait:0 "术师干员"
+rs_arkNights_Reunion_SS_leader_job_trait_desc:0 ""
+rs_arkNights_Reunion_SS_leader_job_trait_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_XF_leader_job_trait:0 "先锋干员"
+rs_arkNights_Reunion_XF_leader_job_trait_desc:0 ""
+rs_arkNights_Reunion_XF_leader_job_trait_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_ZZ_leader_job_trait:0 "重装干员"
+rs_arkNights_Reunion_ZZ_leader_job_trait_desc:0 ""
+rs_arkNights_Reunion_ZZ_leader_job_trait_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_JJ_leader_job_trait:0 "狙击干员"
+rs_arkNights_Reunion_JJ_leader_job_trait_desc:0 ""
+rs_arkNights_Reunion_JJ_leader_job_trait_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_FZ_leader_job_trait:0 "辅助干员"
+rs_arkNights_Reunion_FZ_leader_job_trait_desc:0 ""
+rs_arkNights_Reunion_FZ_leader_job_trait_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_YL_leader_job_trait:0 "医疗干员"
+rs_arkNights_Reunion_YL_leader_job_trait_desc:0 ""
+rs_arkNights_Reunion_YL_leader_job_trait_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_JW_leader_job_trait:0 "近卫干员"
+rs_arkNights_Reunion_JW_leader_job_trait_desc:0 ""
+rs_arkNights_Reunion_JW_leader_job_trait_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_TZ_leader_job_trait:0 "特种干员"
+rs_arkNights_Reunion_TZ_leader_job_trait_desc:0 ""
+rs_arkNights_Reunion_TZ_leader_job_trait_custom_tooltip:0 ""

@@ -1,0 +1,19 @@
+##########-----arkNights_Advanced_All_Effects_Firepower_Names_List_Related_Variables-----##########
+
+# Global Rogland Leader's Effects(at present)
+@rs_arkNights_global_Rogland_Leaders_advanced_extra_traits_trigger 					= no 	# no
+@rs_arkNights_global_Rogland_Leaders_advanced_extra_oripathy_related_traits_trigger = yes	# yes
+
+# Global Rogland Advanced Leader traits PowerUp Effects(at present: 0-no, 1-yes)
+@rs_arkNights_global_Leaders_advanced_powerUp_Any_Traits_trigger_factory 			= 0		# 1
+
+# ---------------------------------------------------------------
+
+# Global Rogland Pop's Effects(at present)
+@rs_arkNights_global_Rogland_Pops_advanced_extra_oripathy_related_traits_trigger	= yes	# no
+
+# Global Rogland Advanced Pop traits PowerUp Effects(at present: 0-no, 1-yes)
+@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory 			= 0		# 1
+
+# ※Mark-1:
+# if any command Use the "#<DIS>" prefix comment format(AKA: DISABLED), that it's mean we won't use it at the present, but not sure we won't use it in the furture, thank you~

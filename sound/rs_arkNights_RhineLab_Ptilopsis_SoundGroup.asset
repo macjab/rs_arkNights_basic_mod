@@ -1,0 +1,298 @@
+###############################################
+#####-----Author: 	RhineSky--------------#####
+#####-----SteamID:	RhineSky--------------#####
+#####-----Email:	macjab@macjab.com-----#####
+#####-----QQ：		516278065-------------#####
+#U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+###############################################
+
+# 音乐组(音乐对象直接在Scope体内定义并重写，而不需要外部重新再创建Scope对象的说，谢谢)，谢谢，
+soundgroup = {
+	name = rs_arkNights_Rogland_Amiya_sounds_advisor_voice_type
+
+	# 音乐组里的音乐部分重写
+	soundfileoverrides = {
+		# Stellaris里的VO音乐组里的音乐字段名重写赋值
+		# AI问候语音-1/-2/-3
+		advisor_sample_vo_01 									= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_get.wav"
+		advisor_sample_vo_02 									= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_conversation_1.wav"
+		advisor_sample_vo_03 									= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_conversation_2.wav"
+
+		# 遇到异常情况(通常是科研船调查星系时触发的说，qwq，虎摸，谢谢)、星系勘察完成，
+		advisor_notification_situation_log_01 					= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_be_selected_1.wav"
+		advisor_notification_system_survey_complete_01			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_be_selected_1.wav"
+
+		# 科研(科学)研究完成
+		advisor_notification_research_complete_01 				= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_be_deployed_1.wav"		
+
+		# 残骸研究完成
+		advisor_notification_debris_analysed_01 				= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_be_deployed_1.wav"
+
+		# 特殊项目研究完成
+		advisor_notification_special_project_complete_01 		= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_be_deployed_1.wav"
+
+		# 舰船升级成功
+		advisor_notification_ships_upgraded_01 					= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_elitizate_up_1.wav"
+
+		# 星球障碍清理成功
+		advisor_notification_tile_blocker_clear_01 				= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_trust_up_Poke_1.wav"
+
+		# 建筑物(任意陆地的建筑物/天上的太空站等的说，qwq，虎摸，谢谢)建造成功、星球上的陆地上的建筑物炸了，
+		advisor_notification_construction_complete_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_work_into_construction.wav"
+		advisor_notification_building_ruined_01 				= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_less_then_3_stars_mission_complete.wav"
+
+		# 我方正在殖民中(任意正被殖民的殖民球)、我方殖民完成(任意殖民完成的被殖民球)，
+		advisor_notification_colonization_progress_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_level_up_conversation_1.wav"
+		advisor_notification_colony_established_01 				= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_be_deployed_2.wav"
+
+		# 物种已修改
+		advisor_notification_species_modified_01 				= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_level_up_conversation_2.wav"
+
+		# 原始文明启蒙
+		advisor_notification_primitive_enlighted_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_trust_up_conversation_1.wav"
+
+		# 无智慧物种基因提升(无智慧物种->有智慧物种)
+		advisor_notification_pre_sapient_uplifted_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_trust_up_conversation_3.wav"
+
+		# 发现我方被探测
+		advisor_notification_discovery_detected_01 				= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_be_selected_1.wav"
+		advisor_notification_discovery_detected_02 				= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_be_selected_1.wav"
+		
+		# 未标识的对象、遇到外星飞船、遇到宇宙飞船
+		advisor_notification_unidentified_object_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_be_selected_2.wav"
+		advisor_notification_alien_vessel_encountered_01 		= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_be_selected_2.wav"
+		advisor_notification_spaceborne_encounter_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_be_selected_2.wav"	
+
+		# 各个帝国的首次外星通讯、收到传输信息(协议/交易/关闭边界/侮辱/敌对/宣战<素质三连>)，联盟建立，其他联盟建立，
+		advisor_notification_alien_empire_communication_01 		= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_arkNights_Title.wav"
+		advisor_notification_incoming_transmission_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_greeting.wav"
+		advisor_notification_federation_formed_01 				= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_join_the_team.wav"
+		advisor_notification_alien_federation_formed_01 		= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_watch_the_record_of_the_battle.wav"
+
+		# 我方科研船正在遭受攻击、我方科研船炸了，
+		advisor_notification_science_ship_under_attack_01 		= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_fighting_1.wav"
+		advisor_notification_science_ship_destroyed_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_less_then_3_stars_mission_complete.wav"
+		
+		# 我方工程船正遭受攻击、我方工程船炸了，
+		advisor_notification_construction_ship_under_attack_01 	= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_fighting_1.wav"
+		advisor_notification_construction_ship_destroyed_01 	= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_less_then_3_stars_mission_complete.wav"
+		
+		# 我方殖民船正遭受攻击、我方殖民船炸了，
+		advisor_notification_colony_ship_under_attack_01 		= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_fighting_1.wav"
+		advisor_notification_colony_ship_destroyed_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_less_then_3_stars_mission_complete.wav"
+		
+		# 探测到敌方舰队、正与敌方舰队交火、正在躲避敌方舰队，我方舰队被毁-1/-2、
+		advisor_notification_hostile_fleet_detected_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_get.wav"
+		advisor_notification_hostile_fleet_engaged_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_mission_start.wav"
+		advisor_notification_evade_hostile_fleet_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_trust_up_conversation_2.wav"
+		advisor_notification_fleet_destroyed_01 				= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_less_then_3_stars_mission_complete.wav"
+		advisor_notification_fleet_destroyed_02 				= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_less_then_3_stars_mission_complete.wav"
+		
+		# 正与敌方太空站交火(任意功能性站点，如采矿站等的说，qwq，虎摸，谢谢)、正与敌方太空哨站(含升级后的太空港)交火，
+		advisor_notification_hostile_station_engaged_01 		= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_mission_start.wav"
+		advisor_notification_alien_spaceport_engaged_01 		= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_mission_start.wav"
+
+		# 我方太空哨站(含升级后的太空港)正遭受攻击、我方太空哨站(含升级后的太空港)炸了，
+		advisor_notification_spaceport_under_attack_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_fighting_1.wav"
+		advisor_notification_spaceport_lost_01 					= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_less_then_3_stars_mission_complete.wav"
+
+		# 我方太空站(任意功能性站点，如采矿站等的说，qwq，虎摸，谢谢)正遭受攻击、我方采矿站/科研站/军事哨站/观察站/冲动站/边境哨站炸了，
+		advisor_notification_station_under_attack_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_fighting_1.wav"
+		advisor_notification_mining_station_lost_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_less_then_3_stars_mission_complete.wav"
+		advisor_notification_research_station_lost_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_less_then_3_stars_mission_complete.wav"
+		advisor_notification_military_station_lost_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_less_then_3_stars_mission_complete.wav"
+		advisor_notification_observation_post_lost_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_less_then_3_stars_mission_complete.wav"
+		advisor_notification_wormhole_station_lost_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_less_then_3_stars_mission_complete.wav"
+		advisor_notification_frontier_outpost_lost_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_less_then_3_stars_mission_complete.wav"
+
+		# 敌方陆军进攻军登陆我方星球中、我方星球陆军驻军抵抗敌方陆军入侵失败、我方星球陆军驻军抵抗敌方陆军入侵成功，
+		advisor_notification_enemy_troops_landing_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_fighting_2.wav"
+		advisor_notification_enemy_invasion_defeated_01 		= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_mission_failed.wav"
+		advisor_notification_invasion_enemy_won_01 				= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_4_stars_mission_complete.wav"
+
+		# 我方星球陆军进攻军正在入侵敌方星球中、我方星球陆军进攻军入侵敌方星球失败、我方星球陆军进攻军入侵敌方星球成功，
+		advisor_notification_invasion_progress_01 				= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_fighting_2.wav"
+		advisor_notification_invasion_failed_01 				= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_mission_failed.wav"
+		advisor_notification_invasion_success_01 				= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_3_stars_mission_complete.wav"
+
+		# 我方星球(任意已被殖民化完成的星球)正在叛乱，
+		advisor_notification_planet_in_revolt_01 				= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_Poke_1.wav"
+
+		# 玩家向他人宣战、敌方(任意势力)向我方宣战(待定的说，谢谢)、通用宣战(可能是<他人A向他人B宣战>等的说，待继续验证的说，qwq，虎摸，谢谢)、
+		advisor_notification_player_declare_war_01 				= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_mission_ready_to_start.wav"
+		advisor_notification_player_declare_war_02 				= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_mission_ready_to_start.wav"
+		advisor_notification_enemy_declared_war_01 				= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_fighting_3.wav"
+		advisor_notification_enemy_declared_war_02 				= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_fighting_3.wav"
+		advisor_notification_generic_war_declare_01 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_fighting_4.wav"
+		advisor_notification_generic_war_declare_02 			= "vo/rs_arkNights_Rogland_Amiya_sounds/rs_arkNights_Rogland_Amiya_fighting_4.wav"
+	}
+
+	# 音乐组里的音效部分重写(音效对象则引用下方soundeffect对象的说，谢谢)，谢谢，
+	soundeffectoverrides = {
+		# Stellaris里的VO音乐组里的音效字段名重写赋值
+		advisor_notification_research_complete 					= rs_arkNights_Rogland_Amiya_advisor_notification_research_complete
+
+		advisor_notification_discovery_detected 				= rs_arkNights_Rogland_Amiya_advisor_notification_discovery_detected
+
+		advisor_notification_federation_formed 					= rs_arkNights_Rogland_Amiya_advisor_notification_federation_formed
+
+		advisor_notification_colonization_progress 				= rs_arkNights_Rogland_Amiya_advisor_notification_colonization_progress
+
+		advisor_notification_fleet_destroyed 					= rs_arkNights_Rogland_Amiya_advisor_notification_fleet_destroyed
+
+		advisor_notification_player_declare_war 				= rs_arkNights_Rogland_Amiya_advisor_notification_player_declare_war
+		advisor_notification_enemy_declared_war 				= rs_arkNights_Rogland_Amiya_advisor_notification_enemy_declared_war
+		advisor_notification_generic_war_declare 				= rs_arkNights_Rogland_Amiya_advisor_notification_generic_war_declare
+	}
+}
+
+# 各个音效对象(音效里的音乐部分则引用上方音乐组里的任意音乐重写对象的说，谢谢)，谢谢，
+soundeffect = {
+	# Stellaris里的VO音效字段名重写赋值
+	name 		= rs_arkNights_Rogland_Amiya_advisor_notification_research_complete
+
+	sounds = { # Stellaris里的VO音效里的音乐字段名重写赋值(值为引用上方的soundeffectoverrides对象和或soundfileoverrides对象的说，谢谢)，谢谢，
+		sound 	= advisor_notification_research_complete_01
+	}
+
+	volume 		= 0.5
+	is3d		= yes
+	fade_out	= 0.8 # need to enabled/disabled to test the sound effect more to select the more exact the fade_out effect value, thank you~
+
+	max_audible 			= 1
+	max_audible_behaviour 	= fail
+}
+
+soundeffect = {
+	# Stellaris里的VO音效字段名重写赋值
+	name 		= rs_arkNights_Rogland_Amiya_advisor_notification_discovery_detected
+
+	sounds = { # Stellaris里的VO音效里的音乐字段名重写赋值(值为引用上方的soundeffectoverrides对象和或soundfileoverrides对象的说，谢谢)，谢谢，
+		sound 	= advisor_notification_discovery_detected_01
+		sound 	= advisor_notification_discovery_detected_02
+	}
+
+	volume 		= 0.5
+	is3d		= yes
+	fade_out	= 0.8 # need to enabled/disabled to test the sound effect more to select the more exact the fade_out effect value, thank you~
+
+	max_audible 			= 1
+	max_audible_behaviour 	= fail
+}
+
+soundeffect = {
+	# Stellaris里的VO音效字段名重写赋值
+	name 		= rs_arkNights_Rogland_Amiya_advisor_notification_federation_formed
+
+	sounds = { # Stellaris里的VO音效里的音乐字段名重写赋值(值为引用上方的soundeffectoverrides对象和或soundfileoverrides对象的说，谢谢)，谢谢，
+		sound 	= advisor_notification_federation_formed_01
+	}
+
+	volume 		= 0.5
+	is3d		= yes
+	fade_out	= 0.8 # need to enabled/disabled to test the sound effect more to select the more exact the fade_out effect value, thank you~
+
+	max_audible 			= 1
+	max_audible_behaviour 	= fail
+}
+
+soundeffect = {
+	# Stellaris里的VO音效字段名重写赋值
+	name 		= rs_arkNights_Rogland_Amiya_advisor_notification_colonization_progress
+
+	sounds = { # Stellaris里的VO音效里的音乐字段名重写赋值(值为引用上方的soundeffectoverrides对象和或soundfileoverrides对象的说，谢谢)，谢谢，
+		sound 	= advisor_notification_colonization_progress_01
+	}
+
+	volume 		= 0.5
+	is3d		= yes
+	fade_out	= 0.8 # need to enabled/disabled to test the sound effect more to select the more exact the fade_out effect value, thank you~
+
+	max_audible 			= 1
+	max_audible_behaviour 	= fail
+}
+
+soundeffect = {
+	# Stellaris里的VO音效字段名重写赋值
+	name 		= rs_arkNights_Rogland_Amiya_advisor_notification_fleet_destroyed
+
+	sounds = { # Stellaris里的VO音效里的音乐字段名重写赋值(值为引用上方的soundeffectoverrides对象和或soundfileoverrides对象的说，谢谢)，谢谢，
+		sound 	= advisor_notification_fleet_destroyed_01
+		sound 	= advisor_notification_fleet_destroyed_02
+	}
+
+	volume 		= 0.5
+	is3d		= yes
+	fade_out	= 0.8 # need to enabled/disabled to test the sound effect more to select the more exact the fade_out effect value, thank you~
+
+	max_audible 			= 1
+	max_audible_behaviour 	= fail
+}
+
+soundeffect = {
+	# Stellaris里的VO音效字段名重写赋值
+	name 		= rs_arkNights_Rogland_Amiya_advisor_notification_player_declare_war
+
+	sounds = { # Stellaris里的VO音效里的音乐字段名重写赋值(值为引用上方的soundeffectoverrides对象和或soundfileoverrides对象的说，谢谢)，谢谢，
+		sound 	= advisor_notification_player_declare_war_01
+		sound 	= advisor_notification_player_declare_war_02
+	}
+
+	volume 		= 0.5
+	is3d		= yes
+	fade_out	= 0.8 # need to enabled/disabled to test the sound effect more to select the more exact the fade_out effect value, thank you~
+
+	max_audible 			= 1
+	max_audible_behaviour 	= fail
+}
+
+soundeffect = {
+	# Stellaris里的VO音效字段名重写赋值
+	name 		= rs_arkNights_Rogland_Amiya_advisor_notification_enemy_declared_war
+
+	sounds = { # Stellaris里的VO音效里的音乐字段名重写赋值(值为引用上方的soundeffectoverrides对象和或soundfileoverrides对象的说，谢谢)，谢谢，
+		sound 	=  advisor_notification_enemy_declared_war_01
+		sound 	= advisor_notification_enemy_declared_war_02
+	}
+
+	volume 		= 0.5
+	is3d		= yes
+	fade_out	= 0.8 # need to enabled/disabled to test the sound effect more to select the more exact the fade_out effect value, thank you~
+
+	max_audible 			= 1
+	max_audible_behaviour 	= fail
+}
+
+soundeffect = {
+	# Stellaris里的VO音效字段名重写赋值
+	name 		= rs_arkNights_Rogland_Amiya_advisor_notification_generic_war_declare
+
+	sounds = { # Stellaris里的VO音效里的音乐字段名重写赋值(值为引用上方的soundeffectoverrides对象和或soundfileoverrides对象的说，谢谢)，谢谢，
+		sound 	= advisor_notification_generic_war_declare_01
+		sound 	= advisor_notification_generic_war_declare_02
+	}
+
+	volume 		= 0.5
+	is3d		= yes
+	fade_out	= 0.8 # need to enabled/disabled to test the sound effect more to select the more exact the fade_out effect value, thank you~
+
+	max_audible 			= 1
+	max_audible_behaviour 	= fail
+}
+
+# 音效组(音效对象则引用上方soundeffect对象的说，谢谢)，谢谢，
+category = {
+	name = rs_arkNights_Rogland_Amiya_sound_effect_group_name
+
+	soundeffects = {
+		# 音效组里的音效对象(引用上方的soundeffect对象的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+		rs_arkNights_Rogland_Amiya_advisor_notification_research_complete
+		rs_arkNights_Rogland_Amiya_advisor_notification_discovery_detected
+		rs_arkNights_Rogland_Amiya_advisor_notification_federation_formed
+		rs_arkNights_Rogland_Amiya_advisor_notification_colonization_progress
+		rs_arkNights_Rogland_Amiya_advisor_notification_fleet_destroyed
+		rs_arkNights_Rogland_Amiya_advisor_notification_player_declare_war
+		rs_arkNights_Rogland_Amiya_advisor_notification_enemy_declared_war
+		rs_arkNights_Rogland_Amiya_advisor_notification_generic_war_declare
+	}
+}

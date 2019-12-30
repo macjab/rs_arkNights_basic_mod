@@ -1,0 +1,286 @@
+﻿l_english:
+ ###############################################
+ #####-----Author:   RhineSky--------------#####
+ #####-----SteamID:  RhineSky--------------#####
+ #####------Email:   macjab@macjab.com-----#####
+ #####------QQ：     516278065-------------#####
+ #U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+ ###############################################
+ 
+ # -------<自定义本地化字段>内容替换-------
+
+ # -------<资源名称>的本地化变量-------
+  # 能源、能源点、$RhineSky_Prescripted_Resource_Energy$、
+ RhineSky_Prescripted_Resource_Energy:0 "龙门币"
+ # $RhineSky_Prescripted_Resource_Minerals$
+ RhineSky_Prescripted_Resource_Minerals:0 "天灾源石"
+ # RhineSky_Prescripted_Resource_Minerals:0 "工业零件"
+ # $RhineSky_Prescripted_Resource_Foods$
+ RhineSky_Prescripted_Resource_Foods:0 "理智恢复液"
+ # $RhineSky_Prescripted_Resource_Cosume_Goods$
+ RhineSky_Prescripted_Resource_Cosume_Goods:0 "合成玉"
+ # 合金
+ RhineSky_Prescripted_Resource_Alloys:0 "至纯源石"
+
+ # -------包含<资源名称>的文本替换-------
+ # -------<至纯源石-$RhineSky_Prescripted_Resource_Alloys$>的文本替换-------
+
+ancrel.2050.a:0 "多么不可思议！"
+ancrel.2051.name:0 "噬铁者"
+ancrel.2051.desc:1 "挖掘行动发现了覆盖[From.From.Planet.GetName]表面机械的奇异膜状组织的更新鲜的样本！经仔细分析，我们的研究人员得出结论，这种有机物质似乎是一种恶性的嗜铁噬菌体的副产物，或许可以称为噬铁体！这种外来的细菌感染了一种病毒，这种病毒与细菌的生物过程相配合，以溶解黑色金属$RhineSky_Prescripted_Resource_Alloys$的表面。 籍由这种剧烈的生化过程，该病毒获得了维持其持续复制所需的铁元素。\n\n通过这种奇特的异种寄生行为，噬铁体沿着废旧机械传播得越来越深，留下了由死细菌和淤泥组成的生物膜痕迹。"
+ancrel.2052.name:0 "生化恐袭"
+ancrel.2052.desc:1 "在[From.Planet.GetName]上腐蚀的机械设施深处发现了大量可部分挽回的新闻记录，通过拼接这些记录我们的考古学家已经能够推断出噬铁体是由行星上的一群反叛科学家创造出来的！这些生化恐怖分子属于一个秘密活动小组，他们反对建造了遍布行星的机械设施的垄断公司，并显然谋求通过释放噬铁体来抵制公司在全球范围内无孔不入的影响力。"
+
+decision_tissue_growth_stimulants_desc:0 "利用在失落的骸骨之城发现的基因物质，我们的科学家成功地创造了一种增加人口成长速度的刺激物。不幸的是，有些人并不喜欢这种主意——注射靠发掘早已死去的外星生物的病态骸骨研发的物质。"
+decision_explosive_fungifoam_housing:0 "建造爆发增殖式真菌型住宅单元"
+decision_explosive_fungifoam_housing_desc:0 "我们的科研小组基于骸骨之城发掘到的生长组织和骨化疾病，发明出了一种无害的汞$RhineSky_Prescripted_Resource_Alloys$。通过基因剪接能够病毒适应当地的一种真菌，从而我们的科研小组能为我们的机械单元构造一种快速扩展的住房模块。"
+decision_baol_life_seed:0 "新巴奥生命播种"
+decision_baol_life_seed_desc:0 "我们的基因学家已经洞悉了§Y巴奥有机体§!的改造星系能力的秘密。通过在行星部署快速增殖的经过特殊选择的§Y巴奥§!基因数据修饰的植物，我们能够利用极少的花费对整个生物圈进行改造。"
+
+
+d_hab_mote_5:0 "$d_hab_mote_1$"
+d_hab_mote_5_desc:0 "$d_hab_mote_1_desc$"
+d_hab_alloy_1:0 "$RhineSky_Prescripted_Resource_Alloys$矿藏"
+d_hab_alloy_1_desc:0 "该栖所建造在一处可开采的$RhineSky_Prescripted_Resource_Alloys$矿藏附近。"
+d_hab_alloy_2:0 "$d_hab_alloy_1$"
+d_hab_alloy_2_desc:0 "$d_hab_alloy_1_desc$"
+
+
+# drone station destroyed
+story.332.name:1 "$story.333.name$"
+story.332.desc:1 "我们已经破坏了采矿无人机的大本营，并顺利截获了其仓库中保存的大多数矿石和珍贵的$RhineSky_Prescripted_Resource_Alloys$。"
+story.332.a:0 "隐秘的财富。"
+story.332.b:0 "……还有一个奇怪的设备……"
+
+
+anomaly.110.a:0 "马上回放。"
+anomaly.115.name:0 "细胞仓库"
+anomaly.115.desc:0 "[From.GetName]部分中空。内部是密集的蜂窝结构，由某种未知的$RhineSky_Prescripted_Resource_Alloys$打造，放着许多储存外星基因材料的储藏器。这显然是一座生命档案，纪录着一个失落文明的基因资料。多数DNA都已严重损毁，但仍能从中了解许多。"
+anomaly.120.name:0 "史诗碑塔"
+anomaly.120.desc:0 "[From.GetName]无人居住，也确实无法居住，但却并非无人拜访过。它的表面散布着许多高耸的尖碑，由某种非本星球的金属雕刻，显然是某种热衷艺术的太空文明的物品。这些碑塔的曲线雕琢出一段如梦似幻的历史，定为虚构。\n\n一定是。"
+
+
+anomaly.4000.a.tooltip:1 "添加§Y酸性丛林§!调整因素至 [From.GetName]：\n£blocker£ 剧毒沼泽§R+3§!\n£society£ §G+2§!"
+anomaly.4005.name:0 "站在巨人的肩膀上"
+anomaly.4005.desc:1 "看来小行星 [From.GetName]以及周围的碎片都来自于先前的一颗行星！\n\n在小行星的内部我们能够找到极其珍贵的$RhineSky_Prescripted_Resource_Alloys$。还有一些证据表明细菌生物的存在，如今已经死于真空。这表明这个天体上曾经诞生过生命。"
+anomaly.4005.a.tooltip:2 "添加§Y曾为行星§!调整因素至 [From.GetName]：\n£alloys£ §G+3§!"
+anomaly.4010.name:0 "迷失太空"
+
+
+rare_crystals:0 "稀有水晶"
+rare_crystals_desc:0 "这些水晶拥有独特的属性，非常适合用来凝聚和集中激光束，同时也是制作大部分高级电子器材的关键材料。部分文化也视之为装饰物。"
+alloys:0 "$RhineSky_Prescripted_Resource_Alloys$"
+alloys_desc:1 "§E§H$RhineSky_Prescripted_Resource_Alloys$§!（£alloys£）是高级资源，一般用于军事领域，可用于建造§H舰船§!和§H太空基地§!。我们可以通过下列途径获得更多$RhineSky_Prescripted_Resource_Alloys$：\n§Y1.§!在殖民行星表面建造£building£§H$building_foundry_1$§!。\n§Y2.§!在§H市场§!购买。§!"
+
+sr_zro:0 "卓尘"
+
+ARMOR_1:0 "纳米装甲"
+ARMOR_1_DESC:0 "强化的纳米船体镀层可以提供额外的保护层，造成战斗形势的生死逆转。"
+ARMOR_2:0 "$RhineSky_Prescripted_Resource_Alloys$陶瓷装甲"
+ARMOR_2_DESC:0 "多种陶瓷与金属的复合材料可以制造坚硬装甲且不牺牲韧性。"
+ARMOR_3:0 "塑钢装甲"
+
+ARMOR_4_DESC:0 "这种坚固且有弹性的材料在承受强大火力方面表现不俗。是很好的船体装甲。"
+ARMOR_5:0 "中子装甲"
+ARMOR_5_DESC:0 "这种高密度且坚硬的材料能够抵抗强大的火力，任何其它$RhineSky_Prescripted_Resource_Alloys$制成的装甲在这样的火力下都会被炸成烂泥。"
+CRYSTAL_ARMOR_1:0 "水晶复合镀层"
+CRYSTAL_ARMOR_1_DESC:1 "从超硬的晶态实体处采集的元素$RhineSky_Prescripted_Resource_Alloys$位于镀层内部，改善船体完整性。"
+CRYSTAL_ARMOR_2:0 "水晶锻造镀层"
+CRYSTAL_ARMOR_2_DESC:1 "晶态$RhineSky_Prescripted_Resource_Alloys$的锻造方式改良后，$RhineSky_Prescripted_Resource_Alloys$更加耐用。"
+
+SMALL_CRYSTAL_ARMOR_1:0 "小型$CRYSTAL_ARMOR_1$"
+
+MEDIUM_ARMOR_1:0 "中型纳米装甲"
+LARGE_ARMOR_1:0 "大型纳米装甲"
+SMALL_ARMOR_2:0 "小型$RhineSky_Prescripted_Resource_Alloys$陶瓷装甲"
+MEDIUM_ARMOR_2:0 "中型$RhineSky_Prescripted_Resource_Alloys$陶瓷装甲"
+LARGE_ARMOR_2:0 "大型$RhineSky_Prescripted_Resource_Alloys$陶瓷装甲"
+SMALL_ARMOR_3:0 "小型塑钢装甲"
+MEDIUM_ARMOR_3:0 "中型塑钢装甲"
+
+st_production_desc:0 "此星域将专注于生产原材料，例如$RhineSky_Prescripted_Resource_Foods$、$RhineSky_Prescripted_Resource_Minerals$和$RhineSky_Prescripted_Resource_Energy$。"
+st_manufacturing:0 "制造业重心"
+st_manufacturing_desc:0 "此星域将专注于制造高级产品，例如$RhineSky_Prescripted_Resource_Alloys$和$RhineSky_Prescripted_Resource_Cosume_Goods$。"
+
+####################################
+
+
+leviathans.2115.a:0 "让我们祈祷也能把他们弄出来。"
+leviathans.2131.name:0 "神秘要塞：塔楼"
+leviathans.2131.desc:0 "探险队发现他们的道路被一块巨大的隔板挡住了。小队报告说在右侧隔板上有一处凹陷，里面放着一个底座，底座上有一台与要塞风格相同的黑色$RhineSky_Prescripted_Resource_Alloys$锻造的新奇装置。\n\n他们认为这个装置是打开隔板的关键。探险队队长说这个装置有三根笔直的杆等距地插在基座上，最左边的杆上还有三个不同尺寸的金属托环，小的在上面，大的在下面。"
+leviathans.2131.a:0 "在剩余两根杆上放置金属环。"
+leviathans.2131.b:0 "在隔板上搜寻托环形状的凹槽。"
+
+
+building_underground_chemists_desc:1 "位于偏远地区的地下制毒实验室，从地表丝毫不能探测到它的存在。药剂师们在这里日夜不停地生产各种非法、极易上瘾、利润丰厚的“麻醉品”。"
+building_wrecking_yards:0 "拆解厂"
+building_wrecking_yards_desc:0 "窃得的脏船和海盗俘获的飞船在这里被拆成碎片。任何有价值的部件和$RhineSky_Prescripted_Resource_Alloys$都会被小心地回收。"
+building_underground_clubs:0 "地下俱乐部"
+building_underground_clubs_desc:0 "这些非法娱乐俱乐部可以满足任何邪欲。随着夜幕降临，这些俱乐部也在行星上乌烟瘴气的地区开始营业。"
+
+job_fabricator:0 "制造者"
+job_fabricator_plural:0 "制造者"
+job_fabricator_desc:1 "高度专业化的制造者加工贵重$RhineSky_Prescripted_Resource_Minerals$成耐用的$RhineSky_Prescripted_Resource_Alloys$用于军事发展和高级建筑。"
+job_fabricator_effect_desc:0 "£job_fabricator£ $job_fabricator_plural$加工£minerals£§Y$minerals$§!生产£alloys£§Y$alloys$§!"
+mod_job_fabricator_add:0 "$job_fabricator$职位"
+
+job_alloy_drone:0 "铸造工蜂"
+job_alloy_drone_plural:0 "铸造工蜂"
+job_alloy_drone_desc:1 "高度专业化的铸造工蜂加工贵重$RhineSky_Prescripted_Resource_Minerals$质成耐用的$RhineSky_Prescripted_Resource_Alloys$用于军事发展和高级建筑。"
+job_alloy_drone_effect_desc:0 "£job_alloy_drone£$job_alloy_drone_plural$加工£minerals£§Y$minerals$§!生产£alloys£§Y$alloys$§!"
+mod_job_alloy_drone_add:0 "$job_alloy_drone$职位"
+
+job_foundry:0 "冶金师"
+job_foundry_plural:0 "冶金师"
+job_foundry_desc:0 "大量训练有素的专业人员将原矿加工成坚固耐久的$RhineSky_Prescripted_Resource_Alloys$，这些$RhineSky_Prescripted_Resource_Alloys$将用于各种高级建设。"
+job_foundry_effect_desc:0 "£job_foundry£$job_foundry_plural$加工£minerals£§Y$minerals$§!生产£alloys£§Y$alloys$§!"
+mod_job_foundry_add:0 "$job_foundry$职位"
+
+heavy_metal:0 "重金属"
+heavy_metal_desc:0 "自巨型尸业事故以来，不知怎么的，在这颗行星上生产金属更加容易了。"
+alloy_relic:0 "超级$RhineSky_Prescripted_Resource_Alloys$制造机"
+alloy_relic_desc:0 "这神秘的装置放到铸造厂里之后，$RhineSky_Prescripted_Resource_Alloys$生产大幅增加效率。"
+minerals_relic:0 "非常无趣的遗物"
+minerals_relic_desc:0 "这台奇怪的机器可以设法将$RhineSky_Prescripted_Resource_Minerals$从地下召唤出来，而不会影响到周围的物质。"
+
+building_crystal_mines:0 "水晶矿井"
+building_crystal_mines_desc:1 "开采这些矿时必须万分谨慎，以免损坏水晶。"
+building_foundry_1:0 "$RhineSky_Prescripted_Resource_Alloys$铸造厂"
+building_foundry_1_desc:0 "在这些铸造厂工作的$job_foundry_plural$可以生产出高质量的$RhineSky_Prescripted_Resource_Alloys$。"
+building_foundry_2:0 "$RhineSky_Prescripted_Resource_Alloys$巨型熔炉"
+building_foundry_2_desc:0 "这些熔炉可以大规模生产$RhineSky_Prescripted_Resource_Alloys$。"
+building_foundry_3:0 "$RhineSky_Prescripted_Resource_Alloys$纳米工厂"
+building_foundry_3_desc:0 "借助纳米机器生产$RhineSky_Prescripted_Resource_Alloys$的先进制造中心。"
+building_factory_1:0 "民用工厂"
+building_factory_1_desc:0 "生产各种各样$RhineSky_Prescripted_Resource_Cosume_Goods$的民用工业和制造业的集合。"
+
+building_dimensional_fabricator:0 "异次元制造厂"
+building_dimensional_fabricator_desc:0 "这座建筑利用所知甚少的次元科技，从其它次元吸取宝贵的资源。"
+building_nano_forge_desc:1 "这座巨大的纳米复制机以惊人的效率将原材料转化成先进的$RhineSky_Prescripted_Resource_Alloys$。"
+building_affluence_center:0 "富裕中心"
+building_affluence_center_desc:0 "任何物质欲望都可以在这里得到满足，不管多么古怪。"
+
+tech_food_processing_2_desc:1 "全新的冷冻保存和蛋白质重组方法可以大幅提升食品加工的效率。"
+tech_alloys_1:0 "全息影像铸模"
+tech_alloys_1_desc:0 "固态全息影像铸模可以瞬间改变自身形态，从而加速$RhineSky_Prescripted_Resource_Alloys$的生产。"
+tech_alloys_2:0 "纳米分离器"
+tech_alloys_2_desc:0 "纳米分离器是$RhineSky_Prescripted_Resource_Alloys$制造的革命性新发明，不仅简化了铸造工艺，同时也提高了整体生产质量。"
+tech_luxuries_1:0 "纳米电路装配"
+tech_luxuries_1_desc:0 "有了预编程纳米电路，很多$RhineSky_Prescripted_Resource_Cosume_Goods$能够在制造厂中快速组装。"
+
+planet_buildings_researchlabs:0 "研究实验室"
+planet_buildings_maintenancedepots:0 "维修站"
+planet_buildings_foundries:0 "$RhineSky_Prescripted_Resource_Alloys$铸造厂"
+planet_buildings_factories:0 "工厂"
+planet_buildings_refineries:0 "精炼厂"
+
+col_rural_desc:1 "此行星的自然生产无需主要城市中心。"
+col_foundry:0 "熔炉星球"
+col_foundry_desc:1 "在此行星上任何一个角落都能感受到无数$RhineSky_Prescripted_Resource_Alloys$铸造厂散发的热量。"
+col_refinery:0 "精炼星球"
+col_refinery_desc:1 "行星地表的大部分都覆盖着管道、精炼厂、蒸馏厂组成的工业网络。尽量不要深呼吸。"
+
+col_ecu_mix_desc:0 "此都市行星尚未针对任一产业特化。"
+col_ecu_foundry:0 "铸造型寰球都市"
+col_ecu_foundry_desc:0 "规模庞大的行星城市，专门昼夜不息地生产$RhineSky_Prescripted_Resource_Alloys$。"
+col_ecu_factory:0 "工业型寰球都市"
+col_ecu_factory_desc:0 "规模庞大的行星城市，专门昼夜不息地生产$RhineSky_Prescripted_Resource_Cosume_Goods$。"
+
+col_mac_desc:0 "此机械星球尚未针对任一生产类型特化。"
+col_mac_foundry:0 "铸造型机械星球"
+col_mac_foundry_desc:0 "一台行星规模的庞大机械，指定用于大规模生产$RhineSky_Prescripted_Resource_Alloys$。"
+col_mac_factory:0 "工业型机械星球"
+col_mac_factory_desc:0 "一台行星规模的庞大机械，指定用于大规模生产$RhineSky_Prescripted_Resource_Cosume_Goods$。"
+
+col_hiv_desc:0 "一个行星规模的有机物，尚未针对任一生产类型特化。"
+col_hiv_foundry:0 "铸造型蜂巢星球"
+col_hiv_foundry_desc:0 "一个行星规模的有机物，指定用于大规模生产$RhineSky_Prescripted_Resource_Alloys$。"
+col_habitat_research:0 "研究栖所"
+col_habitat_research_desc:0 "人工建造的的深空生态城，致力于科研。"
+
+col_habitat_fortress_desc:0 "人工建造的的深空生态城，致力于防御设施。"
+col_habitat_foundry:0 "铸造栖所"
+col_habitat_foundry_desc:0 "人工建造的的深空生态城，致力于$RhineSky_Prescripted_Resource_Alloys$生产。"
+col_habitat_factory:0 "工业栖所"
+col_habitat_factory_desc:0 "人工建造的的深空生态城，致力于$RhineSky_Prescripted_Resource_Cosume_Goods$生产。"
+
+lootbox_contents_l:2 "§E$lootbox$装着一个只能以波长光谱的形式存在于以太介质中的生灵。它在被发现后瞬间逃逸到了更高阶的位面，只在你心里留下深刻的启示和麻痹性的恐惧。§!"
+lootbox_contents_m:0 "§E$lootbox$很难打开，因为它被引力异常紧紧从内部封闭。§!"
+lootbox_contents_n:1 "§E$lootbox$什么都没装着。原本用于贮藏的空间被一块平滑的金属$RhineSky_Prescripted_Resource_Alloys$块占据了，与$lootbox$的内壁无缝融在一起。§!"
+lootbox_contents_galatron:0 "§E是§!银河之星§E……！§!"
+
+
+cara_fleet3_main.title:0 "$NAME_Caravaneer_Fleet3$"
+fleet3hewwo1:0 "我已经解释过了。将能源转换器重新调至辅助模式。不，不是那个能源转换器！§H克嘶§!是不是什么都要我自己——\n\n噢！客人！欢迎。我们带着很多货物，我们有很多商品。穿越星际只为安全送达您手中！"
+fleet3hewwo2:0 "你喜欢$RhineSky_Prescripted_Resource_Alloys$吗，§H克嘶？§!你喜欢金属和瓦斯吗？辛勤的劳工？贵重的矿石？嗯，我知道你会有兴趣。"
+fleet3hewwo3:0 "噢，[Root.GetSpeciesNamePlural]。这是最新的货！你根本不敢相信，§H克嘶§!箱子里面装满了各种军火。多到数不清的武器。来吧。看看吧。"
+fleet3hewwo4:0 "真不该相信他们，真不该做那笔买卖。肮脏的[scammer_country.GetSpeciesNamePlural]！§H克嘶§!\n\n噢，[Root.GetSpeciesNamePlural]。我们欢迎您。你愿意和我们交易吗？"
+
+fleet3deal4cost2:1 "如果你给我们£rare_crystals£§R55§!§Y$rare_crystals$§!。"
+fleet3deal4cost3:0 "如果你给我们£sr_zro£§R15§!§Y$sr_zro$§!。"
+fleet3deal4product1:0 "这$RhineSky_Prescripted_Resource_Alloys$。这重量。这光泽。这光芒！你以前见过这样的复$RhineSky_Prescripted_Resource_Alloys$属吗？难以置信的屈服强度。最高等级。不含杂质。我们能够感受它。它在召唤你。\n\n我们能给你£alloys£§G2000§!§Y$alloys$§!，"
+fleet3deal4product2:0 "这些奇异瓦斯。泡腾块。压缩到最大密度，只为运输方便。小心！非常易爆！你想要它们，不是吗？为了你的护盾？你的等离子大炮？都能是你的。\n\n我们能给你£exotic_gases£§G150§!§Y$exotic_gases$§!，"
+fleet3deal4product3:0 "这种金属，移动，漂浮，重构，§H克嘶！§!我们自己就发现了很多用途。你肯定也能找到很多。\n\n我们能给你£sr_living_metal£§G40§!§Y$sr_living_metal$§!，"
+
+MANDATE_mandate_monthly_food:1 "$RhineSky_Prescripted_Resource_Foods$增长"
+MANDATE_mandate_monthly_food_DESC:1 "[Root.GetRulerTitle][Root.GetRulerName]承诺将我们的£food£§H$RhineSky_Prescripted_Resource_Foods$§!生产盈余增加到至少£food£§Y+15§!/月，并因此当选。\n\n任期结束时的奖励：\n$mandate_unity_reward$"
+MANDATE_mandate_monthly_alloys:1 "$RhineSky_Prescripted_Resource_Alloys$冶炼"
+MANDATE_mandate_monthly_alloys_DESC:1 "[Root.GetRulerTitle][Root.GetRulerName]承诺将我们的£alloys£§H$RhineSky_Prescripted_Resource_Alloys$§!生产盈余增加到至少£alloys£§Y+12§!/月，并因此当选。\n\n任期结束时的奖励：\n$mandate_unity_reward$"
+MANDATE_mandate_monthly_consumer_goods:1 "消耗品生产"
+MANDATE_mandate_monthly_consumer_goods_DESC:1 "[Root.GetRulerTitle][Root.GetRulerName]承诺将我们的£consumer_goods£§H$RhineSky_Prescripted_Resource_Cosume_Goods$§!生产盈余增加到至少£consumer_goods£§Y+6§!/月，并因此当选。\n\n任期结束时的奖励：\n$mandate_unity_reward$"
+
+
+GetPurgeProcessingResource_food:0 "营养丰富的$RhineSky_Prescripted_Resource_Foods$源，提升£food£§H$RhineSky_Prescripted_Resource_Foods$§!产出"
+GetPurgeProcessingResource_minerals:1 "金属碎片，提升£alloys£§H$RhineSky_Prescripted_Resource_Alloys$§!产出"
+
+trait_pc_hive_preference:0 "蜂巢世界偏好"
+
+
+tech_ship_armor_1:0 "纳米复合材料"
+tech_ship_armor_1_desc:0 "强化的纳米船体镀层可以提供额外的保护层，造成战斗形势的生死逆转。"
+tech_ship_armor_2:0 "$RhineSky_Prescripted_Resource_Alloys$陶瓷材料"
+tech_ship_armor_2_desc:0 "多种陶瓷与金属的复合材料可以制造坚硬装甲且不牺牲韧性。"
+tech_ship_armor_3:0 "塑钢材料"
+
+tech_ship_armor_4_desc:0 "这种坚固且有弹性的材料在承受强大火力方面表现不俗。是很好的船体装甲。"
+tech_ship_armor_5:0 "中子材料"
+tech_ship_armor_5_desc:0 "这种高密度且坚硬的材料能够抵抗强大的火力，任何其它$RhineSky_Prescripted_Resource_Alloys$制成的装甲在这样的火力下都会被炸成烂泥。"
+
+tech_crystal_armor_1:0 "水晶聚合镀层"
+
+
+tutorial.6.desc:1 "非常好！刚刚研究完成的科技对我们作用很大。别忘了为科学家们安排新的研究项目。"
+tutorial.7.name:0 "教程：工程船"
+tutorial.7.desc:1 "母星上生产的资源只够我们暂时使用，我们的工业需要向外拓展，这就需要§S工程船§!。\n\n一旦收集了足够的§S$RhineSky_Prescripted_Resource_Alloys$§!，就立即建造吧。"
+tutorial.8.name:0 "工程船建造完毕"
+tutorial.8.desc:0 "非常好！§S工程船§!可以运行了，上面的船员可都是帝国最棒的工程师。"
+
+tutorial.32.desc:0 "干得漂亮！真是激动人心。我们高尚的文明已经散播到五个星球了！只要机会合适，我们需要继续探索，进行扩张。"
+tutorial.33.name:0 "教程：资源生产"
+tutorial.33.desc:3 "稳定的§S$RhineSky_Prescripted_Resource_Minerals$§!、§S$RhineSky_Prescripted_Resource_Alloys$§!和§S$RhineSky_Prescripted_Resource_Energy$§!供应是任何星际势力繁荣发展的关键。我们应当采取措施增加这些资源的产量。\n\n空间站和建筑需要消耗$RhineSky_Prescripted_Resource_Alloys$或$RhineSky_Prescripted_Resource_Minerals$来建造，以及$RhineSky_Prescripted_Resource_Energy$来维护。舰船也是如此，只不过它们也需要$RhineSky_Prescripted_Resource_Alloys$来维护。这些资源由§S采矿基地§!或§S行星建筑§!生产。\n\n后期你会发现一些有趣的新资源，可用于神秘的新建造。"
+tutorial.38.name:0 "资源生产成功"
+tutorial.38.desc:0 "干得漂亮。这下我们有足够的资源去建立我们的宏伟帝国了。"
+
+tutorial_2_tooltip:1 "§S教程：技术研究§!已添加至情报日志"
+tutorial_3_chain_title:0 "教程：建造工程船"
+tutorial_3_chain_desc:2 "如果要开采§S科研船§!发现的资源，就需要一艘§S工程船§!。\n\n要建造一艘工程船，点击我们的太空基地，选择§S太空港§!标签，然后在备选项中选择§S工程船§!。\n\n注意，建造需要足够的§S$RhineSky_Prescripted_Resource_Alloys$§!才能开始。"
+construction_ship_built:0 "工程船建造完毕"
+tutorial_3_tooltip:0 "§S教程：制造工程船§!已添加至情报日志"
+
+tutorial_8_tooltip:0 "§S教程：勘察星系§!已添加至情报日志"
+tutorial_9_chain_title:0 "教程：建造第二艘科研船"
+tutorial_9_chain_desc:3 "我们应该考虑建造第二艘§S科研船§!，以便增加我们探索宇宙的速度。\n\n要进行建造，请点击太空基地并选择§S太空港§!标签，然后从可选项中选择§S科研船§!。\n\n注意，要启动建造，你将需要足够的§S$RhineSky_Prescripted_Resource_Alloys$§!才能开始。"
+science_ship_built:0 "科研船建造完毕"
+tutorial_9_tooltip:0 "§S教程：建造第二艘科研船§!已添加至情报日志"
+
+tutorial_10_tooltip:0 "§S教程：招募科学家§!已经加入情报日志中"
+tutorial_11_chain_title:0 "教程：建造殖民船"
+tutorial_11_chain_desc:4 "现在该殖民另一颗星球了。首先我们得建造一艘§S殖民船§!。建造这些殖民船需要花很长时间，以及大量的§S$RhineSky_Prescripted_Resource_Alloys$§!、§S$RhineSky_Prescripted_Resource_Foods$§!和§S$RhineSky_Prescripted_Resource_Cosume_Goods$§!，但兴旺发展的殖民地带来的回报远远大于这笔投入。\n\n点击你的太空基地，并选择§S船坞§!界面。然后点击§S建造舰船§!按钮，并选择§S殖民船§!。\n\n请注意，在建造开始之前，你必须先积累足够的资源。"
+colony_ship_built:0 "殖民船建造完毕"
+tutorial_11_tooltip:0 "§S教程：建造殖民船§!已经加入情报日志中"
+
+tutorial_15_tooltip:0 "§S教程：资源生产§!已经加入到情报日志中"
+tutorial_16_chain_title:0 "教程：扩张舰队"
+tutorial_16_chain_desc:4 "我们必须组建一支强大的星际舰队，以确保[Root.GetName]的安全。\n\n有了这些资源，我们应该可以至少再建造五艘§S护卫舰§!。等我们的§S$RhineSky_Prescripted_Resource_Alloys$§!供应允许的时候，通过§S太空基地§!建造这些舰船。新造的军舰会加入§S太空基地§!所处的恒星轨道上已有的舰队。\n\n另外也要记得招募一位§S舰队司令§!，并派遣到我们的新舰队。操作方式和派遣§S科学家§!到§S科研船§!一样，在舰队界面中点击§S派遣领袖§!框，并新招募一位舰队司令。一位老练的舰队司令可以大幅增强舰队的战斗力。"
+corvettes_built:0 "护卫舰建造完毕"
+admiral_assigned:0 "舰队司令部署完毕"

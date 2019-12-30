@@ -1,0 +1,72 @@
+v1.2.7版本内容：
+1、游戏世界观还原：MOD内容完全遵循游戏原设，游戏的细节和世界观会尽可能的100%还原，
+
+2、独立的人物系统：所有人物及其技能特征点全部独立设计。
+每个人物都有自己的：星级、职业、技能和个人介绍内容等(部分人物还在继续开发中)，
+
+3、独立的抽卡系统：给非洲人一点爱♂。里面所有人物均有各自独立的概率值系统。
+不是每个人物都能100%抽到，能不能得到这个人物得看脸qwq(但是肯定比手游的概率高一些)，
+PS：有7星人物，你能猜到是谁吗~
+
+4、独立的帝国AI系统：所有预设帝国的AI规范全部独立设计，每个预设帝国都有自己的行为方式，尽可能的还原明日方舟里的世界，
+	a、可选选项(不是必须内容)：请打开"高级AI"选项、并至少设置2个高级AI空位，以获得更好的游戏体验，谢谢，
+
+5、独立的预设帝国世界观：所有预设帝国的内容全部独立设计。
+	a、每个预设帝国都有自己的独立的世界观系统、外交措辞、关系背景和故事背景，在MOD里感受明日方舟里的世界冲突(后续内容还在开发中，谢谢)，
+
+6、同步手游里的资源设定：游戏里的资源名基本上均同步为明日方舟的各个资源名称，并且使用明日方舟里对应的资源图标。(就算你是堕落爸爸，也得使用我们明日方舟的资源qwq)，
+
+7、增加AI人物语音：增加了3个预设的AI人物语音(可以随意选择使用)：阿米娅、阿消(Rap大佬)和白面鸮，
+
+8、增加了2个可用的预设帝国：罗德岛势力、整合运动势力(其他势力还在开发中)，谢谢，
+
+※其他备注说明：
+1、目前已经搭建了初步的明日方舟的世界观框架、以及罗德岛和整合运动的这2个预设帝国的势力内容，后续更多功能和势力还在开发中，
+
+2、大部分势力都是预设帝国、其他关键性的剧情推手势力在MOD里同样重要(还在开发中)，
+
+3、本<基础人物框架MOD>的代码内容已经开源到Github，地址为：https://github.com/macjab/rs_arkNights_basic_mod/tree/arkNights_basic_mod，如果有任何问题请在本评论区留言、或者在Github中发起Request都可以的说，谢谢，
+	a、同样的，本<基础人物框架MOD>的代码也在Steam的《群星》创意工坊里进行发布了，地址为：https://steamcommunity.com/sharedfiles/filedetails/?id=1828601610，如果有任何问题请同样可以在本创意工坊的评论区留言、或者在Github中发起Request都可以的说，谢谢，
+
+4、在您游玩时，如果您有对本MOD的任何想法，除了上方的2种留言方式外，您还可以通过发送邮件到"macjab@macjab.com"来和我说明您的游戏想法(邮件标题可以注明"明日方舟MOD"以方便邮件查询)，
+	a、对于有趣或精彩的设计想法，在下次或之后的MOD内容更新时，您的想法很可能会被采纳并被实现到MOD功能中，欢迎各位有想法的玩家一起参与到本MOD的玩法设计中，谢谢，
+we're welcome for any arkNights hobbiers who is willing to translate the mod content from the chinese to engligh or to the other languages, you can leave a comment below/ put a request in github/ or email me with the "macjab@macjab.com", we'll very thanks for your efforts and take your name to the leader names list in the game world :)
+
+5、游戏官网地址：https://ak.hypergryph.com/index，感受真实氪金的魅力~，
+
+6、we're welcome for any arkNights hobbiers who is willing to translate the mod content from the chinese to engligh or to the other languages, you can leave a comment below/ put a request in github/ or email me with the "macjab@macjab.com", we'll very thanks for your efforts and we could take your name to the leader names list in the game world if you wiiling to :)
+
+--------------
+
+12、目前已上线的预设帝国势力及其已上线的所含人物(这些人物在游戏里都有，如果你暂时还没有则表示你还没有抽到这个人物，虎摸一下非洲人qwq)：
+	a、罗德岛势力：
+		I、统治者：阿米娅、凯尔希、博士、华法琳、杜宾、
+
+		II、总督：梓兰、夜刀、芬、枚兰莎、ACE、
+
+		III、科学家：芙蓉、安塞尔、调香师、嘉维尔、夜莺、安洁莉娜、闪灵、
+
+		IV、舰队司令：空爆、深海色、守林人、蓝毒、天火、普罗旺斯、陨星、真理、拉普兰德、
+
+		V、陆军将军：蛇屠箱、霜叶、缠丸、清道夫、临光、红、凛冬、幽灵鲨、斯卡蒂、闪灵、拉普兰德、
+
+		VI、多面手(会随机出现在其中一个职业中、但同时也只能工作于这一个职业，另一个职业将不再出现这个人物)：
+			<1>、科学家/陆军将军：闪灵、
+			<2>、舰队司令/陆军将军：拉普兰德、
+
+	b、整合运动势力：
+		I、统治者：塔露拉、W、
+
+		II、总督：***、霜星、
+
+		III、科学家：梅菲斯特、
+
+		IV、舰队司令：米莎、碎骨、浮士德、梅菲斯特、W、霜星、塔露拉、
+
+		V、陆军将军：弑君者、米莎、碎骨、
+
+		VI、多面手(会随机出现在其中一个职业中、但同时也只能工作于这一个职业，另一个职业将不再出现这个人物)：
+			<1>、统治者/舰队司令：W、塔露拉、
+			<2>、总督/舰队司令：霜星、
+			<1>、科学家/舰队司令：梅菲斯特、
+			<2>、舰队司令/陆军将军：米莎、碎骨、

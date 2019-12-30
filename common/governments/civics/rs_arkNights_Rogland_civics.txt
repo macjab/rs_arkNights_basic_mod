@@ -1,0 +1,62 @@
+# 明日方舟
+rs_arkNights_Rogland_civic_arkNights = {
+	pickable_at_start = yes
+	modification = yes
+	can_build_ruler_ship = no
+
+	icon = "gfx/interface/icons/governments/civics/rs_arkNights_rogland_civic_arkNights.dds"
+
+	possible = {
+		authority = {
+			value = rs_arkNights_rogland_authorities
+		}
+
+		ethics = {
+			value = ethic_egalitarian
+			value = ethic_militarist
+			value = ethic_xenophile
+		}
+	}
+
+	random_weight = {
+		base = 99999
+	}
+
+	# description = RhineSky_Prescripted_Rogland_Civic_arkNights_Description_1
+
+	modifier = {
+		country_unity_produces_mult = 0.1
+	}
+}
+
+# 战士文化
+rs_arkNights_Rogland_civic_warrior_culture = {
+	pickable_at_start = yes
+	modification = yes
+	can_build_ruler_ship = no
+
+	icon = "gfx/interface/icons/governments/civics/rs_arkNights_rogland_civic_purpose.dds"
+	
+	possible = {
+		authority = {
+			value = rs_arkNights_rogland_authorities
+		}
+
+		ethics = {
+			value = ethic_egalitarian
+			value = ethic_militarist
+			value = ethic_xenophile
+		}
+	}
+
+	random_weight = {
+		base = 99999
+	}
+
+	# description = RhineSky_Prescripted_Rogland_Civic_warrior_culture_Description_1
+
+	modifier = {
+		army_damage_mult 	= 0.1
+		ship_weapon_damage 	= 0.05
+	}
+}

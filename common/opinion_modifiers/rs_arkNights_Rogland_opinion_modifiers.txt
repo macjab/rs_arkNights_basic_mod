@@ -1,0 +1,141 @@
+trigger_rs_arkNights_Rogland_opinion_modifier_1 = {
+	trigger = {
+		has_authority = rs_arkNights_rogland_authorities
+		# has_government = rs_arkNights_rogland_goverment
+
+		from = {
+			OR = {
+				has_authority = rs_arkNights_reunion_authorities
+				# has_government = rs_arkNights_reunion_goverment
+
+				has_ai_personality 	= rs_arkNights_Reunion_Personality
+				has_authority		= rs_arkNights_reunion_authorities
+			}
+		}
+	}
+
+	opinion = {
+		base = 20
+
+		modifier = {
+			add = -150
+
+			has_authority = rs_arkNights_rogland_authorities
+			# has_government = rs_arkNights_rogland_goverment
+
+			from = {
+				OR = {
+					has_authority = rs_arkNights_reunion_authorities
+					# has_government = rs_arkNights_reunion_goverment
+					
+					has_ai_personality 	= rs_arkNights_Reunion_Personality
+					has_authority		= rs_arkNights_reunion_authorities
+				}
+			}
+		}
+
+		modifier = {
+			add = 30
+
+			has_authority = rs_arkNights_rogland_authorities
+			# has_government = rs_arkNights_rogland_goverment
+
+			from = {
+				owner_species = {
+					OR = {
+						has_trait = rs_arkNights_Rogland_pops_trait_oripathy
+						has_trait = rs_arkNights_Reunion_pops_trait_oripathy
+					}
+				}
+			}
+		}
+	}
+}
+
+trigger_rs_arkNights_Rogland_opinion_modifier_2 = {
+	trigger = {
+		has_authority = rs_arkNights_rogland_authorities
+		# has_government = rs_arkNights_rogland_goverment
+
+		from = {
+			OR = {
+				has_authority = rs_arkNights_rogland_authorities
+				# has_government = rs_arkNights_rogland_goverment
+
+				has_ai_personality 	= rs_arkNights_Rogland_Personality
+			}
+		}
+	}
+
+	opinion = {
+		base = 20
+
+		modifier = {
+			add = 50
+
+			has_authority = rs_arkNights_rogland_authorities
+			# has_government = rs_arkNights_rogland_goverment
+
+			from = {
+				OR = {
+					has_authority = rs_arkNights_rogland_authorities
+					# has_government = rs_arkNights_rogland_goverment
+
+					has_ai_personality 	= rs_arkNights_Rogland_Personality
+				}
+			}
+		}
+	}
+}
+
+trigger_rs_arkNights_Rogland_opinion_modifier_3 = {
+	trigger = {
+		has_authority = rs_arkNights_rogland_authorities
+		# has_government = rs_arkNights_rogland_goverment
+
+		from = {
+			NOR = {
+				has_authority = rs_arkNights_reunion_authorities
+				# has_government = rs_arkNights_reunion_goverment
+
+				has_authority = rs_arkNights_rogland_authorities
+				# has_government = rs_arkNights_rogland_goverment
+			}
+
+			owner_species = { 
+				OR = {
+					has_trait = rs_arkNights_Reunion_pops_trait_oripathy
+					has_trait = rs_arkNights_Rogland_pops_trait_oripathy
+				}
+			}
+		}
+	}
+
+	opinion = {
+		base = 20
+
+		modifier = {
+			add = 35
+
+			has_authority = rs_arkNights_rogland_authorities
+			# has_government = rs_arkNights_rogland_goverment
+
+			from = {
+				NOR = {
+					has_authority = rs_arkNights_reunion_authorities
+					# has_government = rs_arkNights_reunion_goverment
+
+					has_authority = rs_arkNights_rogland_authorities
+					# has_government = rs_arkNights_rogland_goverment
+				}
+
+				owner_species = { 
+					OR = {
+						has_trait = rs_arkNights_Reunion_pops_trait_oripathy
+						has_trait = rs_arkNights_Rogland_pops_trait_oripathy
+					}
+				}
+			}
+		}
+	}
+}

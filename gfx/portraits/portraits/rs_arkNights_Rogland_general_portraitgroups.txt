@@ -1,0 +1,559 @@
+###############################################
+#####-----Author: 	RhineSky--------------#####
+#####-----SteamID:	RhineSky--------------#####
+#####-----Email:	macjab@macjab.com-----#####
+#####-----QQ：		516278065-------------#####
+#U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+###############################################
+
+#########################################################################
+##########-----General组陆军将军leaders的人物肖像Scope对象-----##########
+#########################################################################
+###########--------------Cuora--------------###########
+portrait_groups = {
+	rs_arkNights_cuora_portrait_01 = {
+		default = rs_arkNights_cuora_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_cuora_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_cuora_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the Rogland, thank you~
+			add = {
+				portraits = {
+					rs_arkNights_cuora_material_01
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					# gender = female
+
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_cuora_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					# gender = female
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_cuora_material_01
+				}
+			}
+		}
+	}
+}
+
+###########--------------Fronstleaf--------------###########
+portrait_groups = {
+	rs_arkNights_fronstleaf_portrait_01 = {
+		default = rs_arkNights_fronstleaf_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_fronstleaf_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_fronstleaf_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the Rogland, thank you~
+			add = {
+				portraits = {
+					rs_arkNights_fronstleaf_material_01
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					# gender = female
+
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_fronstleaf_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					# gender = female
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_fronstleaf_material_01
+				}
+			}
+		}
+	}
+}
+
+###########--------------Matoimaru--------------###########
+portrait_groups = {
+	rs_arkNights_matoimaru_portrait_01 = {
+		default = rs_arkNights_matoimaru_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_matoimaru_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_matoimaru_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the Rogland, thank you~
+			add = {
+				portraits = {
+					rs_arkNights_matoimaru_material_01
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					# gender = female
+
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_matoimaru_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					# gender = female
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_matoimaru_material_01
+				}
+			}
+		}
+	}
+}
+
+###########--------------Scavenger--------------###########
+portrait_groups = {
+	rs_arkNights_scavenger_portrait_01 = {
+		default = rs_arkNights_scavenger_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_scavenger_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_scavenger_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the Rogland, thank you~
+			add = {
+				portraits = {
+					rs_arkNights_scavenger_material_01
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					# gender = female
+
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_scavenger_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					# gender = female
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_scavenger_material_01
+				}
+			}
+		}
+	}
+}
+
+###########--------------Nearl--------------###########
+portrait_groups = {
+	rs_arkNights_nearl_portrait_01 = {
+		default = rs_arkNights_nearl_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_nearl_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_nearl_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the Rogland, thank you~
+			add = {
+				portraits = {
+					rs_arkNights_nearl_material_01
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					# gender = female
+
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_nearl_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					# gender = female
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_nearl_material_01
+				}
+			}
+		}
+	}
+}
+
+###########--------------ProjektRed--------------###########
+portrait_groups = {
+	rs_arkNights_projektRed_portrait_01 = {
+		default = rs_arkNights_projektRed_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_projektRed_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_projektRed_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the Rogland, thank you~
+			add = {
+				portraits = {
+					rs_arkNights_projektRed_material_01
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					# gender = female
+
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_projektRed_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					# gender = female
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_projektRed_material_01
+				}
+			}
+		}
+	}
+}
+
+###########--------------Winter--------------###########
+portrait_groups = {
+	rs_arkNights_winter_portrait_01 = {
+		default = rs_arkNights_winter_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_winter_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_winter_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the Rogland, thank you~
+			add = {
+				portraits = {
+					rs_arkNights_winter_material_01
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					# gender = female
+
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_winter_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					# gender = female
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_winter_material_01
+				}
+			}
+		}
+	}
+}
+
+###########--------------Specter--------------###########
+portrait_groups = {
+	rs_arkNights_specter_portrait_01 = {
+		default = rs_arkNights_specter_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_specter_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_specter_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the Rogland, thank you~
+			add = {
+				portraits = {
+					rs_arkNights_specter_material_01
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					# gender = female
+
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_specter_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					# gender = female
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_specter_material_01
+				}
+			}
+		}
+	}
+}
+
+###########--------------Skadi--------------###########
+portrait_groups = {
+	rs_arkNights_skadi_portrait_01 = {
+		default = rs_arkNights_skadi_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_skadi_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_skadi_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the Rogland, thank you~
+			add = {
+				portraits = {
+					rs_arkNights_skadi_material_01
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					# gender = female
+
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_skadi_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					# gender = female
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_skadi_material_01
+				}
+			}
+		}
+	}
+}

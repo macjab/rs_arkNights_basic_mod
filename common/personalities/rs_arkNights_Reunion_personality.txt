@@ -1,0 +1,82 @@
+rs_arkNights_Reunion_Personality = {
+	aggressiveness = 1.6
+
+	trade_willingness = 0.75
+
+	bravery = 2
+
+	combat_bravery = 0.5
+
+	military_spending = 1.8
+
+	colony_spending = 1.35
+
+	federation_acceptance = 1
+
+	nap_acceptance = 1
+
+	commercial_pact_acceptance = 1
+
+	research_agreement_acceptance = 1
+
+	defensive_pact_acceptance = 1
+
+	migration_pact_acceptance = 1
+
+	advanced_start_chance = 75
+
+	weapon_preferences = weapon_type_energy
+
+	armor_ratio = 0.45
+
+	shields_ratio = 0.35
+
+	hull_ratio = 0.2
+
+	threat_modifier = 1.6
+
+	threat_others_modifier = 1.5
+
+	claims_modifier = 2
+
+	behaviour = {
+		conqueror = yes
+
+		subjugator = no
+
+		liberator = yes
+
+		opportunist = yes
+
+		slaver = no
+
+		uplifter = no
+
+		purger = yes
+
+		displacer = yes
+
+		infiltrator = yes
+
+		dominator = yes
+
+		robot_exploiter = yes
+
+		robot_liberator = yes
+		
+		propagator = no
+
+		multispecies = no
+
+		crisis_fighter = yes
+	}
+
+	allow = {
+		has_authority = rs_arkNights_reunion_authorities
+		# has_government = rs_arkNights_reunion_goverment
+	}
+
+	weight_modifier = {
+		weight = 99999
+	}
+}

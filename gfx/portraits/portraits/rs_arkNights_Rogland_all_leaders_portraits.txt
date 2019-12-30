@@ -1,0 +1,225 @@
+###############################################
+#####-----Author: 	RhineSky--------------#####
+#####-----SteamID:	RhineSky--------------#####
+#####-----Email:	macjab@macjab.com-----#####
+#####-----QQ：		516278065-------------#####
+#U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+###############################################
+
+portraits = {
+	##############################################################
+	##########-----Ruler组领导者的人物肖像Scope对象-----##########
+	##############################################################
+	# --------------Amiya_1--------------
+	rs_arkNights_amiya_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/amiya_style_1.dds"
+	}
+
+	# --------------Amiya_2--------------
+	rs_arkNights_amiya_material_02 = {
+		texturefile = "gfx/models/portraits/rogland/amiya_style_1.dds"
+	}
+
+	# --------------Doctor--------------
+	rs_arkNights_doctor_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/doctor_style_1.dds"
+	}
+
+	# --------------Dobermann--------------
+	rs_arkNights_dobermann_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/dobermann_style_1.dds"
+	}
+
+	# --------------Kaltsit--------------
+	rs_arkNights_kaltsit_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/kaltsit_style_1.dds"
+	}
+
+	# --------------Warfarin--------------
+	rs_arkNights_warfarin_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/warfarin_style_1.dds"
+	}
+
+	#################################################################
+	##########-----Governor组领导者的人物肖像Scope对象-----##########
+	#################################################################
+	# --------------Orchid--------------
+	rs_arkNights_orchid_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/orchid_style_1.dds"
+	}
+
+	# --------------Yato--------------
+	rs_arkNights_yato_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/yato_style_1.dds"
+	}
+
+	# --------------Fang--------------
+	rs_arkNights_fang_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/fang_style_1.dds"
+	}
+
+	# --------------Melantha--------------
+	rs_arkNights_melantha_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/melantha_style_1.dds"
+	}
+
+	# --------------ACE--------------
+	rs_arkNights_ACE_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/ACE_style_1.dds"
+	}
+
+	##################################################################
+	##########-----Scientist组领导者的人物肖像Scope对象-----##########
+	##################################################################
+	# --------------Hibiscus--------------
+	rs_arkNights_hibiscus_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/hibiscus_style_1.dds"
+	}
+
+	# --------------Ansel--------------
+	rs_arkNights_ansel_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/ansel_style_1.dds"
+	}
+
+	# --------------Perfumer--------------
+	rs_arkNights_perfumer_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/perfumer_style_1.dds"
+	}
+
+	# --------------Gavial--------------
+	rs_arkNights_gavial_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/gavial_style_1.dds"
+	}
+
+	# --------------Nightingal--------------
+	rs_arkNights_nightingal_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/nightingal_style_1.dds"
+	}
+
+	# --------------Angelina--------------
+	rs_arkNights_angelina_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/angelina_style_1.dds"
+	}
+
+	################################################################
+	##########-----Admiral组领导者的人物肖像Scope对象-----##########
+	################################################################
+	# --------------Catapult--------------
+	rs_arkNights_catapult_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/catapult_style_1.dds"
+	}
+
+	# --------------DeepColor--------------
+	rs_arkNights_deepcolor_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/deepcolor_style_1.dds"
+	}
+
+	# --------------Firewatch--------------
+	rs_arkNights_firewatch_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/firewatch_style_1.dds"
+	}
+
+	# --------------Bluepoision--------------
+	rs_arkNights_bluepoision_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/bluepoison_style_1.dds"
+	}
+
+	# --------------Skyfire--------------
+	rs_arkNights_skyfire_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/skyfire_style_1.dds"
+	}
+
+	# --------------Provence--------------
+	rs_arkNights_provence_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/provence_style_1.dds"
+	}
+
+	# --------------Meteorite--------------
+	rs_arkNights_meteorite_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/meteorite_style_1.dds"
+	}
+
+	# --------------Truth--------------
+	rs_arkNights_truth_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/truth_style_1.dds"
+	}
+
+	################################################################
+	##########-----General组领导者的人物肖像Scope对象-----##########
+	################################################################
+	# --------------Cuora--------------
+	rs_arkNights_cuora_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/cuora_style_1.dds"
+	}
+
+	# --------------Fronstleaf--------------
+	rs_arkNights_fronstleaf_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/fronstleaf_style_1.dds"
+	}
+
+	# --------------Matoimaru--------------
+	rs_arkNights_matoimaru_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/matoimaru_style_1.dds"
+	}
+
+	# --------------Scavenger--------------
+	rs_arkNights_scavenger_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/scavenger_style_1.dds"
+	}
+
+	# --------------Nearl--------------
+	rs_arkNights_nearl_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/nearl_style_1.dds"
+	}
+
+	# --------------ProjektRed--------------
+	rs_arkNights_projektRed_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/projektred_style_1.dds"
+	}
+
+	# --------------Winter--------------
+	rs_arkNights_winter_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/winter_style_1.dds"
+	}
+
+	# --------------Specter--------------
+	rs_arkNights_specter_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/specter_style_1.dds"
+	}
+
+	# --------------Skadi--------------
+	rs_arkNights_skadi_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/skadi_style_1.dds"
+	}
+
+	##########################################################################
+	##########-----Special特殊多职业组领导者的人物肖像Scope对象-----##########
+	##########################################################################
+	# --------------Shining(Scientist/General)--------------
+	rs_arkNights_shining_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/shining_style_1.dds"
+	}
+
+	# --------------Lappland(Admiral)--------------
+	rs_arkNights_lappland_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/lappland_style_1.dds"
+	}
+
+	# --------------Lappland(Admiral)--------------
+	rs_arkNights_lappland_material_02 = {
+		texturefile = "gfx/models/portraits/rogland/lappland_style_1.dds"
+	}
+
+	#################################################################################################################
+	##########-----Other其他没有个人属性卡面的特殊NPC角色的罗德岛的补充人物组领导者的人物肖像Scope对象-----##########
+	#################################################################################################################
+	# --------------Other_1--------------
+	rs_arkNights_other_1_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/shopper_style_1.dds"
+	}
+
+	# --------------Other_2--------------
+	rs_arkNights_other_2_material_01 = {
+		texturefile = "gfx/models/portraits/rogland/other_rogland_member_1_style_1.dds"
+	}
+}

@@ -1,0 +1,157 @@
+﻿l_english:
+ ###############################################
+ #####-----Author:   RhineSky--------------#####
+ #####-----SteamID:  RhineSky--------------#####
+ #####------Email:   macjab@macjab.com-----#####
+ #####------QQ：     516278065-------------#####
+ #U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+ ###############################################
+
+ ##########-----all_leader_feature_traits-----##########
+rs_arkNights_Common_leaders_traint_originiumsArts:0 "源石技艺使用者"
+rs_arkNights_Common_leaders_traint_originiumsArts_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Common_leaders_traint_originiumsArts_custom_tooltip:0 ""
+
+# ----------整合运动的每个arkNights角色的领导者的技能特性(源石技艺)：个人技能&天赋技能相关----------
+####################################################################################
+##########-----Ruler组指挥官leaders的各个人物能力特点的源石技艺特征点-----##########
+####################################################################################
+rs_arkNights_ruler_w_feature_traint_originiumsArts:0 "W的源石技艺"
+rs_arkNights_ruler_w_feature_traint_originiumsArts_desc:0 "你真的......配得上别人的牺牲吗？"
+rs_arkNights_ruler_w_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_ruler_talulah_feature_traint_originiumsArts:0 "塔露拉的源石技艺"
+rs_arkNights_ruler_talulah_feature_traint_originiumsArts_desc:0 "反抗会为大地带去希望。但反抗，改变不了你们的命运。"
+rs_arkNights_ruler_talulah_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+#####################################################################################
+##########-----Governor组总督leaders的各个人物能力特点的源石技艺特征点-----##########
+#####################################################################################
+rs_arkNights_governor_weiyanwu_feature_traint_originiumsArts:0 "魏彦吾的源石技艺"
+rs_arkNights_governor_weiyanwu_feature_traint_originiumsArts_desc:0 "一切都在计划中。"
+rs_arkNights_governor_weiyanwu_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_governor_fronstStar_feature_traint_originiumsArts:0 "霜星的源石技艺"
+rs_arkNights_governor_fronstStar_feature_traint_originiumsArts_desc:0 "我会让你们死的毫无痛苦。"
+rs_arkNights_governor_fronstStar_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+########################################################################################
+##########-----Scientist组科学家leaders的各个人物能力特点的源石技艺特征点-----##########
+########################################################################################
+rs_arkNights_scientist_mephisto_feature_traint_originiumsArts:0 "梅菲斯特的源石技艺"
+rs_arkNights_scientist_mephisto_feature_traint_originiumsArts_desc:0 "这些懦夫，这些施暴者，我们该怎么处理他们呢？"
+rs_arkNights_scientist_mephisto_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+########################################################################################
+##########-----Admiral组舰队司令leaders的各个人物能力特点的源石技艺特征点-----##########
+########################################################################################
+rs_arkNights_admiral_kingkiller_feature_traint_originiumsArts:0 "弑君者的源石技艺"
+rs_arkNights_admiral_kingkiller_feature_traint_originiumsArts_desc:0 "哼，逃跑......又能逃到哪里？——追上你们了。"
+rs_arkNights_admiral_kingkiller_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_admiral_micha_feature_traint_originiumsArts:0 "米莎的源石技艺"
+rs_arkNights_admiral_micha_feature_traint_originiumsArts_desc:0 "这一切，不过是我自己种下的残忍种子所结的恶果......我只是愧疚而已。我只是......太过软弱了而已。但我已经决定了。即使只有一步，我也要......踏出这一步。 我是一个感染者。我站在感染者这边。"
+rs_arkNights_admiral_micha_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_admiral_brokenbone_feature_traint_originiumsArts:0 "碎骨的源石技艺"
+rs_arkNights_admiral_brokenbone_feature_traint_originiumsArts_desc:0 "如果整合运动......如果感染者能......如果————！如果能早一些的话，早一些的话！我们感染者就不用遭遇那么多苦难了！"
+rs_arkNights_admiral_brokenbone_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_admiral_w_feature_traint_originiumsArts:0 "W的源石技艺"
+rs_arkNights_admiral_w_feature_traint_originiumsArts_desc:0 "你真的......配得上别人的牺牲吗？"
+rs_arkNights_admiral_w_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_admiral_faust_feature_traint_originiumsArts:0 "浮士德的源石技艺"
+rs_arkNights_admiral_faust_feature_traint_originiumsArts_desc:0 "——"
+rs_arkNights_admiral_faust_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_admiral_mephisto_feature_traint_originiumsArts:0 "梅菲斯特的源石技艺"
+rs_arkNights_admiral_mephisto_feature_traint_originiumsArts_desc:0 "这些懦夫，这些施暴者，我们该怎么处理他们呢？"
+rs_arkNights_admiral_mephisto_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_admiral_fronstStar_feature_traint_originiumsArts:0 "霜星的源石技艺"
+rs_arkNights_admiral_fronstStar_feature_traint_originiumsArts_desc:0 "舌头，是不是不听使唤了？雪怪小队，各自散开就位。"
+rs_arkNights_admiral_fronstStar_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_admiral_talulah_feature_traint_originiumsArts:0 "塔露拉的源石技艺"
+rs_arkNights_admiral_talulah_feature_traint_originiumsArts_desc:0 "反抗会为大地带去希望。但反抗，改变不了你们的命运。"
+rs_arkNights_admiral_talulah_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+########################################################################################
+##########-----General组陆军将军leaders的各个人物能力特点的源石技艺特征点-----##########
+########################################################################################
+rs_arkNights_general_kingkiller_feature_traint_originiumsArts:0 "弑君者的源石技艺"
+rs_arkNights_general_kingkiller_feature_traint_originiumsArts_desc:0 "哼，逃跑......又能逃到哪里？——追上你们了。"
+rs_arkNights_general_kingkiller_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_general_micha_feature_traint_originiumsArts:0 "米莎的源石技艺"
+rs_arkNights_general_micha_feature_traint_originiumsArts_desc:0 "这一切，不过是我自己种下的残忍种子所结的恶果......我只是愧疚而已。我只是......太过软弱了而已。但我已经决定了。即使只有一步，我也要......踏出这一步。 我是一个感染者。我站在感染者这边。"
+rs_arkNights_general_micha_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_general_brokenbone_feature_traint_originiumsArts:0 "碎骨的源石技艺"
+rs_arkNights_general_brokenbone_feature_traint_originiumsArts_desc:0 "如果整合运动......如果感染者能......如果————！如果能早一些的话，早一些的话！我们感染者就不用遭遇那么多苦难了！"
+rs_arkNights_general_brokenbone_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+########################################################################################
+########################################################################################
+########################################################################################
+########################################################################################
+########################################################################################
+
+
+# ----------整合运动的每个非arkNights角色的领导者的技能特性(源石技艺)：个人技能&天赋技能相关----------
+####################################################################################
+##########-----Ruler组指挥官leaders的各个人物能力特点的源石技艺特征点-----##########
+####################################################################################
+rs_arkNights_Reunion_ruler_traint_originiumsArts_1:0 "这位领袖的源石技艺"
+rs_arkNights_Reunion_ruler_traint_originiumsArts_1_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Reunion_ruler_traint_originiumsArts_1_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_ruler_traint_originiumsArts_2:0 "这位领袖的源石技艺"
+rs_arkNights_Reunion_ruler_traint_originiumsArts_2_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Reunion_ruler_traint_originiumsArts_2_custom_tooltip:0 ""
+
+#####################################################################################
+##########-----Governor组总督leaders的各个人物能力特点的源石技艺特征点-----##########
+#####################################################################################
+rs_arkNights_Reunion_governor_traint_originiumsArts_1:0 "这位总督的源石技艺"
+rs_arkNights_Reunion_governor_traint_originiumsArts_1_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Reunion_governor_traint_originiumsArts_1_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_governor_traint_originiumsArts_2:0 "这位总督的源石技艺"
+rs_arkNights_Reunion_governor_traint_originiumsArts_2_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Reunion_governor_traint_originiumsArts_2_custom_tooltip:0 ""
+
+########################################################################################
+##########-----Scientist组科学家leaders的各个人物能力特点的源石技艺特征点-----##########
+########################################################################################
+rs_arkNights_Reunion_scientist_traint_originiumsArts_1:0 "这位科学家的源石技艺"
+rs_arkNights_Reunion_scientist_traint_originiumsArts_1_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Reunion_scientist_traint_originiumsArts_1_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_scientist_traint_originiumsArts_2:0 "这位科学家的源石技艺"
+rs_arkNights_Reunion_scientist_traint_originiumsArts_2_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Reunion_scientist_traint_originiumsArts_2_custom_tooltip:0 ""
+
+########################################################################################
+##########-----Admiral组舰队司令leaders的各个人物能力特点的源石技艺特征点-----##########
+########################################################################################
+rs_arkNights_Reunion_admiral_traint_originiumsArts_1:0 "这位舰队司令的源石技艺"
+rs_arkNights_Reunion_admiral_traint_originiumsArts_1_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Reunion_admiral_traint_originiumsArts_1_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_admiral_traint_originiumsArts_2:0 "这位舰队司令的源石技艺"
+rs_arkNights_Reunion_admiral_traint_originiumsArts_2_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Reunion_admiral_traint_originiumsArts_2_custom_tooltip:0 ""
+
+########################################################################################
+##########-----General组陆军将军leaders的各个人物能力特点的源石技艺特征点-----##########
+########################################################################################
+rs_arkNights_Reunion_general_traint_originiumsArts_1:0 "这位陆军将军的源石技艺"
+rs_arkNights_Reunion_general_traint_originiumsArts_1_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Reunion_general_traint_originiumsArts_1_custom_tooltip:0 ""
+
+rs_arkNights_Reunion_general_traint_originiumsArts_2:0 "这位陆军将军的源石技艺"
+rs_arkNights_Reunion_general_traint_originiumsArts_2_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Reunion_general_traint_originiumsArts_2_custom_tooltip:0 ""
+

@@ -1,0 +1,52 @@
+rs_arkNights_Common_Oripathy_Monster_Casus_Belli = {
+	show_in_diplomacy = yes
+
+	show_notification = yes
+
+	potential = {
+		NOR = {
+			has_authority = rs_arkNights_rogland_authorities
+			has_authority = rs_arkNights_reunion_authorities
+		}
+	}
+
+	is_valid = {
+		NOR = {
+			has_authority = rs_arkNights_rogland_authorities
+			has_authority = rs_arkNights_reunion_authorities
+		}
+
+		from = {
+			owner_species = {
+				OR = {
+					has_trait = rs_arkNights_Rogland_pops_trait_oripathy
+					has_trait = rs_arkNights_Reunion_pops_trait_oripathy
+				}
+			}
+		}
+	}
+}
+
+rs_arkNights_Common_Reunion_Atrocities_Casus_Belli = {
+	show_in_diplomacy = yes
+
+	show_notification = yes
+
+	potential = {
+		NOR = {
+			has_authority = rs_arkNights_rogland_authorities
+			has_authority = rs_arkNights_reunion_authorities
+		}
+	}
+
+	is_valid = {
+		NOR = {
+			has_authority = rs_arkNights_rogland_authorities
+			has_authority = rs_arkNights_reunion_authorities
+		}
+
+		from = {
+			has_authority = rs_arkNights_reunion_authorities
+		}
+	}
+}

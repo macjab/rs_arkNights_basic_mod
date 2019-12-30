@@ -1,0 +1,578 @@
+﻿l_english:
+ ###############################################
+ #####-----Author:   RhineSky--------------#####
+ #####-----SteamID:  RhineSky--------------#####
+ #####------Email:  macjab@macjab.com------#####
+ #####------QQ：   516278065---------------#####
+ #U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+ ###############################################
+ 
+ # -------<自定义本地化字段>内容替换-------
+
+ # -------<资源名称>的本地化变量-------
+ # 能源、能源点、能源点数、
+ RhineSky_Prescripted_Resource_Energy:0 "龙门币"
+ # 矿物
+ RhineSky_Prescripted_Resource_Minerals:0 "天灾源石"
+ # RhineSky_Prescripted_Resource_Minerals:0 "工业零件"
+ # 食物
+ RhineSky_Prescripted_Resource_Foods:0 "理智恢复液"
+ # 消费品
+ RhineSky_Prescripted_Resource_Cosume_Goods:0 "合成玉"
+
+ # -------包含<资源名称>的文本替换-------
+ # -------<食物-理智恢复液>的文本替换-------
+ancrel.2052.desc:1 "在[From.Planet.GetName]上腐蚀的机械设施深处发现了大量可部分挽回的新闻记录，通过拼接这些记录我们的考古学家已经能够推断出噬铁体是由行星上的一群反叛科学家创造出来的！这些生化恐怖分子属于一个秘密活动小组，他们反对建造了遍布行星的机械设施的垄断公司，并显然谋求通过释放噬铁体来抵制公司在全球范围内无孔不入的影响力。"
+ancrel.2053.name:0 "菌毯国度"
+ancrel.2053.desc:1 "在艰辛重建完成[From.Planet.GetName]上的古代电子公司记录后，我们的考古学家推断出该公司对生化恐怖分子展开过报复，公司对反叛者来源的地区（或者按照当时的说法，称为“企业州”）执行了大量的经济制裁。显然，随着严重的$RhineSky_Prescripted_Resource_Energy$、供给及$RhineSky_Prescripted_Resource_Foods$短缺的出现，在受影响的企业州内的受害公民发动了该地区的暴乱。"
+ancrel.2054.name:1 "无人机故障"
+ancrel.2054.desc:1 "对一些作战无人机残骸进行仔细检查后发现，在暴乱发生后一段时间内，这些无人机企图遏制暴乱。有趣的是，这个行星级机械背后的公司，当时被称作C.A.R.E，好像就是大多数无人机的制造商。\n\n与此同时，噬铁体开始肆虐，持续吞噬着星球表面C.A.R.E的机械设施，该公司阻止它扩散的一切努力似乎都不起作用。"
+
+ancrel.6310.name:0 "大副的报告"
+ancrel.6310.desc:0 "已找到另一篇日志并翻译：\n\n§H“大副尤瑟尔记录。舰长已被安然的存放在C号杂物橱中。那个笨手笨脚的傻瓜是这一切的罪魁祸首。现在由我指挥。总工程师扎布拉现在正试着做一个子空间信号发射机。我们离企业贸易线路太远了，没有那个机器，恐怕我们永远都不会获救。\n\n皮尔瓦克斯又失去了一只眼睛。他可能等不到那一天了。§!”"
+ancrel.6320.name:0 "$RhineSky_Prescripted_Resource_Foods$状况"
+ancrel.6320.desc:0 "又一篇已翻译的日志：\n\n§H“$RhineSky_Prescripted_Resource_Foods$已经耗尽，五个周期前我们就开始吃死者的尸体，现在已经不够了。所以我们投票决定分食舰长。扎布拉工程师还在努力制造出子空间信号发射器。她向我保证它几乎要完成了。看起来它非常的复杂。\n\n皮尔瓦克斯的最后一个次级附肢已经萎缩并变成洋红色，他就要死了。”§!"
+ancrel.6330.name:0 "骗局"
+ancrel.6330.desc:0 "来自大副尤瑟尔的另一篇日志：\n\n§H“与扎布拉就亚空间发射器进行了质询。事实证明她只是把一堆垃圾和松散的电缆硬塞进空油罐而已。她甚至不是真正的工程师。\n\n皮尔瓦克斯的胸窦正在渗出体液。将会很快迎来死亡。真羡慕啊。”§!"
+ancrel.6340.name:0 "三副的报告"
+ancrel.6340.desc:0 "这篇已翻译的日志似乎记录自三副乌克拉：\n\n§H“大副尤瑟尔昨天通过切断自己的触须自杀了。技术员（二等）米斯瓦不久之后宣称自己是女皇，但因由$RhineSky_Prescripted_Resource_Foods$引发的骚乱被驱逐至下甲板。我们的情况十分严峻。同类相食的情况普遍存在。\n\n皮尔瓦克斯在昨天腹部发生炸裂之后整个身体都变的潮红。理应已经死去，但依旧存活。目前被伽马相移当做神灵来崇拜。”§!"
+ancrel.6350.name:0 "巡逻日志"
+ancrel.6350.desc:0 "最后的日志已被发现并翻译：\n\n§H“巡逻日志，船副吉尔伽美。在55-23-X侦测到坠毁的船只，前往调查。船只被鉴定为莱文克号，一艘P级货船。在残骸中发现了仅存的生还者，处于十分危急的状况。其身份被确认是皮尔瓦克斯，副水手长。\n\n剩下的船员不是在坠毁中遇难就是在我们到来不久之前互相厮杀。按照标准协议，我将这份日志留在这里并将莱文克号注册为保护墓地。记录结束。”§!"
+
+
+leviathans.173.desc:1 "我们的$RhineSky_Prescripted_Resource_Minerals$储备已经枯竭，无法维持消耗$RhineSky_Prescripted_Resource_Minerals$的贸易协议。所有与贸易飞地的相关协议已被取消。"
+enclave_energy_trade_ended:1 "£energy£ §H$RhineSky_Prescripted_Resource_Energy$§!不足以维持与贸易飞地的交易。"
+leviathans.175.name:0 "$RhineSky_Prescripted_Resource_Foods$贸易已取消"
+leviathans.175.desc:0 "我们的$RhineSky_Prescripted_Resource_Foods$储备已经耗尽，无法维持消耗$RhineSky_Prescripted_Resource_Foods$的贸易协议。所有与贸易飞地的相关协议已被取消。"
+enclave_food_trade_ended:0 "£food£ §H$RhineSky_Prescripted_Resource_Foods$§!不足以维持与贸易飞地的交易。"
+
+leviathans.111.e:0 "就这样了。"
+
+
+A_LEAVE_A_ACCEPT_01:0 "你们的联盟衰弱了，[From.GetSpeciesName]。"
+A_DEMAND_VASS_SELECT:0 "你们真的愿意低头吗，[From.GetSpeciesClass]？"
+A_DEMAND_VASS_PROPOSE:0 "难以言状的恐惧潜伏在宇宙的黑暗角落，等待合适的时刻发出致命攻击。对他们而言，你们不过是新的$RhineSky_Prescripted_Resource_Foods$和物资来源。为我们服务，我们会保护你们的。"
+A_DEMAND_VASS_ACCEPT:0 "你们自从淤泥中诞生以来就证明了自身优越。我们将遵守你们的规矩。"
+A_DEMAND_VASS_ACCEPT_02:0 "如您所愿，[From.GetSpeciesName]。[Root.GetName]将归于您的麾下。"
+
+ORG_TO_MECH_LEAVE_A_ACCEPT_01:0 "谁能想到昔日的厨房用具如此善变？"
+ORG_TO_MECH_DEMAND_VASS_SELECT_01:0 "你们[From.GetSpeciesNamePlural]知道怎么管理一个有机体帝国吗？"
+ORG_TO_MECH_DEMAND_VASS_PROPOSE_01:0 "你们只是机器。你们被创造出来就是为了完成简单的任务，比如生产$RhineSky_Prescripted_Resource_Foods$或者比较二进制数，而不是管理一个独立的银河帝国。把这些事情留给有大脑的人吧。"
+ORG_TO_MECH_DEMAND_VASS_ACCEPT_01:0 "让我们痛苦的是承认[Root.GetName]不再拥有它曾经的力量了。除了接受你们的议案我们别无选择。"
+ORG_TO_MECH_DEMAND_VASS_REFUSE_01:0 "你们认为我们会将我们的帝国政府拱手交给昔日的厨房用具来治理？"
+
+
+distar.71.pop.slave:0 "他们将成为有用的奴隶。"
+distar.71.pop.phile:0 "我们张开双臂欢迎他们！"
+distar.71.pop.swarm:0 "他们将成为我们 [Root.Owner.GetSpeciesSpawnNamePlural] 的美味$RhineSky_Prescripted_Resource_Foods$。"
+distar.71.swarm.alt.tooltip:0 "将克隆体加工为营养物质。"
+distar.71.pop.servi:0 "他们不再需要工作。"
+
+# Eat or be Eaten
+distar.1050.name:0 "食或被食"
+distar.1050.desc:0 "[From.GetName] 周围残骸场的外围漂浮着一艘不明出处的科研船残体，粉身碎骨，惨不忍睹。船体上遍布的咬痕和消化液，意味着其曾被某种大型捕食者咀嚼并反刍。\n\n讽刺的是，当时船员们正举行饕餮之旅，搜寻异域美食，自身却最终沦为菜品。\n\n他们依据从营养成分到嚼劲等一切标准来品评，被品评过的生物种类数量惊人。其中 [delicious_aliens.GetName] 以其多汁的[delicious_aliens.GetSpeciesOrganName]和辛辣的脾气被评为上上之选。而我们位列名单最后一页中游，多亏我们肌肉呈纤维性且作为猎物无精打采。看来某些人喜欢玩弄$RhineSky_Prescripted_Resource_Foods$……"
+distar.1050.a:0 "看来他们终于食逢对手……"
+# The Cube
+
+# Single-Minded
+distar.2020.name:0 "一心一意"
+distar.2020.desc:0 "乍看起来， [From.GetName] 上似乎有着大量多样化的生命形式，在一个类似我们的生态系统中共存：营养通过光合作用、分解和捕食在$RhineSky_Prescripted_Resource_Foods$链中循环。\n\n但在仔细研究后，船组发现，尽管 [From.GetName] 上的各种生命起初由个体发展而来，现在已经按照某种神秘的设计作为一个统一的生物体运行。这一生物体对一切外界的干扰都回应以强烈且无差别的攻击。"
+# Artificial Moon
+distar.2025.name:0 "人工卫星"
+
+
+country_base_unity_produces_add_DESC:0 "我帝国产生了这么多额外的基础凝聚力。"
+country_base_food_produces_mult_DESC:0 "我帝国总体$RhineSky_Prescripted_Resource_Foods$生产将依据此数值调整。"
+country_base_influence_produces_mult_DESC:0 "我帝国总体影响力生产将依据此数值调整。"
+country_base_influence_produces_add_DESC:1 "我帝国产生了这么多额外的基础影响力。"
+
+tr_supremacy_natural_preeminence_devour:0 "驯化清扫"
+tr_supremacy_natural_preeminence_devour_desc:0 "$tr_supremacy_natural_preeminence_desc$"
+tr_supremacy_natural_preeminence_devour_delayed:0 "即使在吸收了他们所有的地面和太空作战群之后，许多被我们征服的人口拒绝接受成为我们的食物，并顽固地抵抗着。一次系统性的运动，切除关键工蜂的额叶，打散亲族部落的群居，并公开开展暴力行动将帮助他们接受在我们的伟大计划中的分工。"
+
+tr_domination_cloud_calculations:0 "云计算"
+
+
+refugees.1.name:0 "[Root.GetSpeciesName]的难民已抵达"
+refugees.1.desc.1:0 "搭载§Y[Root.GetSpeciesName]§!难民的民用运输舰队从§Y[RefugeeEscapedFrom.GetName]§!来到了我们的领地。他们已经获准在§H[Root.Planet.GetName]§!上安居。\n\n这些不幸的受逐者被[RefugeeEscapedFrom.GetSpeciesName]当局强制驱离出家。自那以来，他们一直在星系之间旅行， 绝望地努力在最后的补给物资用完之前找到新家。"
+refugees.1.desc.2:0 "搭载§Y[Root.GetSpeciesNamePlural]§!难民的破旧民用运输舰队从§Y[RefugeeEscapedFrom.GetName]§!来到了我们的领地。我们为难民提供了$RhineSky_Prescripted_Resource_Foods$和医疗照顾，同时他们被获准在§H[Root.Planet.GetName]§!上安居。\n\n这些衣衫褴褛的难民是[RefugeeEscapedFrom.GetSpeciesName]当局实施种族清洗政策的幸存者。他们能够脱逃还需要感谢一个匆忙组建起来的地下解救组织和一些富有同情心的商船船长。"
+refugees.1.desc.2.b:0 "一支破败的民用舰队，满载着逃离§Y[RefugeeEscapedFrom.GetName]§!的§Y[Root.GetSpeciesNamePlural]§!，已经抵达了我们的境内。我们提供了$RhineSky_Prescripted_Resource_Foods$和医疗，之后这些难民被准许在§H[Root.Planet.GetName]§!安家。\n\n这些狼狈恐慌的难民是[RefugeeEscapedFrom.GetSpeciesAdj]无情攻势下的幸存者。他们冒险从星球上一处旧军港里偷了几艘废弃太空船才逃了出来。"
+refugees.1.desc.3:0 "搭载§Y[Root.GetSpeciesNamePlural]§!难民的破旧民用运输舰队从§Y[RefugeeEscapedFrom.GetName]§!来到了我们的领地。我们为难民提供了$RhineSky_Prescripted_Resource_Foods$和医疗照顾，同时他们被获准在§H[Root.Planet.GetName]§!上安居。\n\n这些衣衫褴褛的难民正从 [RefugeeEscapedFrom.GetSpeciesName] 空间中的 §H[RefugeeEscapedCrisis.GetName]§! 肆虐中逃离。他们在 [RefugeeEscapedCrisis.GetSpeciesAdj] 发起猛攻前匆忙逃出 §H[RefugeeEscapedPlanet.GetName]§!  的家园，将几乎所有的个人财产都留在了那个将毁灭的世界。"
+refugees.1.a:0 "欢迎他们前来"
+
+
+
+anomaly.215.desc:0 "[From.From.GetName]的表面充斥着许多处过于茂盛的植被，十分不自然。\n\n科学家[Root.GetLeaderName]仍然无法解释这个星球的土地为什么会出现肥沃程度如此不均匀的现象，但认为此处的植被能够被[Root.Owner.GetSpeciesAdj]正常食用，且无需进行大量加工。"
+anomaly.215.desc.serv:0 "[From.From.GetName]的表面充斥着许多处过于茂盛的植被，十分不自然。\n\n科学家[Root.GetLeaderName]仍然无法解释这个星球的土地为什么会出现肥沃程度如此不均匀的现象，但认为此处的植被能够被 [Root.Owner.GetSpeciesAdj] 生化展品正常食用，且无需进行大量加工。"
+anomaly.215.a.tooltip:0 "添加§Y丰饶§!调整因素至[From.GetName]：\n额外的§G$RhineSky_Prescripted_Resource_Foods$§!"
+anomaly.220.name:0 "矿产丰富"
+anomaly.220.desc:0 "科学家[Root.GetLeaderName]就[From.GetName]的矿藏进行了详细报告。由于独特的地壳构造进程，[Root.GetName]的地表附近聚集了大量的重要金属矿脉。"
+
+story.501.name:0 "天凯"
+story.501.desc.spiri:0 "先知将那个漂浮在黑暗中的存在称为“§Y天凯§!”。 我们应该与其保持距离。"
+story.501.desc:1 "[Root.GetSpeciesAdj]社会研究首席研究员将这种太空生命形式称为“§Y天凯§!”，他们都是非常温和的生物。太空生命能够进入低次元的亚空间，因此，在各星系间移动对他们而言轻而易举。\n\n他们大多栖息在气态巨行星的上层大气之中。虽然有些难以置信，但空气就是他们唯一的$RhineSky_Prescripted_Resource_Foods$来源，但是否还有其他的养分摄取，这一点还有待观察。\n\n他们生性温和，即使受到挑衅，也很少会主动攻击。碰上的时候，可以放心大胆地无视他们。"
+story.501.desc.gesta:0 "我们称之为"§Y天凯§!"的太空生命形式是非常温和的生物。太空生命能够进入低次元的亚空间，因此，在各星系间移动对他们而言轻而易举。\n\n他们大多栖息在气态巨行星的上层大气之中。虽然有些难以置信，但空气就是他们唯一的$RhineSky_Prescripted_Resource_Foods$来源，但是否还有其他的养分摄取，这一点还有待观察。\n\n除非被激怒，它们不会主动攻击。碰上的时候，可以放心大胆地无视他们。"
+story.501.a.spiri:0 "令人钦佩。"
+story.501.a.mater:0 "捕猎他们也没什么好处。"
+
+
+uplift.6000.name:0 "蛇行"
+uplift.6000.desc:0 "[Root.GetName]报告称在[From.GetName]占据$RhineSky_Prescripted_Resource_Foods$链顶端的是一种相当巨大的毒蛇，拥有很强大的智能。\n\n科学家[Root.GetLeaderName]认为它们现在所处的阶段和我们在进化为智慧物种之前所处的[Root.Owner.GetSpeciesName]进化末期有诸多相似之处。\n\n或许我们可以用科技的力量提升这种低级生物。"
+uplift.6000.a:0 "是的，我们有那种知识。"
+uplift.6000.b:0 "以后再说吧。"
+
+
+anomaly.4066.b.tooltip:1 "添加资源到[From.From.From.GetName]：\n£minerals£ §G+3§!"
+anomaly.4070.name:0 "重大收获"
+anomaly.4070.desc:0 "好消息！我们发现[From.GetName]的热带雨林中生长着一种特殊的树，它的果实非常有营养。这种$RhineSky_Prescripted_Resource_Foods$容纳着惊人的能量以及我们的人民所需的所有营养。这将有助于减轻我们殖民这个地方的压力。"
+anomaly.4070.a:0 "的确是好消息！"
+anomaly.4075.name:0 "小体量，大力量"
+
+anomaly.4101.desc:0 "我们试图靠近它们做研究，但进展并不顺利。它们一发现我们靠近，就要么逃走要么战斗，它们好像从大老远就能发现我们。\n\n这些动物明显清楚我们的意图，所以尽量避免跟我们接触。\n\n至少我们可以从远距离研究它们，也许会有所发现。"
+anomaly.4101.a:0 "这最起码是一种意志坚定的动物。"
+anomaly.4102.desc:0 "接触这些动物的进展相当顺利！它们似乎拥有一种灵能感应，可以通过精神彼此沟通以及跟我们沟通。\n\n它们想要自由自在地生活在大地上，尽情享受那里的水果。如果我们不打扰它们的生存空间和$RhineSky_Prescripted_Resource_Foods$，它们愿意在必要时帮助我们。\n\n这段正能量满满的接触将会被广泛传播到人们的耳中。"
+anomaly.4102.b:0 "我们自己也需要$RhineSky_Prescripted_Resource_Foods$。"
+anomaly.4103.desc:0 "这些动物非常难以驯服。为了靠近它们，我们被迫使用了暴力和麻醉剂。它们总是反抗我们给它们安排的工作。我们必须强迫它们完成工作，但效果不太好。"
+anomaly.4103.a:0 "它们为什么要反抗呢？"
+
+
+colony.150.a:0 "打开看看吧！"
+colony.150.b:0 "还是算了吧。"
+colony.151.desc:0 "我们的科学探险队终于打开了[Root.GetName]避难所的大门，但是他们只找到了一具骸骨，似乎这个避难所最早的成员在大约200年前就已经吃完了所有的$RhineSky_Prescripted_Resource_Foods$储备，饥饿的他们不得不陷入了人吃人的疯狂境地，地上散落的骨头上由很多咬痕，无声地诉说着最后几名生还者们的疯狂。\n\n从好的一方面来看，避难所中保存着足够的日志和数据可供我们的行为学专家和外星心理学家研究，也不白费他们大老远跑来这里了。"
+colony.152.desc:0 "[Root.GetName]的大避难所的大门终于打开了。我们的科学家惊讶的发现在巨大的避难所门后，有着数以百万计的从远古核战争中幸存下来的生还者，他们在这里建立了一个能够自给自足的社会。起初他们对我们的科学家很警惕，毕竟我们是他们见到的第一批外星人，但是他们也很感激我们帮助他们打开了大门。\n\n避难所里存储了大量装备和器材，用来在核灾难后重建文明，这些东西只有他们才知道该如何操作，但是他们似乎更希望在能适应阳光后加入你的殖民地。"
+colony.152.a:0 "让我们一起重建这个世界吧！"
+
+precursor.1100.desc:0 "在经过对第一联盟飞船的仔细研究后，在§Y[Root.Capital.GetName]§!的科学们最终确定了第一联盟的母星系-芬哈本尼斯！我们应该马上展开探索，不要让别人抢在我们前头。"
+precursor.1101.name:0 "第一联盟总部"
+precursor.1101.desc:0 "在第一联盟的长期历史中，§Y[From.GetName]§!大部分时间都是第一联盟的行政中心，也是他们的元老议员的办公地，[From.GetPlanetMoon]是个人口繁盛之地，在其表面上有一个规模巨大的城市。亿万级的人口，决定了他们的$RhineSky_Prescripted_Resource_Foods$只能从外部世界进口。\n\n当联盟分崩离析，这些运输$RhineSky_Prescripted_Resource_Foods$的飞船一夜间都停止了。有一些居民飞向了其他世界，但大部分人口都被留下来了。饥饿与混乱开始爆发，[From.GetPlanetMoon]成为了军阀和犯罪组织的天堂。\n\n人口在几个世纪中持续减少，直到这个星球荒无人烟-成为第一联盟的碑文。"
+precursor.1102.name:0 "发现第一联盟首都"
+precursor.1102.desc.a:0 "我们终于发现了古代第一联盟的都城。但不幸的是，我们来迟了，最近已经有人来造访过了，有价值的东西已经被洗劫一空了。"
+
+crisis.1050.desc_01:0 "……猎物……"
+crisis.1050.desc_02:0 "……屈膝于……我等神威……"
+crisis.1050.desc_03:0 "……$RhineSky_Prescripted_Resource_Foods$……"
+crisis.1050.desc_04:0 "……这家伙……可窥探天幕……"
+crisis.1050.desc_05:0 "……这家伙……被天幕碰过……"
+
+crisis.1050.d.response:0 "……仇恨…恐惧…这感觉…太美妙了……"
+crisis.1050.e:0 "介绍一下你们的种族，让我们互相了解一下吧。"
+crisis.1050.e.response:0 "……了解……你们…是$RhineSky_Prescripted_Resource_Foods$……"
+crisis.1050.f:0 "你们来自更高的次元吗？"
+crisis.1050.f.response:0 "……没错…非常高……"
+
+country.256.b.response:0 "我们……我们真的成功了！飞船仍在努力确定位置，但根据外面的星球来看，我只能确认我们已经离开了堪萨斯。可是，非常不幸，风信子号出现了严重地设备损坏，我们现在完全失去了动力，仅凭借电池支撑。\n\n科尔贝克通知我可能要唤醒殖民者。我现在要去一趟工程室，看看玛姬为什么还没有修好反应堆。希望我们能很快恢复正常然后开始搜寻秋菊号殖民者的旅程。"
+country.256.c:0 "日志III（任务日期422.7）"
+country.256.c.response:0 "情况越来越糟糕了。反应堆已经再无重新启动的可能，而我们储备的最后一点$RhineSky_Prescripted_Resource_Energy$也在尝试抵达这个破星系的时候耗尽了。我们本想找个宜居的地方着陆……但是没那么好的运气。\n\n生命维持系统还能运作几年，但$RhineSky_Prescripted_Resource_Foods$储备对于二十五万殖民者而言连一个月都撑不过去。我已经召集了各部门的领导开会。我们……我们必须得想个办法了……"
+country.256.d:0 "日志IV（任务日期459.9）"
+country.256.d.response:0 "这可能是我最后一次记录日志了。舰桥的船员不是死就是失踪了，就在此时，一群殖民者还在试图冲进舰桥。我们的主要$RhineSky_Prescripted_Resource_Foods$来源几周前就没有了，甚至……甚至还有食人事件的报告。\n\n我为船员留了一小堆$RhineSky_Prescripted_Resource_Foods$，让这艘老船再开得久一点点……等待着奇迹的发生。当殖民者发现时，他们……\n\n他们已经破门而入了。滚回去！别靠近！我是这艘船的舰长！你们要是敢弄我，我就让你们……啊啊啊……"
+country.256.e:0 "登出"
+country.256.e.response:0 "方舟飞船风信子号\nISA-06\n联合国尤利西斯计划\n\n正在退出用户界面。"
+
+
+CANNOT_ENLIGHTEN_FANATIC_XENOPHOBE:0 "无法对§H$ethic_fanatic_xenophobe$§!的原始文明进行技术启蒙。"
+
+FOOD_NO_NEED:0 "§Y我们无需要$RhineSky_Prescripted_Resource_Foods$供养的人口。§!"
+FOOD_NO_PLANETS:0 "§Y我们无需要$RhineSky_Prescripted_Resource_Foods$来增长人口的行星。§!"
+FOOD_SURPLUS_STARVATION:0 "§R我们目前处于饥荒中，£pops£§Y人口增长§!停止。§!"
+FOOD_SURPLUS_NONE:0 "§Y我们正在囤积$RhineSky_Prescripted_Resource_Foods$。$RhineSky_Prescripted_Resource_Foods$储备满之前无£pops£§Y人口增长§!速度加成。§!"
+FOOD_SURPLUS:2 "§G我们的盈余$RhineSky_Prescripted_Resource_Foods$在$NUM|Y$颗行星上提高了§Y$AMT$%§!的人口增长速度。§!"
+FROM_FOOD_SURPLUS:1 "来自盈余$RhineSky_Prescripted_Resource_Foods$：$VALUE|Y=2$"
+
+SPECIES_LACKS_OPTION:0 "§R你所选的种族外观在此分类中无次级选项。§!"
+
+CUSTOM:0 "自定义"
+POP_NAME:0 "$PLANET$拥有$SPECIES$的人口"
+POP_MAX_GROWTH:0 "$RhineSky_Prescripted_Resource_Foods$需求：$VALUE|1Y$"
+POP_MAX_GROWTH_BASE:0 "基础值：$VALUE|1Y$"
+POP_MAX_GROWTH_POPS:0 "$POPS|Y$已有人口：$VALUE|1=-$"
+POP_MAX_GROWTH_HABITABILITY:0 "适居性：$VALUE|0=-%$"
+POP_MAX_GROWTH_HELP:3 "§E人口需要经历一定的增长进程以完全增长。进程长度随行星上已有人口数而变长。§H盈余$RhineSky_Prescripted_Resource_Foods$§!、§H$MOD_POP_GROWTH_SPEED$§E和§H$HABITABILITY$§E会影响新人口增长所需时间。§!§!§!§!§!"
+POPULATION:0 "人口"
+GAME:0 "游戏"
+
+trait_robot_power_drills_desc:0 "§L只要给机器人一组电钻，那么他们看什么都像矿脉。§!\n"
+trait_robot_harvesters:0 "收割机器"
+trait_robot_harvesters_desc:0 "§L一系列工具，从营养解决方案诊断和现场平衡到细致入微的脱粒，使机器工人的$RhineSky_Prescripted_Resource_Foods$产量提升。§!\n"
+trait_robot_efficient_processors:0 "高效芯片"
+trait_robot_efficient_processors_desc:1 "§L这些极其高效的处理器能够提高所有单元的潜在负载能力和耐久。§!\n"
+
+CURRENT_POPULATION_AMOUNT:0 "当前人口"
+CURRENT_POPULATION_AMOUNT_DESC:1 "成员：$CURRENT|Y$/$MAX|Y$\n\n"
+POPULATION_DESC:1 "§E§H人口§!（£pop£）获取§H$RhineSky_Prescripted_Resource_Foods$§!（£food£）后便会增长。建造农场以增加§H$RhineSky_Prescripted_Resource_Foods$§!生产。§!"
+POPULATION_GROWTH:0 "人口增长"
+ARMY_UNAVAILABLE_LIMIT_REACHED:1 "这个行星最多可以驻扎$MAX|Y$支部队。"
+
+STARBASE_NO_PLATFORMS:1 "无防御平台。"
+EMPIRE_FOOD_DESC:0 "我们生产£food£ $PRODUCTION|0G$，消耗£food£ $CONSUMPTION|0R$。"
+PLANETVIEW_FOOD:0 "$RhineSky_Prescripted_Resource_Foods$盈余"
+PLANETVIEW_FOOD_DESC:2 "此行星生产£food£ $PRODUCTION|1G$，消耗£food£ $CONSUMPTION|1R$。"
+PLANETVIEW_FOOD_DELAYED:0 "§E盈余§H$RhineSky_Prescripted_Resource_Foods$§!（£food£）将提高§H人口§!（£pop£）增长速度，$RhineSky_Prescripted_Resource_Foods$短缺则会降低人口幸福度。幸福度的影响效果将在每月初更新。修建£building£§H农场§!可获得更多$RhineSky_Prescripted_Resource_Foods$。§!"
+LEFT_CLICK_TO_SHOW_INFO:0 "§G点击显示详情§!"
+RIGHT_CLICK_TO_BUILD:0 "§G右击显示建设列表§!"
+
+slavery_military_tooltip_delayed:1 "§L战斗奴隶是武装奴隶，他们一般自出生就接受军事训练，习惯于绝对服从。作为对其无条件兵役的回报，他们获准比其它奴隶拥有更多自由，可以从事更多职业。§!"
+slavery_livestock:0 "牲畜"
+slavery_livestock_tooltip:0 "§H牲畜§!人口不能产出资源，但会周期性地被屠宰以增加£food£§H$RhineSky_Prescripted_Resource_Foods$§!供应。"
+slavery_livestock_tooltip_delayed:0 "§L牲畜也算人口§!"
+living_standard_utopian:1 "乌托邦式富足"
+
+purge_neutering_tooltip_delayed:0 "§L将其视作消逝中的种族。我们会走向未来，然而有些种族不会再陪伴我们了。§!"
+purge_labor_camps:0 "强制劳动"
+purge_labor_camps_tooltip:0 "受影响的人口将劳累至死，他们可以被派去生产£food£§H$RhineSky_Prescripted_Resource_Foods$§!和£minerals£§H$RhineSky_Prescripted_Resource_Minerals$§!直到最终灭绝。"
+purge_labor_camps_tooltip_delayed:0 "§L这一最终牺牲起码我们能派上用场。§!"
+purge_processing:0 "$RhineSky_Prescripted_Resource_Foods$加工"
+purge_processing_tooltip:1 "受影响的人口会被加工为[Root.GetPurgeProcessingResource]直到他们死亡。"
+purge_processing_tooltip_delayed:0 "§L悲伤但不可避免的事实就是有些种族注定会成为其他优等种族实现野心的燃料。§!"
+
+requires_actor_not_fanatic_purifiers:1 "$TRIGGER_FAIL$§R我们是§Y$civic_fanatic_purifiers$§!！我们不会与其他种族开展外交！§!"
+requires_recipient_not_devouring_swarm:1 "$TRIGGER_FAIL$§R他们是§Y$civic_hive_devouring_swarm$§!！他们只为吃掉其他种族努力！§!"
+requires_actor_not_devouring_swarm:2 "$TRIGGER_FAIL$§R我们是§Y$civic_hive_devouring_swarm$§!！我们不会与其他种族开展外交……他们是$RhineSky_Prescripted_Resource_Foods$！§!"
+requires_recipient_not_gestalt_consciousness:2 "$TRIGGER_FAIL$§R他们是§Y$ethic_gestalt_consciousness$§!。他们不会与其他社会融合。§!"
+requires_actor_not_gestalt_consciousness:2 "$TRIGGER_FAIL$§R我们是§Y$ethic_gestalt_consciousness$§!。我们不会与其他社会融合。§!"
+
+influence_desc_machine_intelligence:2 "§E§H影响力§!（£influence£）代表着主§H机械智慧体§!调动处理能力获取对其半自主单元的直接控制的能力。它可以用于很多事务，例如颁布§H法令§!、宣称§H所有权§!、修建§H哨站§!。获取率在游戏整个过程中相对恒定，但可以通过研究科技、宣布其他帝国为§H劲敌§!增加。§!"
+influence_desc:5 "§E§H影响力§!（£influence£）代表着政治影响力，可以用于很多事务，例如颁布§H法令§!、宣称§H所有权§!、修建§H哨站§!、处理§H党派§!。获取率在游戏整个过程中相对恒定，但可以通过下列途径增加：\n§Y1.§!赢取我帝国内§H党派§!的支持。\n§Y2.§!宣布其他帝国为§H劲敌§!。§!"
+food:0 "$RhineSky_Prescripted_Resource_Foods$"
+food_desc:2 "§E§H$food$§!（£food£）代表着维持和增长£pop£§H人口§!的各种必要营养物质。我们可以通过下列途径获得更多$RhineSky_Prescripted_Resource_Foods$：\n§Y1.§!在殖民行星表面建设§H农业区§!。\n§Y2.§!在§H市场§!购买。§!"
+food_desc_machine_intelligence:2 "§E§H$food$§!（£food£）代表着有机体需要用以维持他们脆弱身躯的各种生物学营养。§H$auth_machine_intelligence$§!不需要这种资源，除了§H$civic_machine_servitor$§!和§H$civic_machine_assimilator$§!。§H$civic_machine_servitor$§!可以为§H$citizenship_organic_trophy$人口§!提供$RhineSky_Prescripted_Resource_Foods$，§H$civic_machine_assimilator$§!可以为§H半机械人人口§!提供$RhineSky_Prescripted_Resource_Foods$。可以通过下列途径获得$RhineSky_Prescripted_Resource_Foods$：\n§Y1.§!在殖民行星表面建设§H农业区§!。\n§Y2.§!在§H市场§!购买。§!§!"
+minerals:0 "$RhineSky_Prescripted_Resource_Minerals$"
+minerals_desc:3 "§E§H$RhineSky_Prescripted_Resource_Minerals$§!（£minerals£）是建造舰船、基地和建筑所需基础物资的统称。我们可以通过下列途径获得更多$RhineSky_Prescripted_Resource_Minerals$：\n§Y1.§!在殖民行星表面建设§H矿业区§!。\n§Y2.§!用§H工程船§!在富含$RhineSky_Prescripted_Resource_Minerals$的行星或恒星附近建造§H采矿基地§!。\n§Y3.§!在§H市场§!购买。§!"
+
+building_mutant_landfill_desc:0 "一堆腐烂变异的物质构成了毫无生机的惨像。不稳定的有机物质扭曲在一起，形成了某种建筑样式。"
+building_vault:0 "地下避难所"
+building_vault_desc:0 "这些帐篷是通向巨大地下避难所的入口，此世界的原住民把它当作防空洞。$RhineSky_Prescripted_Resource_Foods$耗尽后，避难所里的居民开始自相残杀。"
+building_vault_2:0 "地下避难所"
+building_vault_2_desc:0 "这些帐篷是通向巨大地下避难所的入口，这个世界的原住民把它当作防空洞。这个避难所还包含一个巨大的机械停放处，储备着大量采矿设备。"
+
+alert_starvation_title:0 "饥荒"
+alert_starvation_instant:0 "我帝国正在遭受饥荒。所有人口将停止增长并造成下列效应："
+alert_starvation_delayed:0 "为了避免饥荒，我们应该建造更多§E水培农场§!以生产更多 £food£ $RhineSky_Prescripted_Resource_Foods$。"
+alert_starving_planet_instruction:0 "§G点击循环查看行星§!"
+alert_powerful_factions_title:0 "强大的人口党派"
+
+edict_production_targets_desc:1 "此法令集中行政力量，重评估并优化生产目标，优先提高$RhineSky_Prescripted_Resource_Minerals$产出。"
+edict_farming_subsidies:0 "农业补贴"
+edict_farming_subsidies_desc:1 "此法令实施激进的经济刺激，为$RhineSky_Prescripted_Resource_Foods$产出带来积极可量化的影响。"
+edict_propaganda:0 "宣传广播"
+edict_propaganda_desc:1 "此法令创建了一套广播信息传播机制，以保证积极同一的信息能够持续传播。"
+
+pre_sapients_eat:1 "猎食"
+pre_sapients_eat_name:1 "狩猎亚智慧物种"
+pre_sapients_eat_desc:0 "无智慧的动物很难被视为我帝国的一部分，但牠们也许能以其它方式帮助我们发展……\n\n§E居住在我们行星上的亚智慧物种会被用作$RhineSky_Prescripted_Resource_Foods$，一只一只吃光牠们。§!"
+
+policy_core_worlds:0 "核心世界人口"
+
+
+policy_food_policy:0 "粮食政策"
+policy_food_policy_desc:0 "我帝国有太多饥肠辘辘的人需要$RhineSky_Prescripted_Resource_Foods$。为了保障粮食安全，我们必须在人口的需求与帝国的增长需求之间寻求平衡。"
+
+food_policy_normal:0 "膳食均衡"
+food_policy_normal_name:0 "$food_policy_normal$"
+food_policy_normal_desc:0 "所有人口的营养需求都会得到满足。不过粮食是珍贵的资源，所以浪费$RhineSky_Prescripted_Resource_Foods$应当避免。\n\n§E有机体人口拥有正常的$RhineSky_Prescripted_Resource_Foods$消耗和增长速度。§!"
+
+food_policy_rationing:0 "严格配额"
+
+food_policy_generous:0 "营养充足"
+food_policy_generous_name:0 "$food_policy_generous$"
+food_policy_generous_desc:0 "在进入休眠前饱餐一顿是每一位公民的基本权利。正所谓饱暖思星辰，伸手可得的大量富含营养的$RhineSky_Prescripted_Resource_Foods$将成为我们在群星间成长的燃料。\n\n"
+
+policy_food_policy_gestalt:0 "$policy_food_policy$"
+
+food_policy_gestalt_normal:0 "$food_policy_normal$"
+food_policy_gestalt_normal_name:0 "$food_policy_normal$"
+food_policy_gestalt_normal_desc:0 "所有工蜂的必要生物质摄入需求思维都会满足。\n\n§E工蜂拥有正常的$RhineSky_Prescripted_Resource_Foods$消耗和增长速度。§!"
+
+food_policy_gestalt_rationing:0 "$food_policy_rationing$"
+
+PURGES_ALLOWED:0 "肃清行为在政策中已得到许可。"
+
+policy_food_stockpiling:0 "$RhineSky_Prescripted_Resource_Foods$储备"
+policy_food_stockpiling_desc:0 "想要维持星际帝国的成长，我们必须以人民最需要的方式利用$RhineSky_Prescripted_Resource_Foods$生产盈余。\n"
+food_stockpiling_machine:0 "无"
+food_stockpiling_machine_name:0 "不作储备"
+
+food_stockpiling_1:0 "最低"
+food_stockpiling_1_name:0 "最低储备"
+food_stockpiling_1_desc:0 "维持最低限度的$RhineSky_Prescripted_Resource_Foods$储备，尽量用$RhineSky_Prescripted_Resource_Foods$于人口增长。\n\n"
+food_stockpiling_2:0 "平衡"
+food_stockpiling_2_name:0 "平衡储备"
+food_stockpiling_2_desc:0 "平衡储备将让$RhineSky_Prescripted_Resource_Foods$产生盈余用于人口增长，又能在危难来临时有可观的贮藏。\n\n"
+food_stockpiling_3:0 "大量"
+food_stockpiling_3_name:0 "大量储备"
+food_stockpiling_3_desc:0 "天有不测风云，人有旦夕祸福。大量储备$RhineSky_Prescripted_Resource_Foods$能让我们度过难关而不必让人民遭受苦难。\n\n"
+ONLY_SERVITORS_STOCKPILE_FOOD:0 "$TRIGGER_FAIL$只有§H$civic_machine_servitor$§!才用储备£food£§H$food$§!。"
+
+
+st_financial_desc:0 "此星域将专注于生产$RhineSky_Prescripted_Resource_Energy$。"
+st_agricultural:0 "农业重心"
+st_agricultural_desc:0 "此星域将专注于生产$RhineSky_Prescripted_Resource_Foods$。"
+st_production:0 "生产重心"
+st_production_desc:0 "此星域将专注于生产原材料，例如$RhineSky_Prescripted_Resource_Foods$、$RhineSky_Prescripted_Resource_Minerals$和$RhineSky_Prescripted_Resource_Energy$。"
+st_manufacturing:0 "制造业重心"
+st_manufacturing_desc:0 "此星域将专注于制造高级产品，例如合金和$RhineSky_Prescripted_Resource_Cosume_Goods$。"
+
+
+leviathans.105.a:0 "我们需要£minerals£§Y$RhineSky_Prescripted_Resource_Minerals$§!。"
+leviathans.105.b:0 "我们需要£energy£§Y$RhineSky_Prescripted_Resource_Energy$点§!。"
+leviathans.105.f:0 "我们需要£food£§Y$RhineSky_Prescripted_Resource_Foods$§!。"
+leviathans.105.c:0 "我们对战略资源有兴趣。"
+leviathans.105.c.sr1:0 "我们已有一个 §Y瑞柑的贸易订单§!\n"
+
+leviathans.105.d:0 "现在没事了。再见。"
+
+leviathans.110.desc:1 "在这里，您可以用两份$RhineSky_Prescripted_Resource_Energy$或是$RhineSky_Prescripted_Resource_Foods$与我们交换一份$RhineSky_Prescripted_Resource_Minerals$。下面是我们的报价。"
+leviathans.110.a:1 "每月用£energy£ §R20§! 来换得 £minerals£ §G10§!。"
+leviathans.110.b:1 "每月用£energy£ §R50§! 来换得£minerals£ §G25§!。"
+
+leviathans.110.e:0 "没事了。再见。"
+
+leviathans.120.desc:1 "在这里，您可以用两份$RhineSky_Prescripted_Resource_Minerals$或$RhineSky_Prescripted_Resource_Foods$与我们交换一份$RhineSky_Prescripted_Resource_Energy$。下面是我们的报价。"
+leviathans.120.a:1 "每月用£minerals£ §R20§! 来换得£energy£ §G10§!。"
+leviathans.120.b:1 "每月用£minerals£ §R50§! 来换得£energy£ §G25§!。"
+
+leviathans.120.c.reply:0 "感谢您的选择！我想，只有我们能吃下这么多的$RhineSky_Prescripted_Resource_Minerals$！货款已经到账！"
+
+leviathans.125.desc:0 "在这里，您可以用两份$RhineSky_Prescripted_Resource_Minerals$或$RhineSky_Prescripted_Resource_Energy$与我们交换一份$RhineSky_Prescripted_Resource_Foods$。下面是我们的报价。"
+leviathans.125.minerals.a:0 "每月用£minerals£ §R20§! 来换得£food£ §G10§!。"
+leviathans.125.minerals.b:0 "每月用£minerals£ §R50§! 来换得£food£ §G25§!。"
+
+leviathans.125.energy.b:0 "每月用£energy£ §R50§! 来换得£food£ §G25§!。"
+leviathans.125.energy.c:0 "每月用£energy£ §R100§! 来换得£food£ §G50§!。"
+leviathans.125.a.reply:0 "希望你们能喜欢这些$RhineSky_Prescripted_Resource_Foods$。"
+leviathans.125.b.reply:0 "很好。这些$RhineSky_Prescripted_Resource_Foods$将在最佳食用条件下送到。"
+leviathans.125.c.reply:0 "你的人民这次不会挨饿了！$RhineSky_Prescripted_Resource_Foods$运输舰队马上出发。"
+
+leviathans.130.desc:2 "这种不稳定的粉末是种珍贵的瑞柑香料。它以独一无二的味道和与众不同的爆炸性在宇宙中声名远扬。我们只会将它出售给最有价值的贸易伙伴，包括 [Root.GetName]。\n\n只要你接受这合理的报价，我们愿意在十个标准年里向你出口这种高爆粉尘。"
+
+leviathans.520.name:0 "噬星者"
+leviathans.520.desc:0 "噬星者是银河狩猎场中的一种新的寄生虫，和你的帝国并没有什么不同。它们从恐惧和核聚变中诞生，平时在游荡在银河并潜进恒星内部从内部汲取养分。此外，它们当然也不想被打扰。"
+leviathans.520.a.reply:0 "恒星吞噬者是一种很罕见的存在，这种怪物如何诞生我们无从知晓。我们的情报非常有限，极少有与它们接触的第一手资料。\n\n然而我们的资料都指向了一个事实：这种可怕的生物只会带来毁灭。\n\n噬星者能够靠聚变本身获取能量。我们有个§Y非常§!靠谱的猜测：这种生物产生自其它次元的恒星物质与暗物质聚变。它们潜入恒星，吞噬其中的物质来为其自身的聚变反应提供燃料。它给所有途经的星系带来了死亡。在它饱餐一顿后，星系要么像冰一样破碎，要么被它体内的另一个恒星烧尽。\n\n它渴望$RhineSky_Prescripted_Resource_Foods$，因此吞噬了一切之后才会停下脚步。当你注视它的时候，你会看到幸存者的狂怒。"
+leviathans.520.b.reply:0 "我们唯一确定的是，噬星者最重要的部分是它的聚集核心。它亟需维持其内部反应堆的运作，避免内部因接触寒冷的虚空而崩溃。离开了恒星物质它什么都做不了。\n\n你们可以充分利用这一点，按照我们提供的规格校准武器，从而击穿保护其内部消化系统的外层组织。只要打伤了它，你就能看到它体内的物质喷涌到整个星系。"
+
+
+leviathans.110.name:0 "交换$RhineSky_Prescripted_Resource_Minerals$"
+leviathans.120.name:0 "交换$RhineSky_Prescripted_Resource_Energy$"
+leviathans.125.name:0 "交换$RhineSky_Prescripted_Resource_Foods$"
+
+monthly_opinion1:0 "每月评价：£opinion£§G+1§!"
+
+
+marauder.101.a:0 "献上贡品§Y（$RhineSky_Prescripted_Resource_Energy$）§!"
+marauder.101.b:0 "献上贡品§Y（$RhineSky_Prescripted_Resource_Minerals$）§!"
+marauder.101.c:0 "献上贡品§Y（$RhineSky_Prescripted_Resource_Foods$）§!"
+marauder.101.1.a.response:0 "真遗憾！看来我们的战士得到其他地方找乐子了。\n\n你的人民安全了，至少现在。"
+marauder.101.d:0 "你休想在我们这里得到任何东西，渣滓。"
+
+
+building_private_mining_consortium_desc:1 "由巨型企业控制的民营采矿公司。它雇佣当地矿工开采行星的资源。"
+building_food_conglomerate:1 "快餐连锁店"
+building_food_conglomerate_desc:1 "廉价、快速，并具有完全可接受的营养价值。零毒素*零麻烦！\n\n*$RhineSky_Prescripted_Resource_Foods$中可能含有微量苯甲酸钾、硝酸、暗物质、大豆绿和液态烟雾。"
+building_public_relations_office:1 "公共关系公司"
+building_public_relations_office_desc:1 "任何大型企业都会遭受误解和怀疑。倾听任何争议各相关方面的声音符合公众利益，而这家公关公司的生意就是传达其雇主的观点。"
+
+job_livestock:0 "家畜"
+job_livestock_plural:0 "家畜"
+job_livestock_desc:1 "他们只有一个使命：成为高级生物的$RhineSky_Prescripted_Resource_Foods$。"
+
+job_purge:0 "正在净化"
+
+mod_planet_branch_offices_energy_produces_add:0 "£energy£分公司的收入"
+mod_planet_bio_trophies_unity_produces_mult:0 "$pop_cat_bio_trophy_plural$产出的£unity£$unity$"
+mod_planet_pops_organics_food_upkeep_mult:0 "人口$RhineSky_Prescripted_Resource_Foods$消耗"
+mod_planet_pops_robotics_upkeep_mult:0 "机器人维护费"
+mod_planet_pop_assemblers_upkeep_mult:0 "人口装配成本"
+
+building_machine_assembly_plant:0 "机械装配厂"
+building_machine_assembly_plant_desc:1 "建造新单元的生产线。"
+building_food_processing_facility:0 "$RhineSky_Prescripted_Resource_Foods$加工设施"
+building_food_processing_facility_desc:0 "在这些设施内加工过的$RhineSky_Prescripted_Resource_Foods$营养价值将大大提高。"
+building_food_processing_center:0 "$RhineSky_Prescripted_Resource_Foods$加工中心"
+building_food_processing_center_desc:0 "流水线式的加工处理设施，可以加工大量的$RhineSky_Prescripted_Resource_Foods$。"
+building_luxury_residence:0 "奢侈住宅"
+building_luxury_residence_desc:0 "精心设计的住宅楼，里面全是豪华的公寓。构思奇特的阳台全靠先进的零重力科技才不致于崩塌。"
+
+tech_hive_confluence_desc:1 "蜂群思维的意志可以通过超级神经元神经中枢的扩展和发展来深入强化并协调。"
+tech_food_processing_1:0 "食品加工"
+tech_food_processing_1_desc:1 "改良的$RhineSky_Prescripted_Resource_Foods$加工技术可以让$RhineSky_Prescripted_Resource_Foods$长久保存并减少$RhineSky_Prescripted_Resource_Foods$腐坏。"
+tech_food_processing_2:0 "先进食品加工"
+tech_food_processing_2_desc:1 "全新的冷冻保存和蛋白质重组方法可以大幅提升食品加工的效率。"
+
+d_ancient_particle_accelerator_desc:0 "这台古老的粒子加速器的设计却很有新意，从现存的终端中可以获取大量研究数据。这些研究一定是由某位天才理论物理学家主持的。"
+d_underground_vault:0 "地下避难所"
+d_underground_vault_desc:0 "面积巨大的地下避难所，应该是此星球原住民的防空洞。不过在储存的$RhineSky_Prescripted_Resource_Foods$耗尽后，这些原住民开始互相残杀了。"
+d_underground_vault_2:0 "$d_underground_vault$"
+d_underground_vault_2_desc:0 "面积巨大的地下避难所，应该是此星球原住民的防空洞。避难所中有着庞大的机械园区，其中采矿用装备数量众多。"
+
+cost_500energy:0 "$RhineSky_Prescripted_Resource_Energy$：£energy£§R-500§!"
+cost_1cruiser:0 "[Root.GetAdj]巡洋舰：£military_ship£§R-1§!"
+cost_5000food:0 "$RhineSky_Prescripted_Resource_Foods$：£food£§R-5000§!"
+cost_3pops:0 "[Root.Capital.GetName]上的[Root.GetAdj]人口£pop£§R-3§!"
+cost_2000energy:0 "$RhineSky_Prescripted_Resource_Energy$：£energy£§R-2000§!"
+
+fleet1product1_addendum:0 "§H一次性交付到§Y一个殖民地§!。特利仨牌双层床的使用期限为§Y80年§!，不多不少。在有效期内增加§Y$MOD_PLANET_HOUSING_ADD$§!§G+10%§!。§!\n\n（请注意双层床说明中没提到的内容。双层床的使用与因跌下床导致的轻微伤人数的急剧增长存在相关性。可能会带来隐私问题。可能会提高社会对季节性传染病和/或流行病的易感性。）" # FIXME Carefully considered distribution of bunk beds not included.
+fleet1product1_tooltip:0 "§G+1§!§Y部署特利仨双层床铺§!决策"
+fleet1product2:0 "§G特利仨牌食品容器§!！贵政府是否厌倦了殖民者任由各种完全可消化的蔬菜和动物质在住所里腐烂，仅仅是因为他们的消化系统一次只能处理这么些输入吗？\n\n将这些半透明有盖容器空投到您青睐的殖民地，它可以封存熟食或生食，并持续保持保鲜。这是将残羹剩饭保存为美味和/或名义上营养零食的完美方式，可以大幅减少$RhineSky_Prescripted_Resource_Foods$浪费，因此减少$RhineSky_Prescripted_Resource_Foods$需求。"
+fleet1product2_addendum:1 "§H一次性交付到§Y一个殖民地§!。特利仨牌食品容器的使用期限为§Y80年§!，不多不少。在有效期内降低§Y$mod_planet_pops_organics_food_upkeep_mult$§!§G-10%§!。§!\n\n（使用100%万格拉容器型聚合物制造，经认证可容纳III级腐败物。洗碗机可用。）"
+fleet1product2_tooltip:0 "§G+1§!§Y部署特利仨食品容器§!决策"
+
+bunkbeds_deployed_desc:1 "高效的特利仨牌可堆叠睡眠箱可以降低此星球上的住房需求。"
+tupperware_deployed:0 "§H$cara_fleet1_contact.title$§!：已部署$RhineSky_Prescripted_Resource_Foods$保鲜容器"
+tupperware_deployed_desc:0 "使用特利仨牌食品容器可以降低此星球上的$RhineSky_Prescripted_Resource_Foods$浪费。"
+atmospheric_deodorizer_deployed:1 "§H$cara_fleet1_contact.title$§!：已部署大气除臭器"
+atmospheric_deodorizer_deployed_desc:0 "大气层清洗器可以使此星球上的空气如薄荷般清新。"
+
+MANDATE_mandate_monthly_minerals:1 "矿石精炼"
+MANDATE_mandate_monthly_minerals_DESC:1 "[Root.GetRulerTitle][Root.GetRulerName]承诺将我们的£minerals£§H$RhineSky_Prescripted_Resource_Minerals$§!生产盈余增加到至少£minerals£§Y+30§!/月，并因此当选。\n\n任期结束时的奖励：\n$mandate_unity_reward$"
+tupperware_deployed:0 "§H$cara_fleet1_contact.title$§!：已部署$RhineSky_Prescripted_Resource_Foods$保鲜容器"
+MANDATE_mandate_monthly_food_DESC:1 "[Root.GetRulerTitle][Root.GetRulerName]承诺将我们的£food£§H$RhineSky_Prescripted_Resource_Foods$§!生产盈余增加到至少£food£§Y+15§!/月，并因此当选。\n\n任期结束时的奖励：\n$mandate_unity_reward$"
+MANDATE_mandate_monthly_alloys:1 "合金冶炼"
+MANDATE_mandate_monthly_alloys_DESC:1 "[Root.GetRulerTitle][Root.GetRulerName]承诺将我们的£alloys£§H合金§!生产盈余增加到至少£alloys£§Y+12§!/月，并因此当选。\n\n任期结束时的奖励：\n$mandate_unity_reward$"
+
+galactic_market_station_desc:0 "虽然名义上无组织且不受银河地缘政治影响，但银河贸易市场的许多管理部门都坐落于此空间站内。"
+
+planet_pops_organics_food_upkeep_mult:0 "£pop£人口£food£$RhineSky_Prescripted_Resource_Foods$消耗"
+
+# Messages
+
+already_bought:0 "我们已经购买了这个产品"
+
+GetPurgeProcessingResource_food:0 "营养丰富的$RhineSky_Prescripted_Resource_Foods$源，提升£food£§H$RhineSky_Prescripted_Resource_Foods$§!产出"
+GetPurgeProcessingResource_minerals:1 "金属碎片，提升£alloys£§H合金§!产出"
+
+
+
+projecting_moon_desc:0 "这颗卫星上有一个强大的通讯设备，可以发射以假乱真的勘察读数。"
+cornucopia:0 "丰饶"
+cornucopia_desc:0 "这颗行星上拥有丰富的$RhineSky_Prescripted_Resource_Foods$资源。"
+raw_materials:0 "原矿石"
+raw_materials_desc:0 "这颗行星上拥有丰富的$RhineSky_Prescripted_Resource_Minerals$和矿石资源。"
+
+
+ancient_one:0 "旧日支配者"
+ancient_one_desc:0 "古老的存在，居住在深海之下，是主宰行星的生命力量。"
+food_rich_planet:0 "富营养$RhineSky_Prescripted_Resource_Foods$"
+food_rich_planet_desc:0 "行星的植物群提供了富含营养的水果和物质，可以改善生存环境。"
+super_sensor_array:0 "究极传感器阵列"
+
+
+MOD_POP_ETHICS_SHIFT_SPEED_DESC:0 "人口改变道德的几率由此值上升或下降。"
+MOD_POP_SLOTS:0 "人口槽位"
+MOD_POP_FOOD_REQ:1 "$RhineSky_Prescripted_Resource_Foods$消耗"
+MOD_POP_FOOD_REQ_DESC:0 "帝国内所有人口的$RhineSky_Prescripted_Resource_Foods$需求都将依据此数值调整。"
+MOD_POP_FOOD_REQ_MULT:0 "$MOD_POP_FOOD_REQ$"
+MOD_POP_FOOD_REQ_MULT_DESC:0 "帝国内所有人口的$RhineSky_Prescripted_Resource_Foods$需求都将依据此数值调整。"
+MOD_POP_GROWTH_SPEED_REDUCTION:0 "人口增长减少"
+MOD_POP_GROWTH_SPEED_REDUCTION:0 "人口增长减少"
+
+MOD_POP_DECLINE_SPEED_DESC:0 "此数值影响人口下降的速度。"
+MOD_POP_GROWTH_REQ:1 "增长时间"
+MOD_POP_GROWTH_REQ_DESC:1 "此数值影响产生一个新人口所需的$RhineSky_Prescripted_Resource_Foods$量。"
+MOD_POP_GROWTH_REQ_MULT:1 "增长时间"
+MOD_POP_GROWTH_REQ_MULT_DESC:1 "此数值影响产生一个新人口所需的$RhineSky_Prescripted_Resource_Foods$量。"
+MOD_POP_EFF_WO_SLAVES:3 "无奴仆人口时的幸福度"
+pop_happiness_without_slaves:1 "缺乏奴仆人口"
+
+MOD_POP_NON_FOOD_RESOURCE_OUTPUT:0 "人口减产"
+MOD_POP_SLAVE_MINERAL_OUTPUT:3 "奴隶$RhineSky_Prescripted_Resource_Minerals$产量"
+MOD_POP_SLAVE_FOOD_OUTPUT:1 "奴隶$RhineSky_Prescripted_Resource_Foods$产量"
+MOD_POP_ROBOT_PRODUCTION_OUTPUT:1 "机器人资源产量"
+MOD_POP_ROBOT_NON_ENERGY_OUTPUT:0 "$MOD_POP_ROBOT_PRODUCTION_OUTPUT$"
+MOD_POP_FOOD_ADD:1 "加工$RhineSky_Prescripted_Resource_Foods$产量"
+MOD_POP_FOOD_MULT:2 "$MOD_POP_FOOD_ADD$"
+MOD_POP_ENERGY_ADD:0 "加工$RhineSky_Prescripted_Resource_Energy$产量"
+
+mod_country_base_energy_produces_mult_DESC:0 "我帝国总体能源点数生产将依据此数值调整。"
+mod_country_base_minerals_produces_mult_DESC:0 "我帝国总体矿物生产将依据此数值调整。"
+mod_planet_resource_food_add:0 "行星$RhineSky_Prescripted_Resource_Foods$"
+mod_planet_resource_minerals_add:0 "行星$RhineSky_Prescripted_Resource_Minerals$"
+MOD_COUNTRY_RESOURCE_MAX_ADD:0 "资源储备容量"
+mod_country_max_resource_minerals_add:0 "$RhineSky_Prescripted_Resource_Minerals$储备容量"
+mod_country_max_resource_food_add:0 "$RhineSky_Prescripted_Resource_Foods$储备容量"
+mod_country_max_resource_energy_add:0 "$RhineSky_Prescripted_Resource_Foods$储备容量"
+mod_country_max_influence_add:0 "影响力上限"
+mod_country_base_energy_produces_add:2 "每月£energy£$RhineSky_Prescripted_Resource_Energy$"
+mod_country_base_minerals_produces_add:2 "每月£minerals£$RhineSky_Prescripted_Resource_Minerals$"
+mod_country_base_food_produces_add:1 "每月£food£$RhineSky_Prescripted_Resource_Foods$"
+mod_country_base_unity_produces_mult:1 "每月£unity£凝聚力"
+mod_country_base_unity_produces_mult_DESC:0 "我帝国凝聚力总产出将依据此数值调整。"
+
+mod_country_base_unity_produces_add:0 "每月凝聚力"
+tile_resource_unity_add:0 "凝聚力产出"
+mod_country_base_food_produces_mult:0 "$RhineSky_Prescripted_Resource_Foods$产出"
+static_resource_energy_add:0 "$country_base_energy_produces_add$"
+static_resource_unity_add:0 "$country_base_unity_produces_add$"
+
+
+EMPIRE_DESIGN_blorg_desc:0 "在很久以前，布洛葛一族都是在布洛葛主星的丛林中分开独居的。有一天，他们收听到来自遥远星系的一段无线电通讯。他们被这段通讯的内容震惊了：里面包含着友谊、电影、音乐、文化等等他们闻所未闻的东西。他们终于意识到自己生活的匮乏，布洛葛一族随之从这段通讯的内容给自己起了名字，并开始进入星辰大海寻找这段信息的起源，为的是和他们交个朋友。"
+EMPIRE_DESIGN_kel_azaan:1 "开尔-阿赞共和国"
+EMPIRE_DESIGN_kel_azaan_desc:1 "开尔-阿赞拥有崇尚武力的文化，从中发展出一套复杂的荣辱观。他们原本是种独居动物，在阿扎克星上的水塘之间迁徙的牧群中猎取$RhineSky_Prescripted_Resource_Foods$。慢慢的，开尔-阿赞聚拢成群以对付更大的猎物。在建成城市后，他们最终摒弃了独来独往的生活方式，并发展出农业。但他们从没忘记自己的好战传统。"
+EMPIRE_DESIGN_iferyx:0 "伊芙瑞克斯联合舰队"
+EMPIRE_DESIGN_iferyx_desc:1 "伊芙瑞克斯人曾经分裂为相互竞争的贸易飞地，但为了抵抗灾难性的物种入侵，他们被迫重新团结在了一起。伊芙瑞克斯社会基于平等主义，但暗中存在着一个秘密会议，它确保伊芙瑞克斯人中的个人主义倾向无法威胁到主体思想。\n伊芙瑞克斯文化由多民俗融合而成, 信仰与传说来自各种各样社区，并将继续流传在日常生活之中。"
+
+
+edible_plant:0 "生菜"
+edible_plants:0 "什锦沙拉"
+edible_fallback:0 "一小份$RhineSky_Prescripted_Resource_Foods$"
+edible_fallback_plural:0 "美味佳肴"
+
+
+
+tr_adaptability_dietary_enrichment:0 "食谱富集"
+tr_adaptability_dietary_enrichment_desc:1 "£food£§Y$mod_country_food_produces_mult$§!产量增加§G+10%§!。"
+tr_adaptability_dietary_enrichment_delayed:1 "通过各种富集技术我们可以提高供应给人口的$RhineSky_Prescripted_Resource_Foods$的营养价值，因此我们可以用更少的$RhineSky_Prescripted_Resource_Foods$喂饱更多的嘴。"
+
+tr_adaptability_survival_fittest:0 "适者生存"
+
+
+CREATE_FLEET_FROM_NAVAL_CAP_EFFECT:0 "$COUNTRY|Y$ 获得一支相当于其舰队规模上限的 $PERC|Y%$ 的舰队。"
+ADD_MINERALS_EFFECT:3 "£minerals£ §Y$RhineSky_Prescripted_Resource_Minerals$§!：$NUM$\n"
+ADD_FOOD_EFFECT:3 "£food£ §Y$RhineSky_Prescripted_Resource_Foods$§!：$NUM$\n"
+ADD_PHYSICS_EFFECT:3 "£physics£ §Y物理研究§!：$NUM$\n"
+ADD_SOCIETY_EFFECT:3 "£society£ §Y社会研究§!：$NUM$\n"
+
+TRIGGER_HAS_ASCENSION_PERK:0 "有 $TRADITION|Y$ 飞升特质"
+TRIGGER_NOT_HAS_ASCENSION_PERK:0 "没有 $TRADITION|Y$ 飞升特质"
+TRIGGER_EXCESS_FOOD:0 "有 $COMPARE$ $VAL0|0Y%$ 过剩$RhineSky_Prescripted_Resource_Foods$"
+TRIGGER_NOT_EXCESS_FOOD:0 "没有 $COMPARE$ $VAL0|0Y%$ 过剩$RhineSky_Prescripted_Resource_Foods$"
+
+any_owned_pop_trigger:0 "任何拥有的人口"
+
+EMPIRE_NOT_SIZE_TRIGGER:1 "$EMPIRE_SIZE$不$COMPARE$$VAL|Y$"
+EMPIRE_SIZE_TRIGGER:1 "$EMPIRE_SIZE$$COMPARE$$VAL|Y$"
+FOOD_TRIGGER:0 "$RhineSky_Prescripted_Resource_Foods$$COMPARE$$VAL|Y$"
+FOOD_TRIGGER_NOT:0 "$RhineSky_Prescripted_Resource_Foods$不$COMPARE$$VAL|Y$"
+CLOSE_BRANCH_OFFICE_EFFECT:0 "关闭$ADJ|Y$分公司"
+ESTABLISH_BRANCH_OFFICE_EFFECT:0 "$COUNTRY|Y$设立新公司"
+
+
+TUTORIAL_CONSTRUCTION_SHIP_DESC:1 "这是我们的§S工程船§!，用于建设基地。当行星之类的天体勘察完毕后，就可以派遣工程船建造一座§S科研基地§!，也可建造§S采矿基地§!以便采集行星上的资源。\n\n这种飞船可以在没主权的星系中建造§S太空基地§!，这对我们的扩张至关重要。"
+TUTORIAL_PLANETVIEW_PLANET_TITLE:0 "行星简介"
+TUTORIAL_PLANETVIEW_PLANET_DESC:3 "这是我们的母星，也是帝国的§S首都§!。我们目前正在浏览的是§S行星总览§!界面，显示了这颗行星的重要数据概览。\n\n我们可以看到这颗行星可以支持的§S地区§!总数，上面生活的§S人口§!数和行星生产消耗的§S$RhineSky_Prescripted_Resource_Foods$§!及其它§S资源§!数量。我们也可以看到这颗行星的§S稳定度§!是否过低。而且如果指派了§S总督§!，也会显示在这里。我们也可以在需要时设置行星规划，自动建设行星。"
+TUTORIAL_PLANETVIEW_TILES_TITLE:1 "人口界面"
+TUTORIAL_PLANETVIEW_TILES_DESC:2 "这里我们可以看到星球的人口明细，分划为不同的层次，或者叫§S阶层§!。\n\n我们可以展开§S社会阶层§!来查看里面的§S职位§!类型。§S职位§!使用并生产各种资源，而且从事职位的人口需要一定数量的§S住房§!和§S舒适度§!。如果任一需求未能得到满足，就会降低§S幸福度§!，导致星球的§S稳定性§!下降。"
+
+tutorial_10_tooltip:0 "§S教程：招募科学家§!已经加入情报日志中"
+tutorial_11_chain_title:0 "教程：建造殖民船"
+tutorial_11_chain_desc:4 "现在该殖民另一颗星球了。首先我们得建造一艘§S殖民船§!。建造这些殖民船需要花很长时间，以及大量的§S合金§!、§S$RhineSky_Prescripted_Resource_Foods$§!和§S$RhineSky_Prescripted_Resource_Cosume_Goods$§!，但兴旺发展的殖民地带来的回报远远大于这笔投入。\n\n点击你的太空基地，并选择§S船坞§!界面。然后点击§S建造舰船§!按钮，并选择§S殖民船§!。\n\n请注意，在建造开始之前，你必须先积累足够的资源。"
+colony_ship_built:0 "殖民船建造完毕"
+tutorial_11_tooltip:0 "§S教程：建造殖民船§!已经加入情报日志中"
+
+
+unrest.156.b:0 "我们必须解决分歧"
+unrest.159.name:0 "$unrest_title$ 饥荒袭击了[Root.GetName]"
+unrest.159.desc:0 "似乎 [Root.GetName] 上的奴隶已经厌倦了……进食。发言人通知我们，大量奴隶将拒绝所有的$RhineSky_Prescripted_Resource_Foods$摄入，直到我们在行星上废除奴役。迄今为止，我们所有强迫他们进食的努力都失败了。遗憾的是，缺乏营养将会大大降低他们的工作效率。"
+unrest.159.a:0 "让他们继续挨饿。"
+unrest.159.b:0 "我们需要解决这一问题。"
+
+
+utopia.3339.opt.a:0 "可怕！"
+utopia.3340.name:0 "极欲灵尊：§R腐化堕落§!"
+utopia.3340.desc:0 "灵尊强加给我人民的欲望十分强烈。§Y[planet_target.GetName]§!上的人民陷入了消费主义和生活腐化的狂潮，开始要求更多的独家商品，更稀有更美味的$RhineSky_Prescripted_Resource_Foods$。在几个购物区已经发生了暴乱，我们被迫提高了农业和工业的产量，以阻止行星陷入混乱。"
+utopia.3340.opt.a:0 "遗憾。"
+utopia.3341.name:0 "谱命灵尊：§R异常突变§!"
+
+instrument_deviance_empire_desc:0 "我们整个帝国的人口已经开始对我帝国的道德准则和政策提出质疑。这无疑是§Y极欲灵尊§!的杰作。"
+instrument_consumer_goods:0 "天幕堕落"
+instrument_consumer_goods_desc:0 "这颗行星上的人口已经转向了腐朽的消费主义，迫切需求独家$RhineSky_Prescripted_Resource_Foods$和异域商品。这无疑是§Y极欲灵尊§!的杰作。"
+
+opinion_doomed_us_all:0 "招致末日"

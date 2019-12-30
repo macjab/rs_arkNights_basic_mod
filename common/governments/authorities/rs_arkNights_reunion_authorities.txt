@@ -1,0 +1,48 @@
+rs_arkNights_reunion_authorities = {
+	has_heir = yes
+
+	election_type = oligarchic
+	election_term_years = 30
+	election_term_variance = 10
+
+	# 「感染者应对自己的身份感到骄傲，积极去获取並使用属于自己的力量，这个世界，能者而居之」 —— Talulah
+	re_election_allowed = yes
+	can_reform = yes
+
+	# 如果你的力量足够强大...
+	can_have_emergency_elections = yes
+	emergency_election_cost = 900
+
+	has_agendas = yes
+	uses_mandates = yes
+
+	icon = "gfx/interface/icons/governments/authorities/rs_arkNights_reunion_authorities.dds"
+
+	# 罗德岛：感染者的第二个家、并且与其他势力有着广泛的合作(其中不乏各种商贾和军事势力)、同时地下情报网的深度与广度也在日渐成长、当前正在为着感染者的更好的明天而战斗着
+	country_modifier = {
+		country_naval_cap_mult = 0.15
+		country_trade_attractiveness = 0.15
+		country_trust_growth = 0.15
+		country_starbase_influence_cost_mult = 0.15
+		pop_happiness = 0.15
+	}
+
+	possible = {
+		ethics = {
+			value = ethic_militarist
+			value = ethic_fanatic_xenophobe
+		}
+	}
+
+	traits = {
+#		trait = rs_arkNights_Reunion_pops_trait_oripathy		# 目前可以通过后期的基因修饰进行修改，但是在一开始的预设帝国里不能修改的说(即"默认初始无法移除"的说，谢谢)，
+																# 这么做的原因，是用于以此来模拟"高科技进步后的源石病被治愈"的HE/GE效果(基因/合成修饰效果)的说，qwq，虎摸，谢谢，
+#		trait = rs_arkNights_Reunion_pops_traint_originiumsArts
+#		trait = rs_arkNights_Reunion_pops_trait_originiumsTech
+#		trait = rs_arkNights_Reunion_pops_trait_roglandPeople
+	}
+
+	tags = {
+		RhineSky_Prescripted_Reunion_Authorities_Tag_1
+	}
+}

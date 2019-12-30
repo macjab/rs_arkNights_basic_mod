@@ -1,0 +1,241 @@
+﻿l_simp_chinese:
+ ###############################################
+ #####-----Author:   RhineSky--------------#####
+ #####-----SteamID:  RhineSky--------------#####
+ #####------Email:   macjab@macjab.com-----#####
+ #####------QQ：     516278065-------------#####
+ #U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+ ###############################################
+
+ ##########-----all_leader_feature_traits-----##########
+rs_arkNights_Common_leaders_traint_originiumsArts:0 "源石技艺使用者"
+rs_arkNights_Common_leaders_traint_originiumsArts_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Common_leaders_traint_originiumsArts_custom_tooltip:0 ""
+
+# ----------罗德岛的每个arkNights角色的领导者的技能特性(源石技艺)：个人技能&天赋技能相关----------
+####################################################################################
+##########-----Ruler组指挥官leaders的各个人物能力特点的源石技艺特征点-----##########
+####################################################################################
+rs_arkNights_ruler_dobermann_feature_traint_originiumsArts:0 "杜宾的源石技艺"
+rs_arkNights_ruler_dobermann_feature_traint_originiumsArts_desc:0 "敬礼！曾属玻利瓦尔国民警备队，我是教官杜宾。长话短说，请把需受训干员的名单给我看一下。"
+rs_arkNights_ruler_dobermann_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_ruler_amiya_feature_traint_originiumsArts:0 "阿米娅的源石技艺"
+rs_arkNights_ruler_amiya_feature_traint_originiumsArts_desc:0 "博士，能再见到您......真是太好了。今后我们同行的路还很长，所以，请您多多关照!"
+rs_arkNights_ruler_amiya_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_ruler_warfarin_feature_traint_originiumsArts:0 "华法琳的源石技艺"
+rs_arkNights_ruler_warfarin_feature_traint_originiumsArts_desc:0 "我，华法琳，血液学专科医生。比起普通的治疗法术，我会利用血液学相关知识和经验，为你们提供比常规方式更好的医疗保障。那么，请多关照啦。"
+rs_arkNights_ruler_warfarin_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_ruler_kaltsit_feature_traint_originiumsArts:0 "凯尔希的源石技艺"
+rs_arkNights_ruler_kaltsit_feature_traint_originiumsArts_desc:0 "我出现在这里，说明局势不容乐观。你需要专心……继续完成你的使命。"
+rs_arkNights_ruler_kaltsit_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_ruler_doctor_feature_traint_originiumsArts:0 "博士的源石技艺"
+rs_arkNights_ruler_doctor_feature_traint_originiumsArts_desc:0 "..."
+rs_arkNights_ruler_doctor_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+#####################################################################################
+##########-----Governor组总督leaders的各个人物能力特点的源石技艺特征点-----##########
+#####################################################################################
+rs_arkNights_governor_yato_feature_traint_originiumsArts:0 "夜刀的源石技艺"
+rs_arkNights_governor_yato_feature_traint_originiumsArts_desc:0 "先锋干员夜刀，你——就是我要保护的人吗？"
+rs_arkNights_governor_yato_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_governor_fang_feature_traint_originiumsArts:0 "芬的源石技艺"
+rs_arkNights_governor_fang_feature_traint_originiumsArts_desc:0 "我是芬，长枪手，现在正担任着行动预备组A1的队长一职。我和我的小队一定会竭尽全力，成为罗德岛可靠的战力。"
+rs_arkNights_governor_fang_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_governor_orchid_feature_traint_originiumsArts:0 "梓兰的源石技艺"
+rs_arkNights_governor_orchid_feature_traint_originiumsArts_desc:0 "预备行动组A6的组长，梓兰，前来报道。您就是博士吗，接下来的工作请多多关照。"
+rs_arkNights_governor_orchid_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_governor_melantha_feature_traint_originiumsArts:0 "枚兰莎的源石技艺"
+rs_arkNights_governor_melantha_feature_traint_originiumsArts_desc:0 "......玫兰莎。从现在起，我的利刃将为您所用。"
+rs_arkNights_governor_melantha_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_governor_ACE_feature_traint_originiumsArts:0 "ACE的源石技艺"
+rs_arkNights_governor_ACE_feature_traint_originiumsArts_desc:0 "交给我和我的小队吧。"
+rs_arkNights_governor_ACE_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+########################################################################################
+##########-----Scientist组科学家leaders的各个人物能力特点的源石技艺特征点-----##########
+########################################################################################
+rs_arkNights_scientist_hibiscus_feature_traint_originiumsArts:0 "芙蓉的源石技艺"
+rs_arkNights_scientist_hibiscus_feature_traint_originiumsArts_desc:0 "实习医生芙蓉，今天开始，我会负责您和罗德岛各位干员的健康管理项目，请多多关照！"
+rs_arkNights_scientist_hibiscus_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_scientist_ansel_feature_traint_originiumsArts:0 "安塞尔的源石技艺"
+rs_arkNights_scientist_ansel_feature_traint_originiumsArts_desc:0 "我是实习医生安赛尔，今后将承担一些外科医疗方面的辅助工作，还请您多多指教。"
+rs_arkNights_scientist_ansel_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_scientist_perfumer_feature_traint_originiumsArts:0 "调香师的源石技艺"
+rs_arkNights_scientist_perfumer_feature_traint_originiumsArts_desc:0 "初次见面，博士。我是调香师莱娜。您听说过调香师这种职业吗？"
+rs_arkNights_scientist_hibiscus_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_scientist_gavial_feature_traint_originiumsArts:0 "嘉维尔的源石技艺"
+rs_arkNights_scientist_gavial_feature_traint_originiumsArts_desc:0 "我是医疗术师嘉维尔。先说好了，对我，可不能以貌取人，明白吗？"
+rs_arkNights_scientist_gavial_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_scientist_nightingal_feature_traint_originiumsArts:0 "夜莺的源石技艺"
+rs_arkNights_scientist_nightingal_feature_traint_originiumsArts_desc:0 "丽兹，这是我真正的名字，除此之外的事情，我都不记得了……"
+rs_arkNights_scientist_nightingal_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_scientist_angelina_feature_traint_originiumsArts:0 "安洁莉娜的源石技艺"
+rs_arkNights_scientist_angelina_feature_traint_originiumsArts_desc:0 "我是来自叙拉古的信使，安心院安洁莉娜。嗯，叫我安洁莉娜就可以了。我能用渺渺尔曼来称呼博士你吗？"
+rs_arkNights_scientist_angelina_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_scientist_shining_feature_traint_originiumsArts:0 "闪灵的源石技艺"
+rs_arkNights_scientist_shining_feature_traint_originiumsArts_desc:0 "巡回医师闪灵，你在哪里见过我吗？或许在旅途中，我们也曾擦肩而过。"
+rs_arkNights_scientist_shining_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+########################################################################################
+##########-----Admiral组舰队司令leaders的各个人物能力特点的源石技艺特征点-----##########
+########################################################################################
+rs_arkNights_admiral_catapult_feature_traint_originiumsArts:0 "空爆的源石技艺"
+rs_arkNights_admiral_catapult_feature_traint_originiumsArts_desc:0 "行动预备组A6，空爆，前来报道！哎呀~我一眼就能看出来，你和那个死板的，啊不，令人尊敬的教官杜宾小姐，可是一点都不一样，对吧？"
+rs_arkNights_admiral_catapult_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_admiral_deepcolor_feature_traint_originiumsArts:0 "深海色的源石技艺"
+rs_arkNights_admiral_deepcolor_feature_traint_originiumsArts_desc:0 "请叫我“深海色”。我的职业是画家，对，只是一个“画家”哦。"
+rs_arkNights_admiral_deepcolor_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_admiral_firewatch_feature_traint_originiumsArts:0 "守林人的源石技艺"
+rs_arkNights_admiral_firewatch_feature_traint_originiumsArts_desc:0 "狙击手守林人。为了复仇，我需要强大力量的帮助。"
+rs_arkNights_admiral_firewatch_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_admiral_bluepoision_feature_traint_originiumsArts:0 "蓝毒的源石技艺"
+rs_arkNights_admiral_bluepoision_feature_traint_originiumsArts_desc:0 "初次见面，我是蓝毒，想必您已经听凯尔希医生提起过我，那么，该如何运用我这“毒物”的能力，就交由您来决定了。"
+rs_arkNights_admiral_bluepoision_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_admiral_skyfire_feature_traint_originiumsArts:0 "天火的源石技艺"
+rs_arkNights_admiral_skyfire_feature_traint_originiumsArts_desc:0 "“王者之杖”所属，天火。在达成目的之前，我会暂时在罗德岛停留。目的？当然是将整合运动焚烧殆尽。"
+rs_arkNights_admiral_skyfire_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_admiral_provence_feature_traint_originiumsArts:0 "普罗旺斯的源石技艺"
+rs_arkNights_admiral_provence_feature_traint_originiumsArts_desc:0 "我是普罗旺斯，是个普通的天灾工作者~您这样盯着我看，是在意我的尾巴吗~?"
+rs_arkNights_admiral_provence_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_admiral_meteorite_feature_traint_originiumsArts:0 "陨星的源石技艺"
+rs_arkNights_admiral_meteorite_feature_traint_originiumsArts_desc:0 "代号陨星，职业是自由佣兵。如你所见，是萨卡兹人。即使这样，你还依然打算雇佣我吗？"
+rs_arkNights_admiral_meteorite_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_admiral_truth_feature_traint_originiumsArts:0 "真理的源石技艺"
+rs_arkNights_admiral_truth_feature_traint_originiumsArts_desc:0 "我是真理，虽然还是一名学生，却因为会使用法术，所以就被招募了......是啊，身为学生却站在这种地方，真是奇怪，不是吗？"
+rs_arkNights_admiral_truth_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_admiral_lappland_feature_traint_originiumsArts:0 "拉普兰德的源石技艺"
+rs_arkNights_admiral_lappland_feature_traint_originiumsArts_desc:0 "暴虐的恶人阻断正义的道路，我的主人啊，以复仇与恶意为名，引领弱小的人吧。"
+rs_arkNights_admiral_lappland_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+########################################################################################
+##########-----General组陆军将军leaders的各个人物能力特点的源石技艺特征点-----##########
+########################################################################################
+rs_arkNights_general_cuora_feature_traint_originiumsArts:0 "蛇屠箱的源石技艺"
+rs_arkNights_general_cuora_feature_traint_originiumsArts_desc:0 "欸？这里是什么地方？我是谁？"
+rs_arkNights_general_cuora_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_general_fronstleaf_feature_traint_originiumsArts:0 "霜叶的源石技艺"
+rs_arkNights_general_fronstleaf_feature_traint_originiumsArts_desc:0 "霜叶，前佣兵，现在，是你的干员。随意调遣我吧，我什么都能做。"
+rs_arkNights_general_fronstleaf_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_general_matoimaru_feature_traint_originiumsArts:0 "缠丸的源石技艺"
+rs_arkNights_general_matoimaru_feature_traint_originiumsArts_desc:0 "缠丸，现在正式加入罗德岛！我来负责战斗，指挥就交给博士你了！"
+rs_arkNights_general_matoimaru_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_general_scavenger_feature_traint_originiumsArts:0 "清道夫的源石技艺"
+rs_arkNights_general_scavenger_feature_traint_originiumsArts_desc:0 "我是清道夫，肮脏的工作我来做，你和那些家伙一样，只要付钱就行了。"
+rs_arkNights_general_scavenger_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_general_nearl_feature_traint_originiumsArts:0 "临光的源石技艺"
+rs_arkNights_general_nearl_feature_traint_originiumsArts_desc:0 "玛嘉烈·临光，卡西米尔耀骑士……不，就让我作为一名罗德岛干员，用这面盾捍卫您的生命、您的荣耀。"
+rs_arkNights_general_nearl_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_general_projektred_feature_traint_originiumsArts:0 "红的源石技艺"
+rs_arkNights_general_projektred_feature_traint_originiumsArts_desc:0 "猎狼人，红，闻到了狼的气息。"
+rs_arkNights_general_projektred_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_general_winter_feature_traint_originiumsArts:0 "凛冬的源石技艺"
+rs_arkNights_general_winter_feature_traint_originiumsArts_desc:0 "凛冬，乌萨斯学生自治团团长。我自己怎么样无所谓，但现在我的同伴需要一个安身之处。好了，快给我安排些工作，我知道在这里生活不是免费的。"
+rs_arkNights_general_winter_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_general_specter_feature_traint_originiumsArts:0 "幽灵鲨的源石技艺"
+rs_arkNights_general_specter_feature_traint_originiumsArts_desc:0 "幽灵鲨......那些‘死者’都这样称呼我。那位医生告诉我，继续获得治疗的条件，是为罗德岛而战。嗯，我会的，我会把我的力量，全都献给你们。"
+rs_arkNights_general_specter_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_general_skadi_feature_traint_originiumsArts:0 "斯卡蒂的源石技艺"
+rs_arkNights_general_skadi_feature_traint_originiumsArts_desc:0 "斯卡蒂，赏金猎人。你真要签下我？我可是那种，会给你带来灾祸的人哦。"
+rs_arkNights_general_skadi_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_general_lapplan_feature_traint_originiumsArts:0 "拉普兰德的源石技艺"
+rs_arkNights_general_lapplan_feature_traint_originiumsArts_desc:0 "暴虐的恶人阻断正义的道路，我的主人啊，以复仇与恶意为名，引领弱小的人吧。"
+rs_arkNights_general_lapplan_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+rs_arkNights_general_shining_feature_traint_originiumsArts:0 "闪灵的源石技艺"
+rs_arkNights_general_shining_feature_traint_originiumsArts_desc:0 "巡回医师闪灵，你在哪里见过我吗？或许在旅途中，我们也曾擦肩而过。"
+rs_arkNights_general_shining_feature_traint_originiumsArts_custom_tooltip:0 ""
+
+########################################################################################
+########################################################################################
+########################################################################################
+########################################################################################
+########################################################################################
+
+
+# ----------罗德岛的每个非arkNights角色的领导者的技能特性(源石技艺)：个人技能&天赋技能相关----------
+####################################################################################
+##########-----Ruler组指挥官leaders的各个人物能力特点的源石技艺特征点-----##########
+####################################################################################
+rs_arkNights_Rogland_ruler_traint_originiumsArts_1:0 "这位指挥官的源石技艺"
+rs_arkNights_Rogland_ruler_traint_originiumsArts_1_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Rogland_ruler_traint_originiumsArts_1_custom_tooltip:0 ""
+
+rs_arkNights_Rogland_ruler_traint_originiumsArts_2:0 "这位指挥官的源石技艺"
+rs_arkNights_Rogland_ruler_traint_originiumsArts_2_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Rogland_ruler_traint_originiumsArts_2_custom_tooltip:0 ""
+
+#####################################################################################
+##########-----Governor组总督leaders的各个人物能力特点的源石技艺特征点-----##########
+#####################################################################################
+rs_arkNights_Rogland_governor_traint_originiumsArts_1:0 "这位总督的源石技艺"
+rs_arkNights_Rogland_governor_traint_originiumsArts_1_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Rogland_governor_traint_originiumsArts_1_custom_tooltip:0 ""
+
+rs_arkNights_Rogland_governor_traint_originiumsArts_2:0 "这位总督的源石技艺"
+rs_arkNights_Rogland_governor_traint_originiumsArts_2_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Rogland_governor_traint_originiumsArts_2_custom_tooltip:0 ""
+
+########################################################################################
+##########-----Scientist组科学家leaders的各个人物能力特点的源石技艺特征点-----##########
+########################################################################################
+rs_arkNights_Rogland_scientist_traint_originiumsArts_1:0 "这位科学家的源石技艺"
+rs_arkNights_Rogland_scientist_traint_originiumsArts_1_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Rogland_scientist_traint_originiumsArts_1_custom_tooltip:0 ""
+
+rs_arkNights_Rogland_scientist_traint_originiumsArts_2:0 "这位科学家的源石技艺"
+rs_arkNights_Rogland_scientist_traint_originiumsArts_2_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Rogland_scientist_traint_originiumsArts_2_custom_tooltip:0 ""
+
+########################################################################################
+##########-----Admiral组舰队司令leaders的各个人物能力特点的源石技艺特征点-----##########
+########################################################################################
+rs_arkNights_Rogland_admiral_traint_originiumsArts_1:0 "这位舰队司令的源石技艺"
+rs_arkNights_Rogland_admiral_traint_originiumsArts_1_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Rogland_admiral_traint_originiumsArts_1_custom_tooltip:0 ""
+
+rs_arkNights_Rogland_admiral_traint_originiumsArts_2:0 "这位舰队司令的源石技艺"
+rs_arkNights_Rogland_admiral_traint_originiumsArts_2_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Rogland_admiral_traint_originiumsArts_2_custom_tooltip:0 ""
+
+########################################################################################
+##########-----General组陆军将军leaders的各个人物能力特点的源石技艺特征点-----##########
+########################################################################################
+rs_arkNights_Rogland_general_traint_originiumsArts_1:0 "这位陆军将军的源石技艺"
+rs_arkNights_Rogland_general_traint_originiumsArts_1_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Rogland_general_traint_originiumsArts_1_custom_tooltip:0 ""
+
+rs_arkNights_Rogland_general_traint_originiumsArts_2:0 "这位陆军将军的源石技艺"
+rs_arkNights_Rogland_general_traint_originiumsArts_2_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+rs_arkNights_Rogland_general_traint_originiumsArts_2_custom_tooltip:0 ""
+

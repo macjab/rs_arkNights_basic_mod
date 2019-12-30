@@ -1,0 +1,24 @@
+rs_arkNights_Reunion_pop_species_1 = {
+	archetype = BIOLOGICAL
+
+	randomized = yes
+	
+	robotic = no # yes
+	use_climate_preference = no
+
+	portraits = {
+		rs_arkNights_Reunion_Pops_portrait_01
+	}
+
+	#possible = {
+	#	authority = {
+	#		value = rs_arkNights_reunion_authorities
+	#	}
+	#}
+
+	graphical_culture = humanoid_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+
+	leader_age_min = 14
+	leader_age_max = 60
+}

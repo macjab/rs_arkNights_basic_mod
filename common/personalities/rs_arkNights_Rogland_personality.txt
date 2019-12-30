@@ -1,0 +1,82 @@
+rs_arkNights_Rogland_Personality = {
+	aggressiveness = 0.75
+
+	trade_willingness = 1.2
+
+	bravery = 1.2
+
+	combat_bravery = 1
+
+	military_spending = 1.2
+
+	colony_spending = 1
+
+	federation_acceptance = 1.5
+
+	nap_acceptance = 1.5
+
+	commercial_pact_acceptance = 1.5
+
+	research_agreement_acceptance = 1.5
+
+	defensive_pact_acceptance = 1
+
+	migration_pact_acceptance = 1.5
+
+	advanced_start_chance = 45
+
+	weapon_preferences = weapon_type_energy
+
+	armor_ratio = 0.25
+
+	shields_ratio = 0.4
+
+	hull_ratio = 0.35
+
+	threat_modifier = 1.2
+
+	threat_others_modifier = 1
+
+	claims_modifier = 1.2
+
+	behaviour = {
+		conqueror = no
+
+		subjugator = yes
+
+		liberator = yes
+
+		opportunist = no
+
+		slaver = no
+
+		uplifter = yes
+
+		purger = no
+
+		displacer = yes
+
+		infiltrator = yes
+
+		dominator = yes
+
+		robot_exploiter = yes
+
+		robot_liberator = yes
+		
+		propagator = yes
+
+		multispecies = yes
+
+		crisis_fighter = yes
+	}
+
+	allow = {
+		has_authority = rs_arkNights_rogland_authorities
+		# has_government = rs_arkNights_rogland_goverment
+	}
+
+	weight_modifier = {
+		weight = 99999
+	}
+}

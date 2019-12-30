@@ -1,0 +1,41 @@
+﻿l_english:
+ ###############################################
+ #####-----Author:   RhineSky--------------#####
+ #####-----SteamID:  RhineSky--------------#####
+ #####------Email:   macjab@macjab.com-----#####
+ #####------QQ：     516278065-------------#####
+ #U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+ ###############################################
+ 
+# -------<自定义本地化字段>内容替换-------
+# -------<罗德岛：自定义本地化字段>内容替换-------
+RhineSky_Prescripted_Rogland_Country_Name:0 "Rhodes Island"
+RhineSky_Prescripted_Rogland_Country_Name_desc:0 "Rhodes Island"
+RhineSky_Prescripted_Rogland_Country_Adjective_Name:0 "明日方舟"
+RhineSky_Prescripted_Rogland_Ship_Prefix_Name:0 "坏家伙"
+RhineSky_Prescripted_Rogland_Species_Name:0 "罗德岛干员" # 泰拉亚人种
+RhineSky_Prescripted_Rogland_Species_Plural_Name:0 "罗德岛的干员们" # 泰拉亚人种们
+RhineSky_Prescripted_Rogland_Species_Adjective_Name:0 "感染者处理专家"
+RhineSky_Prescripted_Rogland_Planet_Name:0 "泰拉"
+RhineSky_Prescripted_Rogland_System_Name:0 "太阳系"
+RhineSky_Prescripted_Rogland_Ruler_Title_Name:0 "指挥官"
+RhineSky_Prescripted_Rogland_Hier_Title_Name:0 "副指挥官"
+RhineSky_Prescripted_Rogland_Ruler_Title_Female_Name:0 "指挥官"
+RhineSky_Prescripted_Rogland_Ruler_Title_Male_Name:0 "指挥官"
+#RhineSky_Prescripted_Rogland_Goverment_Tag_1:0 "罗德岛，感染者的明日方舟。每§R20§!年选举出一位新的指挥官，For Amiya！"
+
+# -------<整合运动：自定义本地化字段>内容替换-------
+RhineSky_Prescripted_Reunion_Country_Name:0 "Reunion"
+RhineSky_Prescripted_Reunion_Country_Name_desc:0 "Reunion"
+RhineSky_Prescripted_Reunion_Country_Adjective_Name:0 "无种族世界"
+RhineSky_Prescripted_Reunion_Ship_Prefix_Name:0 "暴鸰"
+RhineSky_Prescripted_Reunion_Species_Name:0 "整合运动成员" # 泰拉亚人种
+RhineSky_Prescripted_Reunion_Species_Plural_Name:0 "整合运动的成员们" # 泰拉亚人种们
+RhineSky_Prescripted_Reunion_Species_Adjective_Name:0 "感染者权利解放组织"
+RhineSky_Prescripted_Reunion_Planet_Name:0 "泰拉-II"
+RhineSky_Prescripted_Reunion_System_Name:0 "太阳系-II"
+RhineSky_Prescripted_Reunion_Ruler_Title_Name:0 "领袖"
+RhineSky_Prescripted_Reunion_Hier_Title_Name:0 "高级干部"
+RhineSky_Prescripted_Reunion_Ruler_Title_Female_Name:0 "领袖"
+RhineSky_Prescripted_Reunion_Ruler_Title_Male_Name:0 "领袖"
+#RhineSky_Prescripted_Reunion_Goverment_Tag_1:0 "整合运动"

@@ -1,0 +1,288 @@
+###############################################
+#####-----Author: 	RhineSky--------------#####
+#####-----SteamID:	RhineSky--------------#####
+#####-----Email:	macjab@macjab.com-----#####
+#####-----QQ：		516278065-------------#####
+#U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+###############################################
+
+# ----------通用领袖特性：源石病相关(0 cost)----------
+# A、患有源石病的罗德岛指挥官
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+ 											  # 源石病：1、100%致死<患者的人均寿命减少>、
+                                              #         2、需要更多的医疗辅助与救助<消耗品增加>、
+                                              #         3、被社会冷漠对待，而罗德岛领导者的作用之一，就是给予这些源石病患者以温暖的说，谢谢(幸福感增加、星球稳定性增加)、
+                                              #         4、感染者比平常普通人更懂感染者在这个世界上的生存痛苦与心理压力(凝聚力产出增加)、
+                                              #         ※备注-1、悲伤、凄凉、但更加懂得人性的说，qwq，虎摸，谢谢，
+
+rs_arkNights_Rogland_ruler_leaders_trait_oripathy = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { ruler }
+	leader_class = { ruler }
+
+	# sapient = yes
+	# sentient = yes
+
+	improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy.dds"
+
+	custom_tooltip = rs_arkNights_Rogland_ruler_leaders_trait_oripathy_custom_tooltip
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	# 目前每个指挥官的健康状态在[健康/患病]这2个状态里暂时最多只能选1个状态哦，qwq，虎摸，谢谢，
+	opposites = {
+		rs_arkNights_Rogland_ruler_leaders_trait_healthy
+	}
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	modifier = {
+		# 对应<设定：1>：领导者的人均减少10年寿命，
+		leader_age = -10
+
+		# 对应<设定：2>：消耗品使用增加+5%，
+		planet_pops_consumer_goods_upkeep_mult = 0.05
+
+		# 对应<设定：3>：人口幸福度+5%，
+		#				 星球稳定性+5%
+		pop_happiness 				= 0.05
+		planet_stability_add 		= 0.05
+
+		# 对应<设定：4>：人口凝聚力产出+10%，
+		country_unity_produces_mult = 0.1
+	}
+}
+
+# B、健康的罗德岛指挥官
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+ 											  # 源石病患者的朋友：1、昔日患难与共的好友被社会冷漠对待，而罗德岛领导者的作用之一，就是给予这些源石病患者以温暖的说，谢谢(幸福感增加、星球稳定性增加、凝聚力增加)、
+                                              #        			  4、作为一名非源石病患者，有着更多的社会接受度去处理社会和政治上问题(国家外交信任成长速增加)
+
+rs_arkNights_Rogland_ruler_leaders_trait_healthy = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { ruler }
+	leader_class = { ruler }
+
+	# sapient = yes
+	# sentient = yes
+
+	improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy.dds"
+
+	custom_tooltip = rs_arkNights_Rogland_ruler_leaders_trait_healthy_custom_tooltip
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	# 目前每个指挥官的健康状态在[健康/患病]这2个状态里暂时最多只能选1个状态哦，qwq，虎摸，谢谢，
+	opposites = {
+		rs_arkNights_Rogland_ruler_leaders_trait_oripathy
+	}
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	modifier = {
+		# 对应<设定：1>：人口幸福度+5%，
+		#				 星球稳定度+5%，
+		#				 人口凝聚力产出+5%
+		pop_happiness 				= 0.05
+		planet_stability_add		= 0.05
+		country_unity_produces_mult = 0.05
+
+		# 对应<设定：2>：国家外交信任成长速度+15%
+		country_trust_growth 		= 0.15
+	}
+}
+
+# C、患有源石病的罗德岛领导者
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+ 											  # 源石病：1、100%致死<患者的人均寿命减少>、
+                                              #         2、需要更多的医疗辅助与救助<消耗品增加>、
+                                              #         3、被社会冷漠对待，而罗德岛领导者的作用之一，就是给予这些源石病患者以温暖的说，谢谢(幸福感增加、星球稳定性增加)、
+                                              #         4、感染者比平常普通人更懂感染者在这个世界上的生存痛苦与心理压力(凝聚力产出增加)、
+                                              #         ※备注-1、悲伤、凄凉、但更加懂得人性的说，qwq，虎摸，谢谢，
+
+rs_arkNights_Rogland_other_leaders_trait_oripathy = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { admiral general governor scientist }
+	leader_class = { admiral general governor scientist }
+
+	# sapient = yes
+	# sentient = yes
+
+	improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy.dds"
+
+	custom_tooltip = rs_arkNights_Rogland_other_leaders_trait_oripathy_custom_tooltip
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	# 目前每个领导者的健康状态在[健康/普通患病/特殊患病]这3个状态里暂时最多只能选1个状态哦，qwq，虎摸，谢谢，
+	opposites = {
+		rs_arkNights_Rogland_other_leaders_trait_neuroticism_oripathy
+		rs_arkNights_Rogland_other_leaders_trait_healthy
+	}
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	modifier = {
+		# 对应<设定：1>：领导者的人均减少10年寿命，
+		leader_age = -10
+
+		# 对应<设定：2>：消耗品使用增加+5%，
+		#<DIS> planet_pops_consumer_goods_upkeep_mult = 0.05*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory
+
+		# 对应<设定：3>：人口幸福度+5%，
+		#				 星球稳定性+5%
+		#<DIS> pop_happiness 		= 0.05*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory
+		#<DIS> planet_stability_add = 0.05*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory
+
+		# 对应<设定：4>：人口凝聚力产出+10%，
+		country_unity_produces_mult = 0.1
+	}
+}
+
+# D、患有特殊神经性源石病的罗德岛领导者
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+ 											  # 源石病：1、100%致死<患者的人均寿命减少>、
+                                              #         2、需要更多的医疗辅助与救助<消耗品增加>、
+                                              #         3、被社会冷漠对待，而罗德岛领导者的作用之一，就是给予这些源石病患者以温暖的说，谢谢(幸福感增加、星球稳定性增加)、
+                                              #         4、感染者比平常普通人更懂感染者在这个世界上的生存痛苦与心理压力(凝聚力产出增加)、
+                                              #         ※备注-1、悲伤、凄凉、但更加懂得人性的说，qwq，虎摸，谢谢，
+
+rs_arkNights_Rogland_other_leaders_trait_neuroticism_oripathy = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { admiral general governor scientist }
+	leader_class = { admiral general governor scientist }
+
+	# sapient = yes
+	# sentient = yes
+
+	improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_neuroticism_oripathy.dds"
+
+	custom_tooltip = rs_arkNights_Rogland_other_leaders_trait_neuroticism_oripathy_custom_tooltip
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	# 目前每个领导者的健康状态在[健康/普通患病/特殊患病]这3个状态里暂时最多只能选1个状态哦，qwq，虎摸，谢谢，
+	opposites = {
+		rs_arkNights_Rogland_other_leaders_trait_oripathy
+		rs_arkNights_Rogland_other_leaders_trait_healthy
+	}
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	modifier = {
+		# 对应<设定：1>：领导者的人均减少15年寿命，
+		leader_age = -15
+
+		# 对应<设定：2>：消耗品使用增加+5%，
+		#<DIS> planet_pops_consumer_goods_upkeep_mult = 0.05*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory
+
+		# 对应<设定：3>：人口幸福度+5%，
+		#				 星球稳定性+5%
+		#<DIS> pop_happiness 		= 0.05*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory
+		#<DIS> planet_stability_add = 0.05*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory
+
+		# 对应<设定：4>：人口凝聚力产出+10%，
+		country_unity_produces_mult = 0.1*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory
+	}
+}
+
+# E、健康的罗德岛领导者(※备注-1：目前暂时不用此领导者特征点的说，谢谢)，谢谢，
+# ※备注-2：目前除了Ruler统治者指挥官外，其他领导者暂时不使用此领导者特征点的说(暂无使用必要，等待后续的数值设计方案里再待定的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+# ※备注-3：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+ 											  # 源石病患者的朋友：1、昔日患难与共的好友被社会冷漠对待，而罗德岛领导者的作用之一，就是给予这些源石病患者以温暖的说，谢谢(幸福感增加、星球稳定性增加、凝聚力增加)、
+                                              #        			  4、作为一名非源石病患者，有着更多的社会接受度去处理社会和政治上问题(国家外交信任成长速增加)
+
+rs_arkNights_Rogland_other_leaders_trait_healthy = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { admiral general governor scientist }
+	leader_class = { admiral general governor scientist }
+
+	# sapient = yes
+	# sentient = yes
+
+	improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy.dds"
+
+	custom_tooltip = rs_arkNights_Rogland_other_leaders_trait_healthy_custom_tooltip
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	# 目前每个领导者的健康状态在[健康/普通患病/特殊患病]这3个状态里暂时最多只能选1个状态哦，qwq，虎摸，谢谢，
+	opposites = {
+		rs_arkNights_Rogland_other_leaders_trait_oripathy
+		rs_arkNights_Rogland_other_leaders_trait_neuroticism_oripathy
+	}
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	modifier = {
+		# 对应<设定：1>：人口幸福度+5%，
+		#				 星球稳定度+5%，
+		#				 人口凝聚力产出+5%
+		#<DIS> pop_happiness 		= 0.05*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory
+		#<DIS> planet_stability_add	= 0.05*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory
+		country_unity_produces_mult = 0.05
+
+		#<DIS> 对应<设定：2>：国家外交信任成长速度+15%
+		country_trust_growth 		= 0.15*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory
+	}
+}

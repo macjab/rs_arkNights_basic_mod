@@ -1,0 +1,193 @@
+###############################################
+#####-----Author: 	RhineSky--------------#####
+#####-----SteamID:	RhineSky--------------#####
+#####-----Email:	macjab@macjab.com-----#####
+#####-----QQ：		516278065-------------#####
+#U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+###############################################
+
+# portraits group of using for settings
+# using for PreCountry-1
+portrait_groups = {
+	rs_arkNights_Reunion_Pops_portrait_01 = {
+		default = rs_arkNights_Reunion_Pops_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_talulah_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_Reunion_Pops_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the rodland, thank you~
+			# also will be triggered in: first play the game and heir the first heir commander will use this pop trait(need to test more to validate this guessing, thank you~), thank you~
+			add = {
+				portraits = {
+					rs_arkNights_Reunion_Talulah_Pops_material_00
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					# rs_arkNights_talulah_material_01
+					rs_arkNights_Reunion_Talulah_Pops_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_talulah_material_01
+				}
+			}
+		}
+	}
+}
+
+# portraits group of using for ruler portrait in the gaming
+# using for PreCountry-2
+portrait_groups = {
+	rs_arkNights_Reunion_Pops_portrait_02 = {
+		default = rs_arkNights_Reunion_normal_leader_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_Reunion_normal_leader_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_Reunion_Pops_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the rodland, thank you~
+			# also will be triggered in: first play the game and heir the first heir commander will use this pop trait(need to test more to validate this guessing, thank you~), thank you~
+			add = {
+				portraits = {
+					rs_arkNights_Reunion_Pops_material_01
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_Reunion_normal_leader_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_Reunion_normal_leader_material_01
+				}
+			}
+		}
+	}
+}
+
+# portraits group of using for settings
+# using for customSpecies In customCountry-1
+portrait_groups = {
+	rs_arkNights_Reunion_Pops_portrait_03 = {
+		default = rs_arkNights_Reunion_Pops_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_talulah_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_Reunion_Pops_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the rodland, thank you~
+			# also will be triggered in: first play the game and heir the first heir commander will use this pop trait(need to test more to validate this guessing, thank you~), thank you~
+			add = {
+				portraits = {
+					# using for customSpecies In customCountry-1, so don't use the amiya for default country settings(only precountry will has the exactly every option settings, thank you~)
+					rs_arkNights_Reunion_Pops_material_01
+
+					# not use in custom species in custom country, thank you~
+					# rs_arkNights_Reunion_Talulah_Pops_material_00
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					# rs_arkNights_talulah_material_01
+					rs_arkNights_Reunion_Talulah_Pops_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_talulah_material_01
+				}
+			}
+		}
+	}
+}

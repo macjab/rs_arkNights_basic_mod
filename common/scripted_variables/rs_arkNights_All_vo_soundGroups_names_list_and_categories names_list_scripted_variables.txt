@@ -1,0 +1,31 @@
+##########-----arkNights_All_VO_SoundGroups_Names_List_And_Categroies_Names_List_Related_Variables-----##########
+
+ ############################################################################################
+ ###########-------<莱茵生命：白面鸮>的VO语音组的音乐组和音效组的组名字符串-------###########
+ ############################################################################################
+ # [sound group] and [sound effect group] related names
+ # @rs_arkNights_RhineLab_Ptilopsis_sound_group_name 							= "rs_arkNights_RhineLab_Ptilopsis_sound_group_name"
+ # @rs_arkNights_RhineLab_Ptilopsis_sound_effect_group_name 					= "rs_arkNights_RhineLab_Ptilopsis_sound_effect_group_name"
+ @rs_arkNights_RhineLab_Ptilopsis_sound_advisor_voice_type_name					= "rs_arkNights_RhineLab_Ptilopsis_sound_advisor_voice_type_name"
+
+ # soundeffect scopes names
+ # @rs_arkNights_RhineLab_Ptilopsis_advisor_notification_research_complete 		= "rs_arkNights_RhineLab_Ptilopsis_advisor_notification_research_complete"
+ # @rs_arkNights_RhineLab_Ptilopsis_advisor_notification_discovery_detected 	= "rs_arkNights_RhineLab_Ptilopsis_advisor_notification_research_complete"
+ # @rs_arkNights_RhineLab_Ptilopsis_advisor_notification_federation_formed 		= "rs_arkNights_RhineLab_Ptilopsis_advisor_notification_research_complete"
+ # @rs_arkNights_RhineLab_Ptilopsis_advisor_notification_colonization_progress 	= "rs_arkNights_RhineLab_Ptilopsis_advisor_notification_research_complete"
+ # @rs_arkNights_RhineLab_Ptilopsis_advisor_notification_fleet_destroyed 		= "rs_arkNights_RhineLab_Ptilopsis_advisor_notification_research_complete"
+ # @rs_arkNights_RhineLab_Ptilopsis_advisor_notification_player_declare_war 	= "rs_arkNights_RhineLab_Ptilopsis_advisor_notification_research_complete"
+ # @rs_arkNights_RhineLab_Ptilopsis_advisor_notification_enemy_declared_war 	= "rs_arkNights_RhineLab_Ptilopsis_advisor_notification_research_complete"
+ # @rs_arkNights_RhineLab_Ptilopsis_advisor_notification_generic_war_declare 	= "rs_arkNights_RhineLab_Ptilopsis_advisor_notification_research_complete"
+
+ ############################################################################################
+ ###########-------<罗德岛：阿米娅>的VO语音组的音乐组和音效组的组名字符串-------#############
+ ############################################################################################
+ # [sound group] and [sound effect group] related names
+ @rs_arkNights_Rogland_Amiya_sound_advisor_voice_type_name						= "rs_arkNights_Rogland_Amiya_sound_advisor_voice_type_name"
+
+ ############################################################################################
+ ###########-------<龙门消防局：阿消>的VO语音组的音乐组和音效组的组名字符串-------###########
+ ############################################################################################
+ # [sound group] and [sound effect group] related names
+ @rs_arkNights_0019_Shaw_sound_advisor_voice_type_name							= "rs_arkNights_0019_Shaw_sound_advisor_voice_type_name"

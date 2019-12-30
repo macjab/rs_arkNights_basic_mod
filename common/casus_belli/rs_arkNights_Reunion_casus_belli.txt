@@ -1,0 +1,38 @@
+rs_arkNights_Reunion_Rogland_Oripathy_Betrayer_Casus_Belli = {
+	show_in_diplomacy = yes
+
+	show_notification = yes
+
+	potential = {
+		has_authority = rs_arkNights_reunion_authorities
+	}
+
+	is_valid = {
+		has_authority = rs_arkNights_reunion_authorities
+
+		from = {
+			has_authority = rs_arkNights_rogland_authorities
+		}
+	}
+}
+
+rs_arkNights_Reunion_Avenger_Casus_Belli = {
+	show_in_diplomacy = yes
+
+	show_notification = yes
+
+	potential = {
+		has_authority = rs_arkNights_reunion_authorities
+	}
+
+	is_valid = {
+		has_authority = rs_arkNights_reunion_authorities
+
+		from = {
+			NOR = {
+				has_authority = rs_arkNights_rogland_authorities
+				has_authority = rs_arkNights_reunion_authorities
+			}
+		}
+	}
+}

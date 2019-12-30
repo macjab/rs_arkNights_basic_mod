@@ -1,0 +1,18 @@
+rs_arkNights_reunion_goverment = {
+	ruler_title = RhineSky_Prescripted_Reunion_Ruler_Title_Name
+	heir_title  = RhineSky_Prescripted_Reunion_Hier_Title_Name
+
+	use_regnal_names 	= yes
+	dynastic_last_names = yes
+	should_force_rename = no
+
+	weight = {
+		base = 99999
+	}
+
+	possible = {
+		has_authority = rs_arkNights_reunion_authorities
+		has_ethic = ethic_militarist
+		has_ethic = ethic_fanatic_xenophobe
+	}
+}

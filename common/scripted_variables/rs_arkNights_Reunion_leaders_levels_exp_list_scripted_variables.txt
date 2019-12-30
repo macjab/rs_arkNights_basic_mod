@@ -1,0 +1,7 @@
+##########-----rs_arkNights_Reunion_All_leaders_Levels_EXP_List_Related_Variables-----##########
+
+@rs_arkNights_Reunion_All_leader_lv_1_exp_value = 0
+@rs_arkNights_Reunion_All_leader_lv_2_exp_value = 200
+@rs_arkNights_Reunion_All_leader_lv_3_exp_value = 475
+@rs_arkNights_Reunion_All_leader_lv_4_exp_value = 825
+@rs_arkNights_Reunion_All_leader_lv_5_exp_value = 1250

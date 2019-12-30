@@ -1,0 +1,30 @@
+###############################################
+#####-----Author: 	RhineSky--------------#####
+#####-----SteamID:	RhineSky--------------#####
+#####-----Email:	macjab@macjab.com-----#####
+#####-----QQ：		516278065-------------#####
+#U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+###############################################
+
+# ArkNights-【莱茵生命研究所】-白面鸮
+rs_arkNights_RhineLab_Ptilopsis_sounds_advisor_voice_type = {
+	name = @rs_arkNights_RhineLab_Ptilopsis_sound_advisor_voice_type_name
+	
+	icon = "gfx/interface/icons/advisor_vo/rs_arkNights_RhineLab_Ptilopsis_elitizate_up_avatar_1.dds"
+
+	weight = {
+		# very poissbile to be selected weight
+		base = 0
+
+		modifier = {
+			# if has matches any options below, will add more weights to the base weights
+			add = 666666
+
+			# <白面鸮>目前在罗德岛中任职，是莱茵生命研究所的前成员(机械娘赛高qwq，然后罗德岛目前似乎正在与整合运动处于敌对状态的说_20190805_0355，qwq，虎摸，谢谢，
+			owner = { 
+				# is_species_class 	= rs_arkNights_Rogland_pop_species_1
+				# is_species_class 	= rs_arkNights_RhineLab_pop_species_1
+			}
+		}
+	}
+}

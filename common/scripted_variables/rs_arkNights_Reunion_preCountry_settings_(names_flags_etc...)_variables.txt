@@ -1,0 +1,5 @@
+##########-----arkNights_Reunion_Country_Names_List_And_Default_Countries_Ruler_Name_List_Related_Variables-----##########
+
+# 整合运动的国家名称、国家的flag标识符、以及整合运动的默认开局Ruler统治者指挥官的姓名名称
+@rs_arkNights_Reunion_country_name 			= EMPIRE_DESIGN_rs_arkNights_Reunion_country_name # "整合运动"
+@rs_arkNights_Reunion_default_ruler_name 	= rs_arkNights_Reunion_ruler_or_admiral_7_stars_Talulah_name

@@ -1,0 +1,102 @@
+rs_arkNights_Reunion_Country_1 = {
+	name = rs_arkNights_Reunion_country_name
+
+	adjective = RhineSky_Prescripted_Reunion_Country_Adjective_Name
+
+	ship_prefix = RhineSky_Prescripted_Reunion_Ship_Prefix_Name
+
+	ignore_portrait_duplication = yes
+
+	spawn_enabled = always # yes # always
+
+	species = {
+		class = rs_arkNights_Reunion_pop_species_1
+
+		portrait = rs_arkNights_Reunion_Pops_portrait_01
+
+		name = RhineSky_Prescripted_Reunion_Species_Name
+		plural = RhineSky_Prescripted_Reunion_Species_Plural_Name
+		adjective = RhineSky_Prescripted_Reunion_Species_Adjective_Name
+
+		name_list = rs_arkNights_Reunion_pop_name_list_1
+
+		trait = "rs_arkNights_Reunion_pops_trait_oripathy"
+#		trait = "rs_arkNights_Reunion_pops_traint_originiumsArts"
+		trait = "rs_arkNights_Reunion_pops_trait_originiumsTech"
+		trait = "rs_arkNights_Reunion_pops_trait_reunionPeople"
+#		trait = "rs_arkNights_Reunion_pops_trait_reunionPeople_living_Adaptor_Professional"
+	}
+
+	room = personality_federation_builders_room
+
+	authority = rs_arkNights_reunion_authorities
+	# authority = auth_democratic
+	# authority = auth_corporate
+
+	civics = {
+		rs_arkNights_Reunion_civic_Chaos_Willing
+		rs_arkNights_Reunion_civic_Originiums_New_Life
+	}
+
+	government = rs_arkNights_reunion_goverment
+
+	# 「感染者应对自己的身份感到骄傲，积极去获取並使用属于自己的力量」 ———— Leader.塔露拉
+	ethic = ethic_militarist
+	ethic = ethic_fanatic_xenophobe
+
+	planet_name  = RhineSky_Prescripted_Reunion_Planet_Name
+	planet_class = pc_nuked
+	# initializer  = sol_system_initializer
+	# initializer  = rs_arkNights_Reunion_solar_system_initializer
+	system_name  = RhineSky_Prescripted_Reunion_System_Name
+
+	graphical_culture      = humanoid_01
+	city_graphical_culture = humanoid_01
+
+	flags = {
+		rs_arkNights_Reunion_Flag
+		custom_start_screen
+	}
+
+	empire_flag = {
+		icon = {
+			category = "reunion"
+			file = "flag_reunion.dds"
+		}
+
+		background = {
+			category = "backgrounds"
+			file = "diagonal.dds"
+			# file = "00_solid.dds"
+		}
+
+		colors = {
+			"red"
+			"red"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name 			= @rs_arkNights_Reunion_ruler_or_admiral_7_stars_Talulah_name # Talulah
+		gender 			= female
+		portrait 		= rs_arkNights_talulah_portrait_01
+		leader_class 	= ruler
+		set_age 		= 22
+
+		texture = 0
+		hair 	= 0
+		clothes = 0
+
+		# leader_flags list please visit "/scripted_variables/rs_arkNights_Reunion_leaders_flags_list_scripted_variables.txt" file, thank you~
+		set_leader_flag = @rs_arkNights_Reunion_ruler_or_admiral_7_stars_Talulah_flag
+
+		trait = rs_arkNights_Reunion_7_Stars_leader_level_trait
+		trait = rs_arkNights_Reunion_SS_leader_job_trait
+		# trait = rs_arkNights_Reunion_ruler_leaders_trait_oripathy
+		trait = rs_arkNights_ruler_talulah_feature_traint_originiumsArts
+
+		ruler_title = RhineSky_Prescripted_Reunion_Ruler_Title_Name
+	}
+}

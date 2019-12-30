@@ -1,0 +1,229 @@
+﻿l_simp_chinese:
+ ###############################################
+ #####-----Author:   RhineSky--------------#####
+ #####-----SteamID:  RhineSky--------------#####
+ #####------Email:   macjab@macjab.com-----#####
+ #####------QQ：     516278065-------------#####
+ #U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+ ###############################################
+ 
+ ##########-----PreCountry_Name-----##########
+  EMPIRE_DESIGN_rs_arkNights_Rogland_country_name:0 "罗德岛"
+
+ ##########-----Authority-----##########
+ rs_arkNights_rogland_authorities:0 "感染者处理专家"
+ rs_arkNights_rogland_authorities_desc:0 "对付感染者最佳的手段即是感染者。罗德岛是一个混合了感染者成员在内，拥有完整独立武装力量与矿石感染研究与检疫手段的组织。每§R20年§!选举出一位新的指挥官，For Amiya！"
+ rs_arkNights_rogland_authorities_custom_tooltip:0 ""
+
+ ##########-----Civics-----##########
+ rs_arkNights_Rogland_civic_arkNights:0 "明日方舟"
+ rs_arkNights_Rogland_civic_arkNights_desc:0 "罗德岛作为一个感染者救助团体，不仅征集战斗员，同时也在研究能够完全治疗源石病的研究手段。任何人都有活下去的意义，罗德岛不会放弃任何人，这就是感染者的第2个家。"
+ rs_arkNights_Rogland_civic_arkNights_custom_tooltip:0 ""
+
+ rs_arkNights_Rogland_civic_warrior_culture:0 "罗德岛的宗旨"
+ rs_arkNights_Rogland_civic_warrior_culture_desc:0 "罗德岛宗旨之一：如果战斗能够避免，那我们应当沉默，如果战斗是必要的，那就战斗到最后，罗德岛的信条，从来没有改变过。"
+ rs_arkNights_Rogland_civic_warrior_culture_custom_tooltip:0 ""
+
+ ##########-----Goverment-----##########
+ rs_arkNights_rogland_goverment:0 "罗德岛制药公司"
+ rs_arkNights_rogland_goverment_desc:0 "罗德岛是一个聘用了包含感染者成员在内，对外注册为制药公司的组织。自注册之日起，经常深入受天灾影响的高危险地区，通过种种手段，已处理了多起由感染者引发的事件。"
+ rs_arkNights_rogland_goverment_custom_tooltip:0 ""
+
+ ##########-----Species-----##########
+ rs_arkNights_Rogland_pop_species_1:0 "罗德岛干员"
+ rs_arkNights_Rogland_pop_species_1_desc:0 "罗德岛干员频繁进入天灾经过或影响后的高危地区，帮助受难人群，处理矿石争端，抵抗反乱势力，或者别的什么隐秘的事物。这些干员们似乎拥有完整的天灾应急对策，熟练的难民急救操作流程，与行之有效的感染者打击手段。"
+ rs_arkNights_Rogland_pop_species_1_plur:0 "罗德岛的干员们"
+ rs_arkNights_Rogland_pop_species_1_insult_01:0 "感染驴子"
+ rs_arkNights_Rogland_pop_species_1_insult_02:0 "阿米驴"
+ rs_arkNights_Rogland_pop_species_1_insult_plural_01:0 "感染驴子群"
+ rs_arkNights_Rogland_pop_species_1_insult_plural_02:0 "阿米驴"
+ rs_arkNights_Rogland_pop_species_1_compliment_01:0 "$rs_arkNights_rogland_authorities$"
+ rs_arkNights_Rogland_pop_species_1_compliment_plural_01:0 "$rs_arkNights_rogland_authorities$们"
+ rs_arkNights_Rogland_pop_species_1_spawn:0 "罗德岛的小家伙"
+ rs_arkNights_Rogland_pop_species_1_spawn_plural:0 "罗德岛的小家伙们"
+ rs_arkNights_Rogland_pop_species_1_sound_01:0 "叽叽喳喳"
+ rs_arkNights_Rogland_pop_species_1_sound_02:0 "救人为己任的话语"
+ rs_arkNights_Rogland_pop_species_1_sound_03:0 "坚定的话语"
+ rs_arkNights_Rogland_pop_species_1_sound_04:0 "未来的承诺"
+ rs_arkNights_Rogland_pop_species_1_sound_05:0 "为感染者开脱的话语"
+ rs_arkNights_Rogland_pop_species_1_organ:0 "体表的源石结晶"
+ rs_arkNights_Rogland_pop_species_1_mouth:0 "嘴"
+ rs_arkNights_Rogland_pop_species_1_hand:0 "手"
+
+##########-----leader_specific_traits-----##########
+# Rogland Common leader traits (for most leaders)
+rs_arkNights_Rogland_ruler_leaders_trait_oripathy:0 "患有源石病的罗德岛指挥官"
+rs_arkNights_Rogland_ruler_leaders_trait_oripathy_desc:0 "感染者比普通人更理解感染者，但纯粹的武力无法解决所有问题。找到治愈感染者的方法，寻找让感染者与普通人的和平共处之路，是罗德岛的组织核心目标。"
+rs_arkNights_Rogland_ruler_leaders_trait_oripathy_custom_tooltip:0 "长期接触源石及其工业衍生品后，会使人容易得到名为矿石病的不治之症，此病会增强人的法术使用能力，但却会在患者使用法术的过程中不断扩大感染。染上矿石病的人普遍被称为感染者，这些人的血液中具有较高浓度的源石颗粒，严重者的体细胞会与源石融合，并在体表长出源石结晶。感染者死亡时，尸体存在扩散传染性。被源石所感染的人。理论致死率100%，死亡时存在扩散传染性以及潜在危险能力，是各国隔离驱逐的目标。\n§R患有源石病的指挥官的预期寿命减少一定年数。§!"
+
+rs_arkNights_Rogland_ruler_leaders_trait_healthy:0 "健康的罗德岛指挥官"
+rs_arkNights_Rogland_ruler_leaders_trait_healthy_desc:0 "昔日好友深受源石病的折磨，渐渐陷入如同被遏住咽喉般的深深绝望...找到治愈感染者的方法，寻找让感染者与普通人的和平共处之路，是罗德岛的组织核心目标。"
+rs_arkNights_Rogland_ruler_leaders_trait_healthy_custom_tooltip:0 "参照医学检测报告，确认为非感染者，各项体检指标皆处于正常水平。"
+
+rs_arkNights_Rogland_other_leaders_trait_oripathy:0 "患有源石病的罗德岛领导者"
+rs_arkNights_Rogland_other_leaders_trait_oripathy_desc:0 "感染者比普通人更理解感染者，但纯粹的武力无法解决所有问题。找到治愈感染者的方法，寻找让感染者与普通人的和平共处之路，是罗德岛的组织核心目标。"
+rs_arkNights_Rogland_other_leaders_trait_oripathy_custom_tooltip:0 "长期接触源石及其工业衍生品后，会使人容易得到名为矿石病的不治之症，此病会增强人的法术使用能力，但却会在患者使用法术的过程中不断扩大感染。染上矿石病的人普遍被称为感染者，这些人的血液中具有较高浓度的源石颗粒，严重者的体细胞会与源石融合，并在体表长出源石结晶。感染者死亡时，尸体存在扩散传染性。被源石所感染的人。理论致死率100%，死亡时存在扩散传染性以及潜在危险能力，是各国隔离驱逐的目标。\n§R患有源石病的领导者的预期寿命减少一定年数。§!"
+
+rs_arkNights_Rogland_other_leaders_trait_neuroticism_oripathy:0 "患有特殊神经性源石病的罗德岛领导者"
+rs_arkNights_Rogland_other_leaders_trait_neuroticism_oripathy_desc:0 "感染者比普通人更理解感染者，但纯粹的武力无法解决所有问题。患有这类神经性源石病的领导者虽然能力出众，但由于精神状态上的不稳定性问题，在作战投入的方式上通常需要战术指挥官单独调整。"
+rs_arkNights_Rogland_other_leaders_trait_neuroticism_oripathy_custom_tooltip:0 "虽然患者体表并未生成源石结晶，但与表征相反，患者的神经系统受到了相当严重的感染。目前还无法探明产生此种症状的原因。\n§R患有这种特殊神经性源石病的干员的预期寿命比一般源石病患者减少更多的年数。§!"
+
+rs_arkNights_Rogland_other_leaders_trait_healthy:0 "健康的罗德岛领导者"
+rs_arkNights_Rogland_other_leaders_trait_healthy_desc:0 "昔日好友深受源石病的折磨，渐渐陷入如同被遏住咽喉般的深深绝望...找到治愈感染者的方法，寻找让感染者与普通人的和平共处之路，是罗德岛的组织核心目标。"
+rs_arkNights_Rogland_other_leaders_trait_healthy_custom_tooltip:0 "参照医学检测报告，确认为非感染者。现于罗德岛指挥官的指导下，为罗德岛提供服务。"
+
+ ##########-----pop_traits-----##########
+ rs_arkNights_Rogland_pops_trait_oripathy:0 "源石病(罗德岛)"
+ rs_arkNights_Rogland_pops_trait_oripathy_desc:0 "自然界普遍存在的黑色半透明晶体矿物，经常于被天灾席卷后的土地出现。其本身蕴含巨大的能量，是引发天灾的首要因素。依赖于技术的进步，源石蕴含的能量投入工业后使得文明顺利迈入现代，与此同时，源石本身也催生出<感染者>的存在。"
+ rs_arkNights_Rogland_pops_trait_oripathy_custom_tooltip:0 "长期接触源石及其工业衍生品后，会使人容易得到名为矿石病的不治之症，此病会增强人的法术使用能力，但却会在患者使用法术的过程中不断扩大感染。染上矿石病的人普遍被称为感染者，这些人的血液中具有较高浓度的源石颗粒，严重者的体细胞会与源石融合，并在体表长出源石结晶。感染者死亡时，尸体存在扩散传染性。被源石所感染的人。理论致死率100%，死亡时存在扩散传染性以及潜在危险能力，是各国隔离驱逐的目标。\n§R患有源石病的患者的预期寿命减少一定年数。§!"
+
+ rs_arkNights_Rogland_pops_traint_originiumsArts:0 "罗德岛的源石技艺"
+ rs_arkNights_Rogland_pops_traint_originiumsArts_desc:0 "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为<法术>。源石技艺所运用的能源，一般被认为来自于源石本身，若没有源石辅助，法术使用效率会大幅下降。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"
+ rs_arkNights_Rogland_pops_traint_originiumsArts_custom_tooltip:0 ""
+
+ rs_arkNights_Rogland_pops_trait_originiumsTech:0 "罗德岛的源石科技"
+ rs_arkNights_Rogland_pops_trait_originiumsTech_desc:0 "源石的诞生可能源自科学试验的失败，科学试验失败后造成不可逆的巨大灾难。政府在掩人耳目的过程中意外发现了源石极高的工业与能源价值。拜源石所赐，源石的出现导致泰拉世界的科技革命，推动了包括神经学(罗德岛的指挥系统是神经网络)和各种<魔法>(源石技艺)在内的各种科学技术的进步。\n但同时也造成人口激增，自然产生的源石已不足满足泰拉世界的需求。而感染者死亡后身体矿石化，可以提纯成源石，能解决源石短缺问题。因此，目前有不少人推测认为，泰拉世界政府背地里人为制造天灾，既解决人口问题又解决能源问题。"
+ rs_arkNights_Rogland_pops_trait_originiumsTech_custom_tooltip:0 ""
+
+ rs_arkNights_Rogland_pops_trait_roglandPeople:0 "罗德岛的员工"
+ rs_arkNights_Rogland_pops_trait_roglandPeople_desc:0 "罗德岛的公开信息并没有表明他们是一家涉及武装的公司，但是从一部分人员和安保手段上都能看到一些专业的影子。"
+ rs_arkNights_Rogland_pops_trait_roglandPeople_custom_tooltip:0 ""
+
+ rs_arkNights_Rogland_pops_trait_roglandPeople_living_Adaptor_Professional:0 "罗德岛员工的生活适应性"
+ rs_arkNights_Rogland_pops_trait_roglandPeople_living_Adaptor_Professional_desc:0 "罗德岛雇佣感染者频繁进入天灾经过或影响后的高危地区，救助受难人群，处理矿石争端，抵抗反乱势力，或别的什么隐秘事物。似乎拥有完整的天灾应急对策，熟练的难民急救操作流程，与行之有效的感染者打击手段。"
+ rs_arkNights_Rogland_pops_trait_roglandPeople_living_Adaptor_Professional_custom_tooltip:0 ""
+
+##########-----custom_tooltips-----##########
+
+
+##########-----Tags-----##########
+RhineSky_Prescripted_Rogland_Authorities_Tag_1:0 "罗德岛是一个民主的地区，每个人都有自己的发言权与充分的个人人权保证 —— Amiya"
+
+##########----- EMPIRE_DESIGN_DESCRIPTION-----##########
+EMPIRE_DESIGN_rs_arkNights_Rogland_Country_1:0 "$rs_arkNights_rogland_goverment$" # name need as same as goverment(need test)
+EMPIRE_DESIGN_rs_arkNights_Rogland_Country_1_desc:0 "大地被起因不明的天灾肆虐，遭受天灾席卷的土地出现蕴含神秘能量的矿物“源石”。随着技术进步，源石逐渐被人们投入到工业中，使文明突飞猛进，然而源石本身也造就了“感染者”的存在。\n受到“源石”影响而感染矿石病的患者，由于拥有潜在的危险能力，以及死亡时带来的扩散传染性，因此成为了各国隔离驱逐的目标。直到一位颠覆者的出现，使越来越多感染者被纳入名为“整合运动”的反抗浪潮中，他们试图用武力去争夺世界的公正。\n当反抗浪潮越演越烈，医疗机构“罗德岛”的突然介入，令整个事态向着未知发展，罗德岛的干员将面对史无前例的感染者暴乱。在各个势力间游走，发掘不为人知的内幕，抵挡感染者的疯狂进攻。"
+
+##########-----Name_Lists-----##########
+name_list_rs_arkNights_Rogland_pop_name_list_1:0 "罗德岛干员、舰船和设备的花名册"
+name_list_rs_arkNights_Rogland_pop_name_list_1_desc:0 "罗德岛干员、舰船和设备的花名册"
+name_list_rs_arkNights_Rogland_pop_name_list_1_custom_tooltip:0 ""
+
+##########-----Leaders_Name_Lists-----##########
+# Rogland_Rulers
+rs_arkNights_Rogland_ruler_4_stars_Dobermann_name:0 "杜宾"
+rs_arkNights_Rogland_ruler_5_stars_Amiya_name:0 "阿米娅"
+rs_arkNights_Rogland_ruler_5_stars_Warfarin_name:0 "华法琳"
+rs_arkNights_Rogland_ruler_6_stars_Kaltsit_name:0 "凯尔希"
+rs_arkNights_Rogland_ruler_7_stars_Doctor_name:0 "博士"
+
+# Rogland_Governors
+rs_arkNights_Rogland_governor_2_stars_Yato_name:0 "夜刀"
+rs_arkNights_Rogland_governor_3_stars_Fang_name:0 "芬"
+rs_arkNights_Rogland_governor_3_stars_Orchid_name:0 "梓兰"
+rs_arkNights_Rogland_governor_3_stars_Melantha_name:0 "玫兰莎"
+rs_arkNights_Rogland_governor_5_stars_ACE_name:0 "ACE"
+
+# Rogland_Scientists(+1)
+rs_arkNights_Rogland_scientist_3_stars_Hibiscus_name:0 "芙蓉"
+rs_arkNights_Rogland_scientist_3_stars_Ansel_name:0 "安塞尔"
+rs_arkNights_Rogland_scientist_4_stars_Perfumer_name:0 "调香师"
+rs_arkNights_Rogland_scientist_4_stars_Gavial_name:0 "嘉维尔"
+rs_arkNights_Rogland_scientist_6_stars_Nightingal_name:0 "夜莺"
+rs_arkNights_Rogland_scientist_6_stars_Angelina_name:0 "安洁莉娜"
+
+# Rogland_Admirals(+1)
+rs_arkNights_Rogland_admiral_3_stars_Catapult_name:0 "空爆"
+rs_arkNights_Rogland_admiral_4_stars_Deepcolor_name:0 "深海色"
+rs_arkNights_Rogland_admiral_5_stars_Firewatch_name:0 "守林人"
+rs_arkNights_Rogland_admiral_5_stars_BluePoision_name:0 "蓝毒"
+rs_arkNights_Rogland_admiral_5_stars_Skyfire_name:0 "天火"
+rs_arkNights_Rogland_admiral_5_stars_Provence_name:0 "普罗旺斯"
+rs_arkNights_Rogland_admiral_5_stars_Meteorite_name:0 "陨星"
+rs_arkNights_Rogland_admiral_5_stars_Truth_name:0 "真理"
+
+# Rogland_Generals(+1)
+rs_arkNights_Rogland_general_4_stars_Cuora_name:0 "蛇屠箱"
+rs_arkNights_Rogland_general_4_stars_Fronstleaf_name:0 "霜叶"
+rs_arkNights_Rogland_general_4_stars_Matoimaru_name:0 "缠丸"
+rs_arkNights_Rogland_general_4_stars_Scavenger_name:0 "清道夫"
+rs_arkNights_Rogland_general_5_stars_Nearl_name:0 "临光"
+rs_arkNights_Rogland_general_5_stars_ProjektRed_name:0 "红"
+rs_arkNights_Rogland_general_5_stars_Winter_name:0 "凛冬"
+rs_arkNights_Rogland_general_5_stars_Specter_name:0 "幽灵鲨"
+rs_arkNights_Rogland_general_6_stars_Skadi_name:0 "斯卡蒂"
+
+# Rogland_Scientist、Rogland_General
+rs_arkNights_Rogland_scientist_or_general_6_stars_Shining_name:0 "闪灵"
+
+# Rogland_General、Rogland_Admiral
+rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_name:0 "拉普兰德"
+
+##########-----Start_Screens_Info-----##########
+# 被屏蔽的系统默认的第三方MOD的开始屏幕信息的字符串内容置空的设置代码在：message_l_xxx.yml的文件内容中，字段名为"START_SCREEN_PART_THREE_HYPERSPACE:0 xxxx"的说，qwq，虎摸，谢谢，
+rs_arkNights_Rogland_Flag_custom_start_screen_info_flag:0 "大地被起因不明的天灾肆虐，遭受天灾席卷的土地出现蕴含神秘能量的矿物“源石”。随着技术进步，源石逐渐被人们投入到工业中，使文明突飞猛进，然而源石本身也造就了“感染者”的存在。\n受到“源石”影响而感染矿石病的患者，由于拥有潜在的危险能力，以及死亡时带来的扩散传染性，因此成为了各国隔离驱逐的目标。直到一位颠覆者的出现，使越来越多感染者被纳入名为“整合运动”的反抗浪潮中，他们试图用武力去争夺世界的公正。\n当反抗浪潮越演越烈，医疗机构“罗德岛”的突然介入，令整个事态向着未知发展，罗德岛的干员将面对史无前例的感染者暴乱。在各个势力间游走，发掘不为人知的内幕，抵挡感染者的疯狂进攻。"
+
+##########-----Personality-----##########
+personality_rs_arkNights_Rogland_Personality:0 "§B感染者处理专家§!"
+personality_rs_arkNights_Rogland_Personality_desc:0 "对付感染者最佳的手段即是感染者。罗德岛是一个混合了感染者成员在内，拥有完整独立武装力量与矿石感染研究与检疫手段的组织。"
+
+##########-----Solar_Sysyem_Initilizer-----##########
+rs_arkNights_Rogland_solar_system_initializer_INTRO:0 "§L决定你的一开始的恒星系的布局，但并不确定其具体位置。§!"
+rs_arkNights_Rogland_solar_system_initializer_NAME:0 "太阳系"
+rs_arkNights_Rogland_solar_system_initializer_DESC:0 "以地球所在的恒星系为模型的星系，同时包括几个邻近的恒星。\n\n$rs_arkNights_Rogland_solar_system_initializer_INTRO$"
+
+##########-----Opinion_Modifiers-----##########
+trigger_rs_arkNights_Rogland_opinion_modifier_1:0 "整合运动"
+
+trigger_rs_arkNights_Rogland_opinion_modifier_2:0 "罗德岛的同僚"
+
+trigger_rs_arkNights_Rogland_opinion_modifier_3:0 "感染者"
+
+##########-----Diplo_phrases-----##########
+Rogland_Neutral_Greeting_1:0 "罗德岛必须直面感染者带来的所有问题。\n只有这样，罗德岛才能替感染者争取到一线生机......"
+
+Rogland_Neutral_Greeting_2:0 "作为感染者，我们也比普通人更能理解感染者。\n无论是普通人还是感染者，无论是和平还是纷争，罗德岛想要解决问题，而不是任由仇恨和疾病蔓延肆虐。"
+
+Rogland_Neutral_Greeting_3:0 "罗德岛宗旨之一：如果战斗能够避免，那我们应当沉默，如果战斗是必要的，那就战斗到最后，罗德岛的信条，从来没有改变过。"
+
+Rogland_Friendly_Greeting_1:0 "无论整合运动的计划有多疯狂，对于我们来说......\n各位的安全才是最重要的。"
+
+Rogland_Protection_Greeting_1:0 "以前有个人这么对我说过......\n眼泪......要留到战争结束之后。\n现在......还不行。"
+
+Rogland_Protection_Greeting_2:0 "别惊慌！保护好自己！......我们还有机会，用行动去拯救自己的生命！"
+
+Rogland_Protection_Greeting_3:0 "无论怎样，我都不能允许你受伤——\n何况，是在我面前！"
+
+Rogland_Vassal_Greeting_1:0 "一直以来，我都觉得我们有一种责任，去帮助应该帮助的人。\n罗德岛所做的事情，真的是正确的吗？\n我只是想去改变那种永无止境的状况......\n哪怕是一点点，一点点——\n可是......这一切如果最后只能变成这样的结局，那我只能......"
+
+Rogland_Vassal_Greeting_2:0 "感染者不是被敌意溺死，就是自己走向毁灭。\n悲剧只会一次接一次的重演。\n在这苦恨的循环里，除了消灭矿石病之外，还有一种方法可以让感染者重拾希望。\n......那就是，熄灭这根荆棘锁链上的仇恨。"
+
+Rogland_Vassal_Disloyal_Greeting_1:0 "......无论过去的人们怎么对待感染者，只要你现在改变——"
+
+Rogland_Vassal_Disloyal_Greeting_2:0 "......"
+
+Rogland_Domineering_Greeting_1:0 "斗争已经不可调和了。虽然很不愿意，但是和你们这些人讲道理是行不通的。"
+
+Rogland_Unfriendly_Greeting_1:0 "每个人的生命，都有价值......\n这不是你们[From.GetName]能玷污的事！"
+
+Rogland_Unfriendly_Greeting_2:0 "即使是数十倍于自己数量的敌人，如果只是些暴徒，罗德岛依然有机会！"
+
+Rogland_Unfriendly_Greeting_3:0 "你那聪明脑瓜现在转不过来了？知道太多对你们[From.GetName]有什么好处？"
+
+Rogland_Unfriendly_Greeting_4:0 "自称感染者救星的整合运动居然会攻击感染者。\n形象......是不是崩塌了呢。"
+
+Rogland_Hostile_Greeting_1:0 "真的是疯了。你们[From.GetSpeciesNamePlural]为什么就不能珍惜自己的生命？！"
+
+Rogland_Hostile_Greeting_2:0 "追在尾巴后面的麻烦是最讨厌的。"
+
+Rogland_Hostile_Greeting_3:0 "从你们开始制造恐怖和惨剧的那一步开始，我们就已经是敌人了！"
+
+Rogland_Rival_Greeting_1:0 "只要这片大地上还有矿石病带来的灾难，我们的战斗就永无休止。\n 所以，如果需要有人去惩罚你和你们的恶行，我们[Root.GetName]义不容辞！"
+
+Rogland_Rival_Greeting_2:0 "罗德岛从来不开空头支票。\n我们完全有击溃你们的实力。"
+
+Rogland_DeclareWar_Greeting_1:0 "恐惧升腾，她终将盲目——\n——泪水干涸，她恸哭无声。\n 准备好大干一场了吗！"
+
+Rogland_DeclareWar_Greeting_2:0 "被剥夺了身份的人。你们早已不是人。你们终究只有这样的结局。"
+
+##########-----Casus_Belli-----##########
+casus_belli_rs_arkNights_Rogland_Reunion_Atrocities_Casus_Belli:0 "整合运动的战争暴行"

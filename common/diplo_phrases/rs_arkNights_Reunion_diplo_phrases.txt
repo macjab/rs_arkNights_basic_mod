@@ -1,0 +1,542 @@
+greetings = {
+	Rogland_Neutral_Greeting_1 = {
+		trigger = {
+			has_ai_personality 		= rs_arkNights_Reunion_Personality
+
+			is_neutral_to	 		= from
+
+			from = {
+				owner_species = { 
+					NOT = {
+						has_trait 		= rs_arkNights_Reunion_pops_trait_oripathy
+						has_trait 		= rs_arkNights_Rogland_pops_trait_oripathy
+					}
+				}
+
+				NOT = {
+					has_ai_personality 	= rs_arkNights_Rogland_Personality
+				}
+
+				has_federation 			= no
+
+				allows_purge			= no
+				allows_slavery			= no
+			}
+		}
+
+		weight = {
+			weight = 10
+		}
+	}
+
+	Reunion_Friendly_Greeting_1 = {
+		trigger = {
+			has_ai_personality 	= rs_arkNights_Reunion_Personality
+
+			is_friendly_to 		= from
+
+			from = {
+				owner_species = { 
+					OR = {
+						has_trait 			= rs_arkNights_Reunion_pops_trait_oripathy
+						has_trait 			= rs_arkNights_Rogland_pops_trait_oripathy
+					}
+				}
+
+				OR = {
+					NOT = {
+						has_ai_personality 	= rs_arkNights_Rogland_Personality
+
+						OR = {
+							has_ethic		= ethic_xenophobe
+							has_ethic		= ethic_fanatic_xenophobe
+						}
+					}
+
+					has_ai_personality 	= rs_arkNights_Reunion_Personality
+				}
+
+				has_federation = no
+			}
+		}
+
+		weight = {
+			weight = 10
+		}
+	}
+
+	Reunion_Protection_Greeting_1 = {
+		trigger = {
+			has_ai_personality = rs_arkNights_Reunion_Personality
+
+			is_friendly_to 		= from
+			is_protective_to 	= from
+
+			from = {
+				owner_species = { 
+					OR = {
+						has_trait 			= rs_arkNights_Reunion_pops_trait_oripathy
+						has_trait 			= rs_arkNights_Rogland_pops_trait_oripathy
+					}
+				}
+
+				OR = {
+					NOT = {
+						has_ai_personality 	= rs_arkNights_Rogland_Personality
+
+						OR = {
+							has_ethic		= ethic_xenophobe
+							has_ethic		= ethic_fanatic_xenophobe
+						}
+					}
+
+					has_ai_personality 		= rs_arkNights_Reunion_Personality
+				}
+
+				has_federation 		= no
+			}
+		}
+
+		weight = {
+			weight = 10
+		}
+	}
+
+	Reunion_Protection_Greeting_2 = {
+		trigger = {
+			has_ai_personality = rs_arkNights_Reunion_Personality
+
+			is_friendly_to 		= from
+			is_protective_to 	= from
+
+			from = {
+				owner_species = { 
+					OR = {
+						has_trait 			= rs_arkNights_Reunion_pops_trait_oripathy
+						has_trait 			= rs_arkNights_Rogland_pops_trait_oripathy
+					}
+				}
+
+				OR = {
+					NOT = {
+						has_ai_personality 	= rs_arkNights_Rogland_Personality
+
+						OR = {
+							has_ethic		= ethic_xenophobe
+							has_ethic		= ethic_fanatic_xenophobe
+						}
+					}
+
+					has_ai_personality 		= rs_arkNights_Reunion_Personality
+				}
+
+				has_federation 		= no
+			}
+		}
+
+		weight = {
+			weight = 10
+		}
+	}
+
+	Reunion_Vassal_Greeting_1 = {
+		trigger = {
+			has_ai_personality 	= rs_arkNights_Reunion_Personality
+
+			exists = overlord
+
+			overlord = { 
+				is_same_value = from
+			}
+
+			NOT = {
+				is_disloyal_to = from
+			}
+		}
+
+		weight = {
+			weight = 10
+		}
+	}
+
+	Reunion_Vassal_Greeting_2 = {
+		trigger = {
+			has_ai_personality 	= rs_arkNights_Reunion_Personality
+
+			exists = overlord
+
+			overlord = { 
+				is_same_value = from
+			}
+
+			NOT = {
+				is_disloyal_to = from
+			}
+		}
+
+		weight = {
+			weight = 10
+		}
+	}
+
+	Reunion_Vassal_Disloyal_Greeting_1 = {
+		trigger = {
+			has_ai_personality 	= rs_arkNights_Reunion_Personality
+
+			exists = overlord
+			
+			overlord = { 
+				is_same_value = from
+			}
+
+			is_disloyal_to = from
+		}
+
+		weight = {
+			weight = 10
+		}
+	}
+
+	Reunion_Vassal_Disloyal_Greeting_2 = {
+		trigger = {
+			has_ai_personality 	= rs_arkNights_Reunion_Personality
+
+			exists = overlord
+			
+			overlord = { 
+				is_same_value = from
+			}
+
+			is_disloyal_to = from
+		}
+
+		weight = {
+			weight = 10
+		}
+	}
+
+	Reunion_Domineering_Greeting_1 = {
+		trigger = {
+			has_ai_personality 		= rs_arkNights_Reunion_Personality
+
+			is_domineering_to 		= from
+
+			from = {
+				has_ai_personality 	= rs_arkNights_Rogland_Personality
+			}
+		}
+
+		weight = {
+			weight = 10
+		}
+	}
+
+	Reunion_Domineering_Greeting_2 = {
+		trigger = {
+			has_ai_personality 		= rs_arkNights_Reunion_Personality
+
+			is_domineering_to 		= from
+
+			from = {
+				has_ai_personality 	= rs_arkNights_Rogland_Personality
+			}
+		}
+
+		weight = {
+			weight = 10
+		}
+	}
+
+	Reunion_Unfriendly_Greeting_1 = {
+		trigger = {
+			has_ai_personality 		= rs_arkNights_Reunion_Personality
+			
+			is_unfriendly_to 		= from
+
+			from = {
+				has_ai_personality 	= rs_arkNights_Rogland_Personality
+			}
+		}
+
+		weight = {
+			weight = 10
+		}
+	}
+
+	Reunion_Unfriendly_Greeting_2 = {
+		trigger = {
+			has_ai_personality 			= rs_arkNights_Reunion_Personality
+			
+			is_unfriendly_to 			= from
+
+			from = {
+				NOT = {
+					has_ai_personality 	= rs_arkNights_Rogland_Personality
+				}
+
+				owner_species = { 
+					OR = {
+						has_trait 		= rs_arkNights_Reunion_pops_trait_oripathy
+						has_trait 		= rs_arkNights_Rogland_pops_trait_oripathy
+					}
+				}
+			}
+		}
+
+		weight = {
+			weight = 10
+		}
+	}
+
+	Reunion_Unfriendly_Greeting_3 = {
+		trigger = {
+			has_ai_personality 		= rs_arkNights_Reunion_Personality
+			
+			is_unfriendly_to 		= from
+
+			from = {
+				has_ai_personality 	= rs_arkNights_Rogland_Personality
+			}
+		}
+
+		weight = {
+			weight = 10
+		}
+	}
+
+	Reunion_Unfriendly_Greeting_4 = {
+		trigger = {
+			has_ai_personality 		= rs_arkNights_Reunion_Personality
+
+			is_hostile_to 			= from
+			is_unfriendly_to 		= from
+
+			from = {
+				owner_species = { 
+					NOR = {
+						has_trait 			= rs_arkNights_Reunion_pops_trait_oripathy
+						has_trait 			= rs_arkNights_Rogland_pops_trait_oripathy
+					}
+				}
+
+				NOR = {
+					has_ai_personality 		= rs_arkNights_Rogland_Personality
+					has_ai_personality 		= rs_arkNights_Reunion_Personality
+				}
+			}
+		}
+
+		weight = {
+			weight = 10
+		}
+	}
+
+	Reunion_Hostile_Greeting_1 = {
+		trigger = {
+			has_ai_personality 		= rs_arkNights_Reunion_Personality
+
+			is_hostile_to 			= from
+			is_unfriendly_to 		= from
+
+			from = {
+				has_ai_personality 	= rs_arkNights_Rogland_Personality
+			}
+		}
+
+		weight = {
+			weight = 10
+		}
+	}
+
+	Reunion_Hostile_Greeting_2 = {
+		trigger = {
+			has_ai_personality 		= rs_arkNights_Reunion_Personality
+
+			is_hostile_to 			= from
+			is_unfriendly_to 		= from
+
+			from = {
+				has_ai_personality 	= rs_arkNights_Rogland_Personality
+			}
+		}
+
+		weight = {
+			weight = 10
+		}
+	}
+
+	Reunion_Hostile_Greeting_3 = {
+		trigger = {
+			has_ai_personality 		= rs_arkNights_Reunion_Personality
+
+			is_hostile_to 			= from
+			is_unfriendly_to 		= from
+
+			from = {
+				has_ai_personality 	= rs_arkNights_Rogland_Personality
+			}
+		}
+
+		weight = {
+			weight = 10
+		}
+	}
+
+	Reunion_Hostile_Greeting_4 = {
+		trigger = {
+			has_ai_personality 		= rs_arkNights_Reunion_Personality
+
+			is_hostile_to 			= from
+			is_unfriendly_to 		= from
+
+			from = {
+				owner_species = { 
+					NOR = {
+						has_trait 			= rs_arkNights_Reunion_pops_trait_oripathy
+						has_trait 			= rs_arkNights_Rogland_pops_trait_oripathy
+					}
+				}
+
+				NOR = {
+					has_ai_personality 		= rs_arkNights_Rogland_Personality
+					has_ai_personality 		= rs_arkNights_Reunion_Personality
+				}
+			}
+		}
+
+		weight = {
+			weight = 10
+		}
+	}
+
+	Reunion_Hostile_Greeting_5 = {
+		trigger = {
+			has_ai_personality 	= rs_arkNights_Reunion_Personality
+
+			is_hostile_to 			= from
+			is_unfriendly_to 		= from
+
+			from = {
+				owner_species = { 
+					NOR = {
+						has_trait 			= rs_arkNights_Reunion_pops_trait_oripathy
+						has_trait 			= rs_arkNights_Rogland_pops_trait_oripathy
+					}
+				}
+
+				NOR = {
+					has_ai_personality 		= rs_arkNights_Rogland_Personality
+					has_ai_personality 		= rs_arkNights_Reunion_Personality
+				}
+			}
+		}
+
+		weight = {
+			weight = 10
+		}
+	}
+}
+
+action_make_rival = {
+	propose = {
+		Reunion_Rival_Greeting_1 = {
+			trigger = {
+				has_ai_personality 		= rs_arkNights_Reunion_Personality
+
+				is_hostile_to 			= from
+				is_unfriendly_to 		= from
+
+				from = {
+					has_ai_personality 	= rs_arkNights_Rogland_Personality
+				}
+			}
+
+			weight = {
+				weight = 10
+			}
+		}
+
+		Reunion_Rival_Greeting_2 = {
+			trigger = {
+				has_ai_personality 		= rs_arkNights_Reunion_Personality
+
+				is_hostile_to 			= from
+				is_unfriendly_to 		= from
+
+				from = {
+					has_ai_personality 	= rs_arkNights_Rogland_Personality
+				}
+			}
+
+			weight = {
+				weight = 10
+			}
+		}
+	}
+}
+
+action_declare_war = {
+	propose = {
+		Reunion_DeclareWar_Greeting_1 = {
+			trigger = {
+				has_ai_personality 		= rs_arkNights_Reunion_Personality
+
+				from = {
+					has_ai_personality 	= rs_arkNights_Rogland_Personality
+				}
+			}
+
+			weight = {
+				weight = 10
+			}
+		}
+
+		Reunion_DeclareWar_Greeting_2 = {
+			trigger = {
+				has_ai_personality 	= rs_arkNights_Reunion_Personality
+
+				from = {
+					owner_species = { 
+						NOR = {
+							has_trait 			= rs_arkNights_Reunion_pops_trait_oripathy
+							has_trait 			= rs_arkNights_Rogland_pops_trait_oripathy
+						}
+					}
+
+					NOR = {
+						has_ai_personality 		= rs_arkNights_Rogland_Personality
+						has_ai_personality 		= rs_arkNights_Reunion_Personality
+					}
+				}
+			}
+
+			weight = {
+				weight = 10
+			}
+		}
+
+		Reunion_DeclareWar_Greeting_3 = {
+			trigger = {
+				has_ai_personality 	= rs_arkNights_Reunion_Personality
+
+				from = {
+					owner_species = { 
+						NOR = {
+							has_trait 			= rs_arkNights_Reunion_pops_trait_oripathy
+							has_trait 			= rs_arkNights_Rogland_pops_trait_oripathy
+						}
+					}
+
+					NOR = {
+						has_ai_personality 		= rs_arkNights_Rogland_Personality
+						has_ai_personality 		= rs_arkNights_Reunion_Personality
+					}
+				}
+			}
+
+			weight = {
+				weight = 10
+			}
+		}
+	}
+}

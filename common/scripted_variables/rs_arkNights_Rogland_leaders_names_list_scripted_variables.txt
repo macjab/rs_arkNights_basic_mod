@@ -1,0 +1,59 @@
+##########-----arkNights_All_Leaders_Names_List_Related_Variables-----##########
+
+##########################################################
+##########-----<罗德岛：干员姓名>常量字符串-----##########
+##########################################################
+# Rogland_Rulers
+@rs_arkNights_Rogland_ruler_4_stars_Dobermann_name			= rs_arkNights_Rogland_ruler_4_stars_Dobermann_name 					# "杜宾"
+@rs_arkNights_Rogland_ruler_5_stars_Amiya_name 				= rs_arkNights_Rogland_ruler_5_stars_Amiya_name 						# "阿米娅"
+@rs_arkNights_Rogland_ruler_5_stars_Warfarin_name			= rs_arkNights_Rogland_ruler_5_stars_Warfarin_name 						# "华法琳"
+@rs_arkNights_Rogland_ruler_6_stars_Kaltsit_name			= rs_arkNights_Rogland_ruler_6_stars_Kaltsit_name 						# "凯尔希"
+@rs_arkNights_Rogland_ruler_7_stars_Doctor_name				= rs_arkNights_Rogland_ruler_7_stars_Doctor_name 						#"博士"
+
+# Rogland_Governors
+@rs_arkNights_Rogland_governor_2_stars_Yato_name			= rs_arkNights_Rogland_governor_2_stars_Yato_name 						# "夜刀"
+@rs_arkNights_Rogland_governor_3_stars_Fang_name 			= rs_arkNights_Rogland_governor_3_stars_Fang_name 						# "芬"
+@rs_arkNights_Rogland_governor_3_stars_Orchid_name 			= rs_arkNights_Rogland_governor_3_stars_Orchid_name						# "梓兰"
+@rs_arkNights_Rogland_governor_3_stars_Melantha_name		= rs_arkNights_Rogland_governor_3_stars_Melantha_name 					# "玫兰莎"
+@rs_arkNights_Rogland_governor_5_stars_ACE_name				= rs_arkNights_Rogland_governor_5_stars_ACE_name 						# "ACE"
+
+# Rogland_Scientists(+1)
+@rs_arkNights_Rogland_scientist_3_stars_Hibiscus_name		= rs_arkNights_Rogland_scientist_3_stars_Hibiscus_name 					# "芙蓉"
+@rs_arkNights_Rogland_scientist_3_stars_Ansel_name 			= rs_arkNights_Rogland_scientist_3_stars_Ansel_name 					# "安塞尔"
+@rs_arkNights_Rogland_scientist_4_stars_Perfumer_name 		= rs_arkNights_Rogland_scientist_4_stars_Perfumer_name 					# "调香师"
+@rs_arkNights_Rogland_scientist_4_stars_Gavial_name			= rs_arkNights_Rogland_scientist_4_stars_Gavial_name 					# "嘉维尔"
+@rs_arkNights_Rogland_scientist_6_stars_Nightingal_name		= rs_arkNights_Rogland_scientist_6_stars_Nightingal_name 				# "夜莺"
+@rs_arkNights_Rogland_scientist_6_stars_Angelina_name		= rs_arkNights_Rogland_scientist_6_stars_Angelina_name 					# "安洁莉娜"
+
+# Rogland_Admirals(+1)
+@rs_arkNights_Rogland_admiral_3_stars_Catapult_name			= rs_arkNights_Rogland_admiral_3_stars_Catapult_name 					# "空爆"
+@rs_arkNights_Rogland_admiral_4_stars_Deepcolor_name 		= rs_arkNights_Rogland_admiral_4_stars_Deepcolor_name 					# "深海色"
+@rs_arkNights_Rogland_admiral_5_stars_Firewatch_name		= rs_arkNights_Rogland_admiral_5_stars_Firewatch_name 					# "守林人"
+@rs_arkNights_Rogland_admiral_5_stars_BluePoision_name		= rs_arkNights_Rogland_admiral_5_stars_BluePoision_name 				# "蓝毒"
+@rs_arkNights_Rogland_admiral_5_stars_Skyfire_name			= rs_arkNights_Rogland_admiral_5_stars_Skyfire_name 					# "天火"
+@rs_arkNights_Rogland_admiral_5_stars_Provence_name			= rs_arkNights_Rogland_admiral_5_stars_Provence_name 					# "普罗旺斯"
+@rs_arkNights_Rogland_admiral_5_stars_Meteorite_name		= rs_arkNights_Rogland_admiral_5_stars_Meteorite_name 					# "陨星"
+@rs_arkNights_Rogland_admiral_5_stars_Truth_name			= rs_arkNights_Rogland_admiral_5_stars_Truth_name 						# "真理"
+
+# Rogland_Generals(+1)
+@rs_arkNights_Rogland_general_4_stars_Cuora_name 			= rs_arkNights_Rogland_general_4_stars_Cuora_name 						# "蛇屠箱"
+@rs_arkNights_Rogland_general_4_stars_Fronstleaf_name 		= rs_arkNights_Rogland_general_4_stars_Fronstleaf_name 					# "霜叶"
+@rs_arkNights_Rogland_general_4_stars_Matoimaru_name 		= rs_arkNights_Rogland_general_4_stars_Matoimaru_name 					# "缠丸"
+@rs_arkNights_Rogland_general_4_stars_Scavenger_name	 	= rs_arkNights_Rogland_general_4_stars_Scavenger_name 					# "清道夫"
+@rs_arkNights_Rogland_general_5_stars_Nearl_name 			= rs_arkNights_Rogland_general_5_stars_Nearl_name 						# "临光"
+@rs_arkNights_Rogland_general_5_stars_ProjektRed_name 		= rs_arkNights_Rogland_general_5_stars_ProjektRed_name 					# "红"
+@rs_arkNights_Rogland_general_5_stars_Winter_name 			= rs_arkNights_Rogland_general_5_stars_Winter_name 						# "凛冬"
+@rs_arkNights_Rogland_general_5_stars_Specter_name 			= rs_arkNights_Rogland_general_5_stars_Specter_name 					# "幽灵鲨"
+@rs_arkNights_Rogland_general_6_stars_Skadi_name 			= rs_arkNights_Rogland_general_6_stars_Skadi_name 						# "斯卡蒂"
+
+# ※其他特殊角色：
+# 1、特殊干员角色(多职业角色，但同时只能存在于一个职位(全局唯一性的随机职位角色)、并且默认随机出卡率降低[当前的出卡率/同时的职位数量]%的说(计算后的数值向下取整的说，谢谢)，qwq，虎摸，谢谢，
+#   (即"如果原先出卡率为100%、且同时可就职于2个职位，则就降到100%/2 = 50%，而如果原先出卡率为50%、且同时可就职于3个职位，则就降到50%/3 = 16%"的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+#   a、即："如果A职位存在了这个这个角色，则其他职位就无法再出现这个角色，直到这个角色死亡之后[而被堕落带走的状态待定的说，谢谢]，才能再次随机刷新这个人物及其职位"的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+# Rogland_Scientist、Rogland_General
+@rs_arkNights_Rogland_scientist_or_general_6_stars_Shining_name	= rs_arkNights_Rogland_scientist_or_general_6_stars_Shining_name 	# "闪灵" # 闪灵同时可以任意兼职"Scientist科学家"和"General陆军将军"的这2个职位的说，qwq，虎摸，谢谢，
+																		 																	 # 即：1个角色、2个副本、同1个肖像、不同特征点、对应2个领导者类型的说，qwq，虎摸，谢谢，
+
+# Rogland_General、Rogland_Admiral
+@rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_name	= rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_name 	# "拉普兰德" # 拉普兰德同时可以任意兼职"General陆军将军"和"Admiral舰队司令"的这2个职位的说，qwq，虎摸，谢谢，
+																			 																	 # 即：1个角色、2个副本、同1个肖像、不同特征点、对应2个领导者类型的说，qwq，虎摸，谢谢，

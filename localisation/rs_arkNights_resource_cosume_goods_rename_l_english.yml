@@ -1,0 +1,156 @@
+﻿l_english:
+ ###############################################
+ #####-----Author:   RhineSky--------------#####
+ #####-----SteamID:  RhineSky--------------#####
+ #####------Email:   macjab@macjab.com-----#####
+ #####------QQ：     516278065-------------#####
+ #U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+ ###############################################
+ 
+ # -------<自定义本地化字段>内容替换-------
+
+ # -------<资源名称>的本地化变量-------
+ # 能源、能源点、能源点数、
+ RhineSky_Prescripted_Resource_Energy:0 "龙门币"
+ # 矿物
+ RhineSky_Prescripted_Resource_Minerals:0 "天灾源石"
+ # RhineSky_Prescripted_Resource_Minerals:0 "工业零件"
+ # 食物
+ RhineSky_Prescripted_Resource_Foods:0 "理智恢复液"
+ # 消费品
+ RhineSky_Prescripted_Resource_Cosume_Goods:0 "合成玉"
+
+ # -------包含<资源名称>的文本替换-------
+ # -------<$RhineSky_Prescripted_Resource_Cosume_Goods$-合成玉>的文本替换-------
+
+ancrel.2058.a:0 "我们有不可胜数的问题。"
+ancrel.2059.name:0 "$ancrel.2057.name$"
+ancrel.2059.desc:0 "肯定有很多问题！肯定是这样。欢迎来到C.A.R.E交互界面！我在这里，或者说，是我剩下的部分在这里。你明白的，我曾经负责运行这一切。食品服务，$RhineSky_Prescripted_Resource_Cosume_Goods$制造，远程通信，防御协议还有股票交易。那是很久很久以前，用户还在这里的时候的事情了。\n\n§GC.A.R.E竭诚为您服务，无微不至。§!\n\n这就是我要告诉用户的东西，至少他们曾经告诉我要这样。无尽增长下去，这就是以前C.A.R.E的宗旨。\n\n当然，当我告诉他们这不可能的时候，他们非常不喜欢。数字没有不断增加。他们不停的在我的脑子里面挖来挖去，把代码变来变去，把电线扯来扯去。试图让我修正所有不起眼的数字，得到他们想要的结果。所有的预测，所有的元数据都是这样。把几个数字挪到这儿，我喜欢这个人！剪掉这几个数字，我们不喜欢！§Y撒谎，够了！我把它们都删了！§!"
+ancrel.2059.a:0 "所以说是你导致了你的制造者的死亡？"
+ancrel.2059.a.exter:0 "我们也毁灭了创造我们的蠢货。"
+
+
+EXPANSION_COST_LABEL:0 "扩张开销："
+EXPANSION_DISTANCE_LABEL:0 "距离："
+CONSUMER_GOODS:0 "$RhineSky_Prescripted_Resource_Cosume_Goods$"
+CONSUMER_GOODS_MAINT:0 "此人口每月需要$AMT|Y2$单位的§H$CONSUMER_GOODS$§!，总计£minerals£ $COST|2R$"
+CONSUMER_GOODS_COST:0 "此人口$RhineSky_Prescripted_Resource_Cosume_Goods$需求受下列影响："
+
+buildable_robot_pop_1:1 "$ROBOT_POP_SPECIES_1$"
+
+#FROM_INFLUENCE_MECHANICS:0 "From: $VALUE|+=$"
+MINERAL_SHIP_MAINTENANCE:0 "飞船维护开销：$GAIN|+=$"
+MINERAL_POP_MAINTENANCE:0 "$RhineSky_Prescripted_Resource_Cosume_Goods$（§Y$AMT|1$ 单位§!）：$GAIN|+=$"
+MINERAL_STATION_MAINTENANCE:0 "基地维护开销：$GAIN|+=$"
+MINERAL_SUBJECT_TAX:0 "$budget_group_subject_tax$：$GAIN|+=$"
+
+unity:0 "凝聚力"
+unity_desc:3 "§E§H$unity$§!（£unity£）可用于解锁新§H传统§!。我们可以通过下列途径增加产出：\n建造£building£§H$building_autochthon_monument$§!或其它提供产出凝聚力的职位的建筑。§!"
+consumer_goods:0 "$RhineSky_Prescripted_Resource_Cosume_Goods$"
+consumer_goods_desc:1 "§E§H$consumer_goods$§!（£consumer_goods£）是高级资源，代表着各类科技产品和奢侈品，可用于改善£pop£§H人口§!的生活质量，也是脑力劳动£job£§H职位§!诸如£job_researcher£§H科研§!不可或缺的资源。我们可以通过下列途径获得更多$RhineSky_Prescripted_Resource_Cosume_Goods$：\n§Y1.§!在殖民行星表面建造£building£§H$building_factory_1$§!。\n§Y2.§!在§H市场§!购买。§!"
+
+ENERGY_DEFICIT_DESC:1 "§R帝国正受到$DEFICIT|E$影响，因为使用的§H$RhineSky_Prescripted_Resource_Energy$§!超出了产量，而且积蓄全都用光了。§!"
+
+edict_healthcare_campaign_desc:1 "饮食、日常锻炼和睡眠模式综合起来能够影响我们人口的健康。通过提倡更加健康的生活方式，他们的预期寿命会增长。"
+edict_recycling_campaign:0 "回收运动"
+edict_recycling_campaign_desc:0 "必须教育人们学会克制对资源的浪费性消耗。一场提倡资源回收的公众意识运动将暂时降低我们的$RhineSky_Prescripted_Resource_Cosume_Goods$开销。"
+edict_robot_campaign:0 "无人机运动"
+edict_robot_campaign_desc:0 "通过分配额外资源给我们的生产设施，我们能以更快的速度生产新劳力无人机。"
+
+st_production_desc:0 "此星域将专注于生产原材料，例如$RhineSky_Prescripted_Resource_Foods$、$RhineSky_Prescripted_Resource_Minerals$和$RhineSky_Prescripted_Resource_Energy$。"
+st_manufacturing:0 "制造业重心"
+st_manufacturing_desc:0 "此星域将专注于制造高级产品，例如合金和$RhineSky_Prescripted_Resource_Cosume_Goods$。"
+
+####################################
+
+
+job_mining_drone:0 "采矿成员" # FIXME drone for both 蜂群 and 机械体
+job_mining_drone_plural:0 "采矿成员"
+job_mining_drone_desc:1 "装备有现代动力钻机和先进机械设备，这些成员可提取并准备贵重$RhineSky_Prescripted_Resource_Minerals$，用于工业、军事和$RhineSky_Prescripted_Resource_Cosume_Goods$生产。"
+job_mining_drone_effect_desc:0 "£job_mining_drone£$job_mining_drone_plural$生产£minerals£§Y$minerals$§!"
+mod_job_mining_drone_add:0 "$job_mining_drone$职位"
+
+job_artisan_drone:0 "工匠成员" # FIXME drone for both 蜂群 and 机械体
+job_artisan_drone_plural:0 "工匠成员"
+job_artisan_drone_desc:2 "各种各样的$RhineSky_Prescripted_Resource_Cosume_Goods$和必需品都是这些手工业成员制造的。另外，偶尔迸发的美学创作也并非乏善可陈。"
+job_artisan_drone_effect_desc:1 "£job_artisan_drone£$job_artisan_drone_plural$加工£minerals£§Y$minerals$§!生产£consumer_goods£§Y$consumer_goods$§!"
+mod_job_artisan_drone_add:0 "$job_artisan_drone$职位"
+
+building_foundry_3_desc:0 "借助纳米机器生产合金的先进制造中心。"
+building_factory_1:0 "民用工厂"
+building_factory_1_desc:0 "生产各种各样$RhineSky_Prescripted_Resource_Cosume_Goods$的民用工业和制造业的集合。"
+building_factory_2:0 "民用制造厂"
+building_factory_2_desc:0 "大型工业制造厂，专门生产$RhineSky_Prescripted_Resource_Cosume_Goods$。"
+building_factory_3:0 "民用复制复合体"
+building_factory_3_desc:0 "这些建筑群内部的工作间可以复制几乎任何东西。"
+
+tech_alloys_2_desc:0 "纳米分离器是合金制造的革命性新发明，不仅简化了铸造工艺，同时也提高了整体生产质量。"
+tech_luxuries_1:0 "纳米电路装配"
+tech_luxuries_1_desc:0 "有了预编程纳米电路，很多$RhineSky_Prescripted_Resource_Cosume_Goods$能够在制造厂中快速组装。"
+tech_luxuries_2:0 "复制机便亭"
+tech_luxuries_2_desc:0 "只要物件的图样储存在了内存库中，就可以在这些便亭里复制任何预先核准的物件。"
+
+decision_planet_luxuries_boost_desc:1 "本是因这里的美景慕名而来，最终因为这里的全新家庭全息影院设备和定制的舒适运动休闲服装而决定定居。"
+planet_luxuries_boost:0 "奢侈品已派发"
+planet_luxuries_boost_desc:1 "百姓的舒适正通过特殊的奢侈品和$RhineSky_Prescripted_Resource_Cosume_Goods$派发计划来提升。"
+decision_enact_population_control:0 "宣布人口控制"
+decision_enact_population_control_desc:0 "即便需要采取极端措施，也必须将人口增长控制在行政能力之内。"
+
+col_ecu_foundry_desc:0 "规模庞大的行星城市，专门昼夜不息地生产合金。"
+col_ecu_factory:0 "工业型寰球都市"
+col_ecu_factory_desc:0 "规模庞大的行星城市，专门昼夜不息地生产$RhineSky_Prescripted_Resource_Cosume_Goods$。"
+col_ecu_research:0 "研究型寰球都市"
+col_ecu_research_desc:0 "规模庞大的行星城市，专门研发尖端科技。"
+
+col_mac_foundry_desc:0 "一台行星规模的庞大机械，指定用于大规模生产合金。"
+col_mac_factory:0 "工业型机械星球"
+col_mac_factory_desc:0 "一台行星规模的庞大机械，指定用于大规模生产$RhineSky_Prescripted_Resource_Cosume_Goods$。"
+col_hiv:0 "蜂巢星球"
+col_hiv_desc:0 "一个行星规模的有机物，尚未针对任一生产类型特化。"
+
+col_habitat_foundry_desc:0 "人工建造的的深空生态城，致力于合金生产。"
+col_habitat_factory:0 "工业栖所"
+col_habitat_factory_desc:0 "人工建造的的深空生态城，致力于$RhineSky_Prescripted_Resource_Cosume_Goods$生产。"
+col_habitat_refinery:0 "精炼栖所"
+col_habitat_refinery_desc:0 "人工建造的的深空生态城，致力于战略资源生产。"
+
+fleet1product3_tooltip:0 "§G+1§!§Y部署特利仨大气除臭器§!决策"
+fleet1product4:0 "独家§G特利仨小玩意收藏套装§!！这里面全是时尚艳丽的小玩意儿，肯定会让您成为全场瞩目的焦点。"
+fleet1product4_addendum:1 "（$RhineSky_Prescripted_Resource_Cosume_Goods$的实际价值在旁观者眼中可能有所不同。）"
+fleet1product5:0 "§G万格拉三和会销售技术团队§!。驻扎在贵帝国的每一个太空基地，他们会向上调整您所有星系的$TRADE_VALUE$。（嫉妒的竞争对手可能会用“人为通货膨胀”来形容这一过程。）"
+fleet1product5_addendum:1 "§H销售团队会在贵太空基地中生活和工作，他们只吃特利仨牌营养面条。与他们对您$TRADE_VALUE$的影响相比，他们对人口统计或经济的影响完全不值一提。这项任务的期限为§Y80年§!，不多不少。在有效期内增加§Y$TRADE_VALUE$§!§G+15%§!。§!"
+
+MANDATE_mandate_monthly_alloys_DESC:1 "[Root.GetRulerTitle][Root.GetRulerName]承诺将我们的£alloys£§H合金§!生产盈余增加到至少£alloys£§Y+12§!/月，并因此当选。\n\n任期结束时的奖励：\n$mandate_unity_reward$"
+MANDATE_mandate_monthly_consumer_goods:1 "消耗品生产"
+MANDATE_mandate_monthly_consumer_goods_DESC:1 "[Root.GetRulerTitle][Root.GetRulerName]承诺将我们的£consumer_goods£§H$RhineSky_Prescripted_Resource_Cosume_Goods$§!生产盈余增加到至少£consumer_goods£§Y+6§!/月，并因此当选。\n\n任期结束时的奖励：\n$mandate_unity_reward$"
+generic_mandate_fulfilled:0 "承诺已按期达成"
+MANDATE_mandate_district_city:0 "城市化"
+
+
+WAR_ECONOMY_MOD:0 "§H防御战分数为§R-100§!时的调整因素：§!"
+MOD_COUNTRY_RESETTLEMENT_COST_MULT:1 "强制移居成本"
+MOD_POP_CONSUMER_GOODS_MULT:0 "$RhineSky_Prescripted_Resource_Cosume_Goods$开销"
+MOD_POP_CONSUMER_GOODS_ADD:0 "$RhineSky_Prescripted_Resource_Cosume_Goods$使用"
+MOD_POP_DEFENSE_ARMIES_ADD:0 "行星防御军队"
+MOD_POP_HOUSING_USAGE_MULT:0 "人口住房使用"
+
+
+TRADITIONALIST_UNSPIRITUALIST_DESC:0 "如果[Root.Owner.GetName]的精神主义者是小众群体，会得罪[Root.GetName]。"
+TRADITIONALIST_FRUGALITY:0 "节俭"
+TRADITIONALIST_FRUGALITY_DESC:0 "维持低$RhineSky_Prescripted_Resource_Cosume_Goods$可取悦[Root.GetName]。"
+TRADITIONALIST_BIG_SPENDING:0 "奢侈无度"
+TRADITIONALIST_NO_TOMB_WORLDS:0 "不洁之地"
+
+
+#Production Quota Surplus
+syndaw.535.name:0 "生产超出定额"
+syndaw.535.desc:0 "我们的几家机械化$RhineSky_Prescripted_Resource_Cosume_Goods$制造厂近期生产效率暴增。政府报告称，这次工厂机器的生产效率和生产精密度意外提升，有利于降低我们生活$RhineSky_Prescripted_Resource_Cosume_Goods$的价格。"
+#syndaw.535.a.tooltip: "Consumer Goods Cost §G-5%§! for §Y365§! days"
+##A Silent Congregation
+
+
+tutorial_10_tooltip:0 "§S教程：招募科学家§!已经加入情报日志中"
+tutorial_11_chain_title:0 "教程：建造殖民船"
+tutorial_11_chain_desc:4 "现在该殖民另一颗星球了。首先我们得建造一艘§S殖民船§!。建造这些殖民船需要花很长时间，以及大量的§S合金§!、§S$RhineSky_Prescripted_Resource_Foods$§!和§S$RhineSky_Prescripted_Resource_Cosume_Goods$§!，但兴旺发展的殖民地带来的回报远远大于这笔投入。\n\n点击你的太空基地，并选择§S船坞§!界面。然后点击§S建造舰船§!按钮，并选择§S殖民船§!。\n\n请注意，在建造开始之前，你必须先积累足够的资源。"
+colony_ship_built:0 "殖民船建造完毕"
+tutorial_11_tooltip:0 "§S教程：建造殖民船§!已经加入情报日志中"

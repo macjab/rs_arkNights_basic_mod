@@ -1,0 +1,1470 @@
+namespace = rogland_events_admiral_leaders_create
+
+#-----------------------------------------------------
+
+# 1、当有任意的罗德岛Admiral被改装并实装时的状态Key值
+# 当有任意的罗德岛Admiral被改装并实装时，此值将被设置为1，默认为非0值(新的游戏一局的开始初始化时)或手动设置为0值(immediate模块的开头、或者在after模块里手动设置的说，qwq，虎摸，谢谢)的说，qwq，虎摸，谢谢，
+# 此常量的作用域为：country层(owner层)的说，qwq，虎摸，谢谢，
+@has_any_rogland_admiral_leader_been_installed = "has_any_rogland_admiral_leader_been_installed"
+
+# 2、admiral舰队司令对应的干员职业类型：远程攻击型角色(狙击/法师/远程攻击型辅助)等的说，qwq，虎摸，谢谢，
+
+#-----------------------------------------------------
+
+# 注意：一般情况下，请勿直接调用此事件处理函数，此函数通过"rogland_Leaders_Spawned_Or_Death_Events_Master_Control.1"事件消息处理函数来让其内部调调用这里面的函数的说，谢谢，
+#       而如果仍然想要调用这里的函数的话，则请通过触发"on_leader_spawned = {...}"事件消息来让事件消息的处理流程来自动的调用此消息的说，qwq，虎摸，谢谢，
+
+country_event = {
+	id = rogland_events_admiral_leaders_create.100
+
+	is_triggered_only = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_rogland_authorities
+		# has_government = rs_arkNights_rogland_goverment
+
+		owner = {
+			# is_species_class = rs_arkNights_Rogland_pop_species_1
+
+			# 1、只要有以下至少任何一个<罗德岛的Admiral舰队司令角色>[未创建]，则就进入到<罗德岛的Admiral舰队司令角色>的改造实装阶段
+			# 2、否则就什么都不做的说(即默认使用当前已创建的随机本地Admiral对象<因为当前是"on_leader_spanwd"事件，其中的单词"spawned"的"ed"则就属于[过去式语法]，即："在领导者创建后，触发此消息"的说，qwq，虎摸，谢谢>，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+			OR = {
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_3_stars_Catapult_Is_Alive
+					value = 0
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_general_4_stars_Fronstleaf_Is_Alive
+					value = 0
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_4_stars_Deepcolor_Is_Alive
+					value = 0
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_5_stars_Firewatch_Is_Alive
+					value = 0
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_5_stars_BluePoision_Is_Alive
+					value = 0
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_5_stars_Skyfire_Is_Alive
+					value = 0
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_5_stars_Provence_Is_Alive
+					value = 0
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_5_stars_Meteorite_Is_Alive
+					value = 0
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_Is_Alive
+					value = 0
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_6_stars_Shining_Is_Alive
+					value = 0
+				}
+			}
+		}
+
+		fromfrom = {
+			leader_class = admiral
+		}
+	}
+
+	immediate = {
+		# 3、重置[是否有任意罗德岛的Admiral舰队司令被创建]的标识符
+		owner = {
+			set_variable = {
+				which = @has_any_rogland_admiral_leader_been_installed
+				value = 0
+			}
+		}
+
+		# 4、正式进入指定<罗德岛的Admiral舰队司令角色>的改造实装阶段：
+		#    a、通过随机数，来挑选一个当前尚未改造实装的任意<罗德岛的Admiral舰队司令角色>进行改造实装的说，qwq，虎摸，谢谢，
+		# 抽卡几率说明：
+		# 60%: 2星卡(暂时没有这个星级阶段人物卡，直接跳过)，
+		# 60%: 3星卡，
+		# 40%：4星卡，
+		# 50%：5星卡(暂时没有这个星级阶段人物卡，直接跳过)，
+		# 30%：6星卡，
+		# 10%：7星卡(暂时没有这个星级阶段人物卡，直接跳过)，
+		random_list = {
+			# 60%: 2星，
+			# arkNights create Rogland leader: [60%] chance to create a 2 Stars arkNights Admiral Leader (mark: arkNights Game Original Chance Rules)
+			# current haven't any 2 Stars admirals, skip this create step of Lv.2 Stars of the admiral leader class at the present until have any 2 Stars admiral(s) join to our admiral leaders team in the furture, thank you~
+
+			# 60%: 3星，
+			# arkNights create Rogland leader: [60%] chance to create a 3 Stars arkNights Admiral Leader (mark: custom Game Original Chance Rules)
+			# 改造并实装3星人物、如果全部改造并实装，则什么都不做的说(即使用默认的Stellaris本地Governor角色[本地卡]的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+			60 = {
+				random_list = {
+					# 改造并实装3星人物：空爆
+					100 = { # ※备注-1：随机数根据当前的3星角色人数的增多而减少的说，随机数的设值范围请设置为[10-100](闭区间)的说，qwq，虎摸，谢谢，
+						if = {
+							limit = {
+								owner = {
+									check_variable = {
+										which = @rs_arkNights_Rogland_admiral_3_stars_Catapult_Is_Alive
+										value = 0
+									}
+								}
+							}
+
+							# 开始改造并实装：空爆
+							fromfromfrom = {
+								set_name 		= @rs_arkNights_Rogland_admiral_3_stars_Catapult_name
+								set_age 		= 16
+								set_is_female 	= yes
+								set_skill		= 1
+
+								change_leader_portrait = rs_arkNights_catapult_portrait_01
+
+								add_trait = rs_arkNights_Rogland_3_Stars_leader_level_trait
+								add_trait = rs_arkNights_Rogland_JJ_leader_job_trait
+								# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+								add_trait = rs_arkNights_admiral_catapult_feature_traint_originiumsArts
+
+								set_leader_flag = @rs_arkNights_Rogland_admiral_3_stars_Catapult_flag
+							}
+
+							# 设置其他周边监控数据：设置其他状态Key所对应的字典变量属性
+							owner = {
+								# 设置干员[空爆]的生/死状态为：存活状态
+								set_variable = {
+									which = @rs_arkNights_Rogland_admiral_3_stars_Catapult_Is_Alive
+									value = 1
+								}
+
+								# 设置[是否有任意罗德岛的Admiral舰队司令被创建]的标识符为"1"(yes值)的说，qwq，虎摸，谢谢，
+								set_variable = {
+									which = @has_any_rogland_admiral_leader_been_installed
+									value = 1
+								}
+							}
+						}
+					}
+				}
+			}
+
+			# 40%: 4星，
+			# arkNights create Rogland leader: [40%] chance to create a 4 Stars arkNights Admiral Leader (mark: arkNights Game Original Chance Rules)
+			# 改造并实装4星人物、如果全部改造并实装，则什么都不做的说(即使用默认的Stellaris本地Governor角色[本地卡]的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+			40 = {
+				random_list = {
+					# 改造并实装4星人物：深海色
+					100 = { # ※备注-1：随机数根据当前的4星角色人数的增多而减少的说，随机数的设值范围请设置为[10-100](闭区间)的说，qwq，虎摸，谢谢，
+						if = {
+							limit = {
+								owner = {
+									check_variable = {
+										which = @rs_arkNights_Rogland_admiral_4_stars_Deepcolor_Is_Alive
+										value = 0
+									}
+								}
+							}
+
+							# 开始改造并实装：深海色
+							fromfromfrom = {
+								set_name 		= @rs_arkNights_Rogland_admiral_4_stars_Deepcolor_name
+								set_age 		= 24
+								set_is_female 	= yes
+								set_skill		= 1
+
+								change_leader_portrait = rs_arkNights_deepcolor_portrait_01
+
+								add_trait = rs_arkNights_Rogland_4_Stars_leader_level_trait
+								add_trait = rs_arkNights_Rogland_FZ_leader_job_trait
+								add_trait = rs_arkNights_admiral_deepcolor_feature_traint_originiumsArts
+
+								set_leader_flag = @rs_arkNights_Rogland_admiral_4_stars_Deepcolor_flag
+							}
+
+							# 设置其他周边监控数据：设置其他状态Key所对应的字典变量属性
+							owner = {
+								# 设置干员[深海色]的生/死状态为：存活状态
+								set_variable = {
+									which = @rs_arkNights_Rogland_admiral_4_stars_Deepcolor_Is_Alive
+									value = 1
+								}
+
+								# 设置[是否有任意罗德岛的Admiral舰队司令被创建]的标识符为"1"(yes值)的说，qwq，虎摸，谢谢，
+								set_variable = {
+									which = @has_any_rogland_admiral_leader_been_installed
+									value = 1
+								}
+							}
+						}
+					}
+				}
+			}
+
+			# 50%: 5星，
+			# arkNights create Rogland leader: [50%] chance to create a 5 Stars arkNights Admiral Leader (mark: custom Game Original Chance Rules)
+			# 改造并实装5星人物、如果全部改造并实装完毕，则什么都不做的说(即使用默认的Stellaris本地Governor角色[本地卡]的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+			50 = {
+				# 改造并实装5星人物：守林人
+				random_list = {
+					30 = { # ※备注-1：随机数根据当前的5星角色人数的增多而减少的说，随机数的设值范围请设置为[10-100](闭区间)的说，qwq，虎摸，谢谢，
+						if = {
+							limit = {
+								owner = {
+									check_variable = {
+										which = @rs_arkNights_Rogland_admiral_5_stars_Firewatch_Is_Alive
+										value = 0
+									}
+								}
+							}
+
+							# 开始改造并实装：守林人
+							fromfromfrom = {
+								set_name 		= @rs_arkNights_Rogland_admiral_5_stars_Firewatch_name
+								set_age 		= 24
+								set_is_female 	= yes
+								set_skill		= 1
+
+								change_leader_portrait = rs_arkNights_firewatch_portrait_01
+
+								add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+								add_trait = rs_arkNights_Rogland_JJ_leader_job_trait
+								add_trait = rs_arkNights_admiral_firewatch_feature_traint_originiumsArts
+
+								set_leader_flag = @rs_arkNights_Rogland_admiral_5_stars_Firewatch_flag
+							}
+
+							# 设置其他周边监控数据：设置其他状态Key所对应的字典变量属性
+							owner = {
+								# 设置干员[守林人]的生/死状态为：存活状态
+								set_variable = {
+									which = @rs_arkNights_Rogland_admiral_5_stars_Firewatch_Is_Alive
+									value = 1
+								}
+
+								# 设置[是否有任意罗德岛的Admiral舰队司令被创建]的标识符为"1"(yes值)的说，qwq，虎摸，谢谢，
+								set_variable = {
+									which = @has_any_rogland_admiral_leader_been_installed
+									value = 1
+								}
+							}
+						}
+					}
+
+					# 改造并实装5星人物：蓝毒
+					30 = { # ※备注-1：随机数根据当前的5星角色人数的增多而减少的说，随机数的设值范围请设置为[10-100](闭区间)的说，qwq，虎摸，谢谢，
+						if = {
+							limit = {
+								owner = {
+									check_variable = {
+										which = @rs_arkNights_Rogland_admiral_5_stars_BluePoision_Is_Alive
+										value = 0
+									}
+								}
+							}
+
+							# 开始改造并实装：蓝毒
+							fromfromfrom = {
+								set_name 		= @rs_arkNights_Rogland_admiral_5_stars_BluePoision_name
+								set_age 		= 23
+								set_is_female 	= yes
+								set_skill		= 1
+
+								change_leader_portrait = rs_arkNights_bluepoision_portrait_01
+
+								add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+								add_trait = rs_arkNights_Rogland_JJ_leader_job_trait
+								add_trait = rs_arkNights_admiral_bluepoision_feature_traint_originiumsArts
+
+								set_leader_flag = @rs_arkNights_Rogland_admiral_5_stars_BluePoision_flag
+							}
+
+							# 设置其他周边监控数据：设置其他状态Key所对应的字典变量属性
+							owner = {
+								# 设置干员[蓝毒]的生/死状态为：存活状态
+								set_variable = {
+									which = @rs_arkNights_Rogland_admiral_5_stars_BluePoision_Is_Alive
+									value = 1
+								}
+
+								# 设置[是否有任意罗德岛的Admiral舰队司令被创建]的标识符为"1"(yes值)的说，qwq，虎摸，谢谢，
+								set_variable = {
+									which = @has_any_rogland_admiral_leader_been_installed
+									value = 1
+								}
+							}
+						}
+					}
+
+					# 改造并实装5星人物：天火
+					30 = { # ※备注-1：随机数根据当前的5星角色人数的增多而减少的说，随机数的设值范围请设置为[10-100](闭区间)的说，qwq，虎摸，谢谢，
+						if = {
+							limit = {
+								owner = {
+									check_variable = {
+										which = @rs_arkNights_Rogland_admiral_5_stars_Skyfire_Is_Alive
+										value = 0
+									}
+								}
+							}
+
+							# 开始改造并实装：天火
+							fromfromfrom = {
+								set_name 		= @rs_arkNights_Rogland_admiral_5_stars_Skyfire_name
+								set_age 		= 16
+								set_is_female 	= yes
+								set_skill		= 1
+
+								change_leader_portrait = rs_arkNights_skyfire_portrait_01
+
+								add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+								add_trait = rs_arkNights_Rogland_SS_leader_job_trait
+								add_trait = rs_arkNights_admiral_skyfire_feature_traint_originiumsArts
+
+								set_leader_flag = @rs_arkNights_Rogland_admiral_5_stars_Skyfire_flag
+							}
+
+							# 设置其他周边监控数据：设置其他状态Key所对应的字典变量属性
+							owner = {
+								# 设置干员[天火]的生/死状态为：存活状态
+								set_variable = {
+									which = @rs_arkNights_Rogland_admiral_5_stars_Skyfire_Is_Alive
+									value = 1
+								}
+
+								# 设置[是否有任意罗德岛的Admiral舰队司令被创建]的标识符为"1"(yes值)的说，qwq，虎摸，谢谢，
+								set_variable = {
+									which = @has_any_rogland_admiral_leader_been_installed
+									value = 1
+								}
+							}
+						}
+					}
+
+					# 改造并实装5星人物：普罗旺斯
+					30 = { # ※备注-1：随机数根据当前的5星角色人数的增多而减少的说，随机数的设值范围请设置为[10-100](闭区间)的说，qwq，虎摸，谢谢，
+						if = {
+							limit = {
+								owner = {
+									check_variable = {
+										which = @rs_arkNights_Rogland_admiral_5_stars_Provence_Is_Alive
+										value = 0
+									}
+								}
+							}
+
+							# 开始改造并实装：普罗旺斯
+							fromfromfrom = {
+								set_name 		= @rs_arkNights_Rogland_admiral_5_stars_Provence_name
+								set_age 		= 22
+								set_is_female 	= yes
+								set_skill		= 1
+
+								change_leader_portrait = rs_arkNights_provence_portrait_01
+
+								add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+								add_trait = rs_arkNights_Rogland_JJ_leader_job_trait
+								# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+								add_trait = rs_arkNights_admiral_provence_feature_traint_originiumsArts
+
+								set_leader_flag = @rs_arkNights_Rogland_admiral_5_stars_Provence_flag
+							}
+
+							# 设置其他周边监控数据：设置其他状态Key所对应的字典变量属性
+							owner = {
+								# 设置干员[普罗旺斯]的生/死状态为：存活状态
+								set_variable = {
+									which = @rs_arkNights_Rogland_admiral_5_stars_Provence_Is_Alive
+									value = 1
+								}
+
+								# 设置[是否有任意罗德岛的Admiral舰队司令被创建]的标识符为"1"(yes值)的说，qwq，虎摸，谢谢，
+								set_variable = {
+									which = @has_any_rogland_admiral_leader_been_installed
+									value = 1
+								}
+							}
+						}
+					}
+
+					# 改造并实装5星人物：陨星
+					30 = { # ※备注-1：随机数根据当前的5星角色人数的增多而减少的说，随机数的设值范围请设置为[10-100](闭区间)的说，qwq，虎摸，谢谢，
+						if = {
+							limit = {
+								owner = {
+									check_variable = {
+										which = @rs_arkNights_Rogland_admiral_5_stars_Meteorite_Is_Alive
+										value = 0
+									}
+								}
+							}
+
+							# 开始改造并实装：陨星
+							fromfromfrom = {
+								set_name 		= @rs_arkNights_Rogland_admiral_5_stars_Meteorite_name
+								set_age 		= 23
+								set_is_female 	= yes
+								set_skill		= 1
+
+								change_leader_portrait = rs_arkNights_meteorite_portrait_01
+
+								add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+								add_trait = rs_arkNights_Rogland_JJ_leader_job_trait
+								# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+								add_trait = rs_arkNights_admiral_meteorite_feature_traint_originiumsArts
+
+								set_leader_flag = @rs_arkNights_Rogland_admiral_5_stars_Meteorite_flag
+							}
+
+							# 设置其他周边监控数据：设置其他状态Key所对应的字典变量属性
+							owner = {
+								# 设置干员[陨星]的生/死状态为：存活状态
+								set_variable = {
+									which = @rs_arkNights_Rogland_admiral_5_stars_Meteorite_Is_Alive
+									value = 1
+								}
+
+								# 设置[是否有任意罗德岛的Admiral舰队司令被创建]的标识符为"1"(yes值)的说，qwq，虎摸，谢谢，
+								set_variable = {
+									which = @has_any_rogland_admiral_leader_been_installed
+									value = 1
+								}
+							}
+						}
+					}
+
+					# 改造并实装5星人物：真理
+					30 = { # ※备注-1：随机数根据当前的5星角色人数的增多而减少的说，随机数的设值范围请设置为[10-100](闭区间)的说，qwq，虎摸，谢谢，
+						if = {
+							limit = {
+								owner = {
+									check_variable = {
+										which = @rs_arkNights_Rogland_admiral_5_stars_Truth_Is_Alive
+										value = 0
+									}
+								}
+							}
+
+							# 开始改造并实装：真理
+							fromfromfrom = {
+								set_name 		= @rs_arkNights_Rogland_admiral_5_stars_Truth_name
+								set_age 		= 16
+								set_is_female 	= yes
+								set_skill		= 1
+
+								change_leader_portrait = rs_arkNights_truth_portrait_01
+
+								add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+								add_trait = rs_arkNights_Rogland_JJ_leader_job_trait
+								add_trait = rs_arkNights_admiral_truth_feature_traint_originiumsArts
+
+								set_leader_flag = @rs_arkNights_Rogland_admiral_5_stars_Truth_flag
+							}
+
+							# 设置其他周边监控数据：设置其他状态Key所对应的字典变量属性
+							owner = {
+								# 设置干员[真理]的生/死状态为：存活状态
+								set_variable = {
+									which = @rs_arkNights_Rogland_admiral_5_stars_Truth_Is_Alive
+									value = 1
+								}
+
+								# 设置[是否有任意罗德岛的Admiral舰队司令被创建]的标识符为"1"(yes值)的说，qwq，虎摸，谢谢，
+								set_variable = {
+									which = @has_any_rogland_admiral_leader_been_installed
+									value = 1
+								}
+							}
+						}
+					}
+
+					# 改造并实装5星人物：拉普兰德(※备注-1：由于目前"拉普兰德"同时可就职于2个职位[General/Admiral]，因此这里的出卡率降低到现有出卡率的1/2的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+					15 = { # ※备注-1：随机数根据当前的5星角色人数的增多而减少的说，随机数的设值范围请设置为[10-100](闭区间)的说，qwq，虎摸，谢谢，
+						if = {
+							limit = {
+								owner = {
+									check_variable = {
+										which = @rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_Is_Alive
+										value = 0
+									}
+								}
+							}
+
+							# 开始改造并实装：拉普兰德(※备注-1：由于目前"拉普兰德"同时可就职于2个职位[General/Admiral]，因此这里的出卡率降低到现有出卡率的1/2的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+							fromfromfrom = {
+								set_name 		= @rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_name
+								set_age 		= 22
+								set_is_female 	= yes
+								set_skill		= 1
+
+								change_leader_portrait = rs_arkNights_lappland_portrait_01
+
+								add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+								add_trait = rs_arkNights_Rogland_JW_leader_job_trait
+								# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+								add_trait = rs_arkNights_admiral_lappland_feature_traint_originiumsArts
+
+								set_leader_flag = @rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_flag
+							}
+
+							# 设置其他周边监控数据：设置其他状态Key所对应的字典变量属性
+							owner = {
+								# 设置干员[拉普兰德]的生/死状态为：存活状态
+								set_variable = {
+									which = @rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_Is_Alive
+									value = 1
+								}
+
+								# 设置[是否有任意罗德岛的Admiral舰队司令被创建]的标识符为"1"(yes值)的说，qwq，虎摸，谢谢，
+								set_variable = {
+									which = @has_any_rogland_admiral_leader_been_installed
+									value = 1
+								}
+							}
+						}
+					}
+				}
+			}
+
+			# 30%: 6星，
+			# arkNights create Rogland leader: [30%] chance to create a 6 Stars arkNights Admiral Leader (mark: custom Game Original Chance Rules)
+			# current haven't any 6 Stars admirals, skip this create step of Lv.6 Stars of the admiral leader class at the present until have any 6 Stars admiral(s) join to our admiral leaders team in the furture, thank you~
+
+			# 10%: 7星，
+			# arkNights create Rogland leader: [10%] chance to create a 7 Stars arkNights Admiral Leader (mark: custom Game Original Chance Rules)
+			# current haven't any 7 Stars admirals, skip this create step of Lv.7 Stars of the admiral leader class at the present until have any 7 Stars admiral(s) join to our admiral leaders team in the furture, thank you~
+		}
+	}
+
+	after = {
+		# 5、检测[是否有任意罗德岛的Admiral舰队司令被创建]的标识符：
+		#    a、如果判断为"0"(no)值，则表示[没有任何的罗德岛的Admiral舰队司令被创建]，此时重新添加<本地admiral在创建出厂时的随机设置的arkNights的trait特征点属性>的说、并重置[是否有任意罗德岛的Admiral舰队司令被创建]的标识符为"0"(no值<默认初始值>)，qwq，虎摸，谢谢，
+		#    b、否则什么都不错，然后重置[是否有任意罗德岛的Admiral舰队司令被创建]的标识符为"0"(no值<默认初始值>)的说，qwq，虎摸，谢谢，
+		if = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = @has_any_rogland_admiral_leader_been_installed
+						value = 0
+					}
+				}
+			}
+
+			# 6、set ruler portrait to the default portrait to prevent to the default amiya_ruler portrait, thank you~
+			fromfrom = {
+				change_leader_portrait = rs_arkNights_Rogland_Pops_portrait_02
+			}
+
+			# 7、重新添加所有的本地admiral在创建出厂时的随机设置的arkNights的trait特征点属性：
+			# 因为没有任何的arkNights的Admiral被创建，所以就没有arkNights的trait<领导者的特征点>的重复叠加问题的说，所以就可以重新添加上这些qwq，虎摸，谢谢，
+			# 因此先移除已有的出厂时的随机可能设置的arkNights的trait<领导者的特征点>，然后再添加新的arkNights的trait<领导者的特征点>的说，qwq，虎摸，谢谢)，谢谢，
+			fromfrom = {
+				# set skills to lv.1
+				set_skill	= 1
+
+				# system local admiral leader trait(1) assign
+#				random_list = {
+#					30*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_fleet_logistician
+#					}
+#
+#					30*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_cautious
+#					}
+#
+#					30*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_scout
+#					}
+#
+#					30*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_gale_speed
+#					}
+#
+#					30*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_admiral_erudite
+#					}
+#
+#					30*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_admiral_cyborg
+#					}
+#
+#					30*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_mercenary_warrior
+#					}
+#
+#					30*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_admiral_synthetic
+#					}
+#
+#					30*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_dimensional_stutter
+#					}
+#
+#					30*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_engineer
+#					}
+#
+#					30*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_trickster
+#					}
+#
+#					30*@rs_arkNights_global_Rogland_Leaders_advanced_powerUp_Any_Traits_trigger_factory = {
+#						add_trait = leader_trait_sentinel
+#					}
+#				}
+
+				# rs_arkNights admiral leader traits(1~2) assign
+#				random_list = {
+#					70 = {
+#						add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+#					}
+#
+#					30 = {
+#						# do nothing here, using to don't add the oripathy trait, thank you~
+#						# if no this option, will 100% to excute the above data
+#					}
+#				}
+
+				random_list = {
+					25 = {
+						add_trait = rs_arkNights_Rogland_admiral_traint_originiumsArts_1
+					}
+
+					25 = {
+						add_trait = rs_arkNights_Rogland_admiral_traint_originiumsArts_2
+					}
+
+					50 = {
+						# do nothing here, using to don't add the originiumsArts trait, thank you~
+						# if no this option, will 100% to excute the above data
+					}
+				}
+			}
+		}
+
+		# 重置[是否有任意罗德岛的Admiral舰队司令被创建]的标识符
+		owner = {
+			set_variable = {
+				which = @has_any_rogland_admiral_leader_been_installed
+				value = 0
+			}
+		}
+	}
+}
+
+#----------------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------------
+
+# 回收当前指定的Admiral舰队司令
+# 流程：[判断是否至少创建了一个rs_arkNights领导者对象->(1、如果有的话)->判断当前回收的领导者是否是rs_arkNights领导者->(1、如果是的话)->回收开关设定、移除flag标识符->数据回收处理完毕；
+#													   (2、如果没有的话)->直接完毕的说，qwq，虎摸，谢谢，             (2、如果不是的话)->直接完毕]的说，qwq，虎摸，谢谢，
+event = {
+	id = rogland_events_admiral_leaders_create.101
+
+	is_triggered_only = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_rogland_authorities
+		# has_government = rs_arkNights_rogland_goverment
+
+		owner = {
+			# is_species_class = rs_arkNights_Rogland_pop_species_1
+
+			# 1、只要有以下至少任何一个<罗德岛的Admiral舰队司令角色>[已创建]，则就进入到<罗德岛的Admiral舰队司令角色>的善后数据回收阶段
+			# 2、否则就什么都不做的说(即默认使用当前已创建的随机本地Admiral对象<因为当前是"on_leader_death/removed"事件，其中的单词"death"的时态和"removed"里的"ed"则就属于[过去式语法]，即："在领导者创建后，触发此消息"的说，qwq，虎摸，谢谢>，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+			OR = {
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_3_stars_Catapult_Is_Alive
+					value = 1
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_4_stars_Deepcolor_Is_Alive
+					value = 1
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_5_stars_Firewatch_Is_Alive
+					value = 1
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_5_stars_BluePoision_Is_Alive
+					value = 1
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_5_stars_Skyfire_Is_Alive
+					value = 1
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_5_stars_Provence_Is_Alive
+					value = 1
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_5_stars_Meteorite_Is_Alive
+					value = 1
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_5_stars_Truth_Is_Alive
+					value = 1
+				}
+				# 特殊的rs_arkNights多重职业角色：
+				# 拉普兰德：[General+Admiral]：
+				check_variable = {
+					which = @rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_Is_Alive
+					value = 1
+				}
+			}
+		}
+
+		fromfrom = {
+			leader_class = admiral
+		}
+	}
+
+	immediate = {
+		# 3、正式进入指定<罗德岛的Admiral舰队司令角色>的善后回收阶段
+		fromfromfrom = {
+			# 判断要回收的Admiral是否是<空爆>：
+			if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_3_stars_Catapult_flag
+
+					owner = {
+						check_variable = {
+							which = @rs_arkNights_Rogland_admiral_3_stars_Catapult_Is_Alive
+							value = 1
+						}
+					}
+				}
+
+				remove_leader_flag = rs_arkNights_Rogland_admiral_3_stars_Catapult_flag
+				
+				owner = {
+					set_variable = {
+						which = @rs_arkNights_Rogland_admiral_3_stars_Catapult_Is_Alive
+						value = 0
+					}
+				}
+			}
+
+			# 判断要回收的Admiral是否是<深海色>：
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_4_stars_Deepcolor_flag
+
+					owner = {
+						check_variable = {
+							which = @rs_arkNights_Rogland_admiral_4_stars_Deepcolor_Is_Alive
+							value = 1
+						}
+					}
+				}
+
+				remove_leader_flag = rs_arkNights_Rogland_admiral_4_stars_Deepcolor_flag
+				
+				owner = {
+					set_variable = {
+						which = @rs_arkNights_Rogland_admiral_4_stars_Deepcolor_Is_Alive
+						value = 0
+					}
+				}
+			}
+
+			# 判断要回收的Admiral是否是<守林人>：
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Firewatch_flag
+
+					owner = {
+						check_variable = {
+							which = @rs_arkNights_Rogland_admiral_5_stars_Firewatch_Is_Alive
+							value = 1
+						}
+					}
+				}
+
+				remove_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Firewatch_flag
+				
+				owner = {
+					set_variable = {
+						which = @rs_arkNights_Rogland_admiral_5_stars_Firewatch_Is_Alive
+						value = 0
+					}
+				}
+			}
+
+			# 判断要回收的Admiral是否是<蓝毒>：
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_BluePoision_flag
+
+					owner = {
+						check_variable = {
+							which = @rs_arkNights_Rogland_admiral_5_stars_BluePoision_Is_Alive
+							value = 1
+						}
+					}
+				}
+
+				remove_leader_flag = rs_arkNights_Rogland_admiral_5_stars_BluePoision_flag
+				
+				owner = {
+					set_variable = {
+						which = @rs_arkNights_Rogland_admiral_5_stars_BluePoision_Is_Alive
+						value = 0
+					}
+				}
+			}
+
+			# 判断要回收的Admiral是否是<天火>：
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Skyfire_flag
+
+					owner = {
+						check_variable = {
+							which = @rs_arkNights_Rogland_admiral_5_stars_Skyfire_Is_Alive
+							value = 1
+						}
+					}
+				}
+
+				remove_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Skyfire_flag
+				
+				owner = {
+					set_variable = {
+						which = @rs_arkNights_Rogland_admiral_5_stars_Skyfire_Is_Alive
+						value = 0
+					}
+				}
+			}
+
+			# 判断要回收的Admiral是否是<普罗旺斯>：
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Provence_flag
+
+					owner = {
+						check_variable = {
+							which = @rs_arkNights_Rogland_admiral_5_stars_Provence_Is_Alive
+							value = 1
+						}
+					}
+				}
+
+				remove_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Provence_flag
+				
+				owner = {
+					set_variable = {
+						which = @rs_arkNights_Rogland_admiral_5_stars_Provence_Is_Alive
+						value = 0
+					}
+				}
+			}
+
+			# 判断要回收的Admiral是否是<陨星>：
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Meteorite_flag
+
+					owner = {
+						check_variable = {
+							which = @rs_arkNights_Rogland_admiral_5_stars_Meteorite_Is_Alive
+							value = 1
+						}
+					}
+				}
+
+				remove_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Meteorite_flag
+				
+				owner = {
+					set_variable = {
+						which = @rs_arkNights_Rogland_admiral_5_stars_Meteorite_Is_Alive
+						value = 0
+					}
+				}
+			}
+
+			# 判断要回收的Admiral是否是<真理>：
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Truth_flag
+
+					owner = {
+						check_variable = {
+							which = @rs_arkNights_Rogland_admiral_5_stars_Truth_Is_Alive
+							value = 1
+						}
+					}
+				}
+
+				remove_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Truth_flag
+				
+				owner = {
+					set_variable = {
+						which = @rs_arkNights_Rogland_admiral_5_stars_Truth_Is_Alive
+						value = 0
+					}
+				}
+			}
+
+			# 特殊的rs_arkNights多重职业角色：
+			# 拉普兰德：[General+Admiral]：
+			# 判断要回收的Admiral是否是<拉普兰德>：
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_flag
+
+					owner = {
+						check_variable = {
+							which = @rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_Is_Alive
+							value = 1
+						}
+					}
+				}
+
+				remove_leader_flag = rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_flag
+				
+				owner = {
+					set_variable = {
+						which = @rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_Is_Alive
+						value = 0
+					}
+				}
+			}
+		}
+	}
+}
+
+#----------------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------------
+
+# 升级当前指定的Admiral舰队司令
+# 流程：[判断是否至少创建了一个rs_arkNights领导者对象->(1、如果有的话)->判断当前回收的领导者是否是rs_arkNights领导者->(1、如果是的话)->升级相关数据/肖像和或技能->数据升级完毕；
+#													   (2、如果没有的话)->直接完毕的说，qwq，虎摸，谢谢，             (2、如果不是的话)->直接完毕]的说，qwq，虎摸，谢谢，
+event = {
+	id = rogland_events_admiral_leaders_create.102
+
+	is_triggered_only = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_rogland_authorities
+		# has_government = rs_arkNights_rogland_goverment
+
+		owner = {
+			# is_species_class = rs_arkNights_Rogland_pop_species_1
+
+			# 1、只要有以下至少任何一个<罗德岛的Admiral舰队司令角色>[已创建]，则就进入到<罗德岛的Admiral舰队司令角色>的数据/肖像和或技能的数据升级处理阶段，
+			# 2、否则就什么都不做的说(即默认使用当前已创建的随机本地Admiral对象<因为当前是"on_leader_death/removed"事件，其中的单词"death"的时态和"removed"里的"ed"则就属于[过去式语法]，即："在领导者创建后，触发此消息"的说，qwq，虎摸，谢谢>，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+			OR = {
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_3_stars_Catapult_Is_Alive
+					value = 1
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_4_stars_Deepcolor_Is_Alive
+					value = 1
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_5_stars_Firewatch_Is_Alive
+					value = 1
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_5_stars_BluePoision_Is_Alive
+					value = 1
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_5_stars_Skyfire_Is_Alive
+					value = 1
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_5_stars_Provence_Is_Alive
+					value = 1
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_5_stars_Meteorite_Is_Alive
+					value = 1
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_admiral_5_stars_Truth_Is_Alive
+					value = 1
+				}
+				# 特殊的rs_arkNights多重职业角色：
+				# 拉普兰德：[General+Admiral]：
+				check_variable = {
+					which = @rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_Is_Alive
+					value = 1
+				}
+			}
+		}
+
+		fromfrom = {
+			leader_class = admiral
+		}
+	}
+
+	immediate = {
+		# 3、正式进入指定<罗德岛的Admiral舰队司令角色>的善后回收阶段
+		fromfromfrom = {
+			# 判断要升级的Admiral是否是<空爆>：
+			if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_3_stars_Catapult_flag
+
+					owner = {
+						check_variable = {
+							which = @rs_arkNights_Rogland_admiral_3_stars_Catapult_Is_Alive
+							value = 1
+						}
+					}
+				}
+
+				# 升级处理操作
+				if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_2_exp_value
+							has_level		>= 2
+							has_skill		>= 2
+						}
+						
+					}
+
+					# ... do some upgrade things any you want here
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_3_exp_value
+							has_level		>= 3
+							has_skill		>= 3
+						}
+					}
+
+					# ... do some upgrade things any you want here
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_4_exp_value
+							has_level		>= 4
+							has_skill		>= 4
+						}
+					}
+
+					# ... do some upgrade things any you want here
+				}
+			}
+
+			# 判断要升级的Admiral是否是<深海色>：
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_4_stars_Deepcolor_flag
+
+					owner = {
+						check_variable = {
+							which = @rs_arkNights_Rogland_admiral_4_stars_Deepcolor_Is_Alive
+							value = 1
+						}
+					}
+				}
+
+				# 升级处理操作
+				if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_2_exp_value
+							has_level		>= 2
+							has_skill		>= 2
+						}
+						
+					}
+
+					# ... do some upgrade things any you want here
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_3_exp_value
+							has_level		>= 3
+							has_skill		>= 3
+						}
+					}
+
+					# ... do some upgrade things any you want here
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_4_exp_value
+							has_level		>= 4
+							has_skill		>= 4
+						}
+					}
+
+					# ... do some upgrade things any you want here
+				}
+			}
+
+			# 判断要升级的Admiral是否是<守林人>：
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Firewatch_flag
+
+					owner = {
+						check_variable = {
+							which = @rs_arkNights_Rogland_admiral_5_stars_Firewatch_Is_Alive
+							value = 1
+						}
+					}
+				}
+
+				# 升级处理操作
+				if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_2_exp_value
+							has_level		>= 2
+							has_skill		>= 2
+						}
+						
+					}
+
+					# ... do some upgrade things any you want here
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_3_exp_value
+							has_level		>= 3
+							has_skill		>= 3
+						}
+					}
+
+					# ... do some upgrade things any you want here
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_4_exp_value
+							has_level		>= 4
+							has_skill		>= 4
+						}
+					}
+
+					# ... do some upgrade things any you want here
+				}
+			}
+
+			# 判断要升级的Admiral是否是<蓝毒>：
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_BluePoision_flag
+
+					owner = {
+						check_variable = {
+							which = @rs_arkNights_Rogland_admiral_5_stars_BluePoision_Is_Alive
+							value = 1
+						}
+					}
+				}
+
+				# 升级处理操作
+				if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_2_exp_value
+							has_level		>= 2
+							has_skill		>= 2
+						}
+						
+					}
+
+					# ... do some upgrade things any you want here
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_3_exp_value
+							has_level		>= 3
+							has_skill		>= 3
+						}
+					}
+
+					# ... do some upgrade things any you want here
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_4_exp_value
+							has_level		>= 4
+							has_skill		>= 4
+						}
+					}
+
+					# ... do some upgrade things any you want here
+				}
+			}
+
+			# 判断要升级的Admiral是否是<天火>：
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Skyfire_flag
+
+					owner = {
+						check_variable = {
+							which = @rs_arkNights_Rogland_admiral_5_stars_Skyfire_Is_Alive
+							value = 1
+						}
+					}
+				}
+
+				# 升级处理操作
+				if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_2_exp_value
+							has_level		>= 2
+							has_skill		>= 2
+						}
+						
+					}
+
+					# ... do some upgrade things any you want here
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_3_exp_value
+							has_level		>= 3
+							has_skill		>= 3
+						}
+					}
+
+					# ... do some upgrade things any you want here
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_4_exp_value
+							has_level		>= 4
+							has_skill		>= 4
+						}
+					}
+
+					# ... do some upgrade things any you want here
+				}
+			}
+
+			# 判断要升级的Admiral是否是<普罗旺斯>：
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Provence_flag
+
+					owner = {
+						check_variable = {
+							which = @rs_arkNights_Rogland_admiral_5_stars_Provence_Is_Alive
+							value = 1
+						}
+					}
+				}
+
+				# 升级处理操作
+				if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_2_exp_value
+							has_level		>= 2
+							has_skill		>= 2
+						}
+						
+					}
+
+					# ... do some upgrade things any you want here
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_3_exp_value
+							has_level		>= 3
+							has_skill		>= 3
+						}
+					}
+
+					# ... do some upgrade things any you want here
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_4_exp_value
+							has_level		>= 4
+							has_skill		>= 4
+						}
+					}
+
+					# ... do some upgrade things any you want here
+				}
+			}
+
+			# 判断要升级的Admiral是否是<陨星>：
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Meteorite_flag
+
+					owner = {
+						check_variable = {
+							which = @rs_arkNights_Rogland_admiral_5_stars_Meteorite_Is_Alive
+							value = 1
+						}
+					}
+				}
+
+				# 升级处理操作
+				if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_2_exp_value
+							has_level		>= 2
+							has_skill		>= 2
+						}
+						
+					}
+
+					# ... do some upgrade things any you want here
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_3_exp_value
+							has_level		>= 3
+							has_skill		>= 3
+						}
+					}
+
+					# ... do some upgrade things any you want here
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_4_exp_value
+							has_level		>= 4
+							has_skill		>= 4
+						}
+					}
+
+					# ... do some upgrade things any you want here
+				}
+			}
+
+			# 判断要升级的Admiral是否是<真理>：
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Truth_flag
+
+					owner = {
+						check_variable = {
+							which = @rs_arkNights_Rogland_admiral_5_stars_Truth_Is_Alive
+							value = 1
+						}
+					}
+				}
+
+				# 升级处理操作
+				if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_2_exp_value
+							has_level		>= 2
+							has_skill		>= 2
+						}
+						
+					}
+
+					# ... do some upgrade things any you want here
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_3_exp_value
+							has_level		>= 3
+							has_skill		>= 3
+						}
+					}
+
+					# ... do some upgrade things any you want here
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_4_exp_value
+							has_level		>= 4
+							has_skill		>= 4
+						}
+					}
+
+					# ... do some upgrade things any you want here
+				}
+			}
+
+			# 特殊的rs_arkNights多重职业角色：
+			# 拉普兰德：[General+Admiral]：
+			# 判断要升级的Admiral是否是<拉普兰德>：
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_flag
+
+					owner = {
+						check_variable = {
+							which = @rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_Is_Alive
+							value = 1
+						}
+					}
+				}
+
+				# 升级处理操作
+				if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_2_exp_value
+							has_level		>= 2
+							has_skill		>= 2
+						}
+						
+					}
+
+					# ... do some upgrade things any you want here
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_3_exp_value
+							has_level		>= 3
+							has_skill		>= 3
+						}
+					}
+
+					# ... do some upgrade things any you want here
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_experience 	>= @rs_arkNights_Rogland_All_leader_lv_4_exp_value
+							has_level		>= 4
+							has_skill		>= 4
+						}
+					}
+
+					# ... do some upgrade things any you want here
+				}
+			}
+		}
+	}
+}

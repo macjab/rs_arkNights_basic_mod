@@ -1,0 +1,43 @@
+##########-----arkNights_All_Leaders_Flags_List_Related_Variables-----##########
+
+########################################################################################################
+##########------------------------------------------------------------------------------------##########
+##########-----scripted_varaibles_的变量作用域：country层(owner层)的说，qwq，虎摸，谢谢，-----##########
+##########------------------------------------------------------------------------------------##########
+########################################################################################################
+
+##################################################################
+##########-----<整合运动：干部flag标识符>常量字符串-----##########
+##################################################################
+# Reunion_Rulers
+
+
+# Reunion_Governors
+@rs_arkNights_Reunion_governor_6_stars_WeiYanWu_flag				= "rs_arkNights_Reunion_governor_6_stars_WeiYanWu_flag" # 1% chance to refresh
+
+# Reunion_Scientists
+
+
+# Reunion_Admirals
+@rs_arkNights_Reunion_admiral_5_stars_Faust_flag					= "rs_arkNights_Reunion_admiral_5_stars_Faust_flag"
+
+# Reunion_Generls
+@rs_arkNights_Reunion_general_4_stars_KingKiller_flag				= "rs_arkNights_Reunion_general_4_stars_KingKiller_flag"
+
+# ※其他特殊角色：
+# 1、特殊干员角色(多职业角色，但同时只能存在于一个职位(全局唯一性的随机职位角色)、并且默认随机出卡率降低[当前的出卡率/同时的职位数量]%的说(计算后的数值向下取整的说，谢谢)，qwq，虎摸，谢谢，
+#   (即"如果原先出卡率为100%、且同时可就职于2个职位，则就降到100%/2 = 50%，而如果原先出卡率为50%、且同时可就职于3个职位，则就降到50%/3 = 16%"的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+#   a、即："如果A职位存在了这个这个角色，则其他职位就无法再出现这个角色，直到这个角色死亡之后[而被堕落带走的状态待定的说，谢谢]，才能再次随机刷新这个人物及其职位"的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+# Reunion_Ruler、Reunion_Admiral
+@rs_arkNights_Reunion_ruler_or_admiral_5_stars_W_flag				= "rs_arkNights_Reunion_ruler_or_admiral_5_stars_W_flag"			 # ruler_chance < admiral_chance
+@rs_arkNights_Reunion_ruler_or_admiral_7_stars_Talulah_flag			= "rs_arkNights_Reunion_ruler_or_admiral_7_stars_Talulah_flag"		 # ruler_chance == admiral_chance
+
+#Reunion_Governor、Reunion_Admiral
+@rs_arkNights_Reunion_governor_or_admiral_6_stars_FronstStar_flag	= "rs_arkNights_Reunion_governor_or_admiral_6_stars_FronstStar_flag" # governor_chance < admiral_chance
+
+# Reunion_Scientist、Reunion_Admiral
+@rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_flag	= "rs_arkNights_Reunion_scientist_or_admiral_6_stars_Mephisto_flag"  # scientist_chance < admiral_chance
+
+# Reunion_General、Reunion_Admiral
+@rs_arkNights_Reunion_general_or_admiral_3_stars_Micha_flag			= "rs_arkNights_Reunion_general_or_admiral_3_stars_Micha_flag"
+@rs_arkNights_Reunion_general_or_admiral_5_stars_BrokenBone_flag	= "rs_arkNights_Reunion_general_or_admiral_5_stars_BrokenBone_flag"  # will be buffed when be a general

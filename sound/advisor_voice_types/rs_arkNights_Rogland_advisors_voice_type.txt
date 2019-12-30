@@ -1,0 +1,30 @@
+###############################################
+#####-----Author: 	RhineSky--------------#####
+#####-----SteamID:	RhineSky--------------#####
+#####-----Email:	macjab@macjab.com-----#####
+#####-----QQ：		516278065-------------#####
+#U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+###############################################
+
+# ArkNights-【罗德岛】-阿米娅
+rs_arkNights_Rogland_Amiya_sounds_advisor_voice_type = {
+	name = @rs_arkNights_RhineLab_Ptilopsis_sound_advisor_voice_type_name
+	
+	icon = "gfx/interface/icons/advisor_vo/rs_arkNights_Rogland_Amiya_avatar_1.dds"
+
+	weight = {
+		# very poissbile to be selected weight
+		base = 0
+
+		modifier = {
+			# if has matches any options below, will add more weights to the base weights
+			add = 999999
+
+			# <阿米娅>目前在罗德岛中任职，是一名催更指挥官(误，然后罗德岛目前似乎正在与整合运动处于敌对状态的说_20190806_1755，qwq，虎摸，谢谢，
+			owner = { 
+				# is_species_class 	= rs_arkNights_Rogland_pop_species_1
+				# is_species_class 	= rs_arkNights_RhineLab_pop_species_1
+			}
+		}
+	}
+}

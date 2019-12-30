@@ -1,0 +1,17 @@
+rs_arkNights_Rogland_Reunion_Atrocities_Casus_Belli = {
+	show_in_diplomacy = yes
+
+	show_notification = yes
+
+	potential = {
+		has_authority = rs_arkNights_rogland_authorities
+	}
+
+	is_valid = {
+		has_authority = rs_arkNights_rogland_authorities
+
+		from = {
+			has_authority = rs_arkNights_reunion_authorities
+		}
+	}
+}

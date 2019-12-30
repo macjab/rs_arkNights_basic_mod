@@ -1,0 +1,18 @@
+﻿l_english:
+ ###############################################
+ #####-----Author:   RhineSky--------------#####
+ #####-----SteamID:  RhineSky--------------#####
+ #####------Email:   macjab@macjab.com-----#####
+ #####------QQ：     516278065-------------#####
+ #U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+ ###############################################
+ 
+##########-----Opinion_Modifiers-----##########
+trigger_rs_arkNights_Common_opinion_modifier_1:0 "感染者猩猩"
+trigger_rs_arkNights_Common_opinion_modifier_2:0 "感染者处理专家"
+trigger_rs_arkNights_Common_opinion_modifier_3:0 "整合运动"
+
+##########-----Casus_Belli-----##########
+casus_belli_rs_arkNights_Common_Oripathy_Monster_Casus_Belli:0 "感染者怪物"
+
+casus_belli_rs_arkNights_Common_Reunion_Atrocities_Casus_Belli:0 "切尔诺伯格被毁事件的主谋"

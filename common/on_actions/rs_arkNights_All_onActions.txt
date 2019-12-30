@@ -1,0 +1,104 @@
+# change the specific arkNights inaugural leaders name
+on_game_start_country = {
+	events = { # ※remark: the country judgement plese coding in the every events scope inside, thank you~
+		rogland_events_specific_leader_classes_leaders_states_control.100
+		reunion_events_specific_leader_classes_leaders_states_control.100
+	}
+}
+
+# Triggers when pressing begin in the intro window
+# This = country to press begin
+on_press_begin = {
+	events = { # ※remark: the country judgement plese coding in the every events scope inside, thank you~
+		
+	}
+}
+
+# scope: country, from: leader
+on_leader_spawned = {
+	events = { # ※remark: the country judgement plese coding in the every events scope inside, thank you~
+		rogland_Leaders_Spawned_Death_LevelUp_Removed_Events_Master_Control.1
+		reunion_Leaders_Spawned_Death_LevelUp_Removed_Events_Master_Control.1
+	}
+}
+
+# scope: country, from: leader
+on_leader_level_up = {
+	events = { # ※remark: the country judgement plese coding in the every events scope inside, thank you~
+		rogland_Leaders_Spawned_Death_LevelUp_Removed_Events_Master_Control.3
+		reunion_Leaders_Spawned_Death_LevelUp_Removed_Events_Master_Control.3
+	}
+}
+
+# scope: country, from: leader
+on_leader_death = {
+	events = { # ※remark: the country judgement plese coding in the every events scope inside, thank you~
+		rogland_Leaders_Spawned_Death_LevelUp_Removed_Events_Master_Control.2
+		reunion_Leaders_Spawned_Death_LevelUp_Removed_Events_Master_Control.2
+	}
+}
+
+# Executed when a ruler has been removed(as same as the death, because you cannot use this leader until you rehire this same leader from the leaders pool back, thank you qwq~)
+# From = Previous Ruler
+# This = Country
+on_ruler_removed = {
+	events = { # ※remark: the country judgement plese coding in the every events scope inside, thank you~
+		rogland_Leaders_Spawned_Death_LevelUp_Removed_Events_Master_Control.2
+		reunion_Leaders_Spawned_Death_LevelUp_Removed_Events_Master_Control.2
+	}
+}
+# Executed when the ruler is ousted and goes back to their pre-ruler class
+# From = Previous Ruler, already has the new class
+# This = Country
+on_ruler_back_to_pre_ruler_class = {
+	events = { # ※remark: the country judgement plese coding in the every events scope inside, thank you~
+		rogland_events_specific_leader_classes_leaders_states_control.102
+		reunion_events_specific_leader_classes_leaders_states_control.102
+	}
+}
+
+# Called when an election starts
+# scope: country
+on_election_started = {
+	events = { # ※remark: the country judgement plese coding in the every events scope inside, thank you~
+		rogland_events_specific_leader_classes_leaders_states_control.102
+		reunion_events_specific_leader_classes_leaders_states_control.102
+	}
+}
+
+# Called when an election ends
+# scope: country
+on_election_ended = {
+	events = { # ※remark: the country judgement plese coding in the every events scope inside, thank you~
+		rogland_events_specific_leader_classes_leaders_states_control.102
+		reunion_events_specific_leader_classes_leaders_states_control.102
+	}
+}
+
+# Executed as new ruler/heir has been set
+# This = Country
+on_ruler_set = {
+	events = { # ※remark: the country judgement plese coding in the every events scope inside, thank you~
+		rogland_events_specific_leader_classes_leaders_states_control.102
+		reunion_events_specific_leader_classes_leaders_states_control.102
+
+		# Ruler Personal Properties Refresh When the any leader upgrade to the ruler, thank you~
+		rogland_events_specific_leader_classes_leaders_states_control.106
+		reunion_events_specific_leader_classes_leaders_states_control.106
+	}
+}
+
+#############################################
+######------Utopia_Events_Actions------######
+#############################################
+# Triggers when a Special Project to apply a species modification template has completed.
+# Note that this will trigger once for each combination of planet & original species.
+#
+# This = Country
+# From = Species ( Post Modification )
+#on_modification_complete = {
+#	events = {
+#		# rogland_events_specific_leader_classes_leaders_states_control.104
+#		# reunion_events_specific_leader_classes_leaders_states_control.104
+#	}
+#}

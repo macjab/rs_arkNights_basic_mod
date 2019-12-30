@@ -1,0 +1,5 @@
+##########-----arkNights_All_Countries_Names_List_And_Default_Countries_Ruler_Name_List_Related_Variables-----##########
+
+# 罗德岛的国家名称、以及罗德岛的默认开局Ruler统治者指挥官的姓名名称
+@rs_arkNights_Rogland_country_name 			=  EMPIRE_DESIGN_rs_arkNights_Rogland_country_name # "罗德岛"
+@rs_arkNights_Rogland_default_ruler_name 	= rs_arkNights_Rogland_ruler_5_stars_Amiya_name

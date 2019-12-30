@@ -1,0 +1,2567 @@
+namespace = rogland_events_specific_leader_classes_leaders_states_control
+
+# 检测Ruler/Heir的姓名属性状态的MTTH的间隔时间状态选择表
+@mtth_set_heir_name_distance_days = 15
+
+##########-----罗德岛的指定领导者类型的领导者的开局状态与属性设置-----##########
+
+# 切换罗德岛的人口肖像、以及罗德岛的开局Ruler统治者指挥官的[生/死]状态设置
+country_event = {
+	id = rogland_events_specific_leader_classes_leaders_states_control.100
+
+	is_triggered_only = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_rogland_authorities
+		# has_government = rs_arkNights_rogland_goverment
+
+		#owner = {
+		#	# is_species_class = rs_arkNights_Rogland_pop_species_1
+		#}
+	}
+
+	immediate = {
+		# 切换罗德岛的人口肖像
+		owner.species = {
+			change_species_portrait = rs_arkNights_Rogland_Pops_portrait_02
+		}
+
+		# 罗德岛默认的指挥官是阿米娅，因此在罗德岛的国家创建后，默认阿米娅为已改造并实装的状态的说(具体的<阿米娅的改造与实装>的代码内容请见："./events/rs_arkNights_Rogland_Events_Ruler_Leaders_Create.txt"文件里的关于<"# 改造并实装5星人物：阿米娅">的代码相关内容的说，谢谢)，qwq，虎摸，谢谢，
+		# 当前Scope范围是country的说(因为就在country的内容定义体内的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+		owner = {
+			set_variable = {
+				which = @rs_arkNights_Rogland_ruler_5_stars_Amiya_Is_Alive
+				value = 1
+			}
+		}
+
+		# 强制性重置初始Ruler的名字为"阿米娅"及其属性内容的说，谢谢，
+		#every_owned_leader = {
+		#	if = {
+		#		limit = {
+		#			has_leader_flag = @rs_arkNights_Rogland_ruler_5_stars_Amiya_flag
+		#		}
+		#
+		#		set_name 				= @rs_arkNights_Rogland_ruler_5_stars_Amiya_name
+		#		set_is_female 			= yes
+		#
+		#		change_leader_portrait 	= rs_arkNights_amiya_portrait_01
+		#	}
+		#}
+
+		# ※备注-1：在新的一局游戏启动后，请先按照"100->101->103"的事件处理流程的先后执行顺序来先后依次的来执行初始化的数据处理操作的说(即下方已设定好的事件顺序处理流程的说，谢谢)，
+		#          这些事件处理流程的先后顺序不能错，否则可能导致"阿米娅不会被正确初始化为默认初始化Ruler、以及Heir继承者的姓名不会被正确MTTH刷新"的问题的说，qwq，虎摸，行行行，
+		country_event = {
+			id = rogland_events_specific_leader_classes_leaders_states_control.101
+			id = rogland_events_specific_leader_classes_leaders_states_control.103 # maybe need to be comment(need test)
+		}
+	}
+}
+
+# 罗德岛的Scientist科学家领导者的开局状态设置
+country_event = {
+	id = rogland_events_specific_leader_classes_leaders_states_control.101
+
+	is_triggered_only = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_rogland_authorities
+		# has_government = rs_arkNights_rogland_goverment
+
+		owner = {
+			# is_species_class = rs_arkNights_Rogland_pop_species_1
+
+			# 1、只要有以下任何一个<罗德岛的Scientist科学家角色>[被创建]，则就进入到<罗德岛的Scientist科学家角色>的状态检测与属性修改阶段
+			# 2、否则就什么都不做的说，qwq，虎摸，谢谢，
+			OR = {
+				check_variable = {
+					which = @rs_arkNights_Rogland_scientist_3_stars_Hibiscus_Is_Alive
+					value = 1
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_scientist_3_stars_Ansel_Is_Alive
+					value = 1
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_scientist_4_stars_Perfumer_Is_Alive
+					value = 1
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_scientist_4_stars_Gavial_Is_Alive
+					value = 1
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_scientist_or_general_6_stars_Shining_Is_Alive
+					value = 1
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_scientist_6_stars_Nightingal_Is_Alive
+					value = 1
+				}
+				check_variable = {
+					which = @rs_arkNights_Rogland_scientist_6_stars_Angelina_Is_Alive
+					value = 1
+				}
+			}
+		}
+	}
+
+	immediate = {
+		every_owned_leader = {
+			# 判断并检测是否是3星Scientist科学家：芙蓉：
+			#   a、如果是，则重新覆盖领导者的姓名(因为初始科学船会在开局时给上船的科学家领导者重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Rogland_scientist_3_stars_Hibiscus_flag
+				}
+
+				set_name = @rs_arkNights_Rogland_scientist_3_stars_Hibiscus_name
+			}
+
+			# 判断并检测是否是3星Scientist科学家：安塞尔：
+			#   a、如果是，则重新覆盖领导者的姓名(因为初始科学船会在开局时给上船的科学家领导者重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Rogland_scientist_3_stars_Ansel_flag
+				}
+
+				set_name = @rs_arkNights_Rogland_scientist_3_stars_Ansel_name
+			}
+
+			# 判断并检测是否是4星Scientist科学家：调香师：
+			#   a、如果是，则重新覆盖领导者的姓名(因为初始科学船会在开局时给上船的科学家领导者重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Rogland_scientist_4_stars_Perfumer_flag
+				}
+
+				set_name = @rs_arkNights_Rogland_scientist_4_stars_Perfumer_name
+			}
+
+			# 判断并检测是否是4星Scientist科学家：嘉维尔：
+			#   a、如果是，则重新覆盖领导者的姓名(因为初始科学船会在开局时给上船的科学家领导者重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Rogland_scientist_4_stars_Gavial_flag
+				}
+
+				set_name = @rs_arkNights_Rogland_scientist_4_stars_Gavial_name
+			}
+
+			# 判断并检测是否是6星Scientist科学家：闪灵：
+			#   a、如果是，则重新覆盖领导者的姓名(因为初始科学船会在开局时给上船的科学家领导者重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Rogland_scientist_or_general_6_stars_Shining_flag
+				}
+
+				set_name = @rs_arkNights_Rogland_scientist_or_general_6_stars_Shining_name
+			}
+
+			# 判断并检测是否是6星Scientist科学家：夜莺：
+			#   a、如果是，则重新覆盖领导者的姓名(因为初始科学船会在开局时给上船的科学家领导者重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Rogland_scientist_6_stars_Nightingal_flag
+				}
+
+				set_name = @rs_arkNights_Rogland_scientist_6_stars_Nightingal_name
+			}
+
+			# 判断并检测是否是6星Scientist科学家：安洁莉娜：
+			#   a、如果是，则重新覆盖领导者的姓名(因为初始科学船会在开局时给上船的科学家领导者重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Rogland_scientist_6_stars_Angelina_flag
+				}
+
+				set_name = @rs_arkNights_Rogland_scientist_6_stars_Angelina_name
+			}
+		}
+	}
+}
+
+# 罗德岛的Ruler指挥官/Heir副指挥官的定期MTTH检查的对外接口
+# (※备注-1：请通过这个102事件调用，而不要直接用下方的104事件调用的说，请保持<封装态>的<封装特性>的说，谢谢，谢谢)，谢谢，
+country_event = {
+	id = rogland_events_specific_leader_classes_leaders_states_control.102
+
+	is_triggered_only = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_rogland_authorities
+		# has_government = rs_arkNights_rogland_goverment
+
+		#owner = {
+		#	# is_species_class = rs_arkNights_Rogland_pop_species_1
+		#}
+	}
+
+	immediate = {
+		# 请在当前文件的代码实现里的代码文件内部调用104事件的说(实现类似于C/C++/OC等OOP语言的"封装"特性的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+		country_event = {
+			# 通过当前的102事件，来一次性的(而不是MTTH持续的)调用104事件以进行Ruler/Heir状态检测操作的说，qwq，虎摸，谢谢，
+			id = rogland_events_specific_leader_classes_leaders_states_control.104
+		}
+	}
+
+}
+
+# 罗德岛的Ruler指挥官/Heir副指挥官的定期MTTH检查的内部中转函数，如果有升任Ruler/Heir的任意rs_arkNights的人物角色，则直接进行属性覆盖操作的说，谢谢，
+country_event = {
+	id = rogland_events_specific_leader_classes_leaders_states_control.103
+
+	is_triggered_only = no
+
+	# single_instance_invoke
+	fire_only_once = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_rogland_authorities
+		# has_government = rs_arkNights_rogland_goverment
+
+		#owner = {
+		#	# is_species_class = rs_arkNights_Rogland_pop_species_1
+		#}
+	}
+
+	# MTTH System (but when the ruler: death、be removed、election start、election ended、reelection、new ruler set[heir->ruler]，will also called current scope function, thank you qwq~)
+	# PS: don't ask me why use chinese and english both but not the single only, just 很方便的说，qwq，虎摸，thank you~_20190804_1156_RhineSky，qwq，虎摸，谢谢，
+	mean_time_to_happen = {
+		days = @mtth_set_heir_name_distance_days
+	}
+
+	immediate = {
+		# 请在当前文件的代码实现里的代码文件内部调用104事件的说(实现类似于C/C++/OC等OOP语言的"封装"特性的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+		country_event = {
+			# 通过当前的102事件，开始通过高频的MTTH来频繁调用104事件以进行Ruler/Heir状态检测操作的说，qwq，虎摸，谢谢，
+			id = rogland_events_specific_leader_classes_leaders_states_control.104
+		}
+	}
+}
+
+# 罗德岛的Ruler指挥官/Heir副指挥官的定期MTTH检查，如果有升任Ruler/Heir的任意rs_arkNights的人物角色，则直接进行属性覆盖操作的说，谢谢，
+# (※备注-1：请通过上方的102和103事件调用，而不要用这个的104事件直接调用的说，否则会破坏OOP的"封装"特性的说，谢谢)，谢谢，
+country_event = {
+	id = rogland_events_specific_leader_classes_leaders_states_control.104
+
+	is_triggered_only = no
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_rogland_authorities
+		# has_government = rs_arkNights_rogland_goverment
+
+		#owner = {
+		#	# is_species_class = rs_arkNights_Rogland_pop_species_1
+		#}
+	}
+	immediate = {
+		# 遍历罗德岛里的所有可以拥有的rs_arkNights的领导者角色，如果有和当前新当任的指挥官或副指挥官的个人数据属性所相符合与匹配的已有领导者角色，则直接将其领导者的数据属性与对应所轮询到的的领导者的数据属性进行同步覆盖的说，qwq，虎摸，谢谢，
+		# 否则就只修改默认的领导者的人物肖像图portrait的说，qwq，虎摸，谢谢，
+		# 任何领导者类型都可以转为Ruler候选人的说，所以这里不做Ruler类型判断的说，谢谢，
+		every_owned_leader = {
+			if = {
+				limit = {
+					has_trait = rs_arkNights_Rogland_2_Stars_leader_level_trait
+				}
+
+				##################################################
+				######------2、遍历罗德岛的2星Governor------######
+				##################################################
+				# 判断并检测是否是2星Governor政治家：夜刀：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_governor_2_stars_Yato_flag
+
+						check_variable = {
+							which = @rs_arkNights_Rogland_governor_2_stars_Yato_Is_Alive
+							value = 1
+						}
+					}
+
+					set_name = @rs_arkNights_Rogland_governor_2_stars_Yato_name
+
+					change_leader_portrait = rs_arkNights_yato_portrait_01
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_trait = rs_arkNights_Rogland_3_Stars_leader_level_trait
+				}
+
+				##################################################
+				######------2、遍历罗德岛的3星Governor------######
+				##################################################
+				# 判断并检测是否是3星Governor政治家：芬：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_governor_3_stars_Fang_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_governor_3_stars_Fang_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_fang_portrait_01
+				}
+
+				# 判断并检测是否是3星Governor政治家：梓兰：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_governor_3_stars_Orchid_Is_Alive
+					}
+
+					set_name 			= @rs_arkNights_Rogland_governor_3_stars_Orchid_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_orchid_portrait_01
+				}
+
+				# 判断并检测是否是3星Governor政治家：枚兰莎：
+				#   a、如果是，则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_governor_3_stars_Melantha_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_governor_3_stars_Melantha_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_melantha_portrait_01
+				}
+
+				###################################################
+				######------3、遍历罗德岛的3星Scientist------######
+				###################################################
+				# 判断并检测是否是3星Scientist科学家：芙蓉：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_scientist_3_stars_Hibiscus_flag
+					}
+					
+					set_name 			= @rs_arkNights_Rogland_scientist_3_stars_Hibiscus_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_hibiscus_portrait_01
+				}
+
+				# 判断并检测是否是3星Scientist科学家：安塞尔：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_scientist_3_stars_Ansel_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_scientist_3_stars_Ansel_name
+					set_is_female 		= no
+
+					change_leader_portrait = rs_arkNights_ansel_portrait_01
+				}
+
+				#################################################
+				######------4、遍历罗德岛的3星Admiral------######
+				#################################################
+				# 判断并检测是否是3星Admiral舰队司令：空爆：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_admiral_3_stars_Catapult_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_admiral_3_stars_Catapult_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_catapult_portrait_01
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_trait = rs_arkNights_Rogland_4_Stars_leader_level_trait
+				}
+
+				###############################################
+				######------1、遍历罗德岛的4星Ruler------######
+				###############################################
+				# 判断并检测是否是4星Ruler统治者指挥官：杜宾：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_ruler_4_stars_Dobermann_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_ruler_4_stars_Dobermann_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_dobermann_portrait_01
+				}
+
+				###################################################
+				######------3、遍历罗德岛的4星Scientist------######
+				###################################################
+				# 判断并检测是否是4星Scientist科学家：调香师：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_scientist_4_stars_Perfumer_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_scientist_4_stars_Perfumer_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_perfumer_portrait_01
+				}
+
+				# 判断并检测是否是4星Scientist科学家：嘉维尔：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_scientist_4_stars_Gavial_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_scientist_4_stars_Gavial_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_gavial_portrait_01
+				}
+
+				#################################################
+				######------4、遍历罗德岛的4星Admiral------######
+				#################################################
+				# 判断并检测是否是4星Admiral舰队司令：深海色：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_admiral_4_stars_Deepcolor_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_admiral_4_stars_Deepcolor_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_deepcolor_portrait_01
+				}
+
+				#################################################
+				######------5、遍历罗德岛的4星General------######
+				#################################################
+				# 判断并检测是否是4星General陆军将军：蛇屠箱：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_general_4_stars_Cuora_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_general_4_stars_Cuora_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_cuora_portrait_01
+				}
+
+				# 判断并检测是否是4星General陆军将军：霜叶：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_general_4_stars_Fronstleaf_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_general_4_stars_Fronstleaf_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_fronstleaf_portrait_01
+				}
+
+				# 判断并检测是否是4星General陆军将军：缠丸：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_general_4_stars_Matoimaru_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_general_4_stars_Matoimaru_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_matoimaru_portrait_01
+				}
+
+				# 判断并检测是否是4星General陆军将军：清道夫：
+				#   a、如果是，则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_general_4_stars_Scavenger_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_general_4_stars_Scavenger_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_scavenger_portrait_01
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+				}
+
+				###############################################
+				######------1、遍历罗德岛的5星Ruler------######
+				###############################################
+
+				# 判断并检测是否是5星Ruler统治者指挥官：阿米娅：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_ruler_5_stars_Amiya_flag
+					}
+
+					# log = "======================华法林22222222222222222222222======================"
+
+					set_name 			= @rs_arkNights_Rogland_ruler_5_stars_Amiya_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_amiya_portrait_01
+				}
+
+				# 判断并检测是否是5星Ruler统治者指挥官：华法琳：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_ruler_5_stars_Warfarin_flag
+					}
+
+					# log = "======================华法林3333333333333333333======================"
+
+					set_name 			= @rs_arkNights_Rogland_ruler_5_stars_Warfarin_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_warfarin_portrait_01
+				}
+
+				##################################################
+				######------2、遍历罗德岛的5星Governor------######
+				##################################################
+				# 判断并检测是否是5星Governor政治家：ACE：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_governor_5_stars_ACE_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_governor_5_stars_ACE_name
+					set_is_female 		= no
+
+					change_leader_portrait = rs_arkNights_ACE_portrait_01
+				}
+
+				#################################################
+				######------4、遍历罗德岛的5星Admiral------######
+				#################################################
+				# 判断并检测是否是5星Admiral舰队司令：守林人：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_admiral_5_stars_Firewatch_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_admiral_5_stars_Firewatch_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_firewatch_portrait_01
+				}
+
+				# 判断并检测是否是5星Admiral舰队司令：蓝毒：
+				#   a、如果是，则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_admiral_5_stars_BluePoision_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_admiral_5_stars_BluePoision_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_bluepoision_portrait_01
+				}
+
+				# 判断并检测是否是5星Admiral舰队司令：天火：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_admiral_5_stars_Skyfire_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_admiral_5_stars_Skyfire_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_skyfire_portrait_01
+				}
+
+				# 判断并检测是否是5星Admiral舰队司令：普罗旺斯：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_admiral_5_stars_Provence_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_admiral_5_stars_Provence_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_provence_portrait_01
+				}
+
+				# 判断并检测是否是5星Admiral舰队司令：陨星：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_admiral_5_stars_Meteorite_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_admiral_5_stars_Meteorite_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_meteorite_portrait_01
+				}
+
+				# 判断并检测是否是5星Admiral舰队司令：真理：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_admiral_5_stars_Truth_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_admiral_5_stars_Truth_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_truth_portrait_01
+				}
+
+				#################################################
+				######------5、遍历罗德岛的5星General------######
+				#################################################
+				# 判断并检测是否是5星General陆军将军：临光：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_general_5_stars_Nearl_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_general_5_stars_Nearl_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_nearl_portrait_01
+				}
+
+				# 判断并检测是否是5星General陆军将军：红：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_general_5_stars_ProjektRed_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_general_5_stars_ProjektRed_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_projektRed_portrait_01
+				}
+
+				# 判断并检测是否是5星General陆军将军：凛冬：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_general_5_stars_Winter_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_general_5_stars_Winter_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_winter_portrait_01
+				}
+
+				# 判断并检测是否是5星General陆军将军：幽灵鲨：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_general_5_stars_Specter_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_general_5_stars_Specter_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_specter_portrait_01
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_trait = rs_arkNights_Rogland_6_Stars_leader_level_trait
+				}
+
+				###############################################
+				######------1、遍历罗德岛的6星Ruler------######
+				###############################################
+				# 判断并检测是否是6星Ruler统治者指挥官：凯尔希：
+				#   a、如果是，则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_ruler_6_stars_Kaltsit_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_ruler_6_stars_Kaltsit_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_kaltsit_portrait_01
+				}
+
+				###################################################
+				######------3、遍历罗德岛的6星Scientist------######
+				###################################################
+				# 判断并检测是否是6星Scientist科学家：夜莺：
+				#   a、如果是，则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_scientist_6_stars_Nightingal_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_scientist_6_stars_Nightingal_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_nightingal_portrait_01
+				}
+
+				# 判断并检测是否是6星Scientist科学家：安洁莉娜：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_scientist_6_stars_Angelina_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_scientist_6_stars_Angelina_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_angelina_portrait_01
+				}
+
+				#################################################
+				######------5、遍历罗德岛的6星General------######
+				#################################################
+				# 判断并检测是否是6星General陆军将军：斯卡蒂：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_general_6_stars_Skadi_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_general_6_stars_Skadi_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_skadi_portrait_01
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_trait = rs_arkNights_Rogland_7_Stars_leader_level_trait
+				}
+
+				###############################################
+				######------1、遍历罗德岛的7星Ruler------######
+				###############################################
+
+				# 判断并检测是否是7星Ruler统治者指挥官：博士：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_ruler_7_stars_Doctor_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_ruler_7_stars_Doctor_name
+					set_is_female 		= no
+
+					change_leader_portrait = rs_arkNights_doctor_portrait_01
+				}
+			}	
+
+			#########################################################
+			######------X-1、遍历罗德岛的特殊多重职业角色------######
+			#########################################################
+			# 判断并检测是否是7星Scientist科学家+General陆军将军：闪灵：
+			#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Rogland_scientist_or_general_6_stars_Shining_flag
+				}
+
+				set_name = @rs_arkNights_Rogland_scientist_or_general_6_stars_Shining_name
+
+				change_leader_portrait = rs_arkNights_shining_portrait_01
+			}
+
+			# 判断并检测是否是7星General陆军将军+Admiral舰队司令：拉普兰德：
+			#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_flag
+				}
+
+				set_name 			= @rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_name
+				set_is_female 		= yes
+
+				change_leader_portrait = rs_arkNights_lappland_portrait_01
+			}
+
+			#######################################################################################
+			######------X-2、不是rs_arkNights的任意星级领导者时的默认的领导者的属性操作------######
+			#######################################################################################
+			# 如果以上的Ruler统治者指挥官的人物选项都不是，则默认只改变当前新的Ruler统治者指挥官/Heir副指挥官的默认Ruler统治者指挥官肖像的说，谢谢，
+			else_if = {
+				# 之后要换为非rs_arkNights星级人物的其他默认Ruler的专用人物肖像图片的说(不过具体的默认Ruler的人物肖像选谁还需要继续待定的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+				# # change_leader_portrait = rs_arkNights_amiya_portrait_01
+				change_leader_portrait = rs_arkNights_Rogland_Pops_portrait_02
+			}
+		}
+	}
+}
+
+# 罗德岛的Ruler指挥官/Heir副指挥官的领导者池的定期MTTH检查，如果有升任Ruler/Heir的任意rs_arkNights的人物角色，则直接进行属性覆盖操作的说，谢谢，
+country_event = {
+	id = rogland_events_specific_leader_classes_leaders_states_control.105
+
+	is_triggered_only = no
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_rogland_authorities
+		# has_government = rs_arkNights_rogland_goverment
+
+		#owner = {
+		#	# is_species_class = rs_arkNights_Rogland_pop_species_1
+		#}
+	}
+	immediate = {
+		# 遍历罗德岛里的所有可以拥有的rs_arkNights的领导者角色，如果有和当前新当任的指挥官或副指挥官的个人数据属性所相符合与匹配的已有领导者角色，则直接将其领导者的数据属性与对应所轮询到的的领导者的数据属性进行同步覆盖的说，qwq，虎摸，谢谢，
+		# 否则就只修改默认的领导者的人物肖像图portrait的说，qwq，虎摸，谢谢，
+		# 任何领导者类型都可以转为Ruler候选人的说，所以这里不做Ruler类型判断的说，谢谢，
+		every_pool_leader = { # 领导者池检查
+			if = {
+				limit = {
+					has_trait = rs_arkNights_Rogland_2_Stars_leader_level_trait
+				}
+
+				##################################################
+				######------2、遍历罗德岛的2星Governor------######
+				##################################################
+				# 判断并检测是否是2星Governor政治家：夜刀：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_governor_2_stars_Yato_flag
+
+						check_variable = {
+							which = @rs_arkNights_Rogland_governor_2_stars_Yato_Is_Alive
+							value = 1
+						}
+					}
+
+					set_name = @rs_arkNights_Rogland_governor_2_stars_Yato_name
+
+					change_leader_portrait = rs_arkNights_yato_portrait_01
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_trait = rs_arkNights_Rogland_3_Stars_leader_level_trait
+				}
+
+				##################################################
+				######------2、遍历罗德岛的3星Governor------######
+				##################################################
+				# 判断并检测是否是3星Governor政治家：芬：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_governor_3_stars_Fang_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_governor_3_stars_Fang_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_fang_portrait_01
+				}
+
+				# 判断并检测是否是3星Governor政治家：梓兰：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_governor_3_stars_Orchid_Is_Alive
+					}
+
+					set_name 			= @rs_arkNights_Rogland_governor_3_stars_Orchid_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_orchid_portrait_01
+				}
+
+				# 判断并检测是否是3星Governor政治家：枚兰莎：
+				#   a、如果是，则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_governor_3_stars_Melantha_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_governor_3_stars_Melantha_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_melantha_portrait_01
+				}
+
+				###################################################
+				######------3、遍历罗德岛的3星Scientist------######
+				###################################################
+				# 判断并检测是否是3星Scientist科学家：芙蓉：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_scientist_3_stars_Hibiscus_flag
+					}
+					
+					set_name 			= @rs_arkNights_Rogland_scientist_3_stars_Hibiscus_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_hibiscus_portrait_01
+				}
+
+				# 判断并检测是否是3星Scientist科学家：安塞尔：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_scientist_3_stars_Ansel_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_scientist_3_stars_Ansel_name
+					set_is_female 		= no
+
+					change_leader_portrait = rs_arkNights_ansel_portrait_01
+				}
+
+				#################################################
+				######------4、遍历罗德岛的3星Admiral------######
+				#################################################
+				# 判断并检测是否是3星Admiral舰队司令：空爆：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_admiral_3_stars_Catapult_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_admiral_3_stars_Catapult_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_catapult_portrait_01
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_trait = rs_arkNights_Rogland_4_Stars_leader_level_trait
+				}
+
+				###############################################
+				######------1、遍历罗德岛的4星Ruler------######
+				###############################################
+				# 判断并检测是否是4星Ruler统治者指挥官：杜宾：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_ruler_4_stars_Dobermann_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_ruler_4_stars_Dobermann_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_dobermann_portrait_01
+				}
+
+				###################################################
+				######------3、遍历罗德岛的4星Scientist------######
+				###################################################
+				# 判断并检测是否是4星Scientist科学家：调香师：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_scientist_4_stars_Perfumer_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_scientist_4_stars_Perfumer_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_perfumer_portrait_01
+				}
+
+				# 判断并检测是否是4星Scientist科学家：嘉维尔：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_scientist_4_stars_Gavial_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_scientist_4_stars_Gavial_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_gavial_portrait_01
+				}
+
+				#################################################
+				######------4、遍历罗德岛的4星Admiral------######
+				#################################################
+				# 判断并检测是否是4星Admiral舰队司令：深海色：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_admiral_4_stars_Deepcolor_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_admiral_4_stars_Deepcolor_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_deepcolor_portrait_01
+				}
+
+				#################################################
+				######------5、遍历罗德岛的4星General------######
+				#################################################
+				# 判断并检测是否是4星General陆军将军：蛇屠箱：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_general_4_stars_Cuora_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_general_4_stars_Cuora_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_cuora_portrait_01
+				}
+
+				# 判断并检测是否是4星General陆军将军：霜叶：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_general_4_stars_Fronstleaf_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_general_4_stars_Fronstleaf_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_fronstleaf_portrait_01
+				}
+
+				# 判断并检测是否是4星General陆军将军：缠丸：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_general_4_stars_Matoimaru_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_general_4_stars_Matoimaru_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_matoimaru_portrait_01
+				}
+
+				# 判断并检测是否是4星General陆军将军：清道夫：
+				#   a、如果是，则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_general_4_stars_Scavenger_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_general_4_stars_Scavenger_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_scavenger_portrait_01
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+				}
+
+				###############################################
+				######------1、遍历罗德岛的5星Ruler------######
+				###############################################
+
+				# 判断并检测是否是5星Ruler统治者指挥官：阿米娅：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_ruler_5_stars_Amiya_flag
+					}
+
+					# log = "======================华法林22222222222222222222222======================"
+
+					set_name 			= @rs_arkNights_Rogland_ruler_5_stars_Amiya_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_amiya_portrait_01
+				}
+
+				# 判断并检测是否是5星Ruler统治者指挥官：华法琳：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_ruler_5_stars_Warfarin_flag
+					}
+
+					# log = "======================华法林3333333333333333333======================"
+
+					set_name 			= @rs_arkNights_Rogland_ruler_5_stars_Warfarin_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_warfarin_portrait_01
+				}
+
+				##################################################
+				######------2、遍历罗德岛的5星Governor------######
+				##################################################
+				# 判断并检测是否是5星Governor政治家：ACE：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_governor_5_stars_ACE_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_governor_5_stars_ACE_name
+					set_is_female 		= no
+
+					change_leader_portrait = rs_arkNights_ACE_portrait_01
+				}
+
+				#################################################
+				######------4、遍历罗德岛的5星Admiral------######
+				#################################################
+				# 判断并检测是否是5星Admiral舰队司令：守林人：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_admiral_5_stars_Firewatch_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_admiral_5_stars_Firewatch_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_firewatch_portrait_01
+				}
+
+				# 判断并检测是否是5星Admiral舰队司令：蓝毒：
+				#   a、如果是，则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_admiral_5_stars_BluePoision_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_admiral_5_stars_BluePoision_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_bluepoision_portrait_01
+				}
+
+				# 判断并检测是否是5星Admiral舰队司令：天火：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_admiral_5_stars_Skyfire_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_admiral_5_stars_Skyfire_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_skyfire_portrait_01
+				}
+
+				# 判断并检测是否是5星Admiral舰队司令：普罗旺斯：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_admiral_5_stars_Provence_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_admiral_5_stars_Provence_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_provence_portrait_01
+				}
+
+				# 判断并检测是否是5星Admiral舰队司令：陨星：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_admiral_5_stars_Meteorite_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_admiral_5_stars_Meteorite_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_meteorite_portrait_01
+				}
+
+				# 判断并检测是否是5星Admiral舰队司令：真理：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_admiral_5_stars_Truth_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_admiral_5_stars_Truth_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_truth_portrait_01
+				}
+
+				#################################################
+				######------5、遍历罗德岛的5星General------######
+				#################################################
+				# 判断并检测是否是5星General陆军将军：临光：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_general_5_stars_Nearl_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_general_5_stars_Nearl_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_nearl_portrait_01
+				}
+
+				# 判断并检测是否是5星General陆军将军：红：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_general_5_stars_ProjektRed_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_general_5_stars_ProjektRed_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_projektRed_portrait_01
+				}
+
+				# 判断并检测是否是5星General陆军将军：凛冬：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_general_5_stars_Winter_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_general_5_stars_Winter_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_winter_portrait_01
+				}
+
+				# 判断并检测是否是5星General陆军将军：幽灵鲨：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_general_5_stars_Specter_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_general_5_stars_Specter_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_specter_portrait_01
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_trait = rs_arkNights_Rogland_6_Stars_leader_level_trait
+				}
+
+				###############################################
+				######------1、遍历罗德岛的6星Ruler------######
+				###############################################
+				# 判断并检测是否是6星Ruler统治者指挥官：凯尔希：
+				#   a、如果是，则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_ruler_6_stars_Kaltsit_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_ruler_6_stars_Kaltsit_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_kaltsit_portrait_01
+				}
+
+				###################################################
+				######------3、遍历罗德岛的6星Scientist------######
+				###################################################
+				# 判断并检测是否是6星Scientist科学家：夜莺：
+				#   a、如果是，则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_scientist_6_stars_Nightingal_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_scientist_6_stars_Nightingal_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_nightingal_portrait_01
+				}
+
+				# 判断并检测是否是6星Scientist科学家：安洁莉娜：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_scientist_6_stars_Angelina_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_scientist_6_stars_Angelina_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_angelina_portrait_01
+				}
+
+				#################################################
+				######------5、遍历罗德岛的6星General------######
+				#################################################
+				# 判断并检测是否是6星General陆军将军：斯卡蒂：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				else_if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_general_6_stars_Skadi_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_general_6_stars_Skadi_name
+					set_is_female 		= yes
+
+					change_leader_portrait = rs_arkNights_skadi_portrait_01
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_trait = rs_arkNights_Rogland_7_Stars_leader_level_trait
+				}
+
+				###############################################
+				######------1、遍历罗德岛的7星Ruler------######
+				###############################################
+
+				# 判断并检测是否是7星Ruler统治者指挥官：博士：
+				#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+				#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+				if = {
+					limit = {
+						has_leader_flag = @rs_arkNights_Rogland_ruler_7_stars_Doctor_flag
+					}
+
+					set_name 			= @rs_arkNights_Rogland_ruler_7_stars_Doctor_name
+					set_is_female 		= no
+
+					change_leader_portrait = rs_arkNights_doctor_portrait_01
+				}
+			}	
+
+			#########################################################
+			######------X-1、遍历罗德岛的特殊多重职业角色------######
+			#########################################################
+			# 判断并检测是否是7星Scientist科学家+General陆军将军：闪灵：
+			#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Rogland_scientist_or_general_6_stars_Shining_flag
+				}
+
+				set_name = @rs_arkNights_Rogland_scientist_or_general_6_stars_Shining_name
+
+				change_leader_portrait = rs_arkNights_shining_portrait_01
+			}
+
+			# 判断并检测是否是7星General陆军将军+Admiral舰队司令：拉普兰德：
+			#   a、如果是，则则重新覆盖指挥官的姓名(因为在下任指挥官的选举开始和选举结束时给所有参与选举的指挥官重新设置一个随机名的说，谢谢)，
+			#   b、否则什么都不做的说，qwq，虎摸，谢谢，
+			else_if = {
+				limit = {
+					has_leader_flag = @rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_flag
+				}
+
+				set_name 			= @rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_name
+				set_is_female 		= yes
+
+				change_leader_portrait = rs_arkNights_lappland_portrait_01
+			}
+
+			#######################################################################################
+			######------X-2、不是rs_arkNights的任意星级领导者时的默认的领导者的属性操作------######
+			#######################################################################################
+			# 如果以上的Ruler统治者指挥官的人物选项都不是，则默认只改变当前新的Ruler统治者指挥官/Heir副指挥官的默认Ruler统治者指挥官肖像的说，谢谢，
+			else_if = {
+				# 之后要换为非rs_arkNights星级人物的其他默认Ruler的专用人物肖像图片的说(不过具体的默认Ruler的人物肖像选谁还需要继续待定的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+				# # change_leader_portrait = rs_arkNights_amiya_portrait_01
+				change_leader_portrait = rs_arkNights_Rogland_Pops_portrait_02
+			}
+		}
+	}
+}
+
+# 当有任意的Ruler统治者上任时，Ruler统治者的个人属性刷新设置
+# 流程：[Normal Leader(Recruit->Normal Leader) -> Ruler(PreRuler->Ruler) -> Removed(Ruler->PreRuler->Removed) -> Recruit(Removed->Rebirth) -> Normal Leader] -> etc...
+# Ruler Trait: [Personal Specific Arts Trait], or [rs_arkNights_Rogland_ruler_traint_originiumsArts_1](*), thank you~
+country_event = {
+	id = rogland_events_specific_leader_classes_leaders_states_control.106
+
+	is_triggered_only = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_rogland_authorities
+		# has_government = rs_arkNights_rogland_goverment
+
+		#owner = {
+		#	# is_species_class = rs_arkNights_Rogland_pop_species_1
+		#}
+	}
+
+	immediate = {
+		every_owned_leader = {
+			if = {
+				limit = {
+					leader_class = ruler
+				}
+
+				if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_ruler_4_stars_Dobermann_flag
+					}
+
+					change_leader_portrait = rs_arkNights_dobermann_portrait_01
+
+					add_trait = rs_arkNights_Rogland_4_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_JW_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_ruler_leaders_trait_oripathy
+					add_trait = rs_arkNights_ruler_dobermann_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_ruler_5_stars_Amiya_flag
+					}
+
+					change_leader_portrait = rs_arkNights_amiya_portrait_01
+
+					add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_SS_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_ruler_leaders_trait_oripathy
+					add_trait = rs_arkNights_ruler_amiya_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_ruler_5_stars_Warfarin_flag
+					}
+
+					change_leader_portrait = rs_arkNights_warfarin_portrait_01
+
+					add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_YL_leader_job_trait
+					add_trait = rs_arkNights_Rogland_ruler_leaders_trait_healthy
+					add_trait = rs_arkNights_ruler_warfarin_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_ruler_6_stars_Kaltsit_flag
+					}
+
+					change_leader_portrait = rs_arkNights_kaltsit_portrait_01
+
+					add_trait = rs_arkNights_Rogland_6_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_YL_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_ruler_leaders_trait_oripathy
+					add_trait = rs_arkNights_ruler_kaltsit_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_ruler_7_stars_Doctor_flag
+					}
+
+					change_leader_portrait = rs_arkNights_doctor_portrait_01
+
+					add_trait = rs_arkNights_Rogland_7_Stars_leader_level_trait
+					# add_trait = rs_arkNights_Rogland_ruler_leaders_trait_oripathy
+					add_trait = rs_arkNights_ruler_doctor_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_governor_2_stars_Yato_flag
+					}
+
+					change_leader_portrait = rs_arkNights_yato_portrait_01
+
+					add_trait = rs_arkNights_Rogland_2_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_XF_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_governor_yato_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_governor_3_stars_Fang_flag
+					}
+
+					change_leader_portrait = rs_arkNights_fang_portrait_01
+
+					add_trait = rs_arkNights_Rogland_3_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_XF_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_governor_fang_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_governor_3_stars_Orchid_flag
+					}
+
+					change_leader_portrait = rs_arkNights_orchid_portrait_01
+
+					add_trait = rs_arkNights_Rogland_3_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_FZ_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_governor_orchid_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_governor_3_stars_Melantha_flag
+					}
+
+					change_leader_portrait = rs_arkNights_melantha_portrait_01
+
+					add_trait = rs_arkNights_Rogland_3_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_JW_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_governor_melantha_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_governor_5_stars_ACE_flag
+					}
+
+					change_leader_portrait = rs_arkNights_ACE_portrait_01
+
+					add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_ZZ_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_governor_ACE_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_scientist_3_stars_Hibiscus_flag
+					}
+
+					change_leader_portrait = rs_arkNights_hibiscus_portrait_01
+
+					add_trait = rs_arkNights_Rogland_3_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_YL_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_scientist_hibiscus_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_scientist_3_stars_Ansel_flag
+					}
+
+					change_leader_portrait = rs_arkNights_ansel_portrait_01
+
+					add_trait = rs_arkNights_Rogland_3_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_YL_leader_job_trait
+					add_trait = rs_arkNights_scientist_ansel_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_scientist_4_stars_Perfumer_flag
+					}
+
+					change_leader_portrait = rs_arkNights_perfumer_portrait_01
+
+					add_trait = rs_arkNights_Rogland_4_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_YL_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_scientist_perfumer_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_scientist_4_stars_Gavial_flag
+					}
+
+					change_leader_portrait = rs_arkNights_gavial_portrait_01
+
+					add_trait = rs_arkNights_Rogland_3_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_YL_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_scientist_gavial_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_scientist_or_general_6_stars_Shining_flag
+					}
+
+					change_leader_portrait = rs_arkNights_shining_portrait_01
+
+					add_trait = rs_arkNights_Rogland_6_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_YL_leader_job_trait
+					add_trait = rs_arkNights_scientist_shining_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_scientist_6_stars_Nightingal_flag
+					}
+
+					change_leader_portrait = rs_arkNights_nightingal_portrait_01
+
+					add_trait = rs_arkNights_Rogland_6_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_YL_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_scientist_nightingal_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_scientist_6_stars_Angelina_flag
+					}
+
+					change_leader_portrait = rs_arkNights_angelina_portrait_01
+
+					add_trait = rs_arkNights_Rogland_6_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_YL_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_scientist_angelina_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_admiral_3_stars_Catapult_flag
+					}
+
+					change_leader_portrait = rs_arkNights_catapult_portrait_01
+
+					add_trait = rs_arkNights_Rogland_3_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_JJ_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_admiral_catapult_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_admiral_4_stars_Deepcolor_flag
+					}
+
+					change_leader_portrait = rs_arkNights_deepcolor_portrait_01
+
+					add_trait = rs_arkNights_Rogland_4_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_FZ_leader_job_trait
+					add_trait = rs_arkNights_admiral_deepcolor_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Firewatch_flag
+					}
+
+					change_leader_portrait = rs_arkNights_firewatch_portrait_01
+
+					add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_JJ_leader_job_trait
+					add_trait = rs_arkNights_admiral_firewatch_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_BluePoision_flag
+					}
+
+					change_leader_portrait = rs_arkNights_bluepoision_portrait_01
+
+					add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_JJ_leader_job_trait
+					add_trait = rs_arkNights_admiral_bluepoision_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Skyfire_flag
+					}
+
+					change_leader_portrait = rs_arkNights_skyfire_portrait_01
+
+					add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_SS_leader_job_trait
+					add_trait = rs_arkNights_admiral_skyfire_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Provence_flag
+					}
+
+					change_leader_portrait = rs_arkNights_provence_portrait_01
+
+					add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_JJ_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_admiral_provence_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Meteorite_flag
+					}
+
+					change_leader_portrait = rs_arkNights_meteorite_portrait_01
+
+					add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_JJ_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_admiral_meteorite_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Truth_flag
+					}
+
+					change_leader_portrait = rs_arkNights_truth_portrait_01
+
+					add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_JJ_leader_job_trait
+					add_trait = rs_arkNights_admiral_truth_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_flag
+					}
+
+					change_leader_portrait = rs_arkNights_lappland_portrait_01
+
+					add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_JW_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_admiral_lappland_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_general_4_stars_Cuora_flag
+					}
+
+					change_leader_portrait = rs_arkNights_cuora_portrait_01
+
+					add_trait = rs_arkNights_Rogland_4_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_ZZ_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_general_cuora_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_general_4_stars_Fronstleaf_flag
+					}
+
+					change_leader_portrait = rs_arkNights_fronstleaf_portrait_01
+
+					add_trait = rs_arkNights_Rogland_4_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_JW_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_general_fronstleaf_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_general_4_stars_Matoimaru_flag
+					}
+
+					change_leader_portrait = rs_arkNights_matoimaru_portrait_01
+
+					add_trait = rs_arkNights_Rogland_4_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_JW_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_general_matoimaru_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_general_4_stars_Scavenger_flag
+					}
+
+					change_leader_portrait = rs_arkNights_scavenger_portrait_01
+
+					add_trait = rs_arkNights_Rogland_4_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_XF_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_general_scavenger_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_general_5_stars_Nearl_flag
+					}
+
+					change_leader_portrait = rs_arkNights_nearl_portrait_01
+
+					add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_ZZ_leader_job_trait
+					# add_trait = rs_arkNights_Rogland_other_leaders_trait_oripathy
+					add_trait = rs_arkNights_general_nearl_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_general_5_stars_ProjektRed_flag
+					}
+
+					change_leader_portrait = rs_arkNights_projektRed_portrait_01
+
+					add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_TZ_leader_job_trait
+					add_trait = rs_arkNights_general_projektred_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_general_5_stars_Winter_flag
+					}
+
+					change_leader_portrait = rs_arkNights_winter_portrait_01
+
+					add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_XF_leader_job_trait
+					add_trait = rs_arkNights_general_winter_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_general_5_stars_Specter_flag
+					}
+
+					change_leader_portrait = rs_arkNights_specter_portrait_01
+
+					add_trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_JW_leader_job_trait
+					add_trait = rs_arkNights_Rogland_other_leaders_trait_neuroticism_oripathy # 特殊的源石病患者<神经性感染的源石病>，保留此属性的说，qwq，虎摸，谢谢，
+					add_trait = rs_arkNights_general_specter_feature_traint_originiumsArts
+				}
+
+				else_if = {
+					limit = {
+						has_leader_flag = rs_arkNights_Rogland_general_6_stars_Skadi_flag
+					}
+
+					change_leader_portrait = rs_arkNights_skadi_portrait_01
+
+					add_trait = rs_arkNights_Rogland_6_Stars_leader_level_trait
+					add_trait = rs_arkNights_Rogland_JW_leader_job_trait
+					add_trait = rs_arkNights_general_skadi_feature_traint_originiumsArts
+				}
+
+				else = {
+					add_trait = rs_arkNights_Rogland_ruler_traint_originiumsArts_1
+				}
+			}
+		}
+	}
+}
+
+# 当有任意的飞身导致当前的领导者肖像出现变化时，此时通过下列消息处理函数来刷新当前领导者(含领导者池里的待征募领导的说，谢谢)的肖像的说，qwq，虎摸，谢谢，
+country_event = {
+	id = rogland_events_specific_leader_classes_leaders_states_control.107
+
+	is_triggered_only = yes
+
+	hide_window = yes
+
+	trigger = {
+		has_authority = rs_arkNights_rogland_authorities
+		# has_government = rs_arkNights_rogland_goverment
+
+		#owner = {
+		#	# is_species_class = rs_arkNights_Rogland_pop_species_1
+		#}
+	}
+
+	immediate = {
+		every_owned_leader = {
+			if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_ruler_4_stars_Dobermann_flag
+				}
+
+				change_leader_portrait = rs_arkNights_dobermann_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_ruler_5_stars_Amiya_flag
+				}
+
+				change_leader_portrait = rs_arkNights_amiya_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_ruler_5_stars_Warfarin_flag
+				}
+
+				change_leader_portrait = rs_arkNights_warfarin_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_ruler_6_stars_Kaltsit_flag
+				}
+
+				change_leader_portrait = rs_arkNights_kaltsit_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_ruler_7_stars_Doctor_flag
+				}
+
+				change_leader_portrait = rs_arkNights_doctor_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_governor_2_stars_Yato_flag
+				}
+
+				change_leader_portrait = rs_arkNights_yato_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_governor_3_stars_Fang_flag
+				}
+
+				change_leader_portrait = rs_arkNights_fang_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_governor_3_stars_Orchid_flag
+				}
+
+				change_leader_portrait = rs_arkNights_orchid_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_governor_3_stars_Melantha_flag
+				}
+
+				change_leader_portrait = rs_arkNights_melantha_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_governor_5_stars_ACE_flag
+				}
+
+				change_leader_portrait = rs_arkNights_ACE_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_scientist_3_stars_Hibiscus_flag
+				}
+
+				change_leader_portrait = rs_arkNights_hibiscus_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_scientist_3_stars_Ansel_flag
+				}
+
+				change_leader_portrait = rs_arkNights_ansel_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_scientist_4_stars_Perfumer_flag
+				}
+
+				change_leader_portrait = rs_arkNights_perfumer_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_scientist_4_stars_Gavial_flag
+				}
+
+				change_leader_portrait = rs_arkNights_gavial_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_scientist_or_general_6_stars_Shining_flag
+				}
+
+				change_leader_portrait = rs_arkNights_shining_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_scientist_6_stars_Nightingal_flag
+				}
+
+				change_leader_portrait = rs_arkNights_nightingal_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_scientist_6_stars_Angelina_flag
+				}
+
+				change_leader_portrait = rs_arkNights_angelina_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_3_stars_Catapult_flag
+				}
+
+				change_leader_portrait = rs_arkNights_catapult_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_4_stars_Deepcolor_flag
+				}
+
+				change_leader_portrait = rs_arkNights_deepcolor_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Firewatch_flag
+				}
+
+				change_leader_portrait = rs_arkNights_firewatch_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_BluePoision_flag
+				}
+
+				change_leader_portrait = rs_arkNights_bluepoision_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Skyfire_flag
+				}
+
+				change_leader_portrait = rs_arkNights_skyfire_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Provence_flag
+				}
+
+				change_leader_portrait = rs_arkNights_provence_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Meteorite_flag
+				}
+
+				change_leader_portrait = rs_arkNights_meteorite_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Truth_flag
+				}
+
+				change_leader_portrait = rs_arkNights_truth_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_flag
+				}
+
+				change_leader_portrait = rs_arkNights_lappland_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_4_stars_Cuora_flag
+				}
+
+				change_leader_portrait = rs_arkNights_cuora_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_4_stars_Fronstleaf_flag
+				}
+
+				change_leader_portrait = rs_arkNights_fronstleaf_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_4_stars_Matoimaru_flag
+				}
+
+				change_leader_portrait = rs_arkNights_matoimaru_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_4_stars_Scavenger_flag
+				}
+
+				change_leader_portrait = rs_arkNights_scavenger_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_5_stars_Nearl_flag
+				}
+
+				change_leader_portrait = rs_arkNights_nearl_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_5_stars_ProjektRed_flag
+				}
+
+				change_leader_portrait = rs_arkNights_projektRed_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_5_stars_Winter_flag
+				}
+
+				change_leader_portrait = rs_arkNights_winter_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_5_stars_Specter_flag
+				}
+
+				change_leader_portrait = rs_arkNights_specter_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_6_stars_Skadi_flag
+				}
+
+				change_leader_portrait = rs_arkNights_skadi_portrait_01
+			}
+
+			else = {
+				change_leader_portrait = rs_arkNights_Rogland_Pops_portrait_02
+			}
+		}
+
+		every_pool_leader = {
+			if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_ruler_4_stars_Dobermann_flag
+				}
+
+				change_leader_portrait = rs_arkNights_dobermann_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_ruler_5_stars_Amiya_flag
+				}
+
+				change_leader_portrait = rs_arkNights_amiya_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_ruler_5_stars_Warfarin_flag
+				}
+
+				change_leader_portrait = rs_arkNights_warfarin_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_ruler_6_stars_Kaltsit_flag
+				}
+
+				change_leader_portrait = rs_arkNights_kaltsit_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_ruler_7_stars_Doctor_flag
+				}
+
+				change_leader_portrait = rs_arkNights_doctor_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_governor_2_stars_Yato_flag
+				}
+
+				change_leader_portrait = rs_arkNights_yato_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_governor_3_stars_Fang_flag
+				}
+
+				change_leader_portrait = rs_arkNights_fang_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_governor_3_stars_Orchid_flag
+				}
+
+				change_leader_portrait = rs_arkNights_orchid_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_governor_3_stars_Melantha_flag
+				}
+
+				change_leader_portrait = rs_arkNights_melantha_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_governor_5_stars_ACE_flag
+				}
+
+				change_leader_portrait = rs_arkNights_ACE_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_scientist_3_stars_Hibiscus_flag
+				}
+
+				change_leader_portrait = rs_arkNights_hibiscus_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_scientist_3_stars_Ansel_flag
+				}
+
+				change_leader_portrait = rs_arkNights_ansel_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_scientist_4_stars_Perfumer_flag
+				}
+
+				change_leader_portrait = rs_arkNights_perfumer_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_scientist_4_stars_Gavial_flag
+				}
+
+				change_leader_portrait = rs_arkNights_gavial_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_scientist_or_general_6_stars_Shining_flag
+				}
+
+				change_leader_portrait = rs_arkNights_shining_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_scientist_6_stars_Nightingal_flag
+				}
+
+				change_leader_portrait = rs_arkNights_nightingal_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_scientist_6_stars_Angelina_flag
+				}
+
+				change_leader_portrait = rs_arkNights_angelina_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_3_stars_Catapult_flag
+				}
+
+				change_leader_portrait = rs_arkNights_catapult_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_4_stars_Deepcolor_flag
+				}
+
+				change_leader_portrait = rs_arkNights_deepcolor_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Firewatch_flag
+				}
+
+				change_leader_portrait = rs_arkNights_firewatch_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_BluePoision_flag
+				}
+
+				change_leader_portrait = rs_arkNights_bluepoision_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Skyfire_flag
+				}
+
+				change_leader_portrait = rs_arkNights_skyfire_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Provence_flag
+				}
+
+				change_leader_portrait = rs_arkNights_provence_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Meteorite_flag
+				}
+
+				change_leader_portrait = rs_arkNights_meteorite_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_admiral_5_stars_Truth_flag
+				}
+
+				change_leader_portrait = rs_arkNights_truth_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_or_admiral_5_stars_Lappland_flag
+				}
+
+				change_leader_portrait = rs_arkNights_lappland_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_4_stars_Cuora_flag
+				}
+
+				change_leader_portrait = rs_arkNights_cuora_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_4_stars_Fronstleaf_flag
+				}
+
+				change_leader_portrait = rs_arkNights_fronstleaf_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_4_stars_Matoimaru_flag
+				}
+
+				change_leader_portrait = rs_arkNights_matoimaru_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_4_stars_Scavenger_flag
+				}
+
+				change_leader_portrait = rs_arkNights_scavenger_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_5_stars_Nearl_flag
+				}
+
+				change_leader_portrait = rs_arkNights_nearl_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_5_stars_ProjektRed_flag
+				}
+
+				change_leader_portrait = rs_arkNights_projektRed_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_5_stars_Winter_flag
+				}
+
+				change_leader_portrait = rs_arkNights_winter_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_5_stars_Specter_flag
+				}
+
+				change_leader_portrait = rs_arkNights_specter_portrait_01
+			}
+
+			else_if = {
+				limit = {
+					has_leader_flag = rs_arkNights_Rogland_general_6_stars_Skadi_flag
+				}
+
+				change_leader_portrait = rs_arkNights_skadi_portrait_01
+			}
+
+			else = {
+				change_leader_portrait = rs_arkNights_Rogland_Pops_portrait_02
+			}
+		}
+	}
+}

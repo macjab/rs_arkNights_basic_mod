@@ -1,0 +1,494 @@
+###############################################
+#####-----Author: 	RhineSky--------------#####
+#####-----SteamID:	RhineSky--------------#####
+#####-----Email:	macjab@macjab.com-----#####
+#####-----QQ：		516278065-------------#####
+#U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+###############################################
+
+# ----------零0cost特性----------
+
+
+# ----------负-cost特性----------
+# A、罗德岛的源石病患者
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+ 											  # 源石病：1、100%理论致死<患者(含领导者)的人均寿命减少、居民的星球稳定性降低>、
+                                              #         2、需要更多的医疗辅助与救助<消耗品增加>、
+                                              #         3、被社会冷漠对待(幸福感减少、食物产出减少)、
+                                              #            有些感染者甚至长期宿街而睡<星球可住房增加、移居消耗减少{对于流浪的感染者来说，只要能睡得地方，就是能住的地方}>、
+                                              #         4、感染者比平常普通人更懂感染者在这个世界上的生存痛苦与心理压力(凝聚力产出增加)、
+                                              #         ※备注-1、悲伤、凄凉、但更加懂得人性的说，qwq，虎摸，谢谢，
+
+rs_arkNights_Rogland_pops_trait_oripathy = {
+	cost = -3
+
+	initial = yes
+	modification = yes
+	randomized = no
+
+	# leader_trait = no
+
+	# sapient = yes
+	# sentient = yes
+
+	improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy.dds"
+
+	custom_tooltip = rs_arkNights_Rogland_pops_trait_oripathy_custom_tooltip
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	opposites = {
+		rs_arkNights_Reunion_pops_trait_oripathy
+	}
+
+	modifier = {
+		# 对应<设定：1>：患者(含领导者)人均寿命减少-15年
+		#				 居民的星球稳定性降低-10
+		leader_age = -15
+		#<DIS> planet_stability_add = -10*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+
+		# 对应<设定：2>：消耗品使用增加+10%，
+		#				 星球可住房+2，
+		#				 人口移居消耗-15%，
+		planet_pops_consumer_goods_upkeep_mult = 0.1
+		planet_housing_add = 2
+		pop_resettlement_cost_mult = -0.15
+
+		# 对应<设定：3>：人口幸福度-10%，
+		#				 农民职业产出-15%，
+		pop_happiness = -0.1
+		#<DIS> planet_jobs_food_produces_mult = -0.15*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+
+		# 对应<设定：4>：人口凝聚力产出+15%，
+		# ※备注-1：这个数值属性已被移动到各个国家的"XXX的居民/员工"的物种特征点上的说(如：见下方的"罗德岛的员工"的物种特征点的特征点的属性内容的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+		# country_unity_produces_mult = 0.15*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+	}
+}
+
+# B、罗德岛的源石技艺使用者
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+#源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+#                                                     效果：1、泰拉世界的现代科技是建立在源石科技之上的，其中不乏大量的顶尖科研人才<全方位科研产出加成>，
+#											                2、源石技艺使用者在多方面造福社会，不能否认他们对于社会的贡献<影响力产出增加>，
+#											                3、源石技艺不仅在个人的战斗力上有帮助、在防御上同样也能依靠源石技艺而获得源源不断的防御力<陆军战斗力增加、陆军防御力增加>
+#															4、但是在世界上，有正就有恶，不是每个人都在想着要帮助他人，这个世界上也是有自私自利、或者像梅菲斯特那样只是为了杀戮而杀戮的人的说，谢谢<星球犯罪率增加、星球稳定性减少>，
+#rs_arkNights_Rogland_pops_traint_originiumsArts = {
+#	cost = 2
+#
+#	initial = yes
+#	modification = yes
+#	randomized = no
+#
+#	# leader_trait = no
+#
+#	# sapient = yes
+#	# sentient = yes
+#	# improves_leaders = yes
+#
+#	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_originiumsArts.dds"
+#
+#	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+#
+#	leader_potential_add = {
+#		from = {
+#			has_authority 	= rs_arkNights_rogland_authorities
+#			is_species		= rs_arkNights_Rogland_pop_species_1
+#		}
+#	}
+#
+#	opposites = {
+#		rs_arkNights_Reunion_pops_traint_originiumsArts
+#	}
+#
+#	modifier = {
+#		# 对应<设定：1>：工程科研点数产出+10%，
+#		#				 物理科研点数产出+10%，
+#		#<DIS> planet_jobs_engineering_research_produces_mult = 0.1*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+#		#<DIS> planet_jobs_physics_research_produces_mult = 0.1*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+#		#<DIS> planet_jobs_society_research_produces_mult = 0.1*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+#
+#		# 对应<设定：2>：国家每月影响力+0.5，
+#		country_base_influence_produces_add = 0.5
+#
+#		# 对应<设定：3>：陆军伤害+10%、
+#		#				 陆军防御+10%、
+#		army_attack_damage_mult = 0.1
+#		army_defense_damage_mult = 0.1
+#		
+#		# 对应<设定：4>：星球犯罪率增加10%，
+#		#				 星球稳定性减少5%，	
+#		#<DIS> planet_crime_add = 10*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+#		#<DIS> planet_stability_add = -5*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+#	}
+#}
+
+# C、罗德岛的源石科技
+# ※备注-1：高效、安全、深入、有现实改善帮助的操作与研究源石，是罗德岛的源石实验室的安全宗旨之一(因此并不一定会得源石病的说{除非意外、或者人为感染源石病的说，谢谢}，谢谢)，谢谢，
+# ※备注-2：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+# 源石科技：1、源石作为一种新能源，它引领了现代革命<飞船战斗力增加、飞船护盾增加、机器人资源产出增加、机器人装配率增加>，
+                                                   #              并且泰拉世界里现代的能源大部分都是依靠源石而产出<电力产出增加、矿工矿物产出增加>，
+                                                   #           2、各个国家为了躲避天灾，迫使几乎所有的国家，都需要采用定期迁移家园与聚落的方式进行躲避。而随着源石科技对能源方面的研究深入，让这种想法成为现实，这就是"移动城邦"<移居花费减少>，
+                                                   #           3、但是，并不是所有的源石科技实验室都有这样的防护条件，时长有因长期接触源石及其工业衍生品后，而得上名为"源石病"的不治之症的病人产生，虽然源石促使了泰拉世界里新人类的科技的进步、但却没有为这些"源石病"患者提供有效的治疗与社会关怀措施<人口幸福度减少、人口增长速度减少>，
+#                                                   
+# 4、而源石科技的发展，则同时带来了源石技艺的发现、开发和发展，源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。
+                                                    # 效果：a、泰拉世界的现代科技是建立在源石科技之上的，其中不乏大量的顶尖科研人才<全方位科研产出加成>，
+											        #       b、源石技艺使用者在多方面造福社会，不能否认他们对于社会的贡献<影响力产出增加>，
+											        #       c、源石技艺不仅在个人的战斗力上有帮助、在防御上同样也能依靠源石技艺而获得源源不断的防御力<陆军战斗力增加、陆军防御力增加>，
+											        #       d、但是在世界上，有正就有恶，不是每个人都在想着要帮助他人，这个世界上也是有自私自利、或者像梅菲斯特那样只是为了杀戮而杀戮的人的说，谢谢<星球犯罪率增加、星球稳定性减少>，
+
+rs_arkNights_Rogland_pops_trait_originiumsTech = {
+	cost = 2
+	
+	initial = yes
+	modification = yes
+	randomized = no
+
+	# leader_trait = no
+
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_rogland_orginiumsTech.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	opposites = {
+		rs_arkNights_Reunion_pops_trait_originiumsTech
+	}
+
+	modifier = {
+		# 对应<设定：1>：飞船战斗力+15%、
+		#				 舰船护盾增加+15%，
+		#				 机器人资源产出增加+15%，
+		#				 机器人装配率+15%，
+		#				 技工能源产出+20%，
+		#				 矿工矿物产出+20%，
+		ship_weapon_damage = 0.15
+		ship_shield_mult = 0.15
+		#<DIS> planet_jobs_robotic_produces_mult = 0.15*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+		#<DIS> planet_pops_robotics_upkeep_mult = -0.15*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+		#<DIS> planet_jobs_energy_produces_mult = 0.2*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+		#<DIS> planet_jobs_minerals_produces_mult = 0.2*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+
+		# 对应<设定：2>：人口移居消耗-15%，
+		pop_resettlement_cost_mult = -0.15
+
+		# 对应<设定：3>：人口幸福度-10%，
+		#				 人口增长速率-10%，
+		#				 星球每月人口增长速率-10%，
+		#<DIS> pop_happiness = -0.1*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+		#<DIS> pop_growth_speed = -0.1*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+		#<DIS> planet_pops_upkeep_mult = -0.1*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+
+		# 对应<设定：4-b>：国家每月影响力+0.5，
+		country_base_influence_produces_add = 0.5
+
+		# 对应<设定：4-c>：陆军伤害+10%、
+		#				   陆军防御+10%、
+		army_attack_damage_mult = 0.1
+		army_defense_damage_mult = 0.1
+	}
+}
+
+# D、罗德岛的员工
+# ※备注-1：罗德岛宗旨之一：如果战斗能够避免，那我们应当沉默，如果战斗是必要的，那就战斗到最后，罗德岛的信条，从来没有改变过，谢谢，
+												  # 效果：1、减少不必要的战斗<战斗逃脱加成>，
+												  #		  2、如果必须要战斗，那么就战斗到最后<血量增加>
+												  #		  3、为了维持"罗德岛"号的正常运转，每月都要消耗大量的源石以供"罗德岛"号的正常运转和运作，
+												  #		  4、感染者比平常普通人更懂感染者在这个世界上的生存痛苦与心理压力(凝聚力产出增加)、
+                                              	  #          ※备注-1、悲伤、凄凉、但更加懂得人性的说，qwq，虎摸，谢谢，
+#                                              	  
+# ※备注-2：罗德岛是一个聘用了包含感染者成员在内，对外注册为制药公司的组织。自注册之日起，经常深入受天灾影响的高危险地区，通过种种手段，帮助受难人群，处理矿石争端，抵抗反乱势力，解决多起由感染者引发的事件，或者别的什么隐秘的事物。这些干员们似乎拥有完整的天灾应急对策，熟练的难民急救操作流程，与行之有效的感染者打击手段。
+																 # ※现效果-1：
+																 # 5、泰拉世界的居民 								<大陆/城市星球适应性_主增加_Lv.1>
+																 #													<草原/海洋星球适应性_副增加_Lv.2>
+																 #
+																 # 6、在严酷的生存考验中存活下来的流浪者感染者干员	<寒冷/冻土/干旱/沙漠/热带/高原星球适应性_少量增加_Lv.4>
+																 #													<人口消费品消耗减少>
+																 #
+																 # 7、天灾与感染者问题处理专家						<废土/遗迹星球适应性_主增加_Lv.1>
+																 #													<障碍清除费用减少>
+																 #													<障碍清除时间减少>
+																 #													<国家信任度增长速度提高>
+																 #													<星球的犯罪率减少>
+																 #													<星球的稳定度增加>
+																 #													<哨站影响力消耗减少>
+																 #
+																 # 8、P.R.T.S.辅助AI与雷姆必拓的现代科技的协助		<机械/智械/蜂巢星球的适应性_部分增加_Lv.3>
+																 #													<能源产出率增加(现代机械的自动化流程操作)>
+																 #
+																 # 9、
+# 1.00 x 1
+@roglandLivingPlace 	= 1.00
+# 0.30 x 3
+@mainLivingPlace 		= 0.90
+# 0.30 x 2.5
+@alwaysLivingPlace 		= 0.70
+# 0.30 x 2
+@sometimesLivingPlace 	= 0.60
+# 0.30 x 1
+@fewtimesLivingPlace 	= 0.30
+# ----------------------------
+@telaWorldTier 	= 0.6
+@AISupportTier	= 0.5
+@defenseTier  	= 0.4
+@workingTier  	= 0.4
+@scheduleTier 	= 0.25
+# ----------------------------
+@livingTier_Lv_1 = 0.75
+@livingTier_Lv_2 = 0.6
+@livingTier_Lv_3 = 0.45
+@livingTier_Lv_4 = 0.25
+@livingTier_Lv_5 = 0.15
+
+rs_arkNights_Rogland_pops_trait_roglandPeople = {
+	cost = 3
+	
+	initial = yes
+	modification = yes
+	randomized = no
+
+	# leader_trait = no
+
+	# sapient = yes
+	# sentient = yes
+
+	# improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_rogland_People.dds"
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_rogland_authorities
+			is_species		= rs_arkNights_Rogland_pop_species_1
+		}
+	}
+
+	opposites = {
+		rs_arkNights_Reunion_pops_trait_reunionPeople
+	}
+
+	modifier = {
+		# 对应<设定：1>：战斗紧急超光速伤害减少-20%，
+		#				 战斗逃脱加成+20%，
+		#				 战斗逃脱几率加成+20%，
+		ship_emergency_ftl_mult = -0.2
+		ship_evasion_mult = 0.2
+		ship_disengage_chance_mult = 0.2
+
+		# 对应<设定：2>：陆军血量+50%，
+		#				 飞船装甲血量+20%，
+		#<DIS> army_health = 0.5*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+		#<DIS> ship_armor_mult = 0.2*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+
+		# 对应<设定：3>：技工能源产出-10%，
+		#<DIS> planet_jobs_energy_produces_mult = -0.1*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+
+		# 对应<设定：4>：人口凝聚力产出+15%，
+		country_unity_produces_mult = 0.15
+
+		# 罗德岛的星球环境适应性调整：
+		pc_continental_habitability 	= @mainLivingPlace
+		pc_city_habitability			= @mainLivingPlace
+
+		pc_nuked_habitability 			= @livingTier_Lv_1
+		pc_relic_habitability 			= @livingTier_Lv_1
+
+		pc_savannah_habitability		= @livingTier_Lv_2
+		pc_ocean_habitability			= @livingTier_Lv_2
+
+		pc_tropical_habitability		= @livingTier_Lv_3
+
+		pc_machine_habitability			= @livingTier_Lv_4
+		pc_ai_habitability 				= @livingTier_Lv_4
+		pc_hive_habitability 			= @livingTier_Lv_4
+
+		pc_arid_habitability			= @livingTier_Lv_5
+		pc_desert_habitability			= @livingTier_Lv_5
+		pc_arctic_habitability			= @livingTier_Lv_5
+		pc_tundra_habitability			= @livingTier_Lv_5
+		pc_alpine_habitability			= @livingTier_Lv_5
+	}
+}
+
+# E、罗德岛员工的生活适应性
+# ※备注-1：罗德岛是一个聘用了包含感染者成员在内，对外注册为制药公司的组织。自注册之日起，经常深入受天灾影响的高危险地区，通过种种手段，帮助受难人群，处理矿石争端，抵抗反乱势力，解决多起由感染者引发的事件，或者别的什么隐秘的事物。这些干员们似乎拥有完整的天灾应急对策，熟练的难民急救操作流程，与行之有效的感染者打击手段。
+																 # ※原效果-1：
+																 # 维多利亚王国、东国、阿尔戈干员入驻	<大陆适应性增加[3+0+0+0]_main>
+																 # 企鹅物流、龙门、巴别塔干员入驻 		<城市适应性增加[2+0+0+0]_main>
+																 # 拉特兰、萨尔贡干员入驻				<草原适应性增加[2+0+0+0]_always>
+																 # 黑钢国际、哥伦比亚联邦干员入驻 		<热带适应性增加[2+0+0+0]_always>
+																 # 炎国、瓦伊凡联盟干员入驻 			<海洋适应性增加[2+0+0+0]_always>
+																 # 叙拉古、玻璃瓦尔干员入驻 			<干旱适应性增加[2+0+0+0]_always>
+																 # 米诺斯干员入驻 						<沙漠适应性增加[1+0+0+0]_sometimes>
+																 # 莱塔尼亚、卡西米尔干员入驻 			<寒冷适应性增加[2+0+0+0]_always>
+																 # 谢拉格、萨米干员入驻					<冻土适应性增加[2+0+0+0]_always>
+																 # 谢拉格、乌萨斯帝国干员入驻			<高原适应性增加[2+0+0+0]_always>
+																 # 雷姆必拓、"罗德岛"号入驻 			<机械适应性增加[2+1+1+0]_rogland>
+																 # 雷姆必拓、"罗德岛"号入驻 			<智械适应性增加[2+1+1+0]_rogland>
+																 # P.R.T.S.系统入驻						<蜂巢适应性增加[0+0+0+1]_fewtimes>
+																 # 雷姆必拓、莱茵生命、卡兹戴尔干员入驻	<废土适应性增加[3+1+0+0]_main>
+																 # S.W.E.E.P.干员入驻 					<遗迹适应性增加[1+0+0+0]_sometimes>
+																 # --------------------------------------------------------------------------
+																 # ※原效果-2：
+																 # 泰拉世界的原生居民							<大陆适应性增加_telaWorld>
+																 # P.R.T.S.辅助AI系统/雷姆必拓的机械支援协议	<蜂巢/机械/智械适应性增加_AISupport>
+																 # 龙门防卫局的合作协议							<城市适应性增加_defense>
+																 # 天灾工作区/感染者高危区的自然环境适应性		<废土/遗迹适应性增加_working>
+																 # 多种族干员的自然环境适应性调度				<其他星球适应性增加_schedule>
+																 # 适应性层次顺序：telaWorld > AISupport >= defense >= working > schedule的说，
+																 #				  (待继续验证和修改的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+																 # --------------------------------------------------------------------------
+																 # ※现效果-1：
+																 # 1、泰拉世界的居民 								<大陆/城市星球适应性_主增加_Lv.1>
+																 #													<草原/海洋星球适应性_副增加_Lv.2>
+																 #
+																 # 2、在严酷的生存考验中存活下来的流浪者感染者干员	<寒冷/冻土/干旱/沙漠/热带/高原星球适应性_少量增加_Lv.4>
+																 #													<人口消费品消耗减少>
+																 #
+																 # 3、天灾与感染者问题处理专家						<废土/遗迹星球适应性_主增加_Lv.1>
+																 #													<障碍清除费用减少>
+																 #													<障碍清除时间减少>
+																 #													<国家信任度增长速度提高>
+																 #													<星球的犯罪率减少>
+																 #													<星球的稳定度增加>
+																 #													<哨站影响力消耗减少>
+																 #
+																 # 4、P.R.T.S.辅助AI与雷姆必拓的现代科技的协助		<机械/智械/蜂巢星球的适应性_部分增加_Lv.3>
+																 #													<能源产出率增加(现代机械的自动化流程操作)>
+																 #
+																 # 5、
+
+# 1.00 x 1
+#@roglandLivingPlace 	= 1.00
+# 0.30 x 3
+#@mainLivingPlace 		= 0.90
+# 0.30 x 2.5
+#@alwaysLivingPlace 	= 0.70
+# 0.30 x 2
+#@sometimesLivingPlace  = 0.60
+# 0.30 x 1
+#@fewtimesLivingPlace 	= 0.30
+# ----------------------------
+#@telaWorldTier = 0.6
+#@AISupportTier	= 0.5
+#@defenseTier  	= 0.4
+#@workingTier  	= 0.4
+#@scheduleTier 	= 0.25
+# ----------------------------
+#@livingTier_Lv_1 = 0.6
+#@livingTier_Lv_2 = 0.45
+#@livingTier_Lv_3 = 0.25
+#@livingTier_Lv_4 = 0.15
+
+#rs_arkNights_Rogland_pops_trait_roglandPeople_living_Adaptor_Professional = {
+#	cost = 0
+#
+#	initial = yes
+#	modification = yes
+#	randomized = no
+#
+#	icon = "gfx/interface/icons/traits/arkNights_pop_traits_roglandPeople_living_Adaptor_Professional.dds"
+#
+#	allowed_archetypes = { BIOLOGICAL }
+#
+#	leader_potential_add = {
+#		from = {
+#			has_authority 	= rs_arkNights_rogland_authorities
+#			is_species		= rs_arkNights_Rogland_pop_species_1
+#		}
+#	}
+#
+#	opposites = {
+#		rs_arkNights_Reunion_pops_trait_reunionPeople_living_Adaptor_Professional
+#	}
+#
+#	modifier = {
+		# pc_continental_habitability 	= @mainLivingPlace
+		# pc_city_habitability			= @mainLivingPlace
+		# pc_savannah_habitability		= @alwaysLivingPlace
+		# pc_tropical_habitability		= @alwaysLivingPlace
+		# pc_ocean_habitability			= @alwaysLivingPlace
+		# pc_arid_habitability			= @alwaysLivingPlace
+		# pc_desert_habitability		= @sometimesLivingPlace	
+		# pc_arctic_habitability		= @alwaysLivingPlace
+		# pc_tundra_habitability		= @alwaysLivingPlace
+		# pc_alpine_habitability		= @alwaysLivingPlace
+		# pc_machine_habitability		= @roglandLivingPlace
+		# pc_ai_habitability 			= @roglandLivingPlace
+		# pc_hive_habitability 			= @fewtimesLivingPlace
+		# pc_nuked_habitability 		= @mainLivingPlace
+		# pc_relic_habitability 		= @sometimesLivingPlace
+		# ------------------------------------------------------
+		
+		# pc_continental_habitability	= @telaWorldTier
+		# pc_city_habitability			= @defenseTier
+
+		# pc_savannah_habitability 		= @scheduleTier
+		# pc_tropical_habitability		= @scheduleTier
+		# pc_ocean_habitability			= @scheduleTier
+		# pc_arid_habitability			= @scheduleTier
+		# pc_desert_habitability		= @scheduleTier	
+		# pc_arctic_habitability		= @scheduleTier
+		# pc_tundra_habitability		= @scheduleTier
+		# pc_alpine_habitability		= @scheduleTier
+
+		# pc_machine_habitability		= @AISupportTier
+		# pc_ai_habitability			= @AISupportTier
+		# pc_hive_habitability			= @AISupportTier
+
+		# pc_nuked_habitability			= @workingTier
+		# pc_relic_habitability			= @workingTier
+		# ------------------------------------------------------
+
+#		pc_continental_habitability 	= @livingTier_Lv_1
+#		pc_city_habitability			= @livingTier_Lv_1
+#
+#		pc_nuked_habitability 			= @livingTier_Lv_1
+#		pc_relic_habitability 			= @livingTier_Lv_1
+#
+#		pc_savannah_habitability		= @livingTier_Lv_2
+#		pc_ocean_habitability			= @livingTier_Lv_2
+#
+#		pc_machine_habitability			= @livingTier_Lv_3
+#		pc_ai_habitability 				= @livingTier_Lv_3
+#		pc_hive_habitability 			= @livingTier_Lv_3
+#
+#		pc_tropical_habitability		= @livingTier_Lv_4
+#		pc_arid_habitability			= @livingTier_Lv_4
+#		pc_desert_habitability			= @livingTier_Lv_4
+#		pc_arctic_habitability			= @livingTier_Lv_4
+#		pc_tundra_habitability			= @livingTier_Lv_4
+#		pc_alpine_habitability			= @livingTier_Lv_4
+#
+#		#<DIS> planet_pops_consumer_goods_upkeep_mult	= -0.1*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+#
+#		#<DIS> deposit_blockers_cost_mult				= -0.15*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+#		#<DIS> planet_clear_blocker_time_mult			= -0.15*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+#		#<DIS> country_trust_growth						= 0.15*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+#		#<DIS> planet_crime_add							= -5*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+#		#<DIS> planet_stability_add						= 5*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+#		#<DIS> country_starbase_influence_cost_mult		= -0.1*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+#
+#		#<DIS> planet_jobs_energy_produces_mult			= 0.1*@rs_arkNights_global_Rogland_Pops_advanced_powerUp_Any_Traits_trigger_factory
+#	}
+#}

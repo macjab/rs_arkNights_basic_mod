@@ -1,0 +1,274 @@
+###############################################
+#####-----Author: 	RhineSky--------------#####
+#####-----SteamID:	RhineSky--------------#####
+#####-----Email:	macjab@macjab.com-----#####
+#####-----QQ：		516278065-------------#####
+#U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+###############################################
+
+# ----------通用领袖特性：源石病相关(0 cost)----------
+# A、患有源石病的整合运动指挥官
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+ 											  # 源石病：1、100%致死<患者的人均寿命减少>、
+                                              #         2、感染者们只需要会初级的源石技艺理论，就能够发挥强大的力量，用血来施展法术不是说着玩玩的<消耗品减少>、
+                                              #         3、被社会冷漠对待，而整合运动领导者的作用之一，就是引领被社会冷漠对待的感染者们反抗这个世界，确立自己的地位<凝聚力增加、幸福度增加>、
+                                              #         ※备注-1、悲伤、凄凉、但更加懂得人性的说，qwq，虎摸，谢谢，
+
+rs_arkNights_Reunion_ruler_leaders_trait_oripathy = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { ruler }
+	leader_class = { ruler }
+
+	# sapient = yes
+	# sentient = yes
+
+	improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy.dds"
+
+	custom_tooltip = rs_arkNights_Reunion_ruler_leaders_trait_oripathy_custom_tooltip
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	# 目前每个指挥官的健康状态在[健康/患病]这2个状态里暂时最多只能选1个状态哦，qwq，虎摸，谢谢，
+	opposites = {
+		rs_arkNights_Reunion_ruler_leaders_trait_healthy
+	}
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_reunion_authorities
+			is_species		= rs_arkNights_Reunion_pop_species_1
+		}
+	}
+
+	modifier = {
+		# 对应<设定：1>：领导者的人均减少10年寿命，
+		leader_age = -10
+
+		# 对应<设定：2>：消耗品使用减少、
+		planet_pops_consumer_goods_upkeep_mult = -0.1
+
+		# 对应<设定：3>：凝聚力增加、
+		#				 人口幸福度增加、
+		country_unity_produces_mult = 0.1
+		pop_happiness 				= 0.1
+	}
+}
+
+# B、健康的整合运动指挥官
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+ 											  # 源石病患者的朋友：1、巴别塔曾经侵入染指人类生命的禁忌，如今即使身体痊愈，这份憎恶，也不会随着时间的流逝而消失的说(飞船攻击力增加、陆军攻击力增加)，谢谢，
+ 											  #					  2、虽然仍有人无法忘却曾经的憎恶与复仇欲望，但是也有很多人是被迫无奈而走上了整合运动的道路，如今随着身体的痊愈，生活逐渐走向正常人的道路，他们现在想要的是更加和平的道路，希望能够与正常人一样生活<陆军士气下降>，谢谢，
+
+rs_arkNights_Reunion_ruler_leaders_trait_healthy = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { ruler }
+	leader_class = { ruler }
+
+	# sapient = yes
+	# sentient = yes
+
+	improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy.dds"
+
+	custom_tooltip = rs_arkNights_Reunion_ruler_leaders_trait_healthy_custom_tooltip
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	# 目前每个指挥官的健康状态在[健康/患病]这2个状态里暂时最多只能选1个状态哦，qwq，虎摸，谢谢，
+	opposites = {
+		rs_arkNights_Reunion_ruler_leaders_trait_oripathy
+	}
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_reunion_authorities
+			is_species		= rs_arkNights_Reunion_pop_species_1
+		}
+	}
+
+	modifier = {
+		# 对应<设定：1>：飞船攻击力增加，
+		#				 陆军攻击力增加，
+		ship_weapon_damage 	= 0.1
+		army_damage_mult	= 0.1
+
+		# 对应<设定：2>：陆军士气下降
+		army_morale 		= -0.1
+	}
+}
+
+# C、患有源石病的整合运动领导者
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+ 											  # 源石病：1、100%致死<患者的人均寿命减少>、
+                                              #         2、感染者们只需要会初级的源石技艺理论，就能够发挥强大的力量，用血来施展法术不是说着玩玩的<消耗品减少>、
+                                              #         3、被社会冷漠对待，而整合运动领导者的作用之一，就是引领被社会冷漠对待的感染者们反抗这个世界，确立自己的地位<凝聚力增加、幸福度增加>、
+                                              #         ※备注-1、悲伤、凄凉、但更加懂得人性的说，qwq，虎摸，谢谢，
+
+rs_arkNights_Reunion_other_leaders_trait_oripathy = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { admiral general governor scientist }
+	leader_class = { admiral general governor scientist }
+
+	# sapient = yes
+	# sentient = yes
+
+	improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy.dds"
+
+	custom_tooltip = rs_arkNights_Reunion_other_leaders_trait_oripathy_custom_tooltip
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	# 目前每个领导者的健康状态在[健康/普通患病/特殊患病]这3个状态里暂时最多只能选1个状态哦，qwq，虎摸，谢谢，
+	opposites = {
+		rs_arkNights_Reunion_other_leaders_trait_neuroticism_oripathy
+		rs_arkNights_Reunion_other_leaders_trait_healthy
+	}
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_reunion_authorities
+			is_species		= rs_arkNights_Reunion_pop_species_1
+		}
+	}
+
+	modifier = {
+		# 对应<设定：1>：领导者的人均减少10年寿命，
+		leader_age = -10
+
+		# 对应<设定：2>：消耗品使用减少、
+		planet_pops_consumer_goods_upkeep_mult = -0.1
+
+		# 对应<设定：3>：凝聚力增加、
+		#				 人口幸福度增加、
+		country_unity_produces_mult = 0.1
+		pop_happiness 				= 0.1
+	}
+}
+
+# D、患有特殊神经性源石病的整合运动领导者
+# ※备注-1：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+ 											  # 源石病：1、100%致死<患者的人均寿命减少>、
+                                              #         2、被社会冷漠对待，而整合运动领导者的作用之一，就是引领被社会冷漠对待的感染者们反抗这个世界，确立自己的地位<凝聚力(1/2倍数系数)增加、幸福度(1/2倍数系数)增加>、
+                                              #			3、由于神经性的源石病感染而导致的双重/多重人格、感觉能力下降、精神稳定性下降的例子屡见不鲜，他们虽然在个人能力上仍然出众，但是在健康问题上却让其他人担忧不已<星球稳定度下降、消耗品增加>、
+                                              #         ※备注-1、悲伤、凄凉、但更加懂得人性的说，qwq，虎摸，谢谢，
+
+rs_arkNights_Reunion_other_leaders_trait_neuroticism_oripathy = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { admiral general governor scientist }
+	leader_class = { admiral general governor scientist }
+
+	# sapient = yes
+	# sentient = yes
+
+	improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_neuroticism_oripathy.dds"
+
+	custom_tooltip = rs_arkNights_Reunion_other_leaders_trait_neuroticism_oripathy_custom_tooltip
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	# 目前每个领导者的健康状态在[健康/普通患病/特殊患病]这3个状态里暂时最多只能选1个状态哦，qwq，虎摸，谢谢，
+	opposites = {
+		rs_arkNights_Reunion_other_leaders_trait_oripathy
+		rs_arkNights_Reunion_other_leaders_trait_healthy
+	}
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_reunion_authorities
+			is_species		= rs_arkNights_Reunion_pop_species_1
+		}
+	}
+
+	modifier = {
+		# 对应<设定：1>：领导者的人均减少15年寿命，
+		leader_age = -15
+
+		# 对应<设定：2>：凝聚力(1/2倍数系数)增加、
+		#				 人口幸福度(1/2倍数系数)增加、
+		country_unity_produces_mult = 0.05
+		pop_happiness 				= 0.05
+
+		# 对应<设定：3>：星球稳定性下降
+		#				 消耗品使用增加
+		planet_stability_add 					= -0.15
+		planet_pops_consumer_goods_upkeep_mult	= 0.1
+	}
+}
+
+# E、健康的整合运动领导者(※备注-1：目前暂时不用此领导者特征点的说，谢谢)，谢谢，
+# ※备注-2：目前除了Ruler统治者指挥官外，其他领导者暂时不使用此领导者特征点的说(暂无使用必要，等待后续的数值设计方案里再待定的说，qwq，虎摸，谢谢)，qwq，虎摸，谢谢，
+# ※备注-3：有源石病的并不一定会源石技艺，而与此相同的，会源石技艺的，也不一定是源石病患者的说，谢谢，
+ 											  # 1、巴别塔曾经侵入染指人类生命的禁忌，如今即使身体痊愈，这份憎恶，也不会随着时间的流逝而消失的说(飞船攻击力增加、陆军攻击力增加)，谢谢，
+ 											  #	2、虽然仍有人无法忘却曾经的憎恶与复仇欲望，但是也有很多人是被迫无奈而走上了整合运动的道路，如今随着身体的痊愈，生活逐渐走向正常人的道路，他们现在想要的是更加和平的道路，希望能够与正常人一样生活<陆军士气下降>，谢谢，
+
+rs_arkNights_Reunion_other_leaders_trait_healthy = {
+	cost = 0
+
+	initial = no
+	modification = yes
+	randomized = no
+
+	leader_trait = { admiral general governor scientist }
+	leader_class = { admiral general governor scientist }
+
+	# sapient = yes
+	# sentient = yes
+
+	improves_leaders = yes
+
+	icon = "gfx/interface/icons/traits/rs_arkNights_pops_trait_oripathy.dds"
+
+	custom_tooltip = rs_arkNights_Reunion_other_leaders_trait_healthy_custom_tooltip
+
+	allowed_archetypes = { BIOLOGICAL } # waiting for next step test with some options...
+
+	# 目前每个领导者的健康状态在[健康/普通患病/特殊患病]这3个状态里暂时最多只能选1个状态哦，qwq，虎摸，谢谢，
+	opposites = {
+		rs_arkNights_Reunion_other_leaders_trait_oripathy
+		rs_arkNights_Reunion_other_leaders_trait_neuroticism_oripathy
+	}
+
+	leader_potential_add = {
+		from = {
+			has_authority 	= rs_arkNights_reunion_authorities
+			is_species		= rs_arkNights_Reunion_pop_species_1
+		}
+	}
+
+	modifier = {
+		# 对应<设定：1>：飞船攻击力增加，
+		#				 陆军攻击力增加，
+		ship_weapon_damage 	= 0.1
+		army_damage_mult	= 0.1
+
+		# 对应<设定：2>：陆军士气下降
+		army_morale 		= -0.1
+	}
+}

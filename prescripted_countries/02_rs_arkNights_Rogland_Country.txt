@@ -1,0 +1,103 @@
+﻿rs_arkNights_Rogland_Country_1 = {
+	name = rs_arkNights_Rogland_country_name # @rs_arkNights_Rogland_country_name
+
+	adjective = RhineSky_Prescripted_Rogland_Country_Adjective_Name
+
+	ship_prefix = RhineSky_Prescripted_Rogland_Ship_Prefix_Name
+
+	ignore_portrait_duplication = yes
+
+	spawn_enabled = always # yes # always
+
+	species = {
+		class = rs_arkNights_Rogland_pop_species_1 # rs_arkNights_Rogland_pop_species_2
+
+		portrait = rs_arkNights_Rogland_Pops_portrait_01
+
+		name = RhineSky_Prescripted_Rogland_Species_Name
+		plural = RhineSky_Prescripted_Rogland_Species_Plural_Name
+		adjective = RhineSky_Prescripted_Rogland_Species_Adjective_Name
+
+		name_list = rs_arkNights_Rogland_pop_name_list_1
+
+		trait = "rs_arkNights_Rogland_pops_trait_oripathy"
+#		trait = "rs_arkNights_Rogland_pops_traint_originiumsArts"
+		trait = "rs_arkNights_Rogland_pops_trait_originiumsTech"
+		trait = "rs_arkNights_Rogland_pops_trait_roglandPeople"
+#		trait = "rs_arkNights_Rogland_pops_trait_roglandPeople_living_Adaptor_Professional"
+	}
+
+	room = personality_federation_builders_room
+
+	authority = rs_arkNights_rogland_authorities
+	# authority = auth_democratic
+	# authority = auth_corporate
+
+	civics = {
+		rs_arkNights_Rogland_civic_arkNights
+		rs_arkNights_Rogland_civic_warrior_culture
+	}
+
+	government = rs_arkNights_rogland_goverment
+
+	# 罗德岛的宗旨之一就是：罗德岛从来不怕战斗，但是如果能够避免，那么就沉默，如果必须战斗，那就战斗到底! ———— Commmander.阿米娅
+	ethic = ethic_egalitarian
+	ethic = ethic_militarist
+	ethic = ethic_xenophile
+
+	planet_name  = RhineSky_Prescripted_Rogland_Planet_Name
+	planet_class = pc_continental
+	# initializer  = sol_system_initializer
+	# initializer  = rs_arkNights_Rogland_solar_system_initializer
+	system_name  = RhineSky_Prescripted_Rogland_System_Name
+
+	graphical_culture      = humanoid_01
+	city_graphical_culture = humanoid_01
+
+	flags = {
+		rs_arkNights_Rogland_Flag
+		custom_start_screen
+	}
+
+	empire_flag = {
+		icon = {
+			category = "rogland"
+			file = "flag_rogland.dds"
+		}
+
+		background = {
+			category = "backgrounds"
+			file = "diagonal.dds"
+			# file = "00_solid.dds"
+		}
+
+		colors = {
+			"blue"
+			"blue"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name 			= @rs_arkNights_Rogland_ruler_5_stars_Amiya_name # Amiya
+		gender 			= female
+		portrait 		= rs_arkNights_amiya_portrait_01
+		leader_class 	= ruler
+		set_age 		= 15
+
+		texture = 0
+		hair 	= 0
+		clothes = 0
+
+		# leader_flags list please visit the "/scripted_variables/rs_arkNights_Rogland_leaders_flags_list_scripted_variables.txt" file, thank you~
+		set_leader_flag = @rs_arkNights_Rogland_ruler_5_stars_Amiya_flag
+
+		trait = rs_arkNights_Rogland_5_Stars_leader_level_trait
+		trait = rs_arkNights_Rogland_SS_leader_job_trait
+		# trait = rs_arkNights_Rogland_ruler_leaders_trait_oripathy
+		trait = rs_arkNights_ruler_amiya_feature_traint_originiumsArts
+
+		ruler_title = RhineSky_Prescripted_Rogland_Ruler_Title_Name
+	}
+}

@@ -1,0 +1,315 @@
+###############################################
+#####-----Author: 	RhineSky--------------#####
+#####-----SteamID:	RhineSky--------------#####
+#####-----Email:	macjab@macjab.com-----#####
+#####-----QQ：		516278065-------------#####
+#U2FsdGVkX180fjMpPJhXAQfCK6G8shl/jyFwZ5MGr4A=##
+###############################################
+
+######################################################################
+##########-----Governor组总督leaders的人物肖像Scope对象-----##########
+######################################################################
+###########--------------Yato--------------###########
+portrait_groups = {
+	rs_arkNights_yato_portrait_01 = {
+		default = rs_arkNights_yato_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_yato_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_yato_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the Rogland, thank you~
+			add = {
+				portraits = {
+					rs_arkNights_yato_material_01
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					# gender = female
+
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_yato_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					# gender = female
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_yato_material_01
+				}
+			}
+		}
+	}
+}
+
+###########--------------Fang--------------###########
+portrait_groups = {
+	rs_arkNights_fang_portrait_01 = {
+		default = rs_arkNights_fang_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_fang_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_fang_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the Rogland, thank you~
+			add = {
+				portraits = {
+					rs_arkNights_fang_material_01
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					# gender = female
+
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_fang_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					# gender = female
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_fang_material_01
+				}
+			}
+		}
+	}
+}
+
+###########--------------Orchid--------------###########
+portrait_groups = {
+	rs_arkNights_orchid_portrait_01 = {
+		default = rs_arkNights_orchid_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_orchid_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_orchid_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the Rogland, thank you~
+			add = {
+				portraits = {
+					rs_arkNights_orchid_material_01
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					# gender = female
+
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_orchid_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					# gender = female
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_orchid_material_01
+				}
+			}
+		}
+	}
+}
+
+###########--------------Melantha--------------###########
+portrait_groups = {
+	rs_arkNights_melantha_portrait_01 = {
+		default = rs_arkNights_melantha_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_melantha_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_melantha_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the Rogland, thank you~
+			add = {
+				portraits = {
+					rs_arkNights_melantha_material_01
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					# gender = female
+
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_melantha_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					# gender = female
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_melantha_material_01
+				}
+			}
+		}
+	}
+}
+
+###########--------------ACE--------------###########
+portrait_groups = {
+	rs_arkNights_ACE_portrait_01 = {
+		default = rs_arkNights_ACE_material_01
+
+		game_setup = {
+			add = {
+				portraits = {
+					rs_arkNights_ACE_material_01
+				}
+			}
+		}
+
+		species = {
+			add = {
+				portraits = {
+					rs_arkNights_ACE_material_01
+				}
+			}
+		}
+
+		pop = {
+			# this will be set to: return the portraits of pop of the Rogland, thank you~
+			add = {
+				portraits = {
+					rs_arkNights_ACE_material_01
+				}
+			}
+		}
+
+		leader = {
+			add = {
+				trigger = {
+					# gender = male
+
+					NOT = {
+						leader_class = ruler
+					}
+				}
+
+				portraits = {
+					rs_arkNights_ACE_material_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					# gender = male
+					leader_class = ruler
+				}
+
+				portraits = {
+					rs_arkNights_ACE_material_01
+				}
+			}
+		}
+	}
+}
