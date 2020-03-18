@@ -44,7 +44,7 @@ rs_arkNights_Reunion_Country_1 = {
 	ethic = ethic_militarist
 	ethic = ethic_fanatic_xenophobe
 
-	origin = origin_default # rs_arkNights_Reunion_Origin_Shoulders_Of_Giants # origin_shoulders_of_giants
+	origin = rs_arkNights_Reunion_Origin_Shoulders_Of_Giants
 
 	planet_name  = RhineSky_Prescripted_Reunion_Planet_Name
 	planet_class = pc_nuked

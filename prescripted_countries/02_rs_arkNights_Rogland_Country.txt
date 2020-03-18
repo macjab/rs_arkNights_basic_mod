@@ -45,7 +45,7 @@
 	ethic = ethic_militarist
 	ethic = ethic_xenophile
 
-	origin = rs_arkNights_Rogland_Origin_Terra_Doomsday # origin_default # rs_arkNights_Rogland_Origin_Terra_Doomsday # origin_doomsday
+	origin = rs_arkNights_Rogland_Origin_Terra_Doomsday
 
 	planet_name  = RhineSky_Prescripted_Rogland_Planet_Name
 	planet_class = pc_continental

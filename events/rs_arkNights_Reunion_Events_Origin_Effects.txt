@@ -1,13 +1,13 @@
-namespace = game_start
+namespace = reunion_events_origin_effects_control
 
 ### Hidden Game Start Event
 event = {
-	id = game_start.10023
+	id = reunion_events_origin_effects_control.100
 	hide_window = yes
 	is_triggered_only = yes
 
 	trigger = {
-		has_origin = rs_arkNights_Rogland_Origin_Terra_Doomsday
+		has_origin = rs_arkNights_Reunion_Origin_Shoulders_Of_Giants
 	}
 
 	immediate = {
@@ -15,7 +15,7 @@ event = {
 			capital_scope = {
 				while = {
 					limit = { 
-						num_pops < 32 
+						num_pops < 36
 					}
 					create_pop = {
 						species = owner_main_species
@@ -23,9 +23,9 @@ event = {
 					}
 				}
 
-				add_district = district_generator
 				add_district = district_mining
-				add_district = district_farming
+				add_district = district_mining
+				add_district = district_mining
 			}
 		}
 	}

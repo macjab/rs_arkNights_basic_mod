@@ -1,0 +1,32 @@
+namespace = rogland_events_origin_effects_control
+
+### Hidden Game Start Event
+event = {
+	id = rogland_events_origin_effects_control.100
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_origin = rs_arkNights_Rogland_Origin_Terra_Doomsday
+	}
+
+	immediate = {
+		owner = {
+			capital_scope = {
+				while = {
+					limit = { 
+						num_pops < 32 
+					}
+					create_pop = {
+						species = owner_main_species
+						ethos = random
+					}
+				}
+
+				add_district = district_generator
+				add_district = district_mining
+				add_district = district_farming
+			}
+		}
+	}
+}
