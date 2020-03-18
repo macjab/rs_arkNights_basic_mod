@@ -1,0 +1,20 @@
+generate_Rogland_start_pops_and_start_districts = {
+	if = {
+		limit = {
+			owner = { 
+				has_origin = rs_arkNights_Rogland_Origin_Terra_Doomsday
+			}
+		}
+		while = {
+			limit = { num_pops < 32 }
+			create_pop = {
+				species = owner_main_species
+				ethos = random
+			}
+		}
+
+		add_district = district_generator
+		add_district = district_mining
+		add_district = district_farming
+	}
+}

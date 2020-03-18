@@ -1,0 +1,18 @@
+generate_Reunion_start_pops_and_start_districts = {
+	if = {
+		limit = {
+			owner = { 
+				has_origin = rs_arkNights_Reunion_Origin_Shoulders_Of_Giants
+			}
+		}
+		while = {
+			limit = { num_pops < 36 }
+			create_pop = {
+				species = owner_main_species
+				ethos = random
+			}
+		}
+
+		add_district = district_mining
+	}
+}

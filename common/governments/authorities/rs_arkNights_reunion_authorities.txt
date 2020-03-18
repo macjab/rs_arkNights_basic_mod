@@ -1,5 +1,5 @@
 rs_arkNights_reunion_authorities = {
-	has_heir = yes
+	#has_heir = yes
 
 	election_type = oligarchic
 	election_term_years = 30

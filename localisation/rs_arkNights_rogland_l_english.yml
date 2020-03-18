@@ -50,6 +50,11 @@
  rs_arkNights_Rogland_pop_species_1_mouth:0 "嘴"
  rs_arkNights_Rogland_pop_species_1_hand:0 "手"
 
+ ##########-----Origin-----##########
+ rs_arkNights_Rogland_Origin_Terra_Doomsday:0 "源石天灾"
+ rs_arkNights_Rogland_Origin_Terra_Doomsday_desc:0 "我一直在想，罗德岛的存在，是为了救赎还是重生呢？揣着各自信标的人们，行驶在同一航线上保障前行，仅此而已。"
+ rs_arkNights_Rogland_Origin_Terra_Doomsday_custom_tooltip:0 "在游戏开始时拥有额外的§Y4§!个 £pop£ 人口和§Y3§!个区划。"
+
 ##########-----leader_specific_traits-----##########
 # Rogland Common leader traits (for most leaders)
 rs_arkNights_Rogland_ruler_leaders_trait_oripathy:0 "患有源石病的罗德岛指挥官"

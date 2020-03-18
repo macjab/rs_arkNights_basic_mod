@@ -7,5 +7,6 @@ tags={
 	"Sound"
 }
 picture="cover.jpg"
-supported_version="2.4.*"
+version="2.6.*"
+supported_version="2.6.*"
 remote_file_id="1828601610"

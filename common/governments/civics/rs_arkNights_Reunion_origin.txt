@@ -1,0 +1,26 @@
+rs_arkNights_Reunion_Origin_Shoulders_Of_Giants = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_one_the_shoulders_of_giant.dds"
+	picture = GFX_origin_shoulders
+	max_once_global = yes
+
+	advanced_start = yes
+
+	playable = {
+		host_has_dlc = "Federations"
+	}
+
+	possible = {
+	}
+
+	random_weight = {
+		base = 100
+	}
+
+	description = "rs_arkNights_Reunion_Origin_Shoulders_Of_Giants_custom_tooltip"
+
+	flags = { custom_start_screen }
+
+	traits = {
+	}
+}

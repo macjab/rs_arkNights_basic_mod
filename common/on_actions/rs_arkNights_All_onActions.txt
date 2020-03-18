@@ -3,6 +3,7 @@ on_game_start_country = {
 	events = { # ※remark: the country judgement plese coding in the every events scope inside, thank you~
 		rogland_events_specific_leader_classes_leaders_states_control.100
 		reunion_events_specific_leader_classes_leaders_states_control.100
+		game_start.10023
 	}
 }
 

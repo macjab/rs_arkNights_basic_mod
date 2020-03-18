@@ -1,5 +1,5 @@
 rs_arkNights_rogland_authorities = {
-	has_heir = yes
+	#has_heir = yes
 
 	election_type = democratic
 	election_term_years = 30
