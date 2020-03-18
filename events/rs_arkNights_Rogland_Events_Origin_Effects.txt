@@ -37,9 +37,15 @@ event = {
 				id = origin.60
 			}
 
-			planet = {
-				planet_event = {
-					id = origin.85 days = 5 
+			solar_system = {
+				every_system_planet = {
+					limit = {
+						is_capital = yes
+					}
+
+					planet_event = {
+						id = origin.85 days = 5 
+					}
 				}
 			}
 		}

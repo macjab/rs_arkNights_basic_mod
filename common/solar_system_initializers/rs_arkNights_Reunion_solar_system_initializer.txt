@@ -17,7 +17,9 @@ rs_arkNights_Reunion_solar_system_initializer = {
             has_star_flag = empire_cluster
         }
     }
-	max_instances = 1
+    
+	# max_instances = 1 # ※note: please comment this code line to get the unlimited ring worlds, thank you~~
+
 	flags = { sanctuary_system }
 	scaled_spawn_chance = 2	# scales by galaxy size (1000 stars = 10x base)
 	
@@ -32,6 +34,7 @@ rs_arkNights_Reunion_solar_system_initializer = {
 	
 	change_orbit = 45
 	
+	# 30 degree for each a ring world field, and total are 12 fields(12*30 degree/field = 360 degree/12fields)
 	planet = {
 		class = "pc_ringworld_habitable"
 		name = "NAME_Sanctuary_A"

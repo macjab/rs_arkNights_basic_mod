@@ -8,6 +8,64 @@ event = {
 
 	trigger = {
 		has_origin = rs_arkNights_Reunion_Origin_Shoulders_Of_Giants
+
+		NOT = {
+			has_country_flag = rs_arkNights_Reunion_Flag
+		}
+	}
+
+	immediate = {
+		owner = {
+			solar_system = {
+				# 90 degree for each a ring world field, and total are 4 fields(4*90 degree/field = 360 degree/12fields)
+				spawn_megastructure = {
+					name = "NAME_Ring_Section_A"
+					type = "ring_world_3_intermediate"
+					orbit_angle = 0
+					orbit_distance = 45
+					owner = from
+					graphical_culture = fromfrom
+					location = star
+				}
+				spawn_megastructure = {
+					name = "NAME_Ring_Section_B"
+					type = "ring_world_ruined"
+					orbit_angle = 90
+					orbit_distance = 45
+					owner = from
+					graphical_culture = fromfrom
+					location = star
+				}
+				spawn_megastructure = {
+					name = "NAME_Ring_Section_C"
+					type = "ring_world_3_intermediate"
+					orbit_angle = 180
+					orbit_distance = 45
+					owner = from
+					graphical_culture = fromfrom
+					location = star
+				}
+				spawn_megastructure = {
+					name = "NAME_Ring_Section_D"
+					type = "ring_world_ruined"
+					orbit_angle = 270
+					orbit_distance = 45
+					owner = from
+					graphical_culture = fromfrom
+					location = star
+				}
+			}
+		}
+	}
+}
+
+event = {
+	id = reunion_events_origin_effects_control.101
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_origin = rs_arkNights_Reunion_Origin_Shoulders_Of_Giants
 	}
 
 	immediate = {

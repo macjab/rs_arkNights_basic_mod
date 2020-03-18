@@ -5,6 +5,7 @@ on_game_start_country = {
 		reunion_events_specific_leader_classes_leaders_states_control.100
 		rogland_events_origin_effects_control.100
 		reunion_events_origin_effects_control.100
+		reunion_events_origin_effects_control.101
 	}
 }
 
