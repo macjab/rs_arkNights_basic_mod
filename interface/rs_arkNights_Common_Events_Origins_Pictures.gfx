@@ -1,0 +1,13 @@
+spriteTypes = {
+	spriteType = {	
+		name = "GFX_origin_terra_doomsday"
+		texturefile = "gfx/event_pictures/origins/origin_terra_doomsday.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {	
+		name = "GFX_origin_breathTwice"
+		texturefile = "gfx/event_pictures/origins/origin_breathTwice.dds"
+		alwaystransparent = yes
+	}
+}

@@ -1,7 +1,7 @@
 rs_arkNights_Reunion_Origin_Shoulders_Of_Giants = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_one_the_shoulders_of_giant.dds"
-	picture = GFX_origin_shoulders
+	picture = GFX_origin_breathTwice
 	max_once_global = yes
 
 	advanced_start = yes
