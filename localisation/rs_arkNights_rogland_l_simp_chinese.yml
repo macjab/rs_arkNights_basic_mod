@@ -53,7 +53,7 @@
  ##########-----Origin-----##########
  rs_arkNights_Rogland_Origin_Terra_Doomsday:0 "源石天灾"
  rs_arkNights_Rogland_Origin_Terra_Doomsday_desc:0 "我一直在想，罗德岛的存在，是为了救赎还是重生呢？揣着各自信标的人们，行驶在同一航线上保障前行，仅此而已。"
- rs_arkNights_Rogland_Origin_Terra_Doomsday_custom_tooltip:0 "在游戏开始时拥有额外的§Y4§!个 £pop£ 人口和§Y3§!个区划。"
+ rs_arkNights_Rogland_Origin_Terra_Doomsday_custom_tooltip:0 "在游戏开始时拥有额外的§Y6§!个 £pop£ 人口、§Y2§!个建筑和§Y3§!个区划。\n\n§R—警告：具有挑战性的起源§!\n—你的母星会在游戏开始§H64年§!后爆炸\n—母星地幔中的珍贵资源可以加速在其表面的生产\n—不保证在母星系附近会生成宜居世界"
 
 ##########-----leader_specific_traits-----##########
 # Rogland Common leader traits (for most leaders)

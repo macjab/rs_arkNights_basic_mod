@@ -49,7 +49,7 @@ rs_arkNights_Reunion_Country_1 = {
 	planet_name  = RhineSky_Prescripted_Reunion_Planet_Name
 	planet_class = pc_nuked
 	# initializer  = sol_system_initializer
-	# initializer  = rs_arkNights_Reunion_solar_system_initializer
+	initializer  = rs_arkNights_Reunion_solar_system_initializer
 	system_name  = RhineSky_Prescripted_Reunion_System_Name
 
 	graphical_culture      = humanoid_01

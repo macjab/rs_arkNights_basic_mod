@@ -57,7 +57,7 @@
  ##########-----Origin-----##########
  rs_arkNights_Reunion_Origin_Shoulders_Of_Giants:0 "二次呼吸"
  rs_arkNights_Reunion_Origin_Shoulders_Of_Giants_desc:0 "被源石感染的人通称“矿石病患者”;患者根据体质会在感染后一定时间内发作，症状包拮体表或体内的矿石结晶生成。患者病情随时间逐步恶化，出现危及生命的体内外明显结晶，至致命性体液结晶后，最终死亡。目前暂时无有效治疗手段。\n“没有人能告诉矿石病患者要如何生存下去”，于是其中具有天赋的他们，赌上各自的未来，势要为世界带来震撼。\n\n从现在起，我们要严格按照时间计划进行。"
- rs_arkNights_Reunion_Origin_Shoulders_Of_Giants_custom_tooltip:0 "在游戏开始时拥有额外的§Y8§!个 £pop£ 人口和§Y3§!个区划。"
+ rs_arkNights_Reunion_Origin_Shoulders_Of_Giants_custom_tooltip:0 "在游戏开始时拥有额外的§Y环世界§!\n\n游戏开始时，你的母星系有一个跟神秘的施恩者相关的§Y考古遗址§!。"
 
 ##########-----leader_specific_traits-----##########
 # Reunion Common leader traits (for most leaders)

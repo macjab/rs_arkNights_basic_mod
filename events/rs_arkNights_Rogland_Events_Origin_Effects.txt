@@ -15,7 +15,7 @@ event = {
 			capital_scope = {
 				while = {
 					limit = { 
-						num_pops < 32 
+						num_pops < 34
 					}
 					create_pop = {
 						species = owner_main_species
@@ -26,6 +26,21 @@ event = {
 				add_district = district_generator
 				add_district = district_mining
 				add_district = district_farming
+
+				add_building = building_foundry_1
+				add_building = building_research_lab_1
+			}
+
+			set_country_flag = colonized_first_planet
+
+			country_event = {
+				id = origin.60
+			}
+
+			planet = {
+				planet_event = {
+					id = origin.85 days = 5 
+				}
 			}
 		}
 	}

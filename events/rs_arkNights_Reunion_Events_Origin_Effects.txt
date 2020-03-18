@@ -12,20 +12,17 @@ event = {
 
 	immediate = {
 		owner = {
-			capital_scope = {
-				while = {
-					limit = { 
-						num_pops < 36
+			solar_system = {
+				random_system_planet = {
+					limit = {
+						is_colonizable = no
+						is_star = no
+						is_asteroid = no
+						is_homeworld = no
+						NOT = { exists = archaeological_site }
 					}
-					create_pop = {
-						species = owner_main_species
-						ethos = random
-					}
+					create_archaeological_site = site_dark_secret
 				}
-
-				add_district = district_mining
-				add_district = district_mining
-				add_district = district_mining
 			}
 		}
 	}
